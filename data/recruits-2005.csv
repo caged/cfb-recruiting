@@ -1,0 +1,2001 @@
+position,location,school,height,weight,fourty,stars,rating,rank,institution,name,year
+ol,"Plainfield, New Jersey","",0,319,5.5,5,6.1,1,Virginia,Eugene Monroe,2005
+de,"Randallstown, Maryland","",78,277,4.5,5,6.1,1,Maryland,Melvin Alaeze,2005
+ath,"Greenbelt, Maryland",Eleanor Roosevelt,78,189,4.3,5,6.1,1,Penn State,Derrick Williams,2005
+rb,"Pahokee, Florida","",65,181,4.3,5,6.1,1,Florida State,Antone Smith,2005
+qb,"Reserve, Louisiana",East St. John,78,207,4.5,5,6.1,1,LSU,Ryan Perrilloux,2005
+db,"Miami, Florida",Carol City,78,195,4.4,5,6.1,1,Miami (FL),Kenneth Phillips,2005
+ol,"Philadelphia, Pennsylvania",West Catholic,78,331,5.1,4,6.0,1,Michigan,Marques Slocum,2005
+qb,"Mission Viejo, California","",78,211,4.7,5,6.1,1,USC,Mark Sanchez,2005
+dt,"Dallas, Texas",Kimball,78,315,4.9,5,6.1,1,Oklahoma,DeMarcus Granger,2005
+te,"Alief, Texas",Taylor,78,237,4.8,5,6.1,1,Texas A&M,Martellus Bennett,2005
+db,"Pittsburgh, Pennsylvania",Gateway,78,183,4.3,5,6.1,1,Penn State,Justin King,2005
+rb,"Seffner, Florida",Armwood,65,245,4.7,4,5.9,1,Iowa,Kalvin Bailey,2005
+rb,"Lacey, Washington",Timberline,65,224,4.5,5,6.1,1,Oregon,Jonathan Stewart,2005
+k,"San Diego, California",St. Augustine,65,185,4.9,3,5.5,1,Nebraska,Jordan Congdon,2005
+lb,"Eureka, California","",78,253,4.7,5,6.1,1,USC,Rey Maualuga,2005
+de,"Rancho Cucamonga, California","",78,260,4.6,4,6.0,1,USC,Averell Spicer,2005
+lb,"LaGrange, Georgia","",78,200,4.5,5,6.1,1,Auburn,Tray Blackmon,2005
+wr,"Nashville, Tennessee",Goodpasture,78,210,4.6,5,6.1,1,USC,Patrick Turner,2005
+ol,"Collins, Mississippi","",78,290,5.1,4,5.9,1,Tennessee,Josh McNeil,2005
+wr,"Tallahassee, Florida",Lincoln,78,190,4.4,5,6.1,2,Florida State,Fred Rouse,2005
+lb,"Winston Salem, North Carolina",Mt. Tabor,78,220,4.6,4,6.0,2,Florida State,Derek Nicholson,2005
+lb,"Las Vegas, Nevada",Bishop Gorman,78,216,4.8,5,6.1,2,Oklahoma,Ryan Reynolds,2005
+rb,"Lufkin, Texas","",78,240,4.6,4,5.8,2,Texas A&M,Jorvorskie Lane,2005
+ol,"Houston, Texas",Booker T. Washington,78,280,5.2,5,6.1,2,Miami (FL),Reginald Youngblood,2005
+ath,"Little Rock, Arkansas",Oak Grove,78,198,4.4,5,6.1,2,Arkansas,Darren McFadden,2005
+te,"Wheaton, Illinois",South,78,250,4.7,4,6.0,2,Iowa,Anthony Moeaki,2005
+qb,"Lockport, Illinois","",78,200,4.9,4,5.9,2,Iowa,Jake Christensen,2005
+dt,"Bryn Mawr, Pennsylvania",Harriton,78,315,5.1,5,6.1,2,Florida State,Callahan Bright,2005
+qb,"Waynesville, North Carolina",Tuscola Senior,78,211,4.8,4,6.0,2,Tennessee,Jonathan Crompton,2005
+rb,"North Hollywood, California","",78,202,4.4,5,6.1,2,Nebraska,Marlon Lucky,2005
+k,"Twinsburg, Ohio",Twinsburg,78,230,,3,5.5,2,Michigan,Zoltan Mesko,2005
+rb,"Antioch, Tennessee","",65,184,4.3,4,6.0,2,Tennessee,LaMarcus Coker,2005
+db,"Covina, California",Charter Oak,78,195,4.5,4,6.0,2,USC,Will Harris,2005
+ol,"Columbus, Georgia",Pacelli Catholic,78,281,4.7,4,5.8,2,Auburn,Mike Harness,2005
+db,"Miami, Florida",Killian,78,176,4.5,5,6.1,2,Tennessee,Demetrice Morley,2005
+de,"Warner Robins, Georgia",Houston County,78,247,4.7,4,6.0,2,USC,Kyle Moore,2005
+ol,"Lovejoy, Georgia","",78,300,5.1,4,6.0,2,Tennessee,Chris Scott,2005
+de,"New Orleans, Louisiana",St. Augustine,78,236,4.7,4,6.0,2,LSU,Al Jones,2005
+rb,"Long Island, New York",North Babylon,0,234,4.6,5,6.1,3,West Virginia,Jason Gwaltney,2005
+qb,"Germantown, Maryland",Northwest,78,198,4.6,4,5.9,3,Virginia Tech,Ike Whitaker,2005
+wr,"Long Beach, California",Poly,65,170,4.4,5,6.1,3,California,DeSean Jackson,2005
+ol,"Lakewood, Ohio",St. Edward,78,296,5.1,5,6.1,3,Ohio State,Alex Boone,2005
+lb,"Greenville, Florida",Madison,78,206,4.7,4,6.0,3,Florida State,Eugene Hayes,2005
+ol,"Denver, Colorado",Mullen,78,295,4.8,4,5.8,3,Oklahoma,Jesse White,2005
+db,"Cleveland, Ohio",Glenville Academic Campus,78,190,4.4,4,6.0,3,Ohio State,Jamario O'Neal,2005
+rb,"La Marque, Texas","",65,165,4.3,4,5.9,3,Florida State,Russell Ball,2005
+ol,"Killeen, Texas",Harker Heights,78,290,5.0,4,5.9,3,Texas A&M,Michael Shumard,2005
+db,"Sulphur Springs, Texas","",78,205,4.5,4,5.9,3,Oklahoma,Keenan Clayton,2005
+te,"Galena Park, Texas",North Shore,78,235,4.5,4,6.0,3,Miami (FL),Dajleon Farr,2005
+dt,"Waynesboro, Mississippi",Wayne County,78,352,4.8,5,6.1,3,Mississippi,Jerrell Powe,2005
+qb,"Clearwater, Florida",Countryside,78,205,4.7,4,5.9,3,Nebraska,Harrison Beck,2005
+lb,"Lakewood, California","",78,227,4.6,4,6.0,3,USC,Luthur Brown,2005
+de,"Miami, Florida",Carol City,78,241,4.9,4,6.0,3,LSU,Ricky Jean-Francois,2005
+k,"Cantonment, Florida",Tate,78,180,4.4,3,5.5,3,Florida State,Graham Gano,2005
+rb,"Miami, Florida",Monsignor Pace,65,220,4.5,4,5.8,3,Pittsburgh,Conredge Collins,2005
+de,"Wilson, North Carolina",Beddingfield,78,238,4.5,4,5.9,3,Florida State,Everette Brown,2005
+ath,"Highland Springs, Virginia","",78,185,4.5,5,6.1,3,Virginia Tech,Victor Harris,2005
+te,"Hope Mills, North Carolina",South View,78,251,4.8,4,5.9,4,South Carolina,Jonathan Hannah,2005
+wr,"Charlotte, North Carolina",Independence,78,190,4.4,4,6.0,4,Georgia,Mohamed Massaquoi,2005
+rb,"Jacksonville, Florida",Sandalwood,65,177,4.4,4,5.8,4,Ohio State,Maurice Wells,2005
+qb,"Oceanside, California","",78,205,4.8,4,5.9,4,Arizona State,Derek Shaw,2005
+ol,"Barrington, Illinois","",78,300,5.0,5,6.1,4,Iowa,Dan Doering,2005
+qb,"Woodland Hills, California",Taft,78,183,4.6,4,5.9,4,Florida,Josh Portis,2005
+de,"Folkston, Georgia",Charlton County,78,240,4.7,4,6.0,4,Florida State,Justin Mincey,2005
+k,"Orange, California",Lutheran,78,200,4.8,3,5.5,4,USC,Troy Van Blarcom,2005
+ath,"Pasco, Washington",Pasco,78,210,4.4,4,6.0,4,Nebraska,Leon Jackson,2005
+dt,"Red Bank, New Jersey","",78,315,5.0,4,6.0,4,Georgia,Kade Weston,2005
+db,"Stevenson, Alabama",North Jackson,78,210,4.4,4,5.9,4,Alabama,Chris Keys,2005
+ol,"Honea Path, South Carolina",Belton-Honea,78,291,5.0,3,5.7,4,Clemson,Barry Humphries,2005
+lb,"Kingfisher, Oklahoma","",78,225,4.6,4,6.0,4,Oklahoma,Curtis Lofton,2005
+de,"Jupiter, Florida","",78,230,4.7,4,5.9,4,Miami (FL),Courtney Harris,2005
+rb,"East Grand Rapids, Michigan","",65,230,4.5,5,6.1,4,Michigan,Kevin Grady,2005
+db,"Batesville, Mississippi",South Panola,65,183,4.4,4,6.0,4,Mississippi State,Derek Pegues,2005
+ol,"Provo, Utah",Timpview,78,270,4.9,4,5.9,4,Brigham Young,Matt Reynolds,2005
+lb,"Washington, District of Columbia",St. John's College High,78,210,4.5,4,6.0,4,Tennessee,Rico McCoy,2005
+rb,"Mandeville, Louisiana",Fontainebleau,78,230,4.6,4,5.8,4,LSU,Steven Korte,2005
+de,"Athol Springs, New York",St. Francis,78,256,4.8,4,5.9,5,Ohio State,Doug Worthington,2005
+de,"Aldine, Texas",Eisenhower,78,229,4.6,4,5.9,5,Texas A&M,Paul Freeney,2005
+dt,"Killeen, Texas",Shoemaker,78,302,5.0,4,6.0,5,Texas,Roy Miller,2005
+ol,"Roseville, Minnesota",Cretin-Derham Hall,78,290,5.2,4,5.9,5,Iowa,Rafael Eubanks,2005
+te,"Miami, Florida",Miami Norland,78,242,4.6,4,5.9,5,Miami (FL),Richard Gordon,2005
+ol,"Orlando, Florida",Edgewater,78,338,5.3,4,6.0,5,Florida State,Matt Hardrick,2005
+lb,"Jenks, Oklahoma","",78,245,4.6,4,5.9,5,Nebraska,Phillip Dillard,2005
+wr,"Warren, Ohio",Harding,78,174,4.4,4,6.0,5,Michigan,Mario Manningham,2005
+k,"Hickory, North Carolina",Hickory,78,210,,3,5.5,5,South Carolina,Ryan Succop,2005
+rb,"Marietta, Georgia",Wheeler,65,177,4.4,4,5.8,5,North Carolina,Richie Rich,2005
+ol,"Cartersville, Georgia","",78,277,5.5,3,5.7,5,Georgia,Ian Smith,2005
+ath,"Jackson, Michigan","",78,194,4.4,4,6.0,5,Michigan,Antonio Bass,2005
+qb,"Stockton, California",St. Mary's,78,212,5.1,4,5.9,5,Arizona,Willie Tuitama,2005
+db,"Alexandria, Louisiana","",78,208,4.5,4,5.9,5,Oklahoma,Nic Harris,2005
+rb,"Jamestown, North Carolina",Ragsdale,65,218,4.5,4,6.0,5,North Carolina State,Toney Baker,2005
+rb,"Denver, Colorado",Montbello,78,220,4.6,3,5.7,5,Texas,Michael Houston,2005
+db,"Edmond, Oklahoma",Santa Fe,78,190,4.5,4,6.0,5,Oklahoma,Reggie Smith,2005
+lb,"Oradell, New Jersey",Bergen Catholic,78,216,4.5,4,6.0,5,USC,Brian Cushing,2005
+qb,"Oakland, California",McClymonds,78,194,4.7,4,5.8,5,California,Kyle Reed,2005
+qb,"Southlake, Texas",Carroll,78,214,4.5,3,5.7,6,Missouri,Chase Daniel,2005
+te,"Diboll, Texas","",78,210,4.6,4,5.9,6,Texas,Jermichael Finley,2005
+wr,"Longview, Texas","",78,200,4.5,4,6.0,6,Oklahoma,Malcolm Kelly,2005
+dt,"Portland, Oregon",Grant,78,278,,4,6.0,6,Nebraska,Ndamukong Suh,2005
+rb,"Atlanta, Georgia",Douglass,78,207,4.4,4,6.0,6,Clemson,James Davis,2005
+lb,"Seattle, Washington",O'Dea,78,225,4.6,4,5.9,6,California,Anthony Felder,2005
+rb,"Phoenix, Arizona",Paradise Valley,78,232,4.7,3,5.7,6,Oklahoma,Matt Clapp,2005
+ol,"Los Angeles, California",Crenshaw,78,313,5.1,4,6.0,6,UCLA,Aleksey Lanis,2005
+qb,"Cincinnati, Ohio",St. Xavier,78,227,4.8,4,5.8,6,Ohio State,Rob Schoenhoft,2005
+de,"Omaha, Nebraska",Creighton Prep,78,258,4.8,4,5.9,6,Nebraska,Zach Potter,2005
+db,"Pensacola, Florida","",78,175,4.4,4,5.9,6,Florida State,Clarence Ward,2005
+ath,"North Augusta, South Carolina","",78,185,4.5,4,6.0,6,Georgia,C.J. Byrd,2005
+ol,"Mission Viejo, California","",78,295,5.1,4,5.9,6,California,Kevin Bemoll,2005
+ol,"Fort Collins, Colorado","",78,270,5.1,3,5.7,6,Oklahoma,Jon Cooper,2005
+rb,"Oak Lawn, Illinois",Richards,65,180,,3,5.7,6,Wisconsin,Dion Foster,2005
+lb,"Oak Creek, Wisconsin","",78,220,4.5,4,6.0,6,Wisconsin,Travis Beckum,2005
+db,"Rock Hill, South Carolina",Northwestern,78,185,4.5,4,6.0,6,Florida State,Jamie Robinson,2005
+de,"San Mateo, California",Serra,78,221,4.6,4,5.9,6,Stanford,Will Powers,2005
+de,"Lakewood, California",Lakewood,78,215,4.7,4,5.9,7,Arizona,Adrian McCovy,2005
+te,"Rolling Hills Estates, California",Peninsula,78,250,4.9,4,5.8,7,Stanford,Erik Lorig,2005
+qb,"Brookhaven, Mississippi","",78,230,4.7,3,5.7,7,Alabama,Jimmy Johns,2005
+ol,"Memphis, Tennessee",Briarcrest Christian,78,330,4.9,4,6.0,7,Mississippi,Michael Oher,2005
+ath,"Grapevine, Texas","",78,275,4.6,4,6.0,7,Texas,Henry Melton,2005
+rb,"Port Arthur, Texas",McAllen Memorial,78,185,4.4,4,6.0,7,Texas,Jamaal Charles,2005
+wr,"Fort Wayne, Indiana",Harding,78,190,4.4,4,6.0,7,Purdue,Selwyn Lymon,2005
+qb,"Charlotte, North Carolina",Independence,78,192,4.7,3,5.7,7,Georgia,Joe Cox,2005
+db,"Belle Glade, Florida",Central,78,181,4.5,4,5.9,7,Miami (FL),Randy Phillips,2005
+db,"Oxnard, California",Rio Mesa,78,166,4.5,4,6.0,7,USC,Kevin Thomas,2005
+de,"Elk Grove, California",Elk Grove,78,268,5.0,4,5.9,7,Stanford,Matt Kopa,2005
+lb,"Naples, Florida","",78,228,4.6,4,5.9,7,Miami (FL),Spencer Adkins,2005
+dt,"Scottsdale, Arizona",Chaparral,78,288,5.1,4,6.0,7,Stanford,Ekom Udofia,2005
+rb,"Peoria, Arizona",Peoria,65,190,4.4,3,5.7,7,Arizona State,Keegan Herring,2005
+ol,"Lancaster, Ohio","",78,285,5.1,4,5.9,7,Ohio State,Jim Cordle,2005
+lb,"Lauderdale Lakes, Florida",Boyd Anderson,78,226,4.7,4,5.9,7,Tennessee,Gerald Williams,2005
+ol,"Newnan, Georgia","",78,302,5.2,3,5.6,7,Virginia Tech,Sergio Render,2005
+k,"Ramsey, New Jersey",Don Bosco Prep,78,185,4.6,3,5.5,7,Villanova,Joe Marcoux,2005
+rb,"Jersey City, New Jersey",St. Peter's Prep,78,250,4.6,3,5.7,7,Virginia,Rashawn Jackson,2005
+qb,"Laurinburg, North Carolina",Scotland County,78,171,4.5,3,5.7,8,North Carolina,Cameron Sexton,2005
+ol,"Wheaton, Illinois",South,78,300,5.0,4,6.0,8,Iowa,Dace Richardson,2005
+rb,"Tallahassee, Florida",Godby,78,195,4.5,4,6.0,8,Alabama,Roy Upchurch,2005
+db,"Chino, California",Chino,78,205,4.6,4,5.8,8,UCLA,Shawn Oatis,2005
+lb,"Virginia Beach, Virginia",Landstown,78,221,4.6,4,5.9,8,Virginia Tech,Deveon Simmons,2005
+rb,"Monessen, Pennsylvania","",78,260,4.7,3,5.6,8,Pittsburgh,Ernest Williams,2005
+db,"Jacksonville, Florida",Ed White,78,175,4.4,4,5.9,8,Georgia,Bryan Evans,2005
+ol,"Clearwater, Florida",Central Catholic,78,285,4.8,4,5.8,8,Miami (FL),A.J. Trump,2005
+dt,"Muskegon, Michigan","",78,285,5.0,4,5.9,8,Michigan,Terrance Taylor,2005
+ath,"Westlake Village, California",Oaks Christian,78,180,4.5,4,5.9,8,UCLA,Aaron Ware,2005
+de,"Mobile, Alabama",Davidson,78,218,4.8,4,5.8,8,Auburn,Gabe McKenzie,2005
+wr,"Conway, South Carolina","",78,186,4.5,4,5.9,8,Oklahoma,Eric Huggins,2005
+lb,"Pensacola, Florida",Washington,78,225,4.6,4,5.8,8,Florida,Jon Demps,2005
+te,"Montgomery, Alabama",Trinity,78,235,4.8,4,5.8,8,Auburn,Tommy Trott,2005
+de,"Oak Creek, Wisconsin","",78,250,4.7,4,5.8,8,Tennessee,Raymond Henderson,2005
+ol,"Vista, California","",78,280,5.3,3,5.5,8,Arizona State,Thomas Altieri,2005
+qb,"Fresno, California",Edison,78,205,4.9,3,5.7,8,Washington State,Arkelon Hall,2005
+db,"Daytona Beach, Florida",Mainland,65,182,4.4,4,5.9,9,Florida,Avery Atkins,2005
+qb,"Princeton, New Jersey",The Hun School,78,189,4.6,3,5.7,9,Michigan State,Domenic Natale,2005
+rb,"Voorhees, New Jersey",Eastern Regional,65,176,4.4,3,5.7,9,Virginia Tech,Jahre Cheeseman,2005
+ol,"Moreno Valley, California",Canyon Springs,78,299,5.2,4,5.8,9,Nebraska,Rodney Picou,2005
+wr,"College Park, Georgia",Banneker,65,165,4.4,4,5.9,9,South Carolina,Carlos Thomas,2005
+de,"Atlanta, Georgia",Douglass,78,236,4.7,4,5.8,9,Georgia,Roderick Battle,2005
+dt,"Louisville, Kentucky",Central,78,277,4.9,4,5.9,9,Michigan,James McKinney,2005
+db,"Walker, Louisiana",Walker,78,180,4.5,4,5.8,9,LSU,Chris Hawkins,2005
+ath,"New Bern, North Carolina","",78,190,4.5,4,5.9,9,Tennessee,Montario Hardesty,2005
+k,"West Palm Beach, Florida",Wellington,78,200,,2,5.4,9,Florida,Jonathan Phillips,2005
+ol,"Fayetteville, North Carolina",E. E. Smith,78,322,5.3,4,6.0,9,North Carolina State,Curtis Crouch,2005
+rb,"Skokie, Illinois",Niles West,78,190,4.5,4,5.9,9,Illinois,Rashard Mendenhall,2005
+lb,"Baton Rouge, Louisiana",Parkview Baptist,78,224,4.5,4,5.9,9,LSU,Darry Beckwith,2005
+rb,"Hyattsville, Maryland",DeMatha,78,230,4.5,3,5.5,9,Virginia Tech,Kenneth Jefferson,2005
+de,"Greenwood, Indiana",Center Grove,78,260,4.8,4,5.8,9,Purdue,J.B. Paxson,2005
+lb,"Erie, Pennsylvania",Cathedral Prep,78,224,4.7,4,5.8,9,Tennessee,Andre Mathis,2005
+qb,"Lighthouse Point, Florida",Cardinal Gibbons,78,199,4.4,3,5.6,9,North Carolina State,Michael Greco,2005
+ol,"Flagstaff, Arizona",Flagstaff,78,250,5.1,3,5.5,9,Fresno State,Joe Bernardi,2005
+te,"Waconia, Minnesota","",78,235,4.7,4,5.8,9,Notre Dame,Joey Hiben,2005
+wr,"Tampa, Florida",Middleton,78,178,4.4,4,5.9,10,South Carolina,O.J. Murdock,2005
+rb,"San Antonio, Texas",Clark,65,170,4.4,3,5.7,10,Texas,Jerrell Wilkerson,2005
+ol,"Murray, Kentucky","",78,301,5.1,4,5.9,10,Michigan,Cory Zirbel,2005
+rb,"Denver, Colorado",Mullen,65,200,4.5,4,5.9,10,Colorado,Maurice Greer,2005
+k,"Milton, Florida","",65,160,4.6,2,5.4,10,Auburn,Zach Kutch,2005
+rb,"Charlotte, North Carolina",Latin,78,221,4.8,3,5.5,10,North Carolina,Mark Paschal,2005
+db,"Little Rock, Arkansas",Central,78,187,4.6,4,5.8,10,Arkansas,Kevin Thornton,2005
+ol,"Daytona Beach, Florida",Seabreeze,78,280,5.3,3,5.5,10,UCF,Richard Clark,2005
+ol,"Memphis, Tennessee",East,78,303,5.3,4,5.8,10,Tennessee,Malcolm Rawls,2005
+de,"Hampton, Virginia",Phoebus,78,215,4.5,4,5.8,10,Virginia Tech,Stephen Friday,2005
+qb,"Littleton, Colorado",Chatfield,78,178,4.6,3,5.6,10,Oklahoma State,Zac Robinson,2005
+te,"Germantown, Tennessee","",78,250,4.6,3,5.7,10,Tennessee,Jeff Cottam,2005
+lb,"Salem, New Jersey","",78,220,4.6,4,5.9,10,Oklahoma,Lamont Robinson,2005
+dt,"Jackson, Mississippi",Lanier,78,293,4.8,4,5.9,10,Mississippi State,Louis Ellis,2005
+lb,"Jacksonville, Florida",First Coast,78,215,4.6,4,5.8,10,Florida,Ryan Stamper,2005
+ath,"Gretna, Virginia","",65,168,4.5,4,5.9,10,Virginia,Vic Hall,2005
+db,"Hyattsville, Maryland",DeMatha,65,175,4.4,4,5.9,10,Maryland,Anthony Wiseman,2005
+de,"Mission Viejo, California",Mission Viejo,78,240,,4,5.8,10,Oregon,Nick Reed,2005
+qb,"Carlsbad, California","",78,203,4.9,3,5.6,10,Oregon State,Sean Canfield,2005
+rb,"Texarkana, Arkansas","",65,188,4.4,3,5.6,11,Arkansas,Brandon Barnett,2005
+ol,"Garland, Texas",South Garland,78,262,5.4,3,5.5,11,Arizona,Blake Kerley,2005
+db,"Miami, Florida",Coral Reef,78,180,4.5,4,5.8,11,Florida,Dorian Munroe,2005
+de,"Lufkin, Texas","",78,240,4.6,4,5.8,11,Texas Tech,McKinner Dixon,2005
+wr,"Kansas City, Missouri",Rockhurst,78,195,4.4,4,5.9,11,Notre Dame,D.J. Hord,2005
+dt,"Eden Prairie, Minnesota","",78,283,5.0,4,5.9,11,USC,Walker Ashley,2005
+k,"San Jose, California",Branham,65,190,,2,5.4,11,Utah,Louie Sakoda,2005
+de,"Albuquerque, New Mexico",La Cueva,78,265,4.6,4,5.8,11,Texas,Aaron Lewis,2005
+rb,"Orange, California",Lutheran,78,240,4.6,3,5.5,11,Kansas State,Pat Roxas,2005
+db,"Sherman Oaks, California",Notre Dame,78,180,4.4,4,5.9,11,USC,Cary Harris,2005
+ath,"Columbus, Ohio",Brookhaven,78,219,4.6,4,5.9,11,Minnesota,Alex Daniels,2005
+qb,"Pittsburgh, Pennsylvania",Seton La Salle,78,181,4.9,3,5.6,11,Pittsburgh,Bill Stull,2005
+te,"Daytona Beach, Florida",Mainland,78,235,4.7,3,5.7,11,Florida,Brian Ellis,2005
+ol,"Libertyville, Illinois","",78,270,,4,5.8,11,Michigan,David Moosman,2005
+lb,"Wailuku, Hawaii",Baldwin,65,212,4.7,4,5.9,11,USC,Kaluka Maiava,2005
+rb,"Winnfield, Louisiana","",78,195,4.5,4,5.8,11,LSU,Antonio Robinson,2005
+lb,"Clovis, California",Clovis,78,228,4.6,4,5.8,11,California,Zack Follett,2005
+ol,"Hattiesburg, Mississippi","",78,336,5.6,4,5.9,11,Mississippi State,Calvin Wilson,2005
+qb,"Pomona, California",Garey,78,190,4.7,3,5.6,11,UCLA,Osaar Rasshan,2005
+qb,"West Palm Beach, Florida",Palm Beach Lakes,78,192,4.5,3,5.6,12,West Virginia,Jarrett Brown,2005
+de,"Mission Viejo, California",Mission Viejo,78,240,4.7,4,5.8,12,Ohio State,Ryan Williams,2005
+ol,"Tyler, Texas",Tyler Lee,78,315,5.3,3,5.7,12,LSU,Ciron Black,2005
+de,"Akron, Ohio",St. Vincent-St. Mary,78,230,4.6,4,5.8,12,Ohio State,Lawrence Wilson,2005
+dt,"Plantation, Florida","",78,263,4.8,4,5.9,12,Georgia,Jeff Owens,2005
+lb,"Fort Valley, Georgia",Peach County,78,211,4.5,4,5.8,12,Georgia,Darius Dewberry,2005
+ol,"Parkton, Maryland",Hereford,78,305,5.2,3,5.5,12,Connecticut,Joe Akers,2005
+db,"Hamilton, Ohio","",78,190,4.5,4,5.8,12,Tennessee,Adam Myers-White,2005
+db,"Live Oak, Florida",Suwanee,78,170,4.4,4,5.8,12,Miami (FL),Bruce Johnson,2005
+k,"Plano, Texas",Plano West,65,190,,2,5.4,12,Missouri,Matt Casaday,2005
+ol,"Webster, New York",Schroeder,78,300,5.0,4,5.8,12,Michigan,Justin Schifano,2005
+rb,"Omaha, Nebraska",Millard North,78,219,4.7,3,5.5,12,Colorado,Jake Behrens,2005
+lb,"Bayonne, New Jersey","",78,225,4.5,4,5.9,12,Penn State,Jerome Hayes,2005
+rb,"Houston, Texas",Worthing,65,175,4.5,3,5.5,12,Louisiana-Lafayette,Deon Wallace,2005
+qb,"Marshall, Michigan","",78,200,4.7,3,5.6,12,Notre Dame,Evan Sharpley,2005
+wr,"Silver Spring, Maryland",McDonogh,78,190,4.4,4,5.9,12,Maryland,Darrius Heyward-Bey,2005
+ath,"Sumter, South Carolina",Lakewood,65,177,4.4,4,5.9,12,North Carolina State,J.C. Neal,2005
+te,"El Dorado, California",Oak Ridge,78,225,4.6,3,5.7,12,UCLA,Ryan Moya,2005
+rb,"White Plains, Maryland",Lackey,65,205,4.5,4,5.8,12,Maryland,Morgan Green,2005
+qb,"Allen, Texas","",78,196,4.7,3,5.6,13,Arkansas,Casey Dick,2005
+wr,"Gilmer, Texas","",65,185,4.5,4,5.8,13,Oklahoma,Manuel Johnson,2005
+db,"Denton, Texas",Ryan,65,185,4.5,4,5.8,13,Texas,Ishie Oduegwu,2005
+lb,"Texarkana, Texas",Texas,78,210,4.5,4,5.8,13,Texas,Chris Brown,2005
+lb,"Westlake, Ohio","",78,228,4.9,3,5.7,13,Iowa,B.J. Travers,2005
+de,"Nashville, Tennessee",Brentwood Academy,78,248,4.5,3,5.7,13,Nebraska,Barry Turner,2005
+ol,"Ada, Oklahoma","",78,290,4.9,3,5.7,13,Nebraska,Craig Roark,2005
+db,"Miami, Florida",Edison,65,153,4.5,4,5.8,13,Clemson,Chris Chancellor,2005
+dt,"Lakeland, Florida","",78,275,4.8,4,5.9,13,Florida State,Kendrick Stewart,2005
+qb,"Los Alamitos, California",Los Alamitos,78,225,5.3,3,5.6,13,Alabama,Jimmy Barnes,2005
+rb,"Los Angeles, California",Loyola,78,255,4.7,3,5.5,13,Colorado,George Hypolite,2005
+ath,"Sacramento, California",Grant,65,178,,4,5.8,13,California,Syd'Quan Thompson,2005
+ol,"Clifton, Virginia",Centreville,78,265,5.0,4,5.8,13,Boston College,Pat Sheil,2005
+de,"Claremont, California","",78,235,4.6,4,5.8,13,California,Cameron Morrah,2005
+rb,"Tallahassee, Florida",Rickards,65,175,4.4,3,5.5,13,Arkansas,Michael Smith,2005
+rb,"Bellevue, Washington","",65,200,4.5,4,5.8,13,Washington,J.R. Hasty,2005
+te,"Oradell, New Jersey",Bergen Catholic,78,220,4.6,3,5.7,13,Stanford,James Dray,2005
+db,"Ramsey, New Jersey",Don Bosco Prep,65,179,4.3,4,5.8,14,Florida State,Michael Ray Garvin,2005
+lb,"Moreno Valley, California","",78,239,4.8,3,5.7,14,Alabama,Prince Hall,2005
+ol,"Harrison City, Pennsylvania",Penn-Trafford,78,300,5.3,4,5.8,14,Purdue,Jason Kacinko,2005
+db,"El Campo, Texas","",78,175,4.4,3,5.7,14,Texas A&M,Arkeith Brown,2005
+de,"Allen, Texas","",78,250,4.7,4,5.8,14,Arkansas,Marcus Shavers,2005
+de,"Compton, California",Dominguez,78,211,4.8,3,5.7,14,Arizona,Michael Shelton,2005
+qb,"Cicero, Indiana",Hamilton Heights,78,194,4.8,3,5.6,14,Wisconsin,Dustin Sherer,2005
+wr,"Fort Smith, Arkansas",Southside,78,180,4.6,4,5.8,14,Tennessee,Slick Shelley,2005
+te,"Ashburn, Virginia",Stone Bridge,78,265,4.7,3,5.7,14,Virginia Tech,Ed Wang,2005
+ol,"Arlington Heights, Illinois",Prospect,78,265,5.0,3,5.7,14,Purdue,Eric Hedstrom,2005
+qb,"Pittsburg, Kansas","",78,203,4.6,3,5.6,14,Kansas,Kerry Meier,2005
+rb,"Muskogee, Oklahoma","",65,179,4.4,3,5.5,14,Texas Tech,Pete Richardson,2005
+lb,"Bellevue, Washington","",78,210,4.5,4,5.8,14,Washington,E.J. Savannah,2005
+rb,"Harrisburg, Pennsylvania","",78,185,4.4,4,5.8,14,Virginia,Mikell Simpson,2005
+ath,"Columbus, Georgia",Pacelli Catholic,78,233,4.5,4,5.8,14,Florida State,Matt Dunham,2005
+k,"Chino, California",Chino,65,170,,2,5.4,14,Colorado State,Durrell Chamorro,2005
+dt,"Troy, Ohio","",78,280,4.9,4,5.8,14,Ohio State,Todd Denlinger,2005
+rb,"Sanford, Florida",Seminole,78,210,4.5,3,5.5,14,Wake Forest,Kevin Harris,2005
+lb,"Palm Bay, Florida","",78,215,4.5,4,5.8,15,Florida State,Neefy Moffett,2005
+de,"Louisville, Kentucky",Ballard,78,260,4.9,4,5.8,15,Louisville,Earl Heyman,2005
+ath,"Memphis, Tennessee",Harding Academy,78,195,4.5,4,5.8,15,Tennessee,Todd Cox,2005
+de,"Canadian, Texas","",78,235,4.5,3,5.6,15,Oklahoma,Auston English,2005
+ol,"Corpus Christi, Texas",Calallen,78,310,4.9,3,5.7,15,Kansas State,Brock Unruh,2005
+qb,"Tuscola, Texas",Jim Ned,78,180,4.7,3,5.6,15,Texas,Colt McCoy,2005
+db,"Duncanville, Texas","",78,193,4.4,3,5.7,15,Texas A&M,Gremon Coffman,2005
+dt,"Iowa City, Iowa",Iowa City West,78,239,4.7,4,5.8,15,Iowa,Alex Kanellis,2005
+te,"Maple Heights, Ohio","",78,225,4.7,3,5.7,15,North Carolina,Richard Quinn,2005
+rb,"Bastrop, Louisiana","",65,170,4.5,3,5.5,15,Mississippi,Marcus Green,2005
+wr,"St. Louis, Missouri",Hazelwood East,78,195,4.5,4,5.8,15,Nebraska,Chris Brooks,2005
+qb,"San Diego, California",St. Augustine,78,205,4.6,3,5.6,15,Michigan,Jason Forcier,2005
+ol,"Atlanta, Georgia",Booker T. Washington,78,330,5.1,4,5.8,15,Oklahoma,Duke Robinson,2005
+lb,"Roanoke, Virginia",William Fleming,78,227,4.8,3,5.7,15,Florida,Darryl Gresham Jr.,2005
+db,"Jersey City, New Jersey",St. Peter's Prep,65,170,4.4,4,5.8,15,Virginia,Mike Brown,2005
+k,"Langhorne, Pennsylvania",Neshaminy,65,175,4.6,2,5.3,15,Penn State,Kevin Kelly,2005
+rb,"Peoria, Arizona",Centennial,65,211,4.4,4,5.8,15,Arizona,Terry Longbons,2005
+db,"Hyattsville, Maryland",DeMatha,78,201,4.5,3,5.7,16,Maryland,Jeff Allen,2005
+ol,"Burbank, California",Burroughs,78,280,5.0,4,5.8,16,Arizona,Eben Britton,2005
+lb,"Miami, Florida",Coral Reef,78,220,4.6,3,5.7,16,Miami (FL),Eric Houston,2005
+qb,"Midland, Texas",Tyler Lee,78,197,4.5,3,5.6,16,Texas A&M,Jamie McCoy,2005
+de,"Carrollton, Texas",Newman Smith,78,256,4.7,4,5.8,16,Kansas State,Jonathan Lewis,2005
+dt,"Dallas, Texas",Carter,78,275,4.7,4,5.8,16,Texas A&M,Vincent Williams,2005
+ol,"Pompano Beach, Florida",Blanche Ely,78,331,5.4,3,5.7,16,Florida,Ronnie Wilson,2005
+ath,"Bennettsville, South Carolina",Marlboro County,78,210,4.6,4,5.8,16,Clemson,Rendrick Taylor,2005
+te,"West Hills, California",Chaminade,78,219,4.8,3,5.6,16,UCLA,Logan Paulsen,2005
+db,"Dayton, Ohio",Chaminade-Julienne,65,190,4.3,4,5.8,16,Michigan,Brandon Harrison,2005
+rb,"Galena Park, Texas",North Shore,65,180,4.4,3,5.5,16,Central Michigan,Deion Gilliam,2005
+rb,"Hampton, Virginia",Phoebus,65,215,4.5,4,5.8,16,Virginia Tech,Elan Lewis,2005
+lb,"Oakland Park, Florida",Northeast,78,199,4.6,4,5.8,16,Miami (FL),Demetri Stewart,2005
+de,"Chattanooga, Tennessee",McCallie School,78,240,4.7,3,5.6,16,Duke,Ayanga Okpokowuruk,2005
+qb,"Lakewood, Washington",Clover Park,78,173,5.1,3,5.6,16,Stanford,Tavita Pritchard,2005
+dt,"Alief, Texas",Hastings,78,295,5.1,4,5.8,17,Duke,Vince Oghobaase,2005
+rb,"Sarasota, Florida",Sarasota,78,205,4.5,4,5.8,17,Alabama,Mike Ford,2005
+ol,"Pensacola, Florida",Pine Forest,78,280,5.2,4,5.8,17,Alabama,Michael Johnson,2005
+qb,"Hopkinsville, Kentucky",Hopkinsville,78,186,4.5,3,5.6,17,Kentucky,Curtis Pulley,2005
+lb,"Highland Park, Illinois","",78,222,4.8,3,5.6,17,Notre Dame,Scott Smith,2005
+qb,"West Hills, California",Chaminade,78,197,4.8,3,5.6,17,Maryland,Chris Turner,2005
+te,"Bellflower, California","",78,225,4.6,3,5.6,17,Oregon,Edward Dickson,2005
+wr,"Los Alamitos, California","",78,180,4.5,4,5.8,17,Boise State,Jeremy Childs,2005
+db,"New Orleans, Louisiana",St. Augustine,78,205,4.5,3,5.7,17,Auburn,Patrick Trahan,2005
+ol,"Merritt Island, Florida",Merritt Island,78,290,5.2,3,5.7,17,Florida,Eddie Haupt,2005
+de,"Harvey, Illinois",Thornton Township,78,225,,3,5.6,17,Wisconsin,Terrance Jamison,2005
+de,"Sunrise, Florida",Piper,78,255,5.1,3,5.7,17,Tennessee,Vladimir Richard,2005
+rb,"Duncanville, Texas","",78,205,4.5,3,5.5,17,Baylor,Cordney Smith,2005
+ath,"Lafayette, Louisiana",Carencro,65,168,4.6,4,5.8,17,Tennessee,Lucas Taylor,2005
+lb,"Manning, South Carolina",Manning,78,211,4.5,4,5.8,17,Clemson,Josh Miller,2005
+db,"Lovejoy, Georgia","",65,200,4.4,3,5.7,17,Mississippi State,Keith Fitzhugh,2005
+k,"Sealy, Texas","",78,200,4.8,2,5.3,18,Texas A&M,Justin Brantly,2005
+ol,"Richardson, Texas",Pearce,78,275,5.2,3,5.7,18,Arkansas,Colin Tucker,2005
+db,"Denton, Texas",Ryan,65,188,4.7,3,5.6,18,Arizona,Xavier Kelley,2005
+ath,"Houston, Texas",Westside,78,197,4.5,4,5.8,18,LSU,R.J. Jackson,2005
+qb,"Concord, California",De La Salle,78,198,4.8,3,5.6,18,Kansas State,Kevin Lopina,2005
+de,"Decatur, Georgia","",78,235,4.8,3,5.7,18,Georgia,Corey Moon,2005
+lb,"Los Angeles, California",Crenshaw,78,225,4.6,3,5.6,18,UCLA,Reggie Carter,2005
+wr,"Syracuse, New York",Christian Brothers Academy,78,195,4.5,4,5.8,18,Syracuse,Lavar Lobdell,2005
+te,"Jacksonville, Florida",First Coast,78,245,4.9,3,5.6,18,Clemson,Paul Muse,2005
+ol,"Miami, Florida",Northwestern,78,332,5.2,4,5.8,18,Miami (FL),Christopher Barney,2005
+db,"Fresno, California",Edison,78,180,4.6,3,5.7,18,California,Robert Peele,2005
+lb,"Apopka, Florida","",78,215,4.6,4,5.8,18,Mississippi,Quentin Taylor,2005
+qb,"Evansville, Indiana",Harrison,78,190,4.6,3,5.6,18,Purdue,Joey Elliott,2005
+de,"Daytona Beach, Florida",Mainland,78,245,4.6,3,5.6,18,Indiana,Matt Lewis,2005
+dt,"Athens, Alabama","",78,245,4.9,4,5.8,18,Tennessee,Wes Brown,2005
+rb,"Oakdale, Minnesota",Tartan,78,180,4.6,3,5.5,18,Minnesota,Jay Thomas,2005
+rb,"Dayton, Ohio",Chaminade,65,186,4.4,3,5.7,18,Michigan State,Javon Ringer,2005
+dt,"Bolingbrook, Illinois",Bolingbrook,78,250,4.7,4,5.8,19,Iowa,Ryan Bain,2005
+de,"DeSoto, Texas","",78,238,4.8,3,5.5,19,Arizona,Donald Horton Jr.,2005
+rb,"Denison, Texas","",78,205,4.6,3,5.7,19,Iowa,Corey Robertson,2005
+lb,"Duncanville, Texas","",78,215,4.6,4,5.8,19,Texas A&M,Jodie Richardson,2005
+te,"Peculiar, Missouri",Raymore-Peculiar,78,210,4.8,3,5.6,19,Missouri,Chase Coffman,2005
+qb,"Daytona Beach, Florida",Mainland,78,206,5.0,3,5.6,19,Georgia Tech,Jonathan Garner,2005
+db,"Greenwood, South Carolina","",78,185,4.7,3,5.6,19,Georgia,Antavious Coates,2005
+rb,"New Rochelle, New York","",65,188,4.6,3,5.5,19,Rutgers,Raymell Rice,2005
+ath,"Tulsa, Oklahoma",Booker T. Washington,65,197,4.4,4,5.8,19,Arkansas,Felix Jones,2005
+ol,"Miami, Florida",Southwest,78,275,5.1,3,5.7,19,South Florida,Chris DeArmas,2005
+de,"Aurora, Colorado",Rangeview,78,230,4.5,3,5.7,19,Colorado,Maurice Lucas,2005
+k,"Memphis, Tennessee",Briarcrest Christian,78,175,,2,5.3,19,Mississippi,Justin Sparks,2005
+qb,"Dalton, Georgia",Southeast Whitfield,78,218,4.6,3,5.6,19,Duke,Marcus Jones,2005
+lb,"Joliet, Illinois",Catholic Academy,78,225,4.6,3,5.6,19,Northwestern,Chris Jeske,2005
+db,"Randallstown, Maryland","",78,172,4.6,3,5.7,19,Maryland,Jamari McCollough,2005
+ol,"Delran, New Jersey",Holy Cross,78,268,4.9,3,5.7,19,Penn State,Dennis Landolt,2005
+wr,"Draper, Utah",Juan Diego Catholic,65,158,4.6,4,5.8,19,Utah,Marquis Wilson,2005
+qb,"Richmond, Virginia",Hermitage,78,196,4.9,3,5.5,20,Virginia,Jameel Sewell,2005
+ol,"Brownwood, Texas","",78,325,5.4,3,5.7,20,Texas A&M,Lee Grimes,2005
+db,"DeSoto, Texas","",78,191,4.5,3,5.7,20,Oklahoma,Brian Jackson,2005
+dt,"Atlanta, Georgia",Douglass,78,250,4.9,4,5.8,20,Georgia,Brandon Sesay,2005
+ath,"Monticello, Florida",Jefferson County,78,202,4.5,4,5.8,20,South Florida,Carlton Hill,2005
+ol,"Camden, South Carolina","",78,286,5.1,3,5.7,20,Clemson,Thomas Austin,2005
+te,"Birmingham, Alabama",Briarwood Christian,78,254,4.8,3,5.6,20,Auburn,Andrew McCain,2005
+qb,"Elizabethtown, Kentucky","",78,185,4.8,3,5.6,20,Texas Tech,Chris Todd,2005
+wr,"Brooklyn, New York",Lincoln,78,186,4.5,4,5.8,20,Florida,Nyan Boateng,2005
+lb,"Sacramento, California",Grant,78,220,4.6,3,5.6,20,Kansas State,Reggie Walker,2005
+db,"Danville, Virginia",George Washington,78,180,4.6,3,5.6,20,Virginia Tech,Cameron Martin,2005
+rb,"Conway, South Carolina","",65,185,4.5,3,5.5,20,South Carolina,Bobby Wallace,2005
+de,"Atlanta, Georgia",Crim School,78,226,5.0,3,5.5,20,Mississippi State,Quinton Wesley,2005
+lb,"Blakely, Georgia",Early County,78,215,4.5,4,5.8,20,Florida State,Dan Foster,2005
+de,"Richmond, Virginia",Hermitage,78,245,4.9,3,5.7,20,Virginia,Jeffrey Fitzgerald,2005
+rb,"Cincinnati, Ohio",Colerain,65,195,4.6,3,5.7,20,Michigan,Mister Simpson,2005
+db,"Henderson, Nevada",Green Valley,78,183,4.6,3,5.6,21,California,Brett Johnson,2005
+te,"Hitchcock, Texas","",78,250,4.7,3,5.6,21,Kansas,Josh Bell,2005
+qb,"Port Arthur, Texas",McAllen Memorial,78,188,4.8,3,5.5,21,New Mexico,Donovan Porterie,2005
+lb,"Garland, Texas",Lakeview Centennial,78,210,4.5,4,5.8,21,Kansas,Brandon Duncan,2005
+de,"Prattville, Alabama",Prattville,78,239,4.8,3,5.7,21,Alabama,Bobby Greenwood,2005
+qb,"Poulsbo, Washington",North Kitsap,78,189,4.6,3,5.5,21,Washington State,Jared Prince,2005
+wr,"Pelham, Alabama","",78,175,4.4,4,5.8,21,Auburn,Montez Billings,2005
+ol,"Ramsey, New Jersey",Don Bosco Prep,78,275,5.0,3,5.7,21,Louisville,Brian Roche,2005
+de,"Kansas City, Missouri",North Kansas City,78,210,4.5,3,5.5,21,Missouri,Tarell Corby,2005
+rb,"Greenville, South Carolina","",78,205,4.5,3,5.7,21,South Carolina State,Travil Jamison,2005
+ath,"Lompoc, California",Cabrillo,65,172,4.6,4,5.8,21,Penn State,Lydell Sargeant,2005
+db,"Seattle, Washington",Rainier Beach,65,196,4.5,3,5.7,21,Washington State,Shelton Danzy,2005
+lb,"The Dalles, Oregon",The Dalles,78,215,4.6,3,5.6,21,Oregon State,Bryant Cornell,2005
+dt,"Worcester, Massachusetts",St. John's,78,289,5.1,4,5.8,21,Stanford,James McGillicuddy,2005
+ol,"Doylestown, Pennsylvania",Central Bucks South,78,335,5.3,3,5.6,21,Rutgers,Dave McClain,2005
+db,"Longview, Texas","",78,170,4.4,3,5.7,22,TCU,Corderra Hunter,2005
+qb,"Wilmington, Delaware",Salesianum School,78,222,4.8,3,5.5,22,Duke,Gene Delle Donne,2005
+rb,"Columbia, South Carolina","",65,209,4.5,3,5.7,22,South Carolina,Mike Davis,2005
+de,"Elizabethtown, Kentucky","",78,232,5.0,3,5.5,22,Alabama,Brandon Deaderick,2005
+te,"Omaha, Nebraska",Central High School,78,250,4.7,3,5.6,22,Kansas State,Nate Prater,2005
+lb,"New Orleans, Louisiana",Abramson,78,209,4.7,4,5.8,22,Auburn,Alonzo Horton,2005
+db,"Miami, Florida",Monsignor Pace,65,190,,3,5.6,22,West Virginia,Quinton Andrews,2005
+ol,"Menasha, Wisconsin","",78,315,5.1,3,5.7,22,Wisconsin,Andrew Kemp,2005
+ath,"Cleveland, Ohio",Glenville Academic Campus,65,195,4.4,3,5.7,22,Ohio State,Freddie Lenix,2005
+qb,"Springfield, Illinois",Sacred Heart Griffin,78,199,4.6,3,5.5,22,Northwestern,Eric Peterman,2005
+de,"Barnesville, Georgia",Lamar County,78,241,5.0,3,5.7,22,Duke,Clifford Respress,2005
+dt,"San Diego, California",Serra,78,296,5.4,3,5.7,22,Washington State,Fevaea'i AhMu,2005
+ol,"Gilbert, Arizona",Highland,78,302,5.5,3,5.6,22,Arizona State,Richard Tuitu'u,2005
+db,"Lufkin, Texas","",78,195,4.5,3,5.7,23,Texas A&M,Alton Dixon,2005
+de,"Mesquite, Texas",Horn,78,264,4.8,3,5.6,23,Oklahoma,Cordero Moore,2005
+wr,"Keller, Texas",Fossil Ridge,78,172,4.5,4,5.8,23,Texas A&M,Howard Morrow,2005
+lb,"Keysville, Georgia",Burke County,78,210,4.6,4,5.8,23,Georgia,Marcus Washington,2005
+te,"Birmingham, Alabama",Briarwood Christian,78,235,4.8,3,5.6,23,Alabama,Charles Hoke,2005
+ath,"Diamond Bar, California","",78,188,4.5,3,5.7,23,UCLA,Bret Lockett,2005
+ol,"Pomona, California",Diamond Ranch,78,249,5.1,3,5.7,23,USC,Charles Brown,2005
+lb,"Bastrop, Louisiana","",78,230,4.6,3,5.5,23,Mississippi,Rogers Loche,2005
+k,"Texas City, Texas",Texas City,65,190,,2,5.2,23,Stephen F. Austin,Michael Perren,2005
+qb,"Martinsburg, West Virginia","",78,195,4.6,3,5.5,23,West Virginia,Nate Sowers,2005
+ol,"Stafford, Virginia",North Stafford,78,305,5.4,3,5.6,23,Virginia Tech,Antonio North,2005
+dt,"Hawkinsville, Georgia","",78,285,5.2,3,5.7,23,Middle Tennessee State,Brandon Perry,2005
+de,"Spring Valley, California",Monte Vista,78,197,4.7,3,5.5,23,Stanford,Clinton Snyder,2005
+rb,"Tucson, Arizona",Sunnyside,78,205,4.5,3,5.7,23,Arizona,Xavier Smith,2005
+qb,"Ridgecrest, California",Burroughs,78,207,4.7,3,5.5,23,Wyoming,Karsten Sween,2005
+qb,"Lakeland, Florida",Lake Gibson,78,190,4.6,3,5.5,24,South Florida,Matt Grothe,2005
+db,"Pompano Beach, Florida",Blanche Ely,78,175,4.4,3,5.7,24,Auburn,Walter McFadden,2005
+dt,"Honolulu, Hawaii",St. Louis,78,270,4.9,3,5.7,24,California,Tyson Alualu,2005
+qb,"Panaca, Nevada",Lincoln County,78,190,4.6,3,5.5,24,Boise State,Kyle Seevers,2005
+rb,"Mansfield, Texas",Mansfield Summit,65,196,4.4,3,5.7,24,Florida,Kestahn Moore,2005
+ol,"Corsicana, Texas","",78,310,5.1,3,5.7,24,Texas Tech,Louis Vasquez,2005
+db,"Irving, Texas",Macarthur,65,185,4.5,3,5.6,24,Texas Tech,LaShawn Vation,2005
+ol,"Austin, Texas",Andesron,78,268,5.0,3,5.6,24,Texas,Charlie Tanner,2005
+ath,"Phoenix, Arizona",Moon Valley,78,182,4.5,3,5.7,24,Arizona State,Chris McGaha,2005
+lb,"Jeffersonville, Georgia",Twiggs County,78,210,4.7,4,5.8,24,Clemson,Antonio Clay,2005
+k,"Lakewood, Ohio",St. Edward,65,173,4.5,2,5.2,24,Indiana,Joe Kleinsmith,2005
+wr,"Hampton, Virginia","",78,185,4.5,4,5.8,24,Virginia Tech,Todd Nolen,2005
+de,"Great Lakes, Illinois",North Chicago,78,216,4.8,3,5.5,24,Wisconsin,O'Brien Schofield,2005
+de,"Bethlehem, Pennsylvania",Catholic,78,230,4.6,3,5.6,24,North Carolina State,Kyle Newell,2005
+te,"Carlsbad, California","",78,210,4.7,3,5.6,24,Brigham Young,Vic So'oto,2005
+ol,"Kailua, Hawaii",Kailua,78,305,5.2,3,5.6,25,Oregon State,Kainoa LaCount,2005
+te,"The Woodlands, Texas","",78,260,4.6,3,5.6,25,LSU,Kyle Anderson,2005
+dt,"McKinney, Texas","",78,294,5.0,3,5.7,25,TCU,Lorenzo Jones,2005
+wr,"Middletown, Ohio","",78,180,4.5,4,5.8,25,Ohio State,Andre Amos,2005
+lb,"Fairfield, Alabama","",78,215,4.5,4,5.8,25,Auburn,Rex Sharpe,2005
+db,"Alliance, Ohio","",65,181,4.4,3,5.7,25,Michigan State,Kendell Davis,2005
+lb,"Tulsa, Oklahoma",East Central,78,222,4.6,3,5.5,25,Tulsa,Popsie Floyd,2005
+de,"Kansas City, Missouri",Rockhurst,78,205,4.5,3,5.5,25,Boston College,Allan Smith,2005
+qb,"Shakopee, Minnesota",Simley,78,205,4.7,3,5.5,25,Minnesota,Marcel Jones,2005
+ol,"Miami, Florida",South Miami,78,270,5.3,3,5.7,25,Florida,Simon Codrington,2005
+qb,"Chicago, Illinois",St. Rita,78,190,,3,5.5,25,Northwestern,Mike Kafka,2005
+ath,"Cartersville, Georgia","",78,200,4.6,3,5.7,25,Georgia Tech,Anthony Barnes,2005
+db,"Santa Rosa, California",Montgomery,65,175,4.7,3,5.6,25,California,Marcus Ezeff,2005
+db,"Fresno, California",Edison,78,175,4.4,3,5.6,26,Michigan,Johnny Sears,2005
+dt,"Cedar Hill, Texas","",78,315,5.2,3,5.7,26,Tulsa,Terrel Nemons,2005
+ath,"El Paso, Texas",Montwood,65,160,4.5,3,5.7,26,Texas Tech,Edward Britton,2005
+lb,"Ft. Lauderdale, Florida",Dillard,78,195,4.5,4,5.8,26,Wisconsin,Elijah Hodge,2005
+lb,"Bettendorf, Iowa","",78,200,4.6,3,5.5,26,Iowa,Pat Angerer,2005
+de,"Walnut, Iowa","",78,250,4.8,3,5.6,26,Iowa,Tyler Blum,2005
+rb,"Amite, Louisiana","",78,216,4.6,3,5.6,26,Mississippi,Kendrick Perry,2005
+wr,"Los Angeles, California",Dorsey,78,198,4.4,4,5.8,26,Baylor,David Gettis,2005
+ol,"Conway, South Carolina","",78,271,4.8,3,5.6,26,Virginia Tech,Hivera Green,2005
+qb,"Glendora, California",Glendora,78,199,5.1,3,5.5,26,New Hampshire,Jacob Crook,2005
+ol,"Dallas, Georgia",East Paulding,78,282,5.4,3,5.7,26,Notre Dame,Paul Duncan,2005
+db,"Little Rock, Arkansas",Mills,78,190,4.5,3,5.6,26,Arkansas,Elston Forte,2005
+qb,"Oklahoma City, Oklahoma",Northeast,78,185,4.6,3,5.5,26,Iowa State,Houston Jones,2005
+de,"Los Angeles, California",Crenshaw,78,205,4.6,3,5.5,26,UCLA,Chinonso Anyanwu,2005
+te,"Snohomish, Washington",Snohomish,78,237,4.8,3,5.6,26,UCLA,Adam Heater,2005
+db,"Spring, Texas",Westfield,78,186,4.4,3,5.6,27,Texas A&M,Devin Gregg,2005
+lb,"Hallsville, Texas","",78,215,4.5,3,5.7,27,Texas,Roddrick Muckelroy,2005
+wr,"Wichita Falls, Texas",Rider,78,195,4.5,4,5.8,27,Florida,David Nelson,2005
+rb,"Los Angeles, California",Dorsey,65,185,4.7,3,5.6,27,Oregon,Jeremiah Johnson,2005
+ol,"Batesville, Mississippi",South Panola,78,315,5.2,3,5.6,27,Mississippi,John Jerry,2005
+qb,"Tenafly, New Jersey","",78,190,4.5,3,5.5,27,Rutgers,Jabulani Lovelace,2005
+qb,"Orrville, Ohio","",78,202,4.7,3,5.5,27,Western Michigan,Tim Hiller,2005
+lb,"Woburn, Massachusetts","",78,240,4.8,3,5.5,27,Boston College,Mike McLaughlin,2005
+dt,"Baton Rouge, Louisiana",Parkview Baptist,78,272,5.0,3,5.6,27,LSU,Lyle Hitt,2005
+db,"Chalkville, Alabama",Clay,78,205,4.6,3,5.5,27,Clemson,Terrell Smith,2005
+te,"Jacksonville, Florida",Bolles,78,250,4.8,3,5.6,27,Georgia Tech,Colin Peek,2005
+ath,"Apopka, Florida","",78,180,4.6,3,5.7,27,Florida,Eric Sledge,2005
+de,"Orchard Lake, Michigan",Saint Marys,78,217,4.8,3,5.5,27,Michigan,Chris McLaurin,2005
+ol,"New Bern, North Carolina","",78,291,,3,5.6,27,North Carolina State,Julian Williams,2005
+de,"Joppa, Maryland",Joppatowne,78,241,4.9,3,5.6,27,Maryland,Jeremy Navarre,2005
+rb,"Rusk, Texas","",78,211,4.6,3,5.6,28,Nebraska,Cody Glenn,2005
+de,"Norwich, Connecticut",Norwich Free Academy,78,210,4.6,3,5.5,28,Wisconsin,Matt Shaughnessy,2005
+db,"Warrensville Heights, Ohio","",78,170,4.5,3,5.5,28,Iowa,Chris Rowell,2005
+dt,"Beaumont, Texas",Ozen,78,265,4.9,3,5.6,28,Auburn,Brian West,2005
+ol,"Bakersfield, California",Centennial,78,244,5.0,3,5.6,28,Nebraska,Jacob Hickman,2005
+wr,"Coconut Creek, Florida",North Broward Prep,78,187,4.5,4,5.8,28,Georgia,Mike Moore,2005
+lb,"Coral Gables, Florida",Coral Gables,78,210,4.6,3,5.7,28,Miami (FL),Daryl Sharpton,2005
+ol,"Fresno, California",Bullard,78,253,5.2,3,5.6,28,USC,Nick Howell,2005
+ath,"San Bernardino, California",Arroyo Valley,78,225,4.5,3,5.7,28,USC,Michael Coleman,2005
+lb,"Plymouth, Minnesota",Wayzata,78,230,4.7,3,5.5,28,Ohio State,James Laurinaitis,2005
+de,"Glen Ellyn, Illinois",Glenbard West,78,235,4.8,3,5.6,28,Stanford,Tom McAndrew,2005
+qb,"Lafayette, Louisiana",St. Thomas More,78,208,4.8,3,5.5,28,Louisiana-Lafayette,John Hundley,2005
+qb,"Denton, Texas",Ryan,78,197,4.9,3,5.5,28,Southern Methodist,Justin Willis,2005
+db,"Fayetteville, North Carolina",Jack Britt,78,165,4.5,3,5.6,28,Wake Forest,Brandon Ghee,2005
+db,"Pearland, Texas","",65,180,4.4,3,5.6,29,Oklahoma State,Quinton Moore,2005
+rb,"Fort Walton Beach, Florida","",78,195,4.4,3,5.6,29,Alabama,Glen Coffee,2005
+lb,"Ft. Pierce, Florida",St. Lucie West Centennial,78,216,4.6,3,5.7,29,Mississippi State,Jamar Chaney,2005
+te,"West Des Moines, Iowa",Dowling Catholic,78,222,4.9,3,5.5,29,Iowa State,Trent Flander,2005
+qb,"Tulsa, Oklahoma",Union,78,183,4.6,3,5.5,29,Vanderbilt,Mackenzi Adams,2005
+dt,"Waldorf, Maryland",Westlake,78,290,5.1,3,5.6,29,Pittsburgh,Derrell Jones,2005
+lb,"Venice, California",Venice,78,222,4.8,3,5.5,29,Mississippi State,Jimmy Miller,2005
+ol,"Longview, Texas",Spring Hill,78,325,5.4,3,5.6,29,Texas Tech,Brandon Carter,2005
+ol,"Bloomington, Illinois","",78,270,4.8,3,5.6,29,Michigan,Tim McAvoy,2005
+wr,"Lake Orion, Michigan","",78,199,4.4,3,5.7,29,Michigan State,Ryan Allison,2005
+ath,"Colorado Springs, Colorado",Doherty,78,187,4.5,3,5.6,29,Arizona State,Shaun Dewitty,2005
+db,"Hackensack, New Jersey","",78,170,4.5,3,5.5,29,Maryland,Danny Oquendo,2005
+de,"Merrillville, Indiana","",78,240,4.6,3,5.6,29,Purdue,Michael Neal,2005
+de,"Lexington, Virginia",Rockbridge County,78,223,4.7,3,5.5,29,Virginia,Aaron Clark,2005
+ol,"Salt Lake City, Utah",Skyline,78,258,4.8,3,5.6,30,Utah,Tony Bergstrom,2005
+wr,"Mamou, Louisiana","",78,195,4.6,3,5.7,30,Michigan,LaTerryal Savoy,2005
+de,"Shreveport, Louisiana",Evangel Christian,78,220,4.6,3,5.5,30,Alabama,Zach Schreiber,2005
+te,"Honolulu, Hawaii",Kamehameha,78,220,4.7,3,5.5,30,San Diego State,Waika Spencer,2005
+db,"Jacksonville, Florida",Mandarin,78,208,4.6,3,5.5,30,South Carolina,Gerrod Sinclair,2005
+rb,"Florissant, Missouri",Hazelwood Central,65,195,4.4,3,5.5,30,Michigan State,A.J. Jimmerson,2005
+db,"Winston-Salem, North Carolina",Parkland,78,185,4.4,3,5.6,30,Tennessee,Antonio Wardlow,2005
+lb,"Columbus, Georgia",Pacelli Catholic,78,230,4.5,3,5.6,30,Florida,Kalvin Baker,2005
+lb,"Baytown, Texas",Tyler Lee,78,210,4.6,3,5.5,30,Texas Tech,Ryan Hale,2005
+ath,"North Miami Beach, Florida","",65,159,4.7,3,5.6,30,Western Michigan,E.J. Biggers,2005
+qb,"Aurora, Illinois",Waubonsie Valley,78,190,,3,5.5,30,Illinois,Paul Blalock,2005
+de,"Virginia Beach, Virginia",Salem,78,239,4.7,3,5.6,30,Virginia,Antonio Appleby,2005
+dt,"Oceanside, California","",78,265,5.0,3,5.6,30,Brigham Young,Russell Tialavea,2005
+ol,"Bedford, Pennsylvania",Valley Forge Military,78,280,5.0,3,5.6,30,Notre Dame,Michael Turkovich,2005
+db,"Spring, Texas",Westfield,65,173,4.4,3,5.6,31,UCLA,Robert Kibble,2005
+dt,"Boutte, Louisiana",Hahnville,78,260,4.9,3,5.6,31,West Virginia,Rashad Roussell,2005
+rb,"Olympia, Washington",Capital,65,185,4.5,3,5.5,31,Eastern Washington,Tony Davis,2005
+db,"Oakland, California",Bishop O'Dowd,78,186,4.6,3,5.5,31,California,Jesse Brooks,2005
+lb,"Lexington, Kentucky",Lexington Catholic,78,195,4.5,3,5.6,31,Michigan,Brandon Logan,2005
+lb,"Kearney, Missouri",Kearney,78,215,4.6,3,5.5,31,Missouri,Brock Christopher,2005
+ol,"Midwest City, Oklahoma",Carl Albert,78,270,5.1,3,5.6,31,Missouri,Dain Wise,2005
+wr,"Cherry Hill, New Jersey",Camden Catholic,78,190,4.5,3,5.7,31,Iowa,Marcus Wilson,2005
+de,"Harvey, Illinois",Thornton Township,78,225,,3,5.5,31,Purdue,Keyon Brown,2005
+ath,"Atlanta, Georgia",Mays,65,174,4.5,3,5.6,31,Clemson,Ramon McElrathbey,2005
+te,"Plantersville, Alabama",Dallas County,78,215,4.6,3,5.5,31,Georgia Tech,Michael Johnson,2005
+de,"Chicago, Illinois",Morgan Park,78,221,4.6,3,5.6,31,Illinois,Sam Porter,2005
+ol,"Springfield, Pennsylvania",Cardinal O'Hara,78,300,5.3,3,5.6,31,Penn State,Matthew Lowry,2005
+ol,"Kernersville, North Carolina",R.B. Glenn,78,340,5.5,3,5.6,32,Wake Forest,Chris DeGeare,2005
+ol,"Irving, Texas","",78,285,5.0,3,5.6,32,Texas,Chris Hall,2005
+wr,"Houston, Texas",Lamar,78,180,4.5,3,5.7,32,LSU,Brandon LaFell,2005
+ath,"Jacksonville, Florida",Ed White,65,180,4.4,3,5.6,32,Illinois,Guesly Dervil,2005
+dt,"Oswego, Illinois","",78,270,,3,5.6,32,Purdue,Alex Magee,2005
+db,"Decatur, Alabama",Decatur,65,170,4.5,3,5.6,32,Auburn,Jerraud Powers,2005
+de,"Hinsdale, Illinois",Hinsdale Central,78,230,,3,5.6,32,Illinois,Doug Pilcher,2005
+de,"Sherman Oaks, California",Notre Dame,78,220,4.8,3,5.5,32,San Diego State,Tony DeMartinis,2005
+te,"Pittsburgh, Pennsylvania",Central Catholic,78,235,4.8,3,5.5,32,Pittsburgh,John Pelusi,2005
+db,"Tampa, Florida",Jefferson,78,170,4.7,3,5.5,32,San Diego State,Josh Walker,2005
+rb,"Cross City, Florida",Dixie County,65,215,4.6,3,5.5,32,Marshall,Paul O'Hara,2005
+lb,"Jacksonville, Florida",Sandalwood,78,215,4.5,3,5.5,32,South Carolina,Marvin Sapp,2005
+lb,"Inglewood, California",Redondo Union,78,214,4.7,3,5.6,32,USC,Kevin Ellison,2005
+dt,"Honolulu, Hawaii",Kamehameha,78,285,5.1,3,5.6,33,California,Mika Kane,2005
+wr,"Milledgeville, Georgia",Baldwin,78,182,4.6,3,5.7,33,Alabama,Nick Kyles,2005
+db,"Sumter, South Carolina",Crestwood,78,190,4.4,3,5.5,33,South Carolina,Damien Wright,2005
+lb,"Glendale, Arizona",Mountain Ridge,78,210,4.5,3,5.6,33,Nebraska,Nick Covey,2005
+db,"Smyrna, Tennessee","",65,185,4.4,3,5.6,33,Tennessee,Marsalous Johnson,2005
+ath,"Hemet, California",Hemet,78,248,5.1,3,5.6,33,UTEP,Brandis Dew,2005
+de,"Miami, Florida",Miami Norland,78,215,4.7,3,5.5,33,Rutgers,Gary Watts,2005
+te,"Brick, New Jersey","",78,223,4.8,3,5.5,33,Wisconsin,Garrett Graham,2005
+lb,"Weirton, West Virginia",Weir,78,209,4.7,3,5.5,33,West Virginia,Zac Cooper,2005
+de,"Kamuela, Hawaii",Hawaii Prep,78,235,4.7,3,5.6,33,Washington,Daniel Te'o-Nesheim,2005
+ol,"Haverford, Pennsylvania",Haverford School,78,275,5.0,3,5.6,33,Virginia,Will Barker,2005
+ol,"Peoria, Arizona",Centennial,78,305,5.4,3,5.6,33,Arizona,Jordan Lowe,2005
+rb,"Battle Ground, Washington",Battle Ground,78,200,4.5,3,5.5,33,Oregon State,Tirrell Thompson,2005
+wr,"Jacksonville, Florida",Wolfson,78,170,4.4,3,5.7,34,Florida State,Rod Owens,2005
+ath,"Los Angeles, California",Crenshaw,78,160,4.5,3,5.6,34,Colorado,Gardner McKay,2005
+de,"Colorado Springs, Colorado",U.S. Air Force Prep,78,240,4.9,3,5.5,34,Colorado,Sam Zimmerer,2005
+de,"College Park, Georgia",Banneker,78,243,4.9,3,5.5,34,Mississippi,Jada Brown,2005
+te,"Jacksonville, Florida",Ed White,78,270,4.6,3,5.5,34,West Virginia,Sabree Thomas,2005
+ol,"Lower Burrell, Pennsylvania",Burrell,78,280,5.0,3,5.6,34,Pittsburgh,John Brown,2005
+db,"Paterson, New Jersey",Paterson Catholic,78,200,4.5,3,5.5,34,Connecticut,Kitt Pommells,2005
+db,"Wilson, North Carolina",Fike,65,185,4.4,3,5.6,34,Duke,Requan Boyette,2005
+lb,"Castle Rock, Colorado",Douglas County,78,215,4.6,3,5.5,34,Kansas State,Ross Diehl,2005
+lb,"Manchester, New Hampshire",Manchester Central,78,220,4.5,3,5.6,34,Maryland,Dave Philistin,2005
+ol,"Vancouver, Washington",Heritage,78,290,5.1,3,5.6,34,Oregon,Mat Webb,2005
+de,"Lewisville, Texas",Hebron,78,240,4.6,3,5.5,35,Texas Tech,Phillip Jones,2005
+dt,"Memphis, Tennessee",East,78,310,5.1,3,5.6,35,Tennessee,Dan Williams,2005
+lb,"Grandville, Michigan","",78,224,4.6,3,5.6,35,Michigan State,Andrew Hawken,2005
+de,"Amarillo, Texas",Palo Duro,78,230,,3,5.5,35,Missouri,Evander Hood,2005
+rb,"Duquesne, Pennsylvania","",65,218,4.6,3,5.5,35,Pittsburgh,Shane Brooks,2005
+ol,"Honolulu, Hawaii",Farrington,78,310,,3,5.6,35,Arizona State,Shawn Sisifo Lauvao,2005
+ath,"Brooklyn, New York",Poly Prep,78,217,4.5,3,5.6,35,Boston College,Paul Anderson,2005
+ol,"Orlando, Florida",Edgewater,78,245,4.9,3,5.6,35,North Carolina State,Quentin Brown,2005
+wr,"Cape Coral, Florida","",78,185,4.4,3,5.7,35,South Florida,Taurus Johnson,2005
+lb,"Channelview, Texas","",78,220,4.5,3,5.6,36,Colorado,Marcus Burton,2005
+dt,"Mandeville, Louisiana",Fontainebleau,78,267,5.0,3,5.5,36,Auburn,Rudy Odom,2005
+ath,"Chesapeake, Virginia",Oscar Smith,78,258,4.6,3,5.6,36,Virginia Tech,Greg Boone,2005
+rb,"Crawfordville, Florida",Wakulla,78,207,4.5,3,5.5,36,Florida A&M,Briceton Wilson,2005
+te,"Johnstown, Pennsylvania",Bishop McCort,78,225,4.9,3,5.5,36,Akron,Jose Cruz,2005
+ol,"Mullins, South Carolina",Mullins,78,310,5.1,3,5.6,36,Clemson,Jamarcus Grant,2005
+db,"Goose Creek, South Carolina",Stratford,78,180,4.6,3,5.6,36,Clemson,Haydrian Lewis,2005
+de,"Tallahassee, Florida",Rickards,78,245,4.8,3,5.5,36,Louisville,Jonathon Holston,2005
+db,"Miamisburg, Ohio","",78,180,4.5,3,5.5,36,Notre Dame,David Bruton,2005
+lb,"Miami, Florida",Coral Reef,78,223,4.6,3,5.5,36,North Carolina State,Avery Vogt,2005
+ol,"Gig Harbor, Washington",Gig Harbor,78,285,4.9,3,5.6,36,Washington State,Kenny Alfred,2005
+wr,"Canton, Ohio",Glenoak,78,174,4.6,3,5.7,36,Ohio State,Brian Hartline,2005
+dt,"Claremore, Oklahoma","",78,290,5.1,3,5.5,37,Oklahoma,Billy Blackard,2005
+lb,"Sugar Land, Texas",Austin,78,213,4.6,3,5.6,37,Notre Dame,Kevin Washington,2005
+ol,"Marion, Iowa",Linn Mar,78,250,5.3,3,5.6,37,Iowa,Andy Kuempel,2005
+ath,"Decatur, Georgia","",78,190,4.4,3,5.6,37,South Carolina,Brandyn Young,2005
+de,"Milton, Massachusetts",Tabor Academy,78,227,5.0,3,5.5,37,Maryland,Jared Harrell,2005
+db,"Belfry, Kentucky","",65,172,4.4,3,5.6,37,Kentucky,David Jones,2005
+rb,"Seffner, Florida",Armwood,78,180,4.4,3,5.5,37,Indiana,Demetrius McCray,2005
+lb,"Decatur, Illinois",Dwight Eisenhower,78,230,,3,5.5,37,Illinois,Brit Miller,2005
+ol,"Honolulu, Hawaii",Mckinley,78,315,5.1,3,5.5,37,Hawaii,Raphael Ieru,2005
+wr,"St. Petersburg, Florida",Lakewood,78,176,4.5,3,5.7,37,Florida,Louis Murphy,2005
+db,"Flint, Michigan",Carman Ainsworth,78,180,4.6,3,5.5,37,Michigan State,Otis Wiley,2005
+te,"Mocksville, North Carolina",Davie County,78,244,5.0,3,5.5,37,Wake Forest,Ted Randolph,2005
+db,"Houston, Texas",Cypress Falls,78,189,4.4,3,5.5,38,Oklahoma State,Andre Sexton,2005
+wr,"Wills Point, Texas","",78,210,4.5,3,5.7,38,Texas Tech,Chris Cunigan,2005
+lb,"Tucker, Georgia","",78,210,4.5,3,5.6,38,Georgia,Tavares Kearney,2005
+db,"Plantation, Florida",American Heritage,78,175,4.4,3,5.6,38,Georgia,Donovan Baldwin,2005
+ol,"La Porte City, Iowa",Union High School,78,256,5.2,3,5.6,38,Miami (FL),Matt Pipho,2005
+rb,"Portland, Texas",Gregory-Portland,78,210,4.5,3,5.5,38,Missouri,Connell Davis,2005
+ol,"St. Paul, Minnesota",Cretin-Derham Hall,78,305,,3,5.5,38,Minnesota,Ned Tavale,2005
+lb,"Virginia Beach, Virginia",Floyd Kellam,78,220,4.5,3,5.5,38,Virginia Tech,Demetrius Taylor,2005
+dt,"Powder Springs, Georgia",Mceachern,78,285,5.0,3,5.5,38,Clemson,Etta-Etta Tawo,2005
+de,"Greenville, South Carolina","",78,247,4.9,3,5.5,38,South Carolina,Nathan Pepper,2005
+te,"Alvarado, Texas","",78,227,4.6,3,5.5,38,Tulane,Justin Kessler,2005
+ath,"Durham, North Carolina",Southern High,78,203,4.6,3,5.6,38,Virginia,Brandon Woods,2005
+ol,"Tucson, Arizona",Ironwood Ridge,78,286,5.4,3,5.6,39,Arizona,Daniel Borg,2005
+de,"Evansville, Indiana",Central,78,255,4.9,3,5.5,39,Purdue,Jared Zwilling,2005
+db,"Lakeland, Florida",Evangelical Christian,78,172,4.5,3,5.6,39,Alabama,Chris Rogers,2005
+ol,"Blue Springs, Missouri","",78,300,5.2,3,5.5,39,Missouri,James Stigall,2005
+lb,"Webster, New York",Schroeder,78,225,4.5,3,5.5,39,Syracuse,Michael Stenclik,2005
+wr,"Tallahassee, Florida",Leon,78,167,4.6,3,5.7,39,Clemson,T.J. Williams,2005
+lb,"Valdosta, Georgia",Lowndes,78,211,4.7,3,5.6,39,Southern Miss,B.J. Wright,2005
+db,"Dallas, Texas",Lincoln,65,200,4.7,3,5.5,39,Kansas State,Courtney Herndon,2005
+ath,"Seminary, Mississippi","",78,215,4.6,3,5.6,39,Mississippi State,Tim Holloway,2005
+dt,"Philadelphia, Pennsylvania",West Catholic,78,298,5.6,3,5.5,39,Notre Dame,Derrell Hand,2005
+te,"Ashburn, Virginia",Broad Run,78,248,4.8,3,5.5,39,Virginia,Alex Field,2005
+ol,"Edmond, Oklahoma",North,78,280,5.2,3,5.6,40,Oklahoma,Ben Barresi,2005
+db,"LaMarque, Texas","",78,180,4.5,3,5.5,40,Florida State,Korey Mangum,2005
+wr,"Humble, Texas","",78,211,4.5,3,5.7,40,Nebraska,Brodrick Hunter,2005
+lb,"Plano, Texas",West,78,207,4.8,3,5.6,40,UCLA,Korey Bosworth,2005
+te,"Woodstock, Georgia","",78,227,4.7,3,5.5,40,Georgia,Tripp Chandler,2005
+db,"Kansas City, Kansas",Washington,78,180,4.5,3,5.5,40,Kansas,Darrell Stuckey,2005
+rb,"Kahuku, Hawaii",Kahuku,78,200,4.5,3,5.5,40,San Diego State,Micah Strickland,2005
+ol,"Vinita, Oklahoma","",78,299,5.1,3,5.5,40,Oklahoma State,Noah Franklin,2005
+ath,"Palm Beach Gardens, Florida",Dwyer,78,200,4.5,3,5.6,40,Wisconsin,Jae McFadden,2005
+dt,"Ottawa, Kansas","",78,270,5.0,3,5.5,40,Kansas,Caleb Blakesley,2005
+de,"Marietta, Georgia",Wheeler,78,250,4.8,3,5.5,40,Southern Miss,Mam Nyang,2005
+lb,"Carson, California","",78,215,4.7,3,5.5,40,Washington State,Lamar Brumfield,2005
+wr,"Avon Lake, Ohio","",78,195,4.5,3,5.7,41,Iowa,Trey Stross,2005
+de,"Norcross, Georgia",Meadowcreek,78,262,4.7,3,5.5,41,Alabama,Antonio Forbes,2005
+lb,"Plano, Texas",West,78,197,4.7,3,5.6,41,UCLA,Kyle Bosworth,2005
+lb,"Hattiesburg, Mississippi","",78,250,5.1,3,5.5,41,Mississippi State,Charles Burns,2005
+dt,"Blackburn, Missouri",Santa Fe,78,287,5.5,3,5.5,41,Missouri,Kurtis Gregory,2005
+db,"Chicago, Illinois",Morgan Park,65,177,4.5,3,5.5,41,Northern Illinois,Melvin Rice Jr,2005
+db,"Jennings, Louisiana","",78,184,4.6,3,5.5,41,Mississippi,Gary Riggs,2005
+ath,"Puyallup, Washington",Rogers,78,178,4.5,3,5.6,41,Washington State,Brandon Gibson,2005
+ol,"Newton, Kansas","",78,270,5.2,3,5.5,41,Kansas,Adam Welty,2005
+ol,"Mason, Ohio","",78,280,5.1,3,5.5,41,Maryland,Zach Marshall,2005
+te,"Tucson, Arizona",Sabino,78,217,4.8,3,5.5,41,California,Cody Jones,2005
+ath,"Tatum, Texas","",65,180,4.4,3,5.6,42,TCU,Stephen Hodge,2005
+db,"Fort Worth, Texas",Dunbar,78,177,4.4,3,5.5,42,Arizona,Brandon Tatum,2005
+lb,"Rockville, Maryland",Richard Montgomery,78,225,4.6,3,5.5,42,West Virginia,Steven Weedon,2005
+dt,"Robbins, North Carolina",North Moore,78,312,5.5,3,5.5,42,North Carolina,Camaron Thomas,2005
+lb,"Durham, North Carolina",Southern High,78,210,4.4,3,5.6,42,Marshall,Charles Gamble,2005
+de,"Orlando, Florida",Olympia,78,230,4.8,3,5.5,42,Boston College,Brendan Deska,2005
+rb,"Easton, Pennsylvania","",78,198,4.4,3,5.5,42,West Virginia,Ovid Goulbourne,2005
+ol,"Tallahassee, Florida",Leon,78,295,4.9,3,5.5,42,Clemson,Quentez Ruffin,2005
+db,"Lynchburg, Virginia",Heritage,78,181,4.5,3,5.5,42,Virginia,Chris Cook,2005
+ol,"Houston, Texas",Stratford,78,302,5.2,3,5.5,42,Texas A&M,Robbie Frost,2005
+te,"Bonne Terre, Missouri",North County,78,213,4.9,3,5.5,42,Iowa State,A.J. Haase,2005
+wr,"Suwanee, Georgia",North Gwinnett,78,202,4.6,3,5.7,42,South Carolina,Jared Cook,2005
+ol,"Klein, Texas","",78,270,5.1,3,5.5,43,Michigan,Mark Ortmann,2005
+lb,"Indianapolis, Indiana",Roncalli,78,200,4.5,3,5.6,43,Purdue,Jason Werner,2005
+wr,"Ft. Lauderdale, Florida",St. Thomas Aquinas,78,175,4.5,3,5.6,43,Florida State,Richard Goodman,2005
+ath,"Louisville, Kentucky",Fairdale,78,220,4.6,3,5.6,43,Louisville,Maurice Grinter,2005
+ol,"Tallahassee, Florida",Lincoln,78,272,4.8,3,5.5,43,Alabama,Cole Harvey,2005
+lb,"Little Rock, Arkansas",Central,78,243,4.7,3,5.5,43,Arkansas,Antwain Robinson,2005
+te,"Decatur, Georgia",Southwest Dekalb,78,225,4.6,3,5.5,43,Arkansas,Michael Hall,2005
+dt,"Wynne, Arkansas","",78,286,5.0,3,5.5,43,Arkansas,Cord Gray,2005
+db,"Mocksville, North Carolina",Davie County,65,171,4.6,3,5.5,43,North Carolina,James Arnold,2005
+db,"Fullerton, California",Union,78,175,4.6,3,5.5,43,Washington State,Xavier Hicks,2005
+de,"La Cygne, Kansas",Prairie View,78,231,4.7,3,5.5,43,Oklahoma,Brody Eldridge,2005
+rb,"Navasota, Texas",Navasota,65,218,4.5,3,5.5,43,TCU,Chris Smith,2005
+de,"Detroit, Michigan",Renaissance,78,235,4.6,3,5.5,44,Michigan,Carson Butler,2005
+ath,"Pflugerville, Texas","",78,185,4.4,3,5.6,44,Texas Tech,Todd Walker,2005
+rb,"Miami, Florida",Edison,78,184,4.4,3,5.5,44,Clemson,Demerick Chancellor,2005
+ol,"Corona, California",Centennial,78,259,5.2,3,5.5,44,Colorado,Devin Head,2005
+dt,"Orlando, Florida",Timber Creek,78,255,5.2,3,5.5,44,South Carolina,Lemuel Jeanpierre,2005
+db,"North Little Rock, Arkansas","",78,186,4.5,3,5.5,44,Arkansas,Jamar Love,2005
+lb,"Seattle, Washington",Rainier Beach,78,225,4.6,3,5.5,44,Hawaii,Adam Leonard,2005
+wr,"Monrovia, California","",78,180,4.5,3,5.6,44,California,Jesse Canada,2005
+db,"Vancouver, Washington",Evergreen High School,78,182,4.6,3,5.5,44,South Carolina,Taylor Rank,2005
+ol,"Prospect Park, Pennsylvania",Interboro,78,250,5.0,3,5.5,44,Akron,Zach Anderson,2005
+ath,"Katy, Texas",Cinco Ranch,78,174,4.4,3,5.6,45,Baylor,Queito Teasley,2005
+rb,"Cypress, Texas",Cy-Fair,78,195,4.7,3,5.5,45,Northwestern,Omar Conteh,2005
+de,"Tallahassee, Florida",Lincoln,78,232,4.6,3,5.5,45,South Carolina,Kerry Bonds,2005
+lb,"Canton, Ohio",Glenoak,78,219,4.6,3,5.5,45,Michigan State,Brandon Long,2005
+ol,"Cordova, Tennessee",Cordova,78,315,5.3,3,5.5,45,Tennessee,Darius Myers,2005
+ol,"Topeka, Kansas",Hayden,78,260,5.0,3,5.5,45,Kansas State,Nick Stringer,2005
+lb,"Mobile, Alabama",Williamson,78,216,4.9,3,5.5,45,Auburn,Antonio Coleman,2005
+db,"Columbus, Ohio",Brookhaven,65,177,4.4,3,5.5,45,Minnesota,Dominic Jones,2005
+db,"Pomona, California",Diamond Ranch,78,184,4.5,3,5.5,45,Oregon,Titus Jackson,2005
+wr,"Lawndale, North Carolina",Burns,78,170,4.4,3,5.6,45,Tennessee,Josh Briscoe,2005
+dt,"Snellville, Georgia",Brookwood,78,267,5.1,3,5.5,45,Oregon,Brian Truelove,2005
+ol,"Torrance, California",North Torrance,78,260,4.9,3,5.5,46,Hawaii,Laupepa Letuli,2005
+db,"West Deptford, New Jersey","",78,185,4.5,3,5.5,46,Penn State,Anthony Scirrotto,2005
+db,"New Haven, Connecticut",Hyde School,65,180,4.4,3,5.5,46,Penn State,Willie Harriott,2005
+lb,"Chicago, Illinois",Morgan Park,78,214,4.8,3,5.5,46,Northern Illinois,Phillip Brown,2005
+ath,"Oak Park, California",Oak Park,78,190,4.6,3,5.6,46,UCLA,Gavin Ketchum,2005
+lb,"Greensboro, North Carolina",Dudley,78,220,4.7,3,5.5,46,Wake Forest,Dominique Midgett,2005
+ol,"Quincy, Massachusetts",Boston College,78,270,5.1,3,5.5,46,Stanford,Chris Marinelli,2005
+ol,"Warren, Ohio",Harding,78,284,5.3,3,5.5,47,Michigan State,Rocco Cironi,2005
+ath,"Stevenson, Alabama",North Jackson,65,185,4.5,3,5.6,47,Alabama,Ali Sharrief,2005
+dt,"Richardson, Texas",Berkner,78,308,5.0,3,5.6,34,Baylor,Trey Bryant,2005
+lb,"Florissant, Missouri",Mccluer North,78,225,4.5,3,5.5,47,Minnesota,Steve Davis,2005
+lb,"Moorefield, West Virginia","",78,224,4.8,3,5.5,47,West Virginia,Reed Williams,2005
+db,"Richmond, Virginia",Huguenot,78,183,4.5,3,5.5,47,Massachusetts,Sean Smalls,2005
+wr,"Wilmington, North Carolina",Ashley,65,180,4.4,3,5.6,47,North Carolina State,Levin Neal,2005
+db,"Melbourne, Florida",Holy Trinity Academy,65,187,4.5,3,5.5,47,Notre Dame,Ray Herring,2005
+de,"Virginia Beach, Virginia",Kempsville,78,224,4.9,3,5.5,47,Virginia,Jason Fuller,2005
+ol,"Albuquerque, New Mexico",Highland,78,269,5.2,3,5.5,47,New Mexico,Phillip Harrison,2005
+rb,"DeSoto, Texas","",78,210,4.4,3,5.5,47,Oklahoma State,Kevin White,2005
+wr,"Houston, Texas",B.T. Washington,65,185,4.4,3,5.6,48,Oklahoma State,Jeremy Broadway,2005
+ol,"Trinity, Alabama",West Morgan,78,293,5.6,3,5.5,48,Alabama,Byron Walton,2005
+db,"Calhoun, Georgia",Gordon Central,65,183,4.5,3,5.5,48,Virginia Tech,Dorian Porch,2005
+ol,"Puyallup, Washington",Puyallup,78,250,5.0,3,5.5,48,Arizona,Adam Grant,2005
+ath,"Ramsey, New Jersey",Don Bosco Prep,78,190,4.6,3,5.6,48,Louisville,Darius Mann,2005
+de,"Blue Springs, Missouri",Blue Springs,78,250,4.8,3,5.5,48,Missouri,Jaron Baston,2005
+lb,"Bellbrook, Ohio","",78,216,4.7,3,5.5,48,Ohio State,Austin Spitler,2005
+db,"Southfield, Michigan","",78,189,4.4,3,5.5,48,Michigan State,Ross Weaver,2005
+lb,"Bearden, Arkansas",Bearden,78,204,4.6,3,5.5,48,Arkansas State,Ben Owens,2005
+ol,"Aldine, Texas",Eisenhower,78,252,5.6,3,5.5,49,Texas Tech,Andrew Johnson,2005
+de,"Indianapolis, Indiana",Roncalli,78,255,4.8,3,5.5,49,Notre Dame,Patrick Kuntz,2005
+dt,"Akron, Ohio",Buchtel,78,275,4.8,3,5.5,46,Akron,Marlon Terry,2005
+ath,"Warren, Arkansas","",65,175,4.5,3,5.5,49,Tennessee,Ricardo Kemp,2005
+db,"DeSoto, Texas","",65,178,4.6,3,5.5,49,Arizona,Corey Hall,2005
+wr,"Oceanside, California","",78,203,4.6,3,5.6,49,San Diego State,Roberto Wallace,2005
+db,"Montrose, Michigan",Montrose,65,195,4.6,3,5.5,49,Wisconsin,Aubrey Pleasant,2005
+lb,"Milwaukee, Wisconsin",Milwaukee Vincent,78,211,4.6,3,5.5,49,Wisconsin,DeAndre Levy,2005
+lb,"Apopka, Florida","",78,230,4.7,3,5.5,49,Maryland,Marvin Peoples,2005
+ol,"Garland, Texas",South Garland,78,281,5.4,3,5.5,49,TCU,Nick Richmond,2005
+db,"Beaumont, Texas",Ozen,78,195,4.5,3,5.5,50,Oklahoma State,Calvin Mickens,2005
+lb,"Houston, Texas",Yates,78,205,4.8,3,5.5,50,Arkansas,Tyrell Graham,2005
+ol,"Marshfield, Massachusetts","",78,285,5.1,3,5.5,50,Boston College,Austin Giles,2005
+ath,"Pompano Beach, Florida",Blanche Ely,78,190,4.5,3,5.5,50,Akron,Carlton Jackson,2005
+wr,"Spanaway, Washington",Bethel School,78,186,4.7,3,5.6,50,UCLA,Jamil Turner,2005
+rb,"Westville, New Jersey",Deptford Township,65,187,4.6,3,5.5,50,Toledo,Dajuane Collins,2005
+ol,"La Puente, California",Bishop Amat,78,255,5.2,3,5.5,50,Kansas,Jose Rodriguez,2005
+ath,"Jackson, Mississippi",Provine,65,188,4.6,3,5.5,51,Mississippi State,Anthony Johnson,2005
+ol,"Knoxville, Tennessee",Carter,78,255,5.1,3,5.5,51,North Carolina,Garrett Reynolds,2005
+wr,"Woodruff, South Carolina",Byrnes,78,195,4.5,3,5.6,51,South Carolina,Freddie Brown,2005
+rb,"Tavares, Florida",Tavares,78,210,4.6,3,5.5,51,Iowa State,Dominique Rocker,2005
+db,"Orlando, Florida",Edgewater,78,190,4.5,3,5.5,51,South Florida,Tyller Roberts,2005
+de,"Aurora, Colorado",Grandview High School,78,245,4.8,3,5.5,50,Colorado,Zach Jones,2005
+lb,"Pittsburgh, Pennsylvania",Upper St. Clair,78,215,4.6,3,5.5,51,Penn State,Sean Lee,2005
+ol,"Joseph, Oregon",Joseph,78,290,,3,5.5,51,Oregon State,Michael Marks,2005
+ath,"Lexington, Texas","",65,185,4.4,3,5.5,52,Texas A&M,Jordan Peterson,2005
+wr,"Lancaster, Pennsylvania",Conestoga Valley,78,169,4.5,3,5.5,52,Maryland,Stephen Smalls,2005
+db,"Wayne, Pennsylvania",Valley Forge Military Academy,78,193,4.4,3,5.5,52,Pittsburgh,Bryan Williams,2005
+lb,"Villa Park, Illinois",Willowbrook,78,213,4.7,3,5.5,52,Illinois,Rahkeem Smith,2005
+rb,"Edgard, Louisiana",West St. John,65,190,4.5,3,5.5,52,Louisiana Tech,Patrick Jackson,2005
+ol,"Kalamazoo, Michigan",Hackett Catholic Central,78,272,5.3,3,5.5,52,Michigan State,Joel Nitchman,2005
+ol,"Edmond, Oklahoma",North,78,304,5.3,3,5.5,52,Arizona,Joe Barresi,2005
+ol,"Columbus, Georgia",Carver,78,306,5.0,3,5.5,53,Alabama,Marlon Davis,2005
+db,"Seffner, Florida",Armwood,65,165,4.4,3,5.5,53,South Florida,R.J. Anderson,2005
+wr,"Huber Heights, Ohio",Wayne High School,78,190,4.5,3,5.5,53,Purdue,Greg Orton,2005
+rb,"Red Bank, New Jersey",Red Bank Catholic,65,190,4.4,3,5.5,53,Connecticut,Donald Brown,2005
+lb,"Laurel, Mississippi",West Jones,78,200,4.7,3,5.5,53,Mississippi State,Archie Sims,2005
+ath,"York, Pennsylvania",William Penn,65,175,,3,5.5,53,Penn State,Knowledge Timmons,2005
+ol,"Plymouth, Pennsylvania",Wyoming Valley West,78,265,4.9,3,5.5,53,Northwestern,Kurt Mattes,2005
+ol,"Las Vegas, Nevada",Las Vegas,78,288,5.3,3,5.5,54,UNLV,Arturo Rodriguez,2005
+rb,"North Las Vegas, Nevada",Cheyenne,78,215,4.5,3,5.5,54,UNLV,Torrie Coleman,2005
+wr,"DeSoto, Texas","",78,170,4.4,3,5.5,54,Arizona,Michael Thomas,2005
+db,"Irving, Texas",Macarthur,78,185,4.5,3,5.5,54,Texas Tech,Brent Nickerson,2005
+lb,"Lewisville, Texas",Hebron,78,225,4.5,3,5.5,54,Oklahoma State,Alex Odiari,2005
+ath,"Philadelphia, Pennsylvania",Bishop McDevitt,65,200,4.5,3,5.5,55,Syracuse,Lamar McPhearson,2005
+ol,"Belleville, Illinois",Belleville East,78,267,5.2,3,5.5,55,Iowa,Kyle Calloway,2005
+db,"Lancaster, Texas","",65,192,4.5,3,5.5,55,Missouri,Chad Washington,2005
+wr,"Parkersburg, West Virginia",Parkersburg South,78,183,4.5,3,5.5,55,West Virginia,Ryan Dawson,2005
+rb,"Akron, Ohio",Hoban,65,186,4.6,3,5.5,41,Northwestern,Tyrell Sutton,2005
+ol,"Hudson, Wisconsin","",78,330,5.2,3,5.5,56,Wisconsin,Eric VandenHeuvel,2005
+lb,"Harbor City, California",Narbonne,65,198,4.9,3,5.5,56,Oregon,Kevin Garrett,2005
+wr,"Nashville, Tennessee",David Lipscomb,78,175,4.4,3,5.5,56,Tennessee,Austin Rogers,2005
+ath,"Hammond, Louisiana","",78,185,4.4,3,5.5,56,Texas A&M,Antonio Perry,2005
+db,"Indianapolis, Indiana",Bishop Chatard,65,175,4.4,3,5.5,56,Purdue,Dray Mason,2005
+ath,"Mableton, Georgia",South Cobb,78,166,4.5,3,5.5,57,South Carolina,Kenny McKinley,2005
+ol,"St. Francis, Wisconsin","",78,308,5.2,3,5.5,57,Arkansas,Jose Valdez,2005
+wr,"Wellington, Florida",Glades Central,78,163,4.5,3,5.5,57,South Florida,Jessie Hester Jr.,2005
+db,"Los Angeles, California",Jefferson,65,158,4.6,3,5.5,57,Arizona State,Travis Smith,2005
+lb,"Westville, New Jersey",Deptford,78,231,4.7,3,5.5,57,Maryland,Jeffrey Clement,2005
+ol,"Dallas, Texas",Jesuit,78,300,5.2,3,5.5,54,Iowa State,Reggie Stephens,2005
+lb,"Waco, Texas","",65,226,4.5,3,5.5,58,Baylor,Shon Brown,2005
+ath,"Johnstown, Pennsylvania","",65,159,4.5,3,5.5,58,Pittsburgh,LaRod Stephens,2005
+db,"Brentwood, Missouri","",78,180,4.4,3,5.5,58,Missouri,Hardy Ricks,2005
+ol,"Apple Valley, Minnesota",Eastview,78,254,5.3,3,5.5,58,Minnesota,Ryan Ruckdashel,2005
+ol,"Cincinnati, Ohio",Moeller,78,250,4.8,3,5.5,55,Boston College,Matt Tennant,2005
+ath,"Irving, Texas",Macarthur,78,196,4.6,3,5.5,59,Kansas State,Eric Childs,2005
+lb,"Hoover, Alabama","",78,200,4.7,3,5.5,59,Alabama,Cory Reamer,2005
+db,"Morganton, North Carolina",Freedom,65,176,4.6,3,5.5,59,North Carolina,Jordan Hemby,2005
+ol,"Morris, Illinois","",78,280,,3,5.5,56,Northwestern,Ramon Diaz,2005
+wr,"St. Albans, New York",Holy Cross,78,171,4.4,3,5.5,59,Virginia,Kevin Ogletree,2005
+ol,"Garber, Oklahoma","",78,260,5.1,3,5.5,59,Oklahoma State,Brady Bond,2005
+ol,"Hialeah, Florida","",78,280,5.2,3,5.5,60,Auburn,Oscar Gonzalez,2005
+lb,"Miami, Florida",Northwestern,65,208,4.6,3,5.5,60,Mississippi,Dustin Forston,2005
+db,"Garden City, Georgia",Groves,78,180,4.5,3,5.5,60,Georgia Tech,Tony Clark,2005
+wr,"Bakersfield, California",West,65,170,4.6,3,5.5,60,Arizona State,Brandon Smith,2005
+ath,"Citrus Heights, California",Mesa Verde,78,195,4.6,3,5.5,60,Boise State,Aiona Key,2005
+db,"Piscataway, New Jersey","",78,214,4.4,3,5.5,61,Ohio State,Malcolm Jenkins,2005
+wr,"Chagrin Falls, Ohio","",78,190,4.5,3,5.5,61,Ohio State,Brian Robiskie,2005
+lb,"Miami, Florida",Miami Norland,78,223,4.6,3,5.5,61,North Carolina,Garrett White,2005
+ath,"North Hills, California",James Monroe,65,155,4.4,3,5.5,61,Michigan,Chris Richards,2005
+ol,"Fresno, California",San Joaquin Memorial,78,270,5.5,3,5.5,61,California,Matt Laird,2005
+wr,"Beaumont, Texas",Ozen,78,170,4.4,3,5.5,62,Nebraska,Wallace Franklin,2005
+ath,"Columbus, Ohio",Brookhaven,78,186,4.5,3,5.5,62,Minnesota,Keith Massey,2005
+lb,"Berkeley, California",Berkeley,78,210,4.7,3,5.5,62,California,Eddie Young,2005
+ol,"Ramsey, New Jersey",Don Bosco Prep,78,255,5.0,3,5.5,62,Northwestern,Corey Wootton,2005
+db,"Albany, Georgia",Westover School,65,175,4.5,3,5.5,63,Auburn,Aairon Savage,2005
+ol,"Fort Lauderdale, Florida",Cypress Bay,78,310,5.4,3,5.5,63,Arkansas,Mike Aguirre,2005
+wr,"Atlanta, Georgia",Douglass,78,190,4.5,3,5.5,63,Georgia Tech,Greg Smith,2005
+lb,"El Dorado Hills, California",Oak Ridge,78,223,4.6,3,5.5,63,Fresno State,Isaac Kinter,2005
+ath,"Jenks, Oklahoma","",78,205,4.4,3,5.5,63,Northwestern,Andrew Brewer,2005
+ath,"St. Paul, Minnesota",Cretin-Derham Hall,65,178,4.5,3,5.5,64,Iowa State,Reggie Rock,2005
+wr,"Detroit, Michigan",DePorres,65,157,4.5,3,5.5,64,Notre Dame,David Grimes,2005
+db,"Denver, Colorado",Mullen,78,170,4.6,3,5.5,64,Arizona State,Grant Crunkleton,2005
+lb,"Katy, Texas","",78,210,4.5,3,5.5,64,Duke,Paul Thornton,2005
+wr,"Duncan, South Carolina",James F. Byrne,65,170,4.4,3,5.5,65,Appalachian State,Reynaldo Hunter,2005
+ath,"Chicago, Illinois",Steinmetz,78,200,,3,5.5,65,Northern Illinois,Justin Anderson,2005
+lb,"Fontana, California",Kaiser,78,218,4.8,3,5.5,65,San Jose State,Bernard Afutiti,2005
+db,"Houston, Texas",Cypress Falls,78,173,4.4,3,5.5,65,Oklahoma State,Ricky Price,2005
+db,"Tallahassee, Florida",Godby,65,160,4.5,3,5.5,66,Louisville,E.K. Sawyerr,2005
+ath,"Cuyahoga Falls, Ohio",Walsh Jesuit,78,175,4.7,3,5.5,66,Minnesota,Mike Chambers,2005
+wr,"Stockton, California",St. Mary's,78,188,4.6,3,5.5,66,Oregon State,Anthony Crosby,2005
+ath,"Philadelphia, Pennsylvania",George Washington,65,164,4.4,3,5.5,67,Wisconsin,Jerry Butler,2005
+db,"Fresno, California",Fresno,65,165,4.5,3,5.5,67,Fresno State,Lawrence Hood,2005
+wr,"Keller, Texas","",78,196,4.7,3,5.5,67,Kansas State,Andrew Richards,2005
+wr,"Chandler, Arizona",Hamilton,65,175,4.4,3,5.5,68,San Diego State,Mekell Wesley,2005
+ath,"Youngstown, Ohio",Cardinal Mooney,78,172,4.5,3,5.5,68,Notre Dame,Kyle McCarthy,2005
+db,"West Covina, California","",65,165,4.5,3,5.5,68,Oregon,Walter Thurmond III,2005
+ath,"Warner Robins, Georgia",Houston County,65,171,4.6,3,5.5,69,Purdue,Brandon King,2005
+wr,"Houston, Texas",Lamar,78,185,4.5,3,5.5,69,Texas A&M,Quincy Driver,2005
+wr,"Denver, Colorado",Montbello,78,185,4.4,3,5.5,70,Colorado,Jarrell Yates,2005
+db,"Ft. Myers, Florida",Dunbar,78,185,4.4,3,5.5,69,Iowa State,Chris Singleton,2005
+wr,"Garland, Texas",South Garland,78,182,4.6,3,5.5,71,Kansas,Raimond Pendleton,2005
+db,"Nanuet, New York",St. Joseph,65,165,4.5,2,5.2,,Rutgers,Devin McCourty,2005
+rb,"Nanuet, New York",St. Joseph,65,158,4.5,2,5.0,,Rutgers,Jason McCourty,2005
+wr,"Baton Rouge, Louisiana",Redemptorist,78,190,,2,4.9,,New Mexico State,A.J. Harris,2005
+de,"Hilton Head, South Carolina",Hilton Head,78,226,4.6,2,5.0,,Duke,Ryan Radloff,2005
+dt,"Prichard, Alabama",Vigor,78,256,4.7,4,5.1,,Auburn,Sen'Derrick Marks,2005
+db,"Los Angeles, California",Loyola,65,162,4.6,2,5.1,,Pennsylvania,Matt Appenfelder,2005
+ath,"Sacramento, California",Bakersfield College,65,185,,0,,,Oregon State,Ricky Herod,2005
+dt,"Santa Clarita, California",College of the Canyons,78,273,4.8,3,,,Michigan State,David Stanton,2005
+db,"San Francisco, California",City College of San Francisco,65,192,4.4,4,,,Oregon State,Edorian McCullough,2005
+de,"Pomona, California","",78,250,4.7,4,,,Michigan,Eugene Germany,2005
+db,"Lake Oswego, Oregon",Lake Oswego,78,205,,2,4.9,,Oregon State,Kevin Maher,2005
+dt,"Cerritos, California",Cerritos C.C.,78,280,4.9,4,,,Arizona,Rickey Parker,2005
+lb,"Santa Clarita, California",College of the Canyons,78,230,4.7,3,,,Colorado State,Jerrod Perry,2005
+de,"Santa Clarita, California",College of the Canyons,78,240,4.8,3,,,Hawaii,Tomi Halai,2005
+ol,"Fresno, California",Fresno City C.C.,78,335,,3,,,Oregon,Palauni Ma Sun,2005
+dt,"Fresno, California",Edison,78,265,5.2,2,4.9,,Fresno State,Cornell Banks,2005
+wr,"San Francisco, California",City College of San Francisco,65,190,4.4,4,,,Oregon State,Ruben Jackson,2005
+ol,"Kapolei, Hawaii",Kapolei,78,295,5.4,2,5.0,,San Diego State,Ikaika Aken-Moleta,2005
+ath,"Kahuku, Hawaii",Kahuku,78,180,4.4,2,5.4,,Brigham Young,Spencer Hafoka,2005
+dt,"Princeton, New Jersey",The Hun School,78,310,4.9,4,,,Miami (FL),Luqman Abdallah,2005
+rb,"Quincy, California",Feather River C.C.,78,210,4.4,0,,,Northern Iowa,Cornell Johnson,2005
+ath,"McKinney, Texas",McKinney North,78,179,,2,5.0,,Louisiana-Monroe,Lynard Barbosa,2005
+lb,"Houston, Texas",Cypress Ridge,78,201,4.5,2,5.4,,Arizona State,Chad Lindsey,2005
+de,"Hayward, California",Chabot College,78,270,,2,,,Idaho,Jonathan Miller,2005
+db,"Beaumont, Texas",Ozen,78,180,4.6,2,5.2,,Louisiana-Lafayette,Phillip Walker,2005
+qb,"Henderson, Nevada",Cimarron,78,198,4.9,0,,,Harvard,Andrew Hatch,2005
+lb,"Fallon, Nevada",Churchill County,78,235,4.5,3,5.5,,Nevada,Josh Mauga,2005
+db,"Las Vegas, Nevada",Desert Pines,78,180,4.8,2,5.1,,Northern Colorado,Jeromy Jones,2005
+ol,"Reno, Nevada",Bishop Manouge,78,315,5.3,2,5.1,,Duke,Joe Suder,2005
+lb,"Las Vegas, Nevada",Palo Verde,78,225,4.8,2,5.1,,New Mexico State,Sam King,2005
+rb,"Sparks, Nevada",Spanish Springs,65,190,,2,4.9,,Nevada,Mike Kanellis,2005
+ath,"Las Vegas, Nevada",Palo Verde,78,196,4.9,2,5.2,,UNLV,Jarrell Harrison,2005
+ol,"North Las Vegas, Nevada",Cheyenne,78,326,5.8,2,5.1,,UNLV,Perry Eppenger,2005
+rb,"Sparks, Nevada",Bishop Manogue,78,185,,2,4.9,,Nevada,Ken Visor,2005
+dt,"Quincy, California",Feather River C.C.,78,295,5.3,2,,,Nevada,Charles Manu,2005
+de,"Las Vegas, Nevada","",78,275,,2,4.9,,UNLV,Jacob Hales,2005
+ol,"San Diego, California",San Diego Mesa College,78,310,,4,,,Louisville,Marcel Benson,2005
+db,"Las Vegas, Nevada",Cimarron,78,195,,2,4.9,,Utah,Kyler Rushton,2005
+k,"Chantilly, Virginia",Westfield,78,190,4.8,2,5.0,,Virginia Tech,Brent Bowden,2005
+k,"Fulton, Mississippi",Itawamba C.C.,78,190,,2,,,Memphis,Michael Gibson,2005
+rb,"Palm Coast, Florida",Flagler Palm Coast,78,180,,2,4.9,,Cincinnati,Marshawn Gilyard,2005
+qb,"Miami, Florida",Central,78,175,4.6,2,5.0,,Connecticut,Dennis Brown,2005
+lb,"Pickens, South Carolina",Prince Avenue Prep,78,235,4.6,0,,,South Carolina State,James Simmons,2005
+wr,"Coffeyville, Kansas",Coffeyville C.C.,78,192,4.5,4,,,Auburn,Prechae Rodriguez,2005
+wr,"Allen, Texas","",78,169,4.6,2,5.3,,Houston,Brennan Gleason,2005
+qb,"Mission, Kansas",Shawnee Mission North,78,205,4.7,2,5.3,,Colorado,Mack Brown,2005
+lb,"Miramar, Florida",Miami Norland,78,233,,2,4.9,,Akron,Michael Alphonse,2005
+rb,"Ellisville, Mississippi",Jones County J.C.,65,180,,2,5.1,,Ohio,Voncarie Owens,2005
+rb,"Chatham, Virginia",Hargrave Military Academy,65,190,4.4,3,,,Marshall,Chub Small,2005
+te,"Redmond, Oregon",Redmond,78,193,5.0,0,,,Portland State,Matt Leunen,2005
+dt,"Woodstock, Georgia","",78,263,5.0,2,5.4,,Illinois,Immanuel Chu,2005
+de,"Chatham, Virginia",Hargrave Military Academy,78,220,4.7,4,,,Virginia,Olu Hall,2005
+rb,"Long Island, New York",North Babylon,78,245,,2,5.3,,West Virginia,Scooter Berry,2005
+ath,"Fairless Hills, Pennsylvania",Conwell-Egan,65,184,4.4,3,5.5,,West Virginia,Steve Slaton,2005
+ath,"San Francisco, California",City College of San Fransisco,65,170,4.4,4,,,California,Lavelle Hawkins,2005
+lb,"New Brunswick, New Jersey","",78,200,4.5,2,5.2,,Wisconsin,Jonathan Casillas,2005
+dt,"Brookhaven, Mississippi","",78,305,5.0,2,5.0,,Mississippi State,Jessie Bowman,2005
+rb,"Clairton, Pennsylvania","",65,200,4.5,2,5.3,,Iowa,Dana Brown,2005
+qb,"Hoover, Alabama","",78,210,4.7,3,,,Alabama,John Parker Wilson,2005
+db,"Roswell, New Mexico",New Mexico Military Institute,78,200,4.4,5,,,Nebraska,Zackary Bowman,2005
+db,"Independence, Kansas",Independence C.C.,78,210,4.4,4,,,Oklahoma,Allan Patrick,2005
+lb,"Syracuse, New York",Henninger,78,215,4.6,2,4.9,,Pittsburgh,Doug Fulmer,2005
+qb,"San Francisco, California",San Francisco City College,78,200,,4,,,California,Joseph Ayoob,2005
+db,"Portland, Oregon",Lincoln,78,180,,0,,,Air Force,Luke Yeager,2005
+de,"Corvallis, Oregon",Corvallis,78,220,,0,,,Army,Nick Emmons,2005
+lb,"Springhill, Louisiana","",78,208,,2,4.9,,Louisiana Tech,Brian White,2005
+wr,"New Brunswick, New Jersey",New Brunswick,78,180,4.5,2,,,Louisiana Tech,Shawn Simmons,2005
+wr,"Spring, Texas","",65,171,4.5,3,5.5,,Rice,Daryl Jones,2005
+wr,"Sugarland, Texas",Kempner,78,185,4.5,3,5.5,,Wisconsin,Elijah Theus,2005
+ol,"Southlake, Texas",Carroll,78,282,5.2,2,5.3,,Southern Methodist,Mitch Enright,2005
+ath,"Killeen, Texas",Killeen,78,185,4.5,3,5.5,,Southern Methodist,Columbus Givens,2005
+ath,"Pflugerville, Texas",Connally,78,225,4.6,2,5.4,,Houston,Keith Demby,2005
+rb,"Fort Worth, Texas",All Saints' Episcopal,65,180,4.4,2,5.4,,Rice,Christopher Douglas,2005
+wr,"Irving, Texas",Macarthur,65,171,4.4,2,5.4,,Houston,Jeffrey Moturi,2005
+qb,"Houston, Texas",Westside,78,195,4.8,2,5.4,,TCU,Marcus Jackson,2005
+qb,"Cedar Park, Texas","",65,181,4.4,2,5.2,,North Texas,Korey Washington,2005
+wr,"Waco, Texas","",65,165,4.5,2,5.4,,Baylor,Carl Sims,2005
+ath,"Kilgore, Texas",Kilgore,65,165,4.4,2,5.4,,TCU,Nick Sanders,2005
+dt,"Compton, California",Compton Community College,78,300,4.9,4,,,Nebraska,Ola Dagunduro,2005
+qb,"Coffeyville, Kansas",Coffeyville C.C.,78,240,4.8,3,,,Kent State,Michael Machen,2005
+lb,"San Antonio, Texas",Smithson Valley,78,205,4.7,2,5.2,,Baylor,Joe Pawelek,2005
+ol,"Union, New Jersey",Hudson Valley Community College,78,305,,2,,,Rutgers,Darnell Stapleton,2005
+dt,"St. Louis, Missouri",Hazelwood East,78,285,5.0,2,5.4,,Missouri,Jason Townson,2005
+ath,"Zachary, Louisiana",Northeast,65,168,4.3,3,5.5,,LSU,Trindon Holliday,2005
+de,"Walnut, California",Mount SAC,78,260,4.7,3,,,California,Nu'u Tafisi,2005
+qb,"Mission Viejo, California",Aliso Niguel,78,215,4.7,2,5.0,,Tulsa,Drew Westling,2005
+db,"Fort Myers, Florida",Lehigh,65,180,4.4,2,5.1,,South Carolina,Jeremy Ware,2005
+ath,"Princeton, New Jersey",The Hun School,78,200,4.4,2,,,Purdue,Derek Benson,2005
+rb,"Rancho Cucamonga, California",Chaffey C.C.,65,180,,2,,,East Carolina,Brandon Fractious,2005
+lb,"Tampa, Florida",Plant High School,78,240,,2,4.9,,South Florida,Donte Spires,2005
+qb,"Westwood, Massachusetts",Xaverian Brothers,78,180,4.5,2,5.4,,Duke,Zack Asack,2005
+db,"Miami, Florida",Central,65,170,4.5,2,5.2,,Bowling Green,Antonio Smith,2005
+de,"Gainesville, Georgia",North Hall,78,240,4.7,0,,,Air Force,Bradley Bernard,2005
+wr,"Tigard, Oregon","",65,152,4.7,2,5.1,,St. Peter's,Jaleel Kindell,2005
+db,"Long Beach, California",Poly,78,180,,2,5.2,,California,Gary Doxy,2005
+rb,"Chatham, Virginia",Hargrave Military Academy,78,210,4.4,4,,,North Carolina State,Andre Brown,2005
+qb,"Kiski Prep, Pennsylvania",Saltsburg,78,195,,3,,,Penn State,Darryl Clark,2005
+ol,"Youngstown, Ohio",Ursuline,78,300,5.1,3,,,Oklahoma,Brandon Braxton,2005
+qb,"Wichita Falls, Texas",Rider,78,195,,2,5.3,,Baylor,Blake Szymanski,2005
+lb,"Coffeyville, Kansas",Coffeyville C.C.,78,225,4.5,3,,,Nebraska,Dontrell Moore,2005
+rb,"Brooklyn, New York",Poly Prep,65,220,4.6,2,5.4,,Wisconsin,P.J. Hill,2005
+db,"Hoover, Alabama","",78,173,4.4,2,5.0,,Vanderbilt,Joel Caldwell,2005
+db,"Kilgore, Texas",Kilgore J.C.,78,210,4.5,4,,,TCU,Marvin White,2005
+ol,"Greensburg, Pennsylvania",Central Catholic,78,290,,2,5.0,,Air Force,Alex Karabin,2005
+ol,"Mason City, Iowa",North Iowa Area C.C.,78,310,5.0,3,,,Iowa,Marshal Yanda,2005
+dt,"Orlando, Florida",Evans,78,260,5.2,2,5.0,,Iowa,Vernon Jackson,2005
+dt,"Fort Worth, Texas",Brewer,78,250,4.7,2,4.9,,Iowa,Justin Collins,2005
+rb,"New Berlin, New York",Milford Academy,65,210,4.5,3,,,Iowa,Shonn Greene,2005
+db,"Garland, Texas",Naaman Forest,78,180,4.5,2,5.3,,Iowa,Justin Edwards,2005
+wr,"Chicago, Illinois",Chicago Harper,65,159,,3,5.5,,Northwestern,Rasheed Ward,2005
+ath,"Nashville, Tennessee",Brentwood Academy,78,190,4.5,2,4.9,,Memphis,Tyler Griffin,2005
+wr,"Plantation, Florida","",78,175,4.5,3,5.5,,Pittsburgh,Cedric McGee,2005
+wr,"Pittsburgh, Pennsylvania",Seton La Salle,78,177,4.7,2,4.9,,West Virginia,Carmen Connolly,2005
+db,"Westville, New Jersey",Deptford,78,184,4.6,2,5.3,,Toledo,Jeff Green,2005
+te,"Phoenix, Arizona",Central,78,228,,2,4.9,,Ohio,Chris Rodgers,2005
+wr,"Oradell, New Jersey",Bergen Catholic,78,189,4.6,3,5.5,,Maryland,Isaiah Williams,2005
+te,"Wheaton, Illinois",Wheaton Warrenville South,78,225,,2,5.2,,Western Michigan,Matt Stevens,2005
+rb,"West Palm Beach, Florida",Palm Beach Lakes,65,190,4.4,2,5.1,,West Virginia,Jetavious Best,2005
+ath,"San Diego, California",Mesa Community College,78,190,4.5,3,,,Nebraska,Tyrell Spain,2005
+dt,"San Jose, California",Valley Christian,78,270,5.3,2,5.2,,Washington State,Joseph Townsend,2005
+ol,"Elmhurst, Illinois",York,78,280,5.2,2,5.1,,New Mexico State,Timothy Freitag,2005
+rb,"Brampton, Ontario",Notre Dame SS,78,230,4.4,4,,,Rutgers,Jerome Messam,2005
+qb,"Hazel Green, Alabama",Hazel Green,78,185,4.7,2,5.0,,Jacksonville State,Wesley Henderson,2005
+rb,"Miramar, Florida",Northwestern,65,190,4.4,2,5.1,,Colorado,Kevin Moyd,2005
+rb,"Midland, Texas",Christian,65,210,4.5,2,5.2,,Kansas State,Courtney Greer,2005
+db,"Nashville, Tennessee",Christ Presbyterian Academy,78,190,4.5,2,5.0,,Alabama,Travis Sikes,2005
+db,"Fort Worth, Texas",All Saints' Episcopal,78,183,4.5,0,,,New Hampshire,B.J. Ross,2005
+rb,"Fresno, California",Edison,78,228,4.8,2,5.2,,Oregon State,Nick Thurston,2005
+dt,"Fullerton, California",Fullerton Community College,78,280,4.8,5,,,Arizona,Gabe Long,2005
+ol,"Columbus, Ohio",Westland,78,310,5.4,2,5.2,,Minnesota,Jason Sekinger,2005
+rb,"Oroville, California",Butte C.C.,78,230,4.6,3,,,UCF,Jason Peters,2005
+dt,"Moses Lake, Washington",Moses Lake,78,290,5.2,2,5.3,,Oregon State,Wilson Holman,2005
+lb,"Los Angeles, California",Dorsey,78,240,4.7,2,5.2,,Kansas State,Chad Lowe,2005
+db,"Jacksonville, Florida","",65,160,4.4,2,5.0,,Louisville,Craig James,2005
+ol,"Colorado Springs, Colorado",U.S. Air Force Prep,78,325,5.2,0,,,Nebraska,Matt Slauson,2005
+db,"Mobile, Alabama",St. Paul's,65,190,,2,4.9,,West Virginia,Trippe Hale,2005
+rb,"Louisville, Kentucky",Western,78,198,4.6,2,5.1,,Kentucky,Corey Goodson,2005
+ath,"Puyallup, Washington",Puyallup,78,190,4.5,2,5.2,,Eastern Washington,Makai Borden,2005
+db,"Everett, Washington",Mariner,78,190,4.5,0,,,Eastern Washington,Aaron Cartwright,2005
+db,"Pasco, Washington",Pasco,65,170,4.5,0,,,Eastern Washington,Tony Coburn,2005
+qb,"Spokane, Washington",Shadle Park,78,200,5.0,2,5.0,,Eastern Washington,Josh Powell,2005
+lb,"Galena Park, Texas",North Shore,65,210,4.7,0,,,Grambling State,Joshua Jolivette,2005
+wr,"Houston, Texas",Hastings,78,182,4.5,0,,,Grambling State,Grant Gaines,2005
+de,"Villa Rica, Georgia","",78,250,4.9,2,5.4,,Middle Tennessee State,Chris McCoy,2005
+dt,"Atlanta, Georgia",Douglass,78,250,,2,5.1,,Vanderbilt,Derrius Dowell,2005
+de,"Norcross, Georgia",Meadowcreek,78,245,4.7,2,5.1,,Connecticut,Kelvin Quarles,2005
+db,"San Diego, California",Grossmont,78,220,4.4,0,,,USC,Mozique McCurtis,2005
+db,"Eugene, Oregon",South Eugene,78,191,4.9,2,5.4,,Oregon,Matt Bramow,2005
+qb,"Round Rock, Texas","",78,180,4.5,0,,,Indiana State,J.R. Kirkendoll,2005
+wr,"Blountstown, Florida","",78,171,4.5,2,,,South Florida,Ishmeal Grant,2005
+db,"Elizabeth, New Jersey","",78,175,4.6,2,5.0,,South Florida,Jerome Murphy,2005
+lb,"Pearl River, Mississippi",Pearl River C.C.,78,245,,2,,,South Florida,Gene Coleman,2005
+qb,"St. Petersburg, Florida",Catholic,78,215,,2,,,Mississippi,Billy Tapp,2005
+ol,"Chatham, Virginia",Hargrave Military Academy,78,305,5.1,2,,,Kentucky,Christian Johnson,2005
+lb,"Independence, Kansas",Independence C.C.,78,210,4.6,0,,,Sam Houston State,James Mitchell,2005
+wr,"Palmer, Alaska",Colony,65,165,,2,4.9,,Bowling Green,Rhett Magner,2005
+ath,"Roebuck, South Carolina",Dorman,78,180,4.5,2,5.2,,South Carolina,Mychal Belcher,2005
+dt,"North Charleston, South Carolina","",78,270,4.9,2,5.3,,South Carolina,Jarriel King,2005
+lb,"Mays Landing, New Jersey",Oakcrest,78,225,4.5,3,5.5,,South Carolina,Dakota Walker,2005
+db,"Del Valle, Texas",Victor Valley College,65,170,,2,,,UNLV,E.J. Whitley,2005
+db,"Garland, Texas",Naaman Forest,65,155,4.5,3,5.5,,Oklahoma State,Jacob Lacey,2005
+db,"Kingsland, Georgia",Camden County,65,169,4.5,2,5.2,,Vanderbilt,Darlron Spead,2005
+ath,"Miami, Florida",Miami Norland,78,180,4.5,2,4.9,,North Carolina,Dwight Fluker-Berry,2005
+ol,"Rumson, New Jersey",Fair Haven,78,288,5.7,2,5.2,,Connecticut,Alex LaMagdelaine,2005
+wr,"Irvington, New Jersey","",78,172,4.6,3,5.5,,Connecticut,Todd Dorcelus,2005
+ol,"Rutherford, New Jersey",St. Mary's,78,299,5.3,2,5.2,,Michigan State,Mike Schmeding,2005
+lb,"Los Angeles, California",Harbor College,78,230,4.5,0,,,Michigan State,Steven Juarez,2005
+wr,"Coffeyville, Kansas",Coffeyville C.C.,78,195,4.4,4,,,Michigan State,Kerry Reed,2005
+db,"Brooklyn Park, Minnesota",Park Center,65,175,4.5,2,4.9,,Michigan State,Ted Toune,2005
+de,"Powhatan, Virginia",Blessed Sacrament,78,252,5.0,2,5.0,,North Carolina,Kyle Jolly,2005
+de,"Waco, Texas",University,78,225,4.8,0,,,Baylor,Damien Taylor,2005
+ol,"Delran, New Jersey",Holy Cross,78,273,5.2,2,5.0,,Maryland,Phil Costa,2005
+ol,"Fayetteville, North Carolina",Byrd,78,305,5.1,2,5.1,,East Carolina,Doug Palmer,2005
+dt,"Upper Marlboro, Maryland",Riverdale Baptist,78,281,5.1,2,4.9,,Maryland,Travis Ivey,2005
+k,"Katy, Texas",Cinco Ranch,78,190,4.4,2,,,Texas,Trevor Gerland,2005
+rb,"Hartford, Connecticut",Weaver,78,247,4.6,2,5.4,,Notre Dame,Asaph Schwapp,2005
+lb,"Richmond, Virginia",Hermitage,78,215,4.5,2,4.9,,Richmond,Josh Vaughn,2005
+db,"Fort Dodge, Iowa",Iowa Central C.C.,78,220,4.4,2,,,Iowa State,Jon Banks,2005
+ol,"Allendale, New Jersey",Northern Highland Regional,78,285,5.5,2,5.1,,Pittsburgh,Kevin Hughes,2005
+qb,"Owensboro, Kentucky",Owensboro Catholic,78,202,4.9,2,5.3,,Marshall,Zach Barnard,2005
+wr,"Miami, Florida",Northwestern,78,186,4.5,2,5.2,,Auburn,Ulysses Alexander,2005
+rb,"New Brunswick, New Jersey","",78,200,4.4,2,5.3,,Connecticut,Andre Dixon,2005
+ol,"Walnut, California",Mt. San Antonio Junior College,78,315,,2,,,Nebraska,Jordan Picou,2005
+lb,"Bolingbrook, Illinois","",78,219,4.6,5,,,Purdue,Kyle Williams,2005
+db,"Richmond, Texas",Foster High School,65,170,4.5,3,5.5,,UTEP,Braxton Amy,2005
+ath,"New Hampton, New Hampshire","",78,203,4.6,2,5.4,,Northwestern,Brendan Smith,2005
+db,"Windsor, Ontario",Sandwich,78,190,4.5,3,5.5,,Kansas,Tang Bacheyie,2005
+ol,"Shenandoah, Pennsylvania",Shenandoah Valley,78,272,5.1,2,5.4,,West Virginia,Frank Carduff,2005
+rb,"Pasadena, California",City College,78,210,4.5,0,,,San Diego State,Tyler Campbell,2005
+wr,"Youngstown, Ohio",Ursuline,65,170,4.4,2,5.2,,Cincinnati,Derrick Stewart,2005
+wr,"Cincinnati, Ohio",Princeton,78,195,4.6,2,5.2,,Miami (OH),E.J. Morton-Green,2005
+ath,"Pittsburgh, Pennsylvania",Central Catholic,78,183,4.6,2,5.3,,Pittsburgh,Shane Murray,2005
+rb,"Pittsburgh, Pennsylvania",Penn Hills,65,200,4.6,2,5.4,,West Virginia,Ed Collington,2005
+lb,"Union, New Jersey","",78,207,4.8,2,4.9,,Rutgers,Peter Tverdov,2005
+lb,"Holly Hills, Florida",Mainland,78,190,4.5,2,5.3,,South Carolina,Brent Davis,2005
+db,"Granada Hills, California",Pierce College,78,190,4.4,2,,,Nebraska,Bryan Wilson,2005
+te,"Corpus Christi, Texas",Calallen,78,235,5.2,2,5.4,,TCU,Tyler Marrou,2005
+lb,"Bellevue, Nebraska",West,78,205,4.6,0,,,Nebraska,Jeff Souder,2005
+dt,"Venice, California",Mt. Zion's Christian Academy,78,290,5.0,0,,,San Diego State,Keioshe Jones,2005
+db,"El Dorado, Kansas",Butler County C.C.,65,185,4.4,3,,,Auburn,Jonathan Wilhite,2005
+ol,"Santa Clarita, California",College of the Canyons,78,305,,4,,,Fresno State,James Paulk,2005
+lb,"San Diego, California",Mission Bay,78,203,4.9,2,5.2,,Virginia,Darren Childs,2005
+rb,"Costa Mesa, California",Orange Coast C.C.,78,260,4.7,2,,,Kansas State,Jimmy Niutapuai,2005
+ol,"Ramsey, New Jersey",Don Bosco Prep,78,262,5.1,2,5.3,,Rutgers,Nate Nurse,2005
+db,"Metairie, Louisiana",Rummel,78,205,4.6,2,5.2,,San Diego State,Jared Edwards,2005
+wr,"Port Gibson, Mississippi",Port Gibson,78,180,4.5,2,4.9,,San Diego State,Tobias Shanks,2005
+ol,"Depew, New York",Depew,78,332,5.6,2,5.1,,Syracuse,Adam Rosner,2005
+ol,"Seymour, Connecticut","",78,306,5.3,2,5.3,,Connecticut,Mike Hicks,2005
+de,"Roanoke Rapids, North Carolina",Roanoke Rapids,78,246,4.7,2,5.4,,North Carolina,Darrius Massenburg,2005
+rb,"Pittsburgh, Pennsylvania",Penn Hills,65,171,4.5,2,5.2,,Bowling Green,Kenny Lewis,2005
+db,"Tabor City, North Carolina",South Columbus,65,185,4.5,2,5.2,,North Carolina,Bryan Dixon,2005
+de,"El Dorado, Kansas",Butler County C.C.,78,265,4.6,4,,,Nebraska,Justin Tomerlin,2005
+qb,"El Dorado, Kansas",Butler County C.C.,78,210,4.7,3,,,Nebraska,Zac Taylor,2005
+db,"Bellevue, Nebraska",Bellevue East,65,160,4.4,2,5.4,,Nebraska,Robert Rands,2005
+ol,"Virginia, Minnesota",Mesabi Range Central and Technical College,78,300,4.9,2,,,Nebraska,Brock Pasteur,2005
+lb,"Palatine, Illinois",William Rainey Harper College,78,230,4.5,4,,,Nebraska,Steve Octavien,2005
+te,"Pomfret, Maryland",McDonough,78,235,5.0,2,5.2,,Nebraska,David Harvey,2005
+wr,"El Dorado, Kansas",Butler County C.C.,78,170,4.4,4,,,Nebraska,Frantz Hardy,2005
+dt,"Dodge City, Kansas",Dodge City C.C.,78,270,4.8,3,,,Nebraska,Barry Cryer,2005
+qb,"Jacksonville, Florida",Mandarin,78,175,4.6,0,,,Indiana,Kellen Lewis,2005
+wr,"Long Beach, California",Poly,78,185,,3,,,Oregon,Derrick Jones,2005
+de,"Costa Mesa, California",Orange Coast C.C.,78,255,4.6,3,,,Kansas State,Ricky Miller,2005
+wr,"Sugar Land, Texas",Kempner,78,185,,2,,,Texas A&M,Kevin Ferguson,2005
+rb,"Klein, Texas",Klein,65,175,4.5,2,5.2,,Vanderbilt,Jared Hawkins,2005
+ol,"McKeesport, Pennsylvania","",78,300,5.5,2,5.3,,Connecticut,Lawrence Green,2005
+wr,"Chatham, Virginia",Hargrave Military Academy,78,190,4.5,4,,,East Carolina,Jamar Bryant,2005
+ath,"Pageland, South Carolina",Central,65,178,4.5,3,5.5,,Clemson,Sadat Chambers,2005
+te,"Fork Union, Virginia",Fork Union Military Academy,78,242,4.8,3,,,Clemson,Durrell Barry,2005
+db,"Houston, Texas",Cypress Ridge,65,169,4.5,2,5.3,,Syracuse,Nick Chestnut,2005
+wr,"Syracuse, New York",Christian Brothers Academy,65,190,4.6,2,5.3,,Syracuse,Bruce Williams,2005
+ol,"Titusville, Florida",Titusville,78,280,5.2,2,5.0,,Connecticut,Bobby Fry,2005
+ath,"Fruita, Colorado",Monument,78,235,4.8,3,5.5,,Colorado,Riar Geer,2005
+qb,"Uniontown, Ohio",Green High School,78,200,4.8,2,5.0,,Connecticut,Billy Cundiff,2005
+ol,"Virginia Beach, Virginia",Landstown,78,300,5.2,2,4.9,,Syracuse,Jonathan Meldrum,2005
+wr,"Pittsburg, California",Los Medanos C.C.,65,195,4.4,0,,,San Diego State,Justin Amaral,2005
+dt,"Louisville, Kentucky",St. Xavier,78,270,5.0,0,5.2,,Louisville,Joe Tronzo,2005
+rb,"LaPlace, Louisiana",St. Charles Catholic,65,180,4.5,2,5.3,,Louisiana-Lafayette,Tyrell Fenroy,2005
+lb,"Dodge City, Kansas",Dodge City C.C.,78,225,4.5,4,,,Louisville,Nate Harris,2005
+rb,"Chatham, Virginia",Hargrave Military Academy,65,180,4.4,3,,,Syracuse,Curtis Brinkley,2005
+lb,"Cedar Hill, Texas",Cedar Hill,65,211,4.7,2,5.2,,Tulsa,George Clinkscale,2005
+db,"Coffeyville, Kansas",Coffeyville C.C.,78,189,4.4,4,,,Florida,Reggie Nelson,2005
+dt,"Chatham, Virginia",Hargrave Military Academy,78,275,4.9,4,,,Alabama,Lorenzo Washington,2005
+de,"Prattville, Alabama","",78,235,4.7,3,,,Alabama,Travis McCall,2005
+lb,"Knoxville, Tennessee",Powell,78,240,5.0,2,5.3,,Alabama,Baron Huber,2005
+de,"Chatham, Virginia",Hargrave Military Academy,78,260,4.9,4,,,Alabama,Brandon Fanney,2005
+ol,"Campbell, Nebraska",Silver Lake,78,270,4.9,0,,,Kansas State,Derek Meyer,2005
+k,"Pasadena, California",Pasadena City C.C.,78,175,4.8,0,,,Virginia,Ryan Weigand,2005
+qb,"Danville, Kentucky",Boyle County,78,190,4.7,2,5.0,,Western Kentucky,Brandon Smith,2005
+ol,"Foley, Minnesota","",78,245,5.2,2,5.2,,Colorado,Paul Backowski,2005
+te,"Tuscaloosa, Alabama",Northridge,78,248,4.7,2,4.9,,UCF,J.R. Sandlin,2005
+dt,"Starke, Florida",Bradford,78,282,,0,,,Florida State,Letroy Guion,2005
+qb,"Lebanon, Tennessee",Friendship Christian,78,215,,2,5.2,,Louisville,Lee Sweeney,2005
+rb,"Columbus, Georgia",Shaw,78,255,4.8,2,5.4,,Miami (FL),Jerrell Mabry,2005
+k,"Murray, Kentucky","",78,185,4.5,2,5.2,,Kentucky,Tim Masthay,2005
+dt,"Brownsville, Tennessee",Haywood,78,240,,2,5.0,,Memphis,Steven Turner,2005
+ol,"Powell, Tennessee",Powell,78,315,5.2,2,5.4,,Marshall,Zane Bruhin,2005
+ath,"Louisville, Kentucky",Pleasure Ridge Park,65,165,4.5,2,5.2,,Louisville,JaJuan Spillman,2005
+ol,"Cadiz, Kentucky",Trigg County,78,270,5.4,2,5.2,,Kentucky,Kenny Ray Turner,2005
+ol,"Covington, Kentucky",Covington Catholic,78,293,5.2,2,5.3,,Louisville,Mike Donoghue,2005
+db,"Ft. Thomas, Kentucky",Highlands,65,180,4.6,2,5.3,,Kentucky,Jordan Nevels,2005
+te,"Elizabethtown, Kentucky","",78,235,4.8,2,5.3,,Kentucky,Zipp Duncan,2005
+ath,"Collierville, Tennessee","",65,178,4.4,2,4.9,,Memphis,Brian Hall,2005
+wr,"Memphis, Tennessee",Evangelical Christian,65,168,4.5,2,5.2,,Wake Forest,Casey Hill,2005
+de,"Memphis, Tennessee",Houston,78,250,4.9,2,5.2,,Kentucky,Jeremy Jarmon,2005
+qb,"Maryville, Tennessee",Maryville,78,175,,2,5.4,,South Carolina,Cade Thompson,2005
+ol,"Miami, Florida",Killian,78,280,5.1,2,5.4,,UCF,Ian Bustillo,2005
+lb,"Madisonville, Kentucky",MNH,78,230,4.7,2,5.3,,Louisville,Blake Boyd,2005
+db,"Paducah, Kentucky",Tilghman,78,180,4.5,2,5.3,,Louisville,Lamar Alston,2005
+db,"Burnside, Kentucky",Pulaski Southwestern,78,198,4.5,2,4.9,,Ohio,Lee Renfro,2005
+wr,"Georgetown, Kentucky",Scott County,78,195,4.6,2,5.4,,Marshall,William Lewis,2005
+wr,"Louisville, Kentucky",Male,78,192,4.5,2,5.0,,Louisville,Stephen Garr,2005
+de,"Chatham, Virginia",Hargrave Military Academy,78,265,,4,,,Troy,Brandon Lang,2005
+db,"Suwanee, Georgia",North Gwinnett,78,185,4.5,2,5.4,,Kentucky,E.J. Adams,2005
+ol,"Suwanee, Georgia",North Gwinnett,78,245,4.8,2,5.2,,Kentucky,Ross Bogue,2005
+lb,"Aliquippa, Pennsylvania","",78,220,4.6,2,5.1,,Cincinnati,Donnell McKenzie,2005
+db,"Chatham, Virginia",Hargrave Military Academy,78,195,4.5,3,,,Alabama,Lionel Mitchell,2005
+ath,"Pinson, Alabama",Pinson Valley,78,180,4.5,3,5.5,,Alabama,Desmond Jennings,2005
+ol,"Birmingham, Alabama",Oak Mountain,78,258,5.2,2,5.4,,Alabama,Scott Deaton,2005
+ol,"Killen, Alabama",Brooks,78,278,4.9,2,5.0,,Alabama,Evan Cardwell,2005
+db,"Decatur, Alabama","",78,190,4.7,2,5.0,,Alabama,Sam Burnthall,2005
+de,"Garden City, Kansas",Garden City C.C.,78,265,4.8,4,,,Kansas,Rodney Allen,2005
+wr,"Burlington, North Carolina",Cummings,78,182,4.5,2,5.3,,North Carolina,Brandon Tate,2005
+db,"Miami, Florida",Killian,65,185,4.4,2,,,Minnesota,Jeff Brooks,2005
+wr,"Miami, Florida",Killian,65,160,4.5,2,,,Minnesota,Richard Christy,2005
+de,"Sedan, Kansas","",78,230,4.8,2,5.2,,Kansas State,Brandon Rees,2005
+wr,"Lake Balboa, California",Birmingham,78,170,4.5,2,5.3,,UNLV,Corey Anderson,2005
+rb,"Conyers, Georgia",Salem,65,185,4.8,2,5.0,,UCF,Jayson Williams,2005
+wr,"Aliquippa, Pennsylvania","",78,212,4.4,2,5.3,,Pittsburgh,Tommie Campbell,2005
+ath,"Pasadena, California",Blair,78,200,4.4,2,5.3,,Utah,Sean Smith,2005
+db,"Clarksdale, Mississippi","",65,170,,2,5.0,,Southern Miss,Cornelius McGee,2005
+db,"Clarksdale, Mississippi","",78,170,4.5,3,5.3,,Southern Miss,Eddie Hicks,2005
+ol,"Troy, Alabama",Henderson,78,270,,2,5.0,,Southern Miss,Micah Brown,2005
+wr,"Utica, Mississippi",Hinds AHS,78,195,4.4,2,5.4,,Southern Miss,Austin Divinity,2005
+rb,"Long Island, New York",Freeport,65,175,4.4,2,5.4,,Rutgers,Leslie Jackman,2005
+lb,"Fresno, California",Fresno City C.C.,78,230,4.7,0,,,Kansas State,Zach Diles,2005
+ol,"Chatham, Virginia",Hargrave Military Academy,78,300,5.0,4,,,Maryland,Jared Gaither,2005
+de,"Rialto, California",Eisenhower Senior High School,78,215,4.6,0,,,Oregon State,Victor Butler,2005
+te,"San Francisco, California",City College of San Francisco,78,265,,0,,,Oregon State,James Otuhiva,2005
+ol,"Phoenix, Arizona",Paradise Valley,78,298,5.6,2,5.1,,Texas Tech,Shawn Byrnes,2005
+de,"Miami, Florida",Dr. Krop,78,260,5.2,2,5.1,,Rutgers,Chris Dirksz,2005
+ath,"Alief, Texas",Taylor,78,205,4.4,2,5.2,,Kansas,Arist Wright,2005
+de,"Palomar, California",Palomar College,78,265,4.8,0,,,Oregon State,John Mayberry,2005
+de,"Dallas, Texas",Skyline,78,245,4.8,2,5.2,,Arizona,Garrett Fields,2005
+db,"Wichita, Kansas",Wichita Heights,65,190,4.7,2,5.2,,Kansas State,Gary Chandler,2005
+rb,"Cleburne, Texas","",78,200,4.5,3,5.6,,Kansas,Angus Quigley,2005
+ol,"Mahwah, New Jersey","",78,265,5.1,2,4.9,,Rutgers,Kevin Haslam,2005
+lb,"Kilgore, Texas",Kilgore J.C.,78,215,4.5,3,,,Tulsa,Steve Craver,2005
+dt,"Miami, Oklahoma",Northeastern Oklahoma A&M J.C.,78,280,4.8,3,,,Colorado,Chris Todd,2005
+wr,"Frankston, Texas","",78,210,4.5,2,5.0,,Colorado,James Lewis,2005
+rb,"Hackensack, New Jersey","",65,183,4.6,2,5.3,,Rutgers,Davon Smart,2005
+rb,"Ashland, Virginia",Patrick Henry,78,210,4.5,0,,,North Carolina,R.J. Waters,2005
+wr,"Augusta, Georgia",Laney Comprehensive,65,180,4.5,0,,,Auburn,Robert Dunn,2005
+lb,"Shreveport, Louisiana",Evangel Christian,78,225,,0,,,McNeese State,Matt Kreamer,2005
+ol,"Meridian, Mississippi","",78,300,4.9,2,5.4,,Mississippi State,Chris Spencer,2005
+te,"Enid, Oklahoma","",78,228,4.8,2,4.9,,Tulsa,Jake Collums,2005
+db,"New Rochelle, New York","",78,195,,2,5.0,,Rutgers,Glen Lee,2005
+ath,"Lawrenceville, New Jersey",Notre Dame,78,157,4.6,2,5.2,,Rutgers,Tiquan Underwood,2005
+db,"Murfreesboro, Tennessee",Riverdale,78,185,4.6,2,5.0,,Memphis,Dave Thomas,2005
+lb,"Memphis, Tennessee",Melrose,78,215,,2,4.9,,Arkansas State,Gregory Hardy,2005
+wr,"Santa Ana, California",Mater Dei,78,200,4.5,2,5.2,,Oregon State,Kyle Brown,2005
+rb,"Charlotte, North Carolina",Charlotte Catholic,78,210,5.0,2,5.1,,North Carolina,Nick Starcevic,2005
+ath,"Norfolk, Virginia",Granby,65,217,4.5,2,5.2,,North Carolina,Bobby Rome,2005
+ol,"Atlanta, Georgia",North Springs,78,251,5.6,2,5.1,,North Carolina,Andre Barbour,2005
+db,"Fork Union, Virginia",Fork Union Military Academy,65,180,4.4,3,,,North Carolina,Jermaine Strong,2005
+lb,"Olive Branch, Mississippi","",78,200,4.6,2,5.4,,Memphis,Jeremy Rockette,2005
+wr,"Cold Spring, Minnesota",Rocori,78,195,,2,5.3,,Minnesota,Eric Decker,2005
+ol,"Jackson, Mississippi",Jackson Academy,78,289,5.1,2,5.4,,Mississippi,Reid Neely,2005
+db,"Marrero, Louisiana",John Ehret,78,190,4.4,2,5.3,,Mississippi,Jabarre Mitchell,2005
+db,"Lafayette, Louisiana",Northside,78,183,4.7,2,5.4,,Mississippi,Tyson Andrus,2005
+te,"Gig Harbor, Washington",Bellarmine Prep,78,215,4.6,2,5.2,,Air Force,Colin Kennedy,2005
+wr,"Pensacola, Florida","",65,171,4.6,2,5.1,,Mississippi State,Adron Chambers,2005
+rb,"Little Rock, Arkansas",McClellan,65,220,4.4,2,5.4,,Arkansas State,Reggie Arnold,2005
+db,"Plantation, Florida","",65,170,4.4,2,5.1,,Rutgers,Dennis Campbell,2005
+rb,"Lake Oswego, Oregon",Lake Oswego,78,195,,0,,,Dartmouth,Andrew Seidman,2005
+db,"Richardson, Texas",Pearce,78,176,4.6,2,5.2,,Arkansas,Matt Harris,2005
+db,"Atlanta, Georgia",Booker T. Washington,78,210,4.4,3,5.6,,Arkansas,Michael Bibbs,2005
+wr,"Gilmer, Texas","",78,175,4.4,2,5.1,,Mississippi State,Tay Bowser,2005
+ol,"Citronelle, Alabama","",78,280,5.3,2,5.4,,Mississippi State,Johnny Carpenter,2005
+ath,"Mart, Texas","",65,200,4.4,4,,,Texas,Quan Cosby,2005
+rb,"Orlando, Florida",Edgewater,78,220,4.7,2,5.3,,Mississippi,Antonio Turner,2005
+lb,"New Orleans, Louisiana",Landry,65,220,4.7,2,5.0,,Mississippi,Rob Russell,2005
+rb,"Millington, Tennessee",Millington High School,65,190,,2,4.9,,Memphis,Miguel Barnes,2005
+ol,"Medford Lakes, New Jersey",Shawnee,78,301,5.7,2,5.2,,Rutgers,Ryan Blaszczyk,2005
+wr,"Southport, North Carolina",South Brunswick,78,190,4.4,2,5.0,,Louisville,Scott Long,2005
+de,"Riviera Beach, Florida",Suncoast,78,255,4.8,2,5.2,,Rutgers,Vantrise Studivant,2005
+ath,"Tallahassee, Florida",Florida A&M,78,180,4.4,2,,,Florida A&M,David Gibson,2005
+lb,"Timber Creek, New Jersey","",78,230,4.5,2,4.9,,Rutgers,Chris Quaye,2005
+ath,"Thibadeaux, Louisiana","",65,175,4.4,2,5.3,,Southern Miss,Edward Morgan,2005
+ol,"Niwot, Colorado",Niwot,78,265,5.1,2,5.2,,Colorado,Jeremy Hauck,2005
+rb,"Warner Robins, Georgia","",78,178,4.7,2,5.4,,Middle Tennessee State,Alton Sanders,2005
+de,"Honolulu, Hawaii",Word Of Life Academy,78,240,4.7,2,5.2,,Hawaii,Brashton Satele,2005
+ol,"Daphne, Alabama","",78,260,5.0,2,5.0,,Southern Miss,Ryan McKee,2005
+lb,"Pasadena, California",Pasadena City C.C.,78,230,4.4,4,,,Southern Miss,Marcus Raines,2005
+de,"Lancaster, Texas",Lancaster,78,215,4.6,2,5.4,,Missouri,Herman King,2005
+lb,"Woodland Hills, California","",78,210,,2,,,Mississippi,Wallace Bates,2005
+te,"Van Vleck, Texas","",78,250,4.8,2,5.2,,Missouri,Chris Hudgins,2005
+te,"Poway, California",Poway,78,230,4.6,2,5.3,,Missouri,Jon Gissinger,2005
+de,"Waco, Texas","",78,233,4.9,2,5.2,,Baylor,Lequantum McDonald,2005
+qb,"New Rochelle, New York",New Rochelle,78,230,,0,,,Providence,Geoff McDermott,2005
+te,"Orlando, Florida",Edgewater,78,245,,0,,,Southern Miss,Bryant Carpenter,2005
+de,"Moorhead, Mississippi",Mississippi Delta C.C.,78,240,4.7,3,,,Missouri,Chad Marshall,2005
+te,"Richardson, Texas",Berkner,78,230,4.8,2,5.4,,Baylor,Jason Lamb,2005
+de,"Miami, Oklahoma",Northeastern Oklahoma A&M J.C.,78,270,4.7,3,,,Missouri,Jamar Smith,2005
+wr,"Prichard, Alabama",Blount,78,204,4.5,2,5.4,,Mississippi State,Aubrey Bell,2005
+wr,"Carlsbad, California",La Costa Canyon,78,191,4.7,2,5.2,,San Diego State,Jon Toledo,2005
+ol,"Coffeeville, Alabama","",78,320,,2,5.0,,Mississippi State,Anthony Dunning,2005
+rb,"LaGrange, Georgia",Troup,78,245,4.8,2,5.0,,Mississippi State,Brandon Hart,2005
+k,"Ripley, Tennessee","",78,180,4.6,2,5.0,,Mississippi State,Blake McAdams,2005
+dt,"Moorhead, Mississippi",Mississippi Delta C.C.,78,300,5.0,3,,,Mississippi State,Antonio Johnson,2005
+db,"Torrance, California",El Camino College,65,200,4.5,3,,,Kansas,Clavens Charles,2005
+db,"Coffeyville, Kansas",Coffeyville C.C.,78,210,4.4,4,,,Missouri,Darnell Terrell,2005
+ol,"San Francisco, California",Community College of San Francisco,78,285,,3,,,Kansas,Marcus Anderson,2005
+rb,"Southlake, Texas",Carroll HS,65,196,4.4,2,5.2,,Rice,Aaron Luna,2005
+k,"Irvine, California",Woodbridge,78,190,4.5,2,5.1,,Fresno State,Gavin Hedstrom,2005
+qb,"Lake Oswego, Oregon",Grossmont College,78,210,4.7,3,,,UNLV,Jarrod Jackson,2005
+qb,"Canby, Oregon",Mt. San Antonio (Calif.),78,220,,0,,,Marshall,Derek Devine,2005
+ol,"Pasadena, California",Pasadena City C.C.,78,310,5.0,3,,,Missouri,Louis Pintola,2005
+de,"Littleton, Colorado",Chatfield,78,218,4.9,2,5.2,,Drake,Cale Hunt,2005
+te,"Salem, Oregon",Sprague,78,230,5.2,0,,,Oregon State,Zach Tatman,2005
+te,"Santa Anna, California",College,78,235,4.8,2,,,Tulsa,Aaron Roupoli,2005
+ol,"Barrington, Illinois","",78,287,4.9,2,5.2,,Minnesota,Otis Hudson,2005
+db,"West Palm Beach, Florida",Royal Palm Beach,65,172,,2,5.0,,Minnesota,Michael McKelton,2005
+db,"Marietta, Georgia",Wheeler,65,170,4.5,3,5.5,,Minnesota,Boyd Coleman,2005
+qb,"Junction City, Oregon","",78,195,4.9,0,,,Northern Arizona,Ryan Rauschert,2005
+k,"Encinitas, California",Torrey Pines,78,185,,0,,,Oregon State,Jake Harry,2005
+ol,"Glen Ellyn, Illinois",College of DuPage,78,255,4.9,0,,,Oregon State,Joel Cohen,2005
+ol,"Fairfield, California",Solano College,78,310,,3,,,Missouri,Matt Russell,2005
+ol,"Coraopolis, Pennsylvania",Moon,78,250,5.0,2,5.4,,Pittsburgh,John Bachman,2005
+de,"Moorhead, Mississippi",Mississippi Delta,78,270,4.8,3,,,Missouri,DeMarcus Scott,2005
+db,"Lewisport, Kentucky",Hancock County,78,205,4.6,2,5.2,,Kentucky,Mike Schwindel,2005
+k,"Memphis, Tennessee",University School,78,185,4.7,2,5.2,,Mississippi,Rob Park,2005
+wr,"Memphis, Tennessee",University School,78,175,4.6,2,5.3,,Mississippi,J.D. Lawhorn,2005
+de,"Nashville, Tennessee",Hunters Lane,78,230,4.6,2,5.4,,Mississippi,Lamark Armour,2005
+rb,"Coos Bay, Oregon",Marshfield Senior,65,205,4.5,2,5.3,,Portland State,Robert McClintock,2005
+lb,"Tigard, Oregon",Tigard,78,220,4.8,0,,,Portland State,Mark Lucas,2005
+ol,"Sandy, Oregon",Sandy HS,78,240,,0,,,Arkansas State,Dominic Padrta,2005
+wr,"Lake Oswego, Oregon",Lakeridge HS,78,170,,0,,,Army,Todd Olson,2005
+rb,"Gresham, Oregon",Barlow HS,78,165,,0,,,Cornell,Aaron Mumford,2005
+ol,"Portland, Oregon",Jesuit HS,78,255,,0,,,Army,Joe Fruechtel,2005
+rb,"Portland, Oregon",Sunset HS,65,185,,0,,,Portland State,Keith Radcliff,2005
+k,"Portland, Oregon",Lincoln HS,78,195,,0,,,Portland State,Brandon Miller,2005
+dt,"Milwaukie, Oregon",Clackamas,78,271,5.2,2,5.2,,Portland State,Rudy Schaffroth,2005
+de,"Sprague, Oregon","",78,208,4.9,0,,,Portland State,Cody Richards,2005
+ol,"West Linn, Oregon","",78,310,5.7,2,5.0,,Northern Arizona,Ryne Holstrom,2005
+ol,"Sublimity, Oregon",Regis,78,315,5.5,0,,,Weber State,Justin Fritz,2005
+rb,"Corvallis, Oregon",Corvallis HS,78,190,,0,,,Yale,Jarren Simmons,2005
+te,"Amarillo, Texas","",78,236,4.8,2,5.2,,Baylor,Dan Sherwood,2005
+dt,"Windsor, Connecticut","",78,290,5.0,2,5.2,,Penn State,Chris Baker,2005
+lb,"Lake Balboa, California",Birmingham,78,210,4.6,3,5.5,,San Diego State,Luke Laolagi,2005
+de,"Santa Maria, California",Allan Hancock C.C.,78,260,4.8,0,,,Baylor,Mike Slaughter,2005
+dt,"Middletown, Maryland",Middletown,78,272,5.0,2,5.0,,Connecticut,Andrew Presnell,2005
+lb,"Colorado Springs, Colorado",Cheyenne Mountain,78,240,4.7,0,,,Montana State,Ryan Cerise,2005
+ol,"Denver, Colorado",Montbello,78,285,5.3,2,5.1,,Weber State,John West,2005
+lb,"Louisville, Colorado",Monarch,78,210,4.7,0,,,Western Illinois,David Beaver,2005
+db,"Wood Ridge, New Jersey",Wood Ridge High School,65,159,4.8,0,,,Brown,Rob Valenti,2005
+ol,"Jacksonville, Florida",Bartram Trail,78,259,5.3,2,5.1,,Wake Forest,Jeff Griffin,2005
+rb,"Austin, Texas",LBJ,78,205,4.4,2,5.4,,TCU,Joseph Turner,2005
+wr,"Vestavia, Alabama",Vestavia Hills,78,205,4.5,3,5.5,,Louisville,Steven Black,2005
+dt,"Endicott, New York",Union-Endicott,78,280,5.3,2,5.3,,Syracuse,Arthur Jones,2005
+ol,"Joplin, Missouri","",78,265,5.1,2,5.1,,Oklahoma State,Andrew Lewis,2005
+ol,"New Orleans, Louisiana",Jesuit,78,282,5.1,2,5.0,,Illinois,Eric Block,2005
+rb,"Central Square, New York",Paul V Moore,65,190,4.6,2,5.4,,Pittsburgh,Irvan Brown,2005
+ol,"Houston, Texas",Bellaire Episcopal,78,272,,0,,,Vanderbilt,Ryan Vance,2005
+dt,"Boswell, Texas","",78,250,4.9,2,5.3,,TCU,James Vess,2005
+dt,"Milledgeville, Georgia",Georgia Military,78,310,4.9,2,,,Oklahoma State,Larry Brown,2005
+de,"Arlington, Texas",Bowie,78,255,4.7,2,5.3,,Georgia Tech,Brad Sellers,2005
+ol,"Philadelphia, Pennsylvania",St. Joseph's,78,290,5.0,2,5.0,,Georgia Tech,Dan Voss,2005
+ol,"Lilly, Georgia",Hawkinsville,78,275,5.0,2,4.9,,Georgia Tech,Trey Dunmon,2005
+wr,"Englewood, Colorado",Kent Denver,65,185,,2,4.9,,Colorado State,Micah Crews,2005
+wr,"Boynton Beach, Florida",Lake Worth,78,200,4.5,2,5.0,,Duke,Kris Stubbs,2005
+lb,"Jacksonville, Florida",Englewood,78,225,4.6,2,,,Mississippi State,Brandon Whittie,2005
+qb,"Gainesville, Florida",Bucholz,78,197,4.6,2,5.2,,UCF,Alex Thompson,2005
+wr,"Everman, Texas","",78,185,4.5,2,5.1,,TCU,Tim Jackson,2005
+ol,"Richardson, Texas","",78,250,4.9,2,5.2,,Baylor,Jordan Hearvey,2005
+db,"Clifton, Virginia",Centreville,65,168,4.6,2,5.3,,Syracuse,Derek Bailey,2005
+wr,"Flower Mound, Texas",Marcus,78,196,4.5,2,5.0,,Connecticut,Travis Watson,2005
+ath,"Southhaven, Mississippi",Southaven,78,195,,2,4.9,,Memphis,Chris Barnett,2005
+qb,"Calgary, Alberta",Bow Valley,78,185,,2,,,Western Michigan,Caleb Clark,2005
+rb,"Valdosta, Georgia","",65,205,4.4,2,5.0,,Bethune-Cookman,Jamal Scott,2005
+db,"Jacksonville, Florida",Ed White,78,175,,0,,,Bethune-Cookman,Rodney Williams,2005
+qb,"Seffner, Florida",Armwood,65,180,,0,,,Bethune-Cookman,Jameel Williams,2005
+dt,"Los Angeles, California",Loyola,78,259,4.9,2,5.1,,Northwestern,Desmond Taylor,2005
+te,"Sanford, Florida",Seminole,78,235,,0,,,Illinois State,Bert Whigham,2005
+db,"Daytona Beach, Florida",Seabreeze,65,175,,0,,,Youngstown State,Jarvis Richards,2005
+lb,"Sanford, Florida",Sanford,78,210,,0,,,Tennessee Tech,Aaron Williams,2005
+de,"Port Orange, Florida",Spruce Creek,78,240,,0,,,Southern Illinois,Tony Adams,2005
+db,"Port Orange, Florida",Spruce Creek,78,190,,0,,,Southern Illinois,Ian Lundy,2005
+rb,"Port Orange, Florida",Spruce Creek,65,190,,0,,,Southern Illinois,Jonate Govan,2005
+ol,"Rockledge, Florida",Rockledge,78,265,,0,,,Southern Illinois,Earl Butterfield,2005
+db,"Palm Bay, Florida",Palm Bay,78,175,,0,,,Florida International,Robert Mitchell,2005
+rb,"Holy Trinity, Florida",Holy Trinity,65,185,,0,,,Bucknell,Taylor Ray,2005
+ath,"Tempe, Arizona",Corona Del Sol,65,185,4.5,2,5.2,,Stanford,Blaise Johnson,2005
+de,"Holy Trinity, Florida",Holy Trinity,78,280,,0,,,Harvard,Scott Alpizar,2005
+qb,"Chatham, Virginia",Hargrave Military Academy,78,194,4.8,2,,,Columbia,Chris Allison,2005
+lb,"Holy Trinity, Florida",Holy Trinity,78,210,,0,,,Columbia,Zac Wallingford,2005
+dt,"Holy Trinity, Florida",Holy Trinity,78,280,,0,,,Florida A&M,Brian Denison,2005
+de,"Eau Gallie, Florida",Eau Gallie,78,265,,0,,,Florida Atlantic,Jermaine Council,2005
+qb,"DeLand, Florida",Deland,78,185,,2,4.9,,Navy,Brandon Wright,2005
+db,"Deland, Florida",Deland,65,170,,0,,,Bethune-Cookman,Fred McCaskill,2005
+k,"DeLand, Florida","",65,175,,0,,,Youngstown State,Halley Ferrell,2005
+dt,"Belle Glade, Florida",Glades Central,78,265,4.9,2,5.1,,Pittsburgh,Rashad Duncan,2005
+db,"Dallas, Texas",Carter,65,180,4.5,2,,,Baylor,Jeremy Williams,2005
+db,"Dallas, Texas",Madison,65,175,,2,,,TCU,Rafael Priest,2005
+wr,"Stone Mountain, Georgia",Stevenson,65,170,4.6,2,5.0,,Vanderbilt,Alex Washington,2005
+lb,"Troy, Alabama",Henderson,78,196,,2,5.1,,Vanderbilt,Quavian Lewis,2005
+lb,"Birmingham, Alabama",Oak Mountain,78,215,4.6,2,5.0,,Vanderbilt,Chris Johnson,2005
+db,"Garland, Texas",South Garland,65,172,4.6,2,5.3,,Tulsa,Josh Burris,2005
+lb,"Winter Garden, Florida",West Orange,78,235,4.6,2,5.2,,UCF,Justin Warr,2005
+lb,"Duluth, Georgia",Chattahoochee,78,230,4.6,2,5.3,,UCF,Travis Barr,2005
+ol,"Tampa, Florida",Jefferson,78,319,5.5,2,5.3,,Bethune-Cookman,Antuan Lewis,2005
+wr,"Tampa, Florida",Jefferson,65,162,4.6,0,,,Bethune-Cookman,Dohnovan Simpson,2005
+dt,"Fort Dodge, Iowa",Iowa Central C.C.,78,330,5.3,2,,,Missouri State,Deyontae Batiste,2005
+db,"Los Angeles, California",Cathedral HS,78,175,4.5,0,,,Oregon State,Tim Clark,2005
+dt,"New Berlin, New York",Milford Academy,78,338,5.2,4,,,Miami (FL),Antonio Dixon,2005
+de,"Clifton, Virginia",Centreville,78,247,4.8,2,5.4,,Syracuse,Andrew Lewis,2005
+db,"Lakeland, Florida",Lake Gibson,65,175,4.4,2,5.2,,Lafayette,Marvin Clecidor,2005
+ol,"Portland, Oregon",West Linn,78,323,5.5,2,5.2,,Duke,Ben Loebner,2005
+wr,"Santa Maria, California",Allan Hancock JC,78,194,4.5,3,,,Tulsa,Ryan Bugg,2005
+ol,"Lafayette, Louisiana",Carencro,78,288,5.4,2,5.0,,TCU,Bradley Guillory,2005
+wr,"Columbus, Georgia",Carver,78,207,4.7,2,5.1,,Illinois,Gregory McClendon,2005
+te,"Deer Park, Texas","",78,225,4.6,2,5.2,,Baylor,Justin Akers,2005
+ol,"Hamilton, Texas","",78,281,5.6,2,5.3,,Baylor,Thad Boatner,2005
+ol,"Vestavia, Alabama",Vestavia Hills,78,280,5.1,2,5.2,,Furman,Tyler Haynes,2005
+db,"Miami, Florida",Miami Norland,78,160,4.5,2,4.9,,North Carolina,Andre Coleman,2005
+wr,"Cedartown, Georgia","",78,218,4.6,2,5.4,,Mississippi State,Cory Gardhigh,2005
+te,"Mays Landing, New Jersey",The Hun School,78,265,4.8,4,,,South Carolina,Shea McKeen,2005
+rb,"Detroit, Michigan",Renaissance,78,240,,2,4.9,,Michigan,Andre Criswell,2005
+wr,"Compton, California",Compton C.C.,78,200,4.5,4,,,Oregon,James Finley,2005
+db,"Houston, Texas",McAllen Memorial,78,205,4.6,2,5.1,,Baylor,Jordan Lake,2005
+wr,"Covington, Virginia",Alleghany,78,186,4.7,2,,,James Madison,Bosco Williams,2005
+ath,"Manassas Park, Virginia","",65,180,4.6,2,4.9,,Liberty,Zach Terrell,2005
+wr,"Williamsburg, Virginia",Jamestown,78,190,4.5,2,,,Morgan State,Terrell White,2005
+rb,"Clifton, Virginia",Centreville,65,230,4.7,2,5.0,,William & Mary,Peter McMurrer,2005
+qb,"Newport News, Virginia",Warwick,78,211,4.8,2,5.3,,Norfolk State,Cody Brodus,2005
+rb,"Roanoke, Virginia",William Fleming,65,165,4.4,2,5.1,,North Carolina A&T,Mijuan Curtis,2005
+wr,"Tallahassee, Florida",Florida A&M,78,185,4.6,2,5.3,,Florida A&M,Javares Knight,2005
+te,"Orlando, Florida",Bishop Moore,78,240,,0,,,Richmond,Michael Silva,2005
+qb,"East Point, Georgia",Tri Cities,78,191,4.6,2,5.4,,Mississippi State,Tray Rutland,2005
+de,"Orlando, Florida",Evans,78,235,,0,,,Bucknell,Sam Williams,2005
+dt,"La Puente, California",Bishop Amat,78,260,4.9,2,5.3,,San Diego State,Jonathan Soto,2005
+lb,"Rockledge, Florida","",78,213,4.8,2,5.4,,West Virginia,Johnny Holmes,2005
+db,"Buford, Georgia","",65,195,4.4,2,5.3,,South Carolina,Yvan Banag,2005
+ol,"Saint Augustine, Florida","",78,287,5.6,2,5.1,,Georgia Tech,Randall Cox,2005
+de,"Gainesville, Georgia",Riverside Military Academy,78,195,4.7,2,5.0,,Vanderbilt,Broderick Stewart,2005
+db,"Palmdale, California",Palmdale,65,160,4.6,2,5.1,,San Diego State,Kwincy Edwards,2005
+db,"Horn Lake, Mississippi",Northwest Mississippi C.C.,65,190,,2,,,Marshall,Timmy Jones,2005
+wr,"Fork Union, Virginia",Fork Union Military Academy,78,195,4.5,2,4.9,,Marshall,CJ Spillman,2005
+lb,"Fork Union, Virginia",Fork Union Military Academy,78,200,4.6,3,,,Marshall,Marcus Roberson,2005
+lb,"Cary, North Carolina",Fork Union Military,78,230,,2,4.9,,Marshall,E.J. Rascoe,2005
+lb,"Lakeland, Florida",Lakeland Kathleen,78,210,4.5,2,4.9,,Marshall,Albert McClellan,2005
+de,"Lakeland, Florida",Kathleen Senior,78,233,4.7,2,4.9,,Marshall,Darrell Lake,2005
+ath,"Travelers Rest, South Carolina","",65,180,,0,,,South Carolina State,Will Ford,2005
+db,"Apopka, Florida",Apopka,78,185,,0,,,Jacksonville,Dante Williams,2005
+db,"Sanford, Florida",Seminole,65,170,,0,,,Illinois State,Jason Tate,2005
+db,"Orlando, Florida",Evans,78,180,,0,,,Bethune-Cookman,Ronterryeous Stewart,2005
+db,"Kissimmee, Florida",Osceola,65,185,,0,,,Georgia Southern,Chris Collier,2005
+db,"Altamonte Springs, Florida",Lake Brantley,78,190,,2,4.9,,Navy,Brad Gooch,2005
+lb,"Winter Springs, Florida",Winter Springs,78,225,,0,,,Western Kentucky,Jimmy Caldwell,2005
+lb,"Orlando, Florida",Oak Ridge,78,225,,0,,,Bethune-Cookman,Marquis Alexander,2005
+lb,"Orlando, Florida",Evans,78,210,,0,,,Bethune-Cookman,Reshard Albert,2005
+ol,"Orlando, Florida",Colonial,78,270,,0,,,Bethune-Cookman,Randy Viville,2005
+ol,"Altamonte Springs, Florida",Lake Brantley,78,350,,0,,,Morgan State,Robbie Richardson,2005
+ol,"Orlando, Florida",Dr. Phillips,78,270,,0,,,Bethune-Cookman,Kirk Mitchell,2005
+ol,"Longwood, Florida",Lyman,78,300,,0,,,Tennessee Tech,Danny Kava,2005
+ol,"Winter Garden, Florida",West Orange,78,330,,2,,,Florida International,Maurice Hazen,2005
+wr,"Orlando, Florida",University,65,185,,0,,,Liberty,Dominic Bolden,2005
+rb,"Orlando, Florida",Edgewater,78,185,,0,,,Southeast Missouri State,Tim Holloman,2005
+rb,"Altamonte Springs, Florida",Lake Brantley,78,190,,2,,,Navy,James Dryden,2005
+rb,"Longwood, Florida",Lyman,65,165,,0,,,Eastern Kentucky,C.J. Walker,2005
+db,"Hollywood, Florida",Hollywood Christian,78,185,4.4,2,5.0,,Duke,Marvin Marcelin,2005
+ol,"Norwich, Connecticut",Norwich Free Academy,78,270,5.0,2,4.9,,Connecticut,Dan Ryan,2005
+dt,"New Hampton, New Hampshire",New Hampton School,78,255,4.8,2,5.4,,Boston College,Josh Williams,2005
+ol,"Senatobia, Mississippi",Northwest Mississippi C.C.,78,300,5.2,2,,,Southeastern Louisiana,Aylon Putt,2005
+db,"Scooba, Mississippi",East Mississippi C.C.,65,176,4.4,0,,,Florida A&M,Julius Randle,2005
+ol,"Booneville, Mississippi",Northeast Mississippi C.C.,78,305,5.3,2,,,Jackson State,Ryan Hopkins,2005
+lb,"Alief, Texas",Taylor,65,216,4.8,2,5.0,,Duke,Mike Brown,2005
+ath,"Winona, Mississippi","",78,176,4.7,2,5.0,,Alcorn State,Lamarcus Russell,2005
+lb,"Liberty, Mississippi",Amite County,78,216,4.5,2,5.2,,Alcorn State,Lee Robinson,2005
+qb,"Jackson, Mississippi",Jim Hill,78,193,4.8,2,5.3,,Alcorn State,Tony Hobson,2005
+ol,"Honolulu, Hawaii",Punahou,78,280,5.2,2,5.4,,San Diego State,Trask Iosefa,2005
+lb,"Irvine, California",University,78,215,,2,5.2,,San Diego State,Josh Cunningham,2005
+db,"Tallahassee, Florida",Lincoln,78,170,4.5,2,5.1,,Louisville,Travis Norton,2005
+rb,"Columbia, South Carolina",Richland Northeast,65,186,4.5,0,,,Liberty,Rod Fluellen,2005
+db,"Miami, Florida",Killian,65,160,4.4,2,5.2,,South Florida,Antwane Cox,2005
+lb,"Hollywood, Florida",Chaminade Madonna,78,225,4.7,2,5.0,,Duke,Greg Akinbiyi,2005
+dt,"Imperial, Pennsylvania",West Allegheny,78,305,5.3,2,5.3,,Pittsburgh,CJ Davis,2005
+lb,"Hartwell, Georgia",Hart County,78,208,4.6,2,5.2,,Kentucky,Sam Maxwell,2005
+de,"Columbia, South Carolina","",78,267,4.7,2,5.0,,Kentucky,Ventrell Jenkins,2005
+db,"Dalton, Georgia","",65,162,4.5,0,,,Wofford,Drew Parks,2005
+db,"Calhoun, Georgia","",65,163,4.5,0,,,Jacksonville State,Rashaad Montgomery,2005
+lb,"Warner Robins, Georgia",Houston County,78,225,4.7,0,,,Furman,Gaines Burnett,2005
+dt,"Warner Robins, Georgia",Warner Robins,65,270,5.2,0,,,Furman,Justin Brown,2005
+lb,"Gainesville, Georgia",West Hall,65,210,4.7,2,5.1,,Chattanooga,Steven Smigelsky,2005
+de,"Loganville, Georgia","",78,230,4.8,2,4.9,,Coastal Carolina,Clarence Donley,2005
+ol,"Covington, Georgia",Newton,78,300,5.2,0,,,Chattanooga,Jared Coles,2005
+te,"Douglasville, Georgia",Douglas County,78,240,4.9,2,5.0,,Jacksonville State,Deonte Carter,2005
+lb,"Norcross, Georgia",Greater Atlanta Christian,65,205,4.6,2,4.9,,Harvard,Eric Schultz,2005
+lb,"Suwanee, Georgia",North Gwinnett,78,205,4.8,0,,,Air Force,Brandon Reeves,2005
+de,"Norcross, Georgia",Norcross,78,220,4.9,0,,,Villanova,Trey Jayroe,2005
+de,"Buford, Georgia",Greater Atlanta Christian,78,238,5.1,0,,,Davidson,Will Funderburg,2005
+ath,"Lawrenceville, Georgia",Greater Atlanta Christian,65,174,4.5,2,4.9,,Wofford,Frank Domonousky,2005
+ol,"Roswell, Georgia","",78,259,4.9,2,5.0,,Furman,Will Landers,2005
+lb,"Fairburn, Georgia",Creekside,78,202,4.7,0,,,Furman,Stephan Lafrance,2005
+de,"Roswell, Georgia",Centennial,78,255,5.2,0,,,Furman,Ricky Jones,2005
+db,"Fairburn, Georgia",Sandy Creek,78,174,4.6,0,,,James Madison,Gerren Griffin,2005
+lb,"Tyrone, Georgia",Sandy Creek,78,205,4.6,0,,,Delaware,Brian Brown,2005
+lb,"Marietta, Georgia",Walton,65,198,4.7,0,,,Air Force,Tyler Perry,2005
+lb,"Marietta, Georgia",Walton,78,222,4.7,2,5.0,,Navy,Andrew McGinn,2005
+ath,"Canton, Georgia",Cherokee,65,168,4.6,0,,,Chattanooga,Robert Jarvis,2005
+lb,"Newnan, Georgia",Newnan,78,236,4.9,2,5.0,,Jacksonville State,Santez Mays,2005
+lb,"Lincoln, Nebraska",East,78,226,4.7,2,5.3,,Illinois State,Brent Gritton,2005
+lb,"Pleasant Hill, California",Diablo Valley College,78,219,4.6,3,,,Oregon,Chris Mulvanny,2005
+te,"Spokane, Washington",Rogers,78,260,5.1,2,5.0,,Oregon,Levi Horn,2005
+ol,"Senatobia, Mississippi",Northwest Mississippi C.C.,78,294,5.2,3,,,Arkansas State,Jess McDonald,2005
+db,"Newtown, Pennsylvania",Council Rock North,78,198,4.6,2,5.2,,Vanderbilt,Ryan Hamilton,2005
+db,"Baltimore, Maryland",Archbishop Curley,65,180,4.5,2,5.1,,Duke,Glenn Williams,2005
+de,"Bakersfield, California",Bakersfield Community College,78,287,,2,,,Tulsa,William Washington,2005
+db,"Chabot, California",Chabot College,78,190,4.5,2,,,Tulsa,Marchon Tatmon,2005
+de,"Coffeyville, Kansas",Coffeyville C.C.,78,255,4.5,3,,,Tulsa,Martelle Narcisse,2005
+wr,"Rancho Cucamonga, California",Chaffey C.C.,65,180,4.6,3,,,Tulsa,Idris Moss,2005
+ol,"Waxahachie, Texas","",78,280,,2,5.3,,Texas Tech,Marlon Winn,2005
+k,"Wellington, Florida",Wellington,78,195,4.9,2,5.1,,Colorado,Matthew DiLallo,2005
+db,"Lexington, Kentucky",Lexington Catholic,78,167,4.6,0,,,Air Force,Tanner Doss,2005
+db,"Delray Beach, Florida",Atlantic,78,185,4.5,2,5.1,,Connecticut,Courtney Robinson,2005
+rb,"Greensboro, North Carolina",Dudley,78,210,,2,5.2,,North Carolina,Kennedy Tinsley,2005
+rb,"Ottawa, Illinois","",65,243,4.9,2,5.1,,Illinois State,Garin Harcar,2005
+rb,"Pittsburgh, Pennsylvania",Central Catholic,65,159,4.4,2,5.2,,Kent State,Eugene Jarvis,2005
+k,"Torrance, California",El Camino College,78,210,,2,,,Oregon,Matt Dragich,2005
+ath,"Bray, Oklahoma",Bray-Doyle,78,245,4.7,2,5.2,,Oklahoma,Aaron Cummings,2005
+db,"Clayton, Missouri","",65,191,4.6,2,5.3,,Oregon,Jairus Byrd,2005
+ol,"Sherman Oaks, California",Notre Dame,78,230,5.2,2,5.3,,Oregon,Mark Sunga,2005
+ol,"Miami, Oklahoma",Northeastern Oklahoma A&M J.C.,78,330,5.1,4,,,Oklahoma,Brandon Keith,2005
+ath,"Riverview, Florida","",78,189,,2,4.9,,Florida Atlantic,Jason Harmon,2005
+dt,"East St. Louis, Illinois","",78,263,5.2,2,5.1,,Southeast Missouri State,Brandon Thomas,2005
+te,"Waukesha, Wisconsin",West Bend West,78,245,,2,4.9,,Western Michigan,Joe Gardner,2005
+wr,"Arlington Heights, Illinois",St. Viator,78,191,4.6,2,5.0,,Georgetown,Brent Tomlinson,2005
+rb,"Fork Union, Virginia",Fork Union Military Academy,65,185,4.5,3,,,Indiana,Bryan Payton,2005
+db,"Mansfield, Texas",Mansfield Summit,65,200,4.6,2,5.2,,Tulsa,James Lockett,2005
+lb,"Palmdale, California",Palmdale,65,204,4.7,2,5.3,,San Diego State,Jerry Milling,2005
+ol,"Comanche, Oklahoma","",78,280,5.3,2,5.3,,Tulsa,Jody Whaley,2005
+db,"Tampa, Florida",Berkely Prep,65,155,,0,,,Richmond,Derek Hatcher,2005
+rb,"Marietta, Georgia",Walton,65,165,,0,,,Richmond,Justin Forte,2005
+ol,"Las Flores, California",Tesoro,78,255,5.2,2,5.0,,San Diego State,Evan Caso,2005
+qb,"Bradenton, Florida",Southeast,65,190,4.7,2,5.0,,UCF,Marquel Neasman,2005
+db,"Miami, Florida",Miami Norland,78,210,4.5,2,5.1,,Connecticut,Matt Ashmead,2005
+db,"Miami, Florida",Southridge,78,183,4.4,2,5.0,,Central Michigan,Reggie McNeal,2005
+db,"Daytona Beach, Florida",Mainland,65,185,,2,5.0,,Youngstown State,Brandon Strapp,2005
+lb,"Naples, Florida","",78,202,4.7,2,5.0,,Massachusetts,George Byrd,2005
+ol,"Aurora, Colorado",Grandview High School,78,300,5.6,2,4.9,,Florida A&M,DeWayne Lanier,2005
+ol,"Jacksonville, Florida",Andrew Jackson,78,345,5.6,2,5.0,,Bethune-Cookman,Larry Morgan,2005
+ath,"Thomaston, Georgia",Upson Lee,78,228,4.6,2,5.3,,Georgia Southern,Fred Bussey,2005
+rb,"Gulf Coast, Mississippi",Gulf Coast C.C.,65,220,,2,5.2,,Ohio,Matt Fryfogle,2005
+qb,"Taylorsville, Mississippi","",78,191,4.9,2,5.3,,Jackson State,Kris Thigpen,2005
+db,"Tyler, Texas",Tyler Lee,65,185,4.5,2,5.3,,Washington State,Jason Stripling,2005
+dt,"Hutchinson, Kansas",Hutchinson C.C.,78,303,4.9,4,,,Kansas State,Willie Williams,2005
+ol,"Russellville, Arkansas","",78,291,5.3,2,5.4,,Arkansas,Joey Crossland,2005
+wr,"Reidsville, North Carolina","",78,180,4.5,2,5.1,,Duke,Raphael Chestnut,2005
+k,"Morgantown, West Virginia","",65,205,4.9,2,4.9,,Syracuse,Patrick Shadle,2005
+ath,"Farmingdale, New York",Farmingdale,78,240,4.7,2,5.2,,Connecticut,Anthony Barksdale,2005
+wr,"Booneville, Mississippi",Northeast Mississippi C.C.,78,204,4.5,3,,,Michigan State,Emory Jones,2005
+ol,"Clinton, Tennessee",Clinton,78,287,5.2,2,5.3,,Vanderbilt,Eric Hensley,2005
+de,"Wahpeton, North Dakota",North Dakota State College of Science,78,287,4.7,4,,,Michigan State,Bobby Jones,2005
+de,"Elizabeth, New Jersey",Hudson Valley CC,78,262,,2,,,Michigan State,Jonal Saint-Dic,2005
+wr,"Staten Island, New York",Tottenville,65,177,4.4,2,5.2,,Michigan State,Diego Oquendo,2005
+dt,"New Orleans, Louisiana",Carver,78,280,5.0,2,5.3,,Michigan State,Haywood Howard,2005
+ol,"Fork Union, Virginia",Fork Union Military Academy,78,256,5.0,3,,,Michigan State,Brendon Moss,2005
+wr,"Kettering, Ohio",Archbishop Alter,78,182,4.4,2,5.1,,Michigan State,Dan Fortener,2005
+lb,"Birmingham, Michigan",Brother Rice,78,234,4.7,2,5.2,,Michigan State,Adam Decker,2005
+de,"Birmingham, Alabama",Homewood,78,210,4.6,2,5.1,,Michigan State,Reggie Graham,2005
+ol,"Tucson, Arizona",Pima C.C.,78,283,5.1,3,,,Michigan State,Kenny Shane,2005
+db,"Tucson, Arizona",Pima C.C,65,174,4.4,3,,,Michigan State,Demond Williams,2005
+ol,"Pleasent Grove, Utah",Pleasent Grove,78,300,,2,5.3,,Utah State,Derek Hoke,2005
+te,"East Pennboro, Pennsylvania","",78,218,,2,5.3,,Penn State,Mickey Shuler,2005
+de,"Conway, Arkansas",Conway,78,230,4.8,2,5.0,,Vanderbilt,Steven Stone,2005
+db,"Irvington, New Jersey","",65,186,4.5,2,4.9,,New Mexico State,Gerald Guerrier,2005
+wr,"Fork Union, Virginia",Fork Union Military Academy,65,187,4.4,3,,,Syracuse,Richard Abney,2005
+lb,"Morris, Illinois","",78,202,4.9,2,5.0,,Western Illinois,Eric Lines,2005
+de,"Bradley, Illinois",Bourbonnais,78,229,4.9,2,5.0,,Southern Illinois,Dolapo Adubifa,2005
+ol,"Chicago, Illinois",St. Rita,78,290,,2,5.2,,Indiana State,Jack Byrne,2005
+ol,"Orland Park, Illinois",Sandburg,78,270,,2,4.9,,Cornell,Steve Valenta,2005
+rb,"Springfield, Illinois",Sacred Heart Griffin,78,215,,2,5.4,,Southern Illinois,Curtis Robinson,2005
+db,"Nyack, New York","",65,165,4.4,2,5.0,,Connecticut,Terry Baltimore,2005
+lb,"Broken Arrow, Oklahoma","",78,222,4.7,2,5.3,,Colorado State,Sedric Patterson,2005
+k,"Nashville, Tennessee",Montgomery Bell Academy,65,180,,2,5.0,,Vanderbilt,Bryant Hahnfeldt,2005
+rb,"Copperas Cove, Texas","",78,205,4.4,2,5.2,,South Carolina State,Jonathan Woods,2005
+de,"Lincolnton, Georgia",Lincoln County,78,235,4.7,2,4.9,,South Carolina State,Jarrius Wynn,2005
+dt,"Lincolnton, Georgia",Lincoln County,78,260,5.1,2,4.9,,South Carolina State,Alex Wideman,2005
+ath,"Aiken, South Carolina","",78,177,4.5,0,,,South Carolina State,Terrance Smith,2005
+db,"Richmond, Virginia",Douglas Freeman,65,165,4.4,2,5.0,,South Carolina State,B.J. Revis,2005
+rb,"Richmond, Virginia",Douglas Freeman,78,185,4.4,2,4.9,,South Carolina State,Fela-Tunde Ogun,2005
+lb,"Lamar, South Carolina","",78,195,4.6,0,,,South Carolina State,Marshall McFadden,2005
+db,"Lamar, South Carolina","",78,175,4.5,0,,,South Carolina State,Markee Hamlin,2005
+ol,"Greer, South Carolina","",78,290,5.0,2,5.2,,South Carolina State,Devon Dawson,2005
+ol,"Charlotte, North Carolina",West Charlotte,78,290,5.5,0,,,South Carolina State,Travis Ashford,2005
+db,"Orlando, Florida",Olympia,65,170,4.4,3,5.5,,Boston College,Razzie Smith,2005
+dt,"Bakersfield, California",Bakersfield C.C.,78,285,4.9,4,,,Illinois,Ismail Abdunafi,2005
+rb,"Hopewell, Virginia","",65,202,4.8,2,4.9,,William & Mary,Michael Pigram,2005
+ol,"Springdale, Pennsylvania","",78,275,,0,,,Liberty,Colin Dugan,2005
+db,"Margate, Florida",Deerfield Beach,65,180,4.5,0,,,Florida International,Sheldon Penrow,2005
+ol,"Oakland Park, Florida",Northeast,78,325,5.6,2,5.4,,Florida Atlantic,Kevin Miller,2005
+lb,"Fort Lauderdale, Florida",Dillard,78,197,4.8,2,5.0,,Florida Atlantic,Edward Bradwell,2005
+wr,"Tampa, Florida",Middleton,78,171,4.6,3,5.5,,Florida Atlantic,Conshario Johnson,2005
+ath,"Chiefland, Florida","",78,167,4.6,2,5.0,,Florida Atlantic,Cortez Gent,2005
+lb,"Lilburn, Georgia",Parkview,78,205,,0,,,Alabama State,Brandon McClure,2005
+de,"Blountsville, Alabama",Susan Moore,78,225,,0,,,Samford,Curt Smith,2005
+lb,"Homewood, Alabama","",65,185,,0,,,Samford,Rodney Shepard,2005
+qb,"Tuscaloosa, Alabama",Hillcrest,78,185,,0,,,Samford,Jonathan Lowrey,2005
+ath,"Nashville, Tennessee",David Lipscomb,65,170,,0,,,Samford,Burton Elrod,2005
+db,"Brentwood, Tennessee",Christ Presbyterian Academy,65,176,4.5,2,4.9,,Samford,Luke Landers,2005
+lb,"Birmingham, Alabama",Oak Mountain,78,210,,0,,,Samford,Ryan Fordham,2005
+lb,"Norcross, Georgia","",78,215,,0,,,Samford,Andrew Kucera,2005
+wr,"Norcross, Alabama",Greater Atlanta Christian,65,180,4.8,0,,,Samford,Ryan Knauss,2005
+de,"Stone Mountain, Georgia",Stephenson,78,230,4.9,0,,,Samford,Mark Brown,2005
+lb,"Prattville, Alabama","",78,220,,0,,,Samford,C.J. Brown,2005
+rb,"Prattville, Alabama","",65,210,4.6,0,,,Samford,Adrian Bradley,2005
+db,"Midfield, Alabama","",78,190,,0,,,Samford,Justin Borden,2005
+ath,"Arab, Alabama","",65,150,,0,,,Samford,Jordan Blevins,2005
+db,"Thomasville, Alabama","",78,180,,0,,,Samford,Ryan Anderson,2005
+lb,"Little Rock, Arkansas",Sylvan Hills,78,220,,2,5.3,,Arkansas,Kevin Hubbard,2005
+ath,"Mesquite, Texas","",65,139,4.5,2,5.2,,Arkansas,Reggie Fish II,2005
+lb,"Chatham, Virginia",Hargrave Military Academy,78,206,4.5,3,,,Arkansas,Fred Fairchild,2005
+wr,"Camden, Arkansas",Fairview,78,173,4.4,3,5.5,,Arkansas,Rod Coleman,2005
+db,"Dunwoody, Georgia","",78,200,4.6,2,5.4,,Arkansas,De'Andre Bryant,2005
+lb,"LaGrange, Georgia","",65,210,4.6,0,,,Eastern Kentucky,Travis Hart,2005
+de,"St. Augustine, Florida",Nease,78,238,4.8,0,,,Samford,Matt Staver,2005
+lb,"Miramar, Florida",Miramar,78,190,4.6,2,5.0,,Florida International,Artis Warthen,2005
+ol,"Ft. Lauderdale, Florida",Dillard,78,265,5.3,2,5.1,,Florida International,Mark Rachels,2005
+lb,"Deerfield Beach, Florida","",78,221,5.1,2,5.2,,Florida International,Wendy Napolean,2005
+qb,"Hollywood Hills, Florida","",78,185,5.1,2,4.9,,Florida International,Paul McCall,2005
+ol,"Sarasota, Florida",Sarasota,78,280,5.1,2,5.2,,Florida International,Brian Kelleher,2005
+dt,"El Cajon, California",Grossmont C.C.,78,285,5.0,4,,,San Diego State,Dallas Mauga,2005
+ath,"Klein, Texas",Forest,78,185,4.6,0,,,Stephen F. Austin,Aaron Rhea,2005
+de,"Hutto, Texas","",78,240,5.0,0,,,Stephen F. Austin,Karl Glimp,2005
+ol,"Copperas Cove, Texas","",78,265,4.8,2,4.9,,New Mexico State,Roberto Davis,2005
+db,"Canton, Ohio",McKinley,65,167,4.6,3,5.5,,West Virginia,Ryan Brinson,2005
+dt,"Pago Pago, ",Samoana,78,285,,2,4.9,,Oregon,Simi Toeaina,2005
+de,"Central Square, New York",Paul V Moore,78,275,4.9,2,5.4,,Wisconsin,Jeff Stehle,2005
+ath,"Scotland, Pennsylvania",Scotland School,78,199,4.7,2,5.4,,Wisconsin,Jarmal Ruffin,2005
+db,"Columbus, Ohio",Eastmoor,65,191,4.4,2,5.3,,Wisconsin,Prince Moody,2005
+dt,"Sandy Hook, Connecticut",Newtown,78,305,5.2,2,5.2,,Wisconsin,Dan Cascone,2005
+wr,"Troy, Ohio",Troy,78,180,4.4,2,5.1,,Wisconsin,Shane Carter,2005
+ath,"Clarksville, Tennessee",Northwest,65,195,,2,4.9,,Arkansas State,Cedric Wilkerson,2005
+db,"Mountain Home, Arkansas",Mountain Home,78,190,,2,4.9,,Arkansas State,Matt Taylor,2005
+wr,"Troup, Texas",Troup,65,165,,2,4.9,,Arkansas State,Jarriell Norman,2005
+lb,"Dallas, Texas",Lincoln,78,200,4.6,2,5.3,,Baylor,Antonio Jones,2005
+db,"Midland, Texas","",65,180,,2,4.9,,New Mexico State,Michael Zant,2005
+ol,"New Orleans, Louisiana",L. W. Higgins,78,290,,2,5.3,,Memphis,Kenneth Turner,2005
+qb,"Germantown, Tennessee",Briarcrest Christian,78,180,,2,5.0,,Memphis,Brett Toney,2005
+lb,"Memphis, Tennessee",Horn Lake,78,230,,2,5.0,,Memphis,Donald Thornton,2005
+db,"Midland, Texas","",65,185,,2,4.9,,New Mexico State,Chris Woods,2005
+de,"Birmingham, Alabama",Wenonah,78,230,4.7,3,5.4,,Memphis,Greg Terrell,2005
+dt,"Germantown, Tennessee",Germantown High School,78,270,,2,4.9,,Arkansas State,Khari Mays,2005
+ol,"Memphis, Tennessee",Harding Academy,78,280,,2,4.9,,Memphis,Clayton Presley,2005
+te,"Phoenix, Arizona",Phoenix CC,78,243,,2,,,New Mexico State,Tim Woloschak,2005
+te,"Greenville, Florida",Madison,78,230,4.8,2,5.3,,Florida State,Charlie Graham,2005
+wr,"Little Rock, Arkansas",Pulaski Academy,78,196,,2,4.9,,Arkansas State,Aaron Langford,2005
+db,"Ellisville, Mississippi",Jones County J.C.,65,180,,2,,,Memphis,Brandon McDonald,2005
+db,"Lithonia, Georgia","",65,168,4.4,2,5.1,,Memphis,Deante Lamar,2005
+rb,"Rio Rancho, New Mexico","",65,140,,2,4.9,,New Mexico State,Chris Williams,2005
+db,"Montgomery, Alabama",Jeff Davis,65,175,,2,4.9,,Memphis,Bernard Key,2005
+wr,"Memphis, Tennessee",White Station,78,185,,2,5.0,,Memphis,Maurice Jones,2005
+wr,"Senatobia, Mississippi",Northwest Mississippi C.C.,78,195,,2,,,Memphis,Brandon Hunt,2005
+te,"Monticello, Arkansas",Monticello Senior,78,255,,2,4.9,,Arkansas State,J.T. Jordan,2005
+ol,"Copperas Cove, Texas",Copperas,78,290,,2,4.9,,New Mexico State,Matt Schoonover,2005
+db,"Montgomery, Alabama",Jeff Davis,78,190,,2,4.9,,Memphis,Chris Huffman,2005
+db,"Chandler, Arizona","",78,170,,2,4.9,,Hawaii,KayBrin Stevenson,2005
+te,"Pine Bluff, Arkansas",Pine Bluff,78,255,,2,4.9,,Arkansas State,David Johnson,2005
+lb,"Kaneohe, Hawaii",Castle,78,210,4.6,2,5.3,,Hawaii,Blaze Soares,2005
+db,"Palos Verdes, California",Peninsula School,78,195,,2,4.9,,Hawaii,Eric Pederson,2005
+wr,"Covington, Tennessee",Covington,65,170,,2,5.1,,Memphis,Michael Grandberry,2005
+de,"Honolulu, Hawaii",Farrington,78,237,,2,4.9,,Hawaii,John Fonoti,2005
+wr,"Cordova, Tennessee",St. Benedict,78,185,,2,5.0,,Memphis,Lucian Godwin,2005
+dt,"Aledo, Texas",Aledo,78,270,,2,4.9,,Arkansas State,Jonathan Hissam,2005
+dt,"Kahuku, Hawaii","",78,300,,2,4.9,,New Mexico State,David Niumatalolo,2005
+db,"Rosdale, Mississippi",West Boliver,65,170,,2,4.9,,Memphis,LaKeitharun Ford,2005
+lb,"Los Angeles, California",Crenshaw,78,220,4.6,2,5.4,,Hawaii,Solomon Elimimian,2005
+ol,"Lepanto, Arkansas",East Poinsett County,78,290,,2,4.9,,Memphis,Eric Evans,2005
+de,"Long Beach, California",Long Beach C.C.,78,280,,2,,,New Mexico State,Maurice Murray,2005
+db,"Terrell, Texas","",78,190,,2,4.9,,New Mexico State,Jarrod McCullar,2005
+db,"Midland, Texas",Tyler Lee,65,180,,2,5.1,,Houston,Anthony Reasno,2005
+lb,"Provo, Utah",Tempview,78,215,4.6,2,5.1,,Brigham Young,Harvey Unga,2005
+db,"Carlsbad, California",Palomar JC,78,195,,2,,,New Mexico State,Cole Marton,2005
+ol,"Houston, Texas",Strake Jesuit,78,233,5.2,2,4.9,,Houston,Norbie Juist,2005
+db,"Bay City, Texas","",78,180,4.5,2,5.1,,Houston,Brandon Brinkley,2005
+wr,"El Paso, Texas",Andress,65,165,,2,4.9,,New Mexico State,Jahmeel Hobson,2005
+db,"Indianapolis, Indiana",Warren Central,78,200,4.5,3,5.5,,Purdue,Christian Graham,2005
+lb,"Corona, California",Chaffey College,78,235,,2,4.9,,New Mexico State,Michael Hernishin,2005
+wr,"Garden Plain, Kansas",Garden Plain,78,200,,2,4.9,,Utah State,Kendall Fisher,2005
+k,"Stoney Creek, Ontario",Saltfleet District,65,185,,2,4.9,,Utah State,Darryl Wheeler,2005
+ol,"Encino, California",Crespi Carmelite,78,280,,2,4.9,,Utah State,Taylor Wallace,2005
+qb,"Houston, Texas",Jersey Village,78,185,,2,4.9,,Utah State,Jerod Walker,2005
+db,"Corona, California",Santiago,78,180,,2,4.9,,Utah State,Josh Taylor,2005
+db,"Corona, California",Santiago,78,190,,2,4.9,,Utah State,Caleb Taylor,2005
+db,"Pasadena, California",John Muir HS / Mount San Antonio,78,180,,2,4.9,,Utah State,Drew Pearson,2005
+ol,"Costa Mesa, California",Orange Coast C.C.,78,305,5.2,2,,,Utah State,Ryan Pahua,2005
+ol,"Grass Valley, California",Nevada Union,78,275,,2,4.9,,Utah State,Brennan McFadden,2005
+qb,"Layton, Utah",Northridge,78,200,,2,4.9,,Utah State,Jase McCormick,2005
+de,"Plain City, Utah",Fremont,78,245,,2,4.9,,Utah State,Mike Martini,2005
+ol,"Miami, Florida",Edison,78,245,,2,4.9,,Utah State,Damian Lee,2005
+de,"Lakewood, California",Lakewood,78,215,,2,4.9,,Utah State,Darby Golden,2005
+lb,"Encino, California",Crespi,65,210,,2,4.9,,Utah State,Daryl Fields,2005
+dt,"Anaheim, California",Esperanza,78,230,,2,4.9,,Utah State,Steven Downs,2005
+k,"West Palm, Florida",Royal Palm Beach,78,190,,2,5.0,,West Virginia,Scott Kozlowski,2005
+wr,"Logan, Utah",Logan,65,185,,2,4.9,,Utah State,Ryan Bohm,2005
+te,"Daleville, Alabama",Daleville,78,245,,2,4.9,,Utah State,Alan Bishop,2005
+rb,"Mesa, Arizona",Red Mountain,65,185,,2,4.9,,UNLV,Channing Trotter,2005
+dt,"Pago Pago, American Samoa, ",Yuba CC,78,285,,2,,,Wyoming,Fa'aaliga Selesele,2005
+db,"Cerritos, California",Cerritos C.C.,78,185,4.4,2,,,UTEP,Tim McCullouch,2005
+ol,"Norco, California","",78,330,,2,4.9,,UNLV,Josh Smith,2005
+de,"Walpole, Massachusetts",Catholic Memorial,78,275,5.1,2,5.1,,Boston College,Nick Rossi,2005
+wr,"Immokalee, Florida","",65,185,,2,4.9,,UNLV,Renan Saint Preux,2005
+k,"Peoria, Arizona",Glendale,65,200,,2,,,UNLV,Brian Pacheco,2005
+ol,"Kahuku, Hawaii","",78,335,,2,4.9,,New Mexico State,Maveu Heimuli,2005
+de,"Woodland, California","",78,230,,2,4.9,,Fresno State,Wilson Ramos,2005
+ol,"Tucson, Arizona",Amphi,78,275,,2,4.9,,UNLV,Ray Lobato,2005
+rb,"Clovis, California",East,78,240,,2,4.9,,Fresno State,Frank Padilla,2005
+ath,"Scottsdale, Arizona",Chaparral,78,210,,2,4.9,,UNLV,Kameron Kranz,2005
+ol,"Corpus Christi, Texas",Carroll,78,276,,2,4.9,,New Mexico State,Polo Gutierrez,2005
+ol,"Phoenix, Arizona",Phoenix Christian,78,250,,2,4.9,,Wyoming,Ben Smith,2005
+lb,"Salt Lake City, Utah",Brighton,78,210,,2,4.9,,Utah,Andrew Smart,2005
+dt,"Santa Monica, California","",78,235,,2,4.9,,Fresno State,Devin Packard,2005
+dt,"Green River, Wyoming","",78,310,,2,4.9,,Wyoming,Erick Pauley,2005
+ath,"Sacramento, California",Natomas,78,170,,2,4.9,,Fresno State,Marlin Moore,2005
+db,"Terrell, Texas","",65,170,,2,4.9,,Utah,Brice McCain,2005
+rb,"Anaheim, California",Morningside,65,175,,2,4.9,,UNLV,Lafayette Fletcher,2005
+ol,"Brighton, Colorado",Thornton,78,240,,2,4.9,,Wyoming,Ryan Otterson,2005
+rb,"Spring Valley, California",Monte Vista,78,208,4.7,2,5.2,,Utah,Darrell Mack,2005
+db,"Stockton, California",Lincoln,78,190,4.5,2,5.0,,Fresno State,Moses Harris,2005
+lb,"Kahuku, Hawaii","",78,240,,2,4.9,,Utah,Semisi Livai,2005
+te,"Canyon Country, California",College of the Canyons,78,250,,2,,,UNLV,Chris Butler,2005
+rb,"Midwest City, Oklahoma",Carl Albert,65,194,,2,4.9,,Wyoming,J.R. Moore,2005
+te,"Minnetonka, Minnesota","",78,220,4.9,2,5.0,,Utah,Chris Joppru,2005
+qb,"El Paso, Texas",Franklin,78,175,,2,4.9,,New Mexico State,Scott Grantham,2005
+de,"Honolulu, Hawaii",Mckinley,78,290,,2,4.9,,Utah,Randy Faletoi,2005
+lb,"Wray, Colorado","",78,206,,2,4.9,,Wyoming,Weston Johnson,2005
+de,"Mission Viejo, California",Saddleback,78,255,,2,4.9,,Nevada,Jay Dixon,2005
+de,"San Franciso, California",South San Francisco,78,270,,2,4.9,,Utah,Kenape Eliapo,2005
+qb,"Boise, Idaho",Ricks C.C.,78,215,,2,,,New Mexico State,Royal Gill,2005
+dt,"Chickasha, Oklahoma","",78,280,,2,4.9,,Wyoming,Fred Givens,2005
+qb,"Chico, California",Butt College,78,195,,2,,,Utah,Brett Ratliff,2005
+db,"El Cajon, California",Grossmont C.C.,65,180,4.4,2,,,UNLV,John Guice,2005
+ath,"Fresno, California",Central Union,78,186,4.5,2,5.2,,Fresno State,Marvin Haynes,2005
+dt,"Santa Monica, California",Santa Monica College,78,310,4.9,2,,,UNLV,Cedrick Fisher,2005
+wr,"Phoenix, Arizona",Pima C.C.,65,180,,2,,,Utah,Brian Hernandez,2005
+wr,"Okmulgee, Oklahoma","",78,185,,2,4.9,,Wyoming,Ryan Gallimore,2005
+wr,"San Bernardino, California",Arroyo Valley,78,170,4.4,3,4.9,,UNLV,Justin Marvel,2005
+te,"Hatch, New Mexico",Hatch Valley,78,210,,2,4.9,,New Mexico State,Ryan Franzoy,2005
+te,"Fresno, California",Washington Union,78,300,,2,4.9,,Fresno State,Maurice Graham,2005
+wr,"Richardson, Texas",North Garland,78,170,4.6,2,4.9,,Wyoming,Marcus Franklin,2005
+dt,"Long Beach, California",West L.A. College,65,315,,2,,,Hawaii,Siave Seti,2005
+lb,"Beverly Hills, California","",78,220,,2,4.9,,Fresno State,Todd Chisom,2005
+ol,"Mililani, Hawaii","",78,260,,2,5.4,,Hawaii,Aaron Kia,2005
+lb,"Spring Valley, California",Steele Canyon,78,205,4.8,2,4.9,,UNLV,Jason Beauchamp,2005
+ol,"Stockton, California",St. Mary's,78,280,,2,4.9,,Hawaii,John Estes,2005
+de,"Kahuku, Hawaii",Kahuku,78,220,4.8,2,4.9,,New Mexico State,La'auli Fonoti,2005
+ath,"Lake Elsinore, California","",65,200,,2,4.9,,Fresno State,Qaadir Brown,2005
+rb,"Oakland, California",McClymonds,65,217,4.7,2,5.2,,Hawaii,Mario Cox,2005
+db,"Los Angeles, California",L.A. Pierce,78,190,,2,,,Houston,Kellen Yancy,2005
+lb,"Kahuku, Hawaii","",78,215,,2,4.9,,New Mexico State,Max Fairclough,2005
+db,"Raceland, Louisiana",Central Lafourche,65,180,,2,4.9,,Louisiana-Monroe,Jarvis Wilson,2005
+wr,"El Dorado Hills, California",Oak Ridge,78,190,,2,4.9,,Fresno State,Seyi Ajirotutu,2005
+ol,"Los Angeles, California",Fremont,78,320,4.8,4,,,USC,Thomas Herring,2005
+ol,"Huntington, West Virginia","",78,245,5.1,2,5.2,,Louisiana-Lafayette,Brad Bryant,2005
+de,"New Orleans, Louisiana",Central Lafourche,78,245,,2,4.9,,Louisiana-Monroe,Chris Turner,2005
+ol,"Bakersfield, California","",78,280,,2,,,Nevada,Fred White,2005
+wr,"Novato, California",Santa Rosa,78,195,,2,,,Nevada,Kyle Sammons,2005
+ol,"Chicago, Illinois",Pima JC,78,320,,2,,,Louisiana-Lafayette,Mike Walzak,2005
+db,"Jefferson, Louisiana",Jesuit,78,195,,2,4.9,,Louisiana-Monroe,James Truxillo,2005
+lb,"Sacramento, California","",78,245,,2,,,Nevada,Jason Demars,2005
+de,"Port Allen, Louisiana",University,78,215,,2,4.9,,Louisiana-Lafayette,Hall Davis,2005
+wr,"West Palm Beach, Florida",Spanish River,65,175,,2,4.9,,Louisiana-Lafayette,Jason Chery,2005
+ol,"Buckeye, Arizona",Eastern Arizona,78,295,,2,,,Nevada,Reid Jacobs,2005
+db,"West Minster, California",Long Beach,78,180,,2,,,Nevada,Joe Garcia,2005
+ol,"Plantation, Florida","",78,265,,2,4.9,,Louisiana-Lafayette,Michael Canon,2005
+wr,"River Ridge, Louisiana",John Curtis,78,195,4.6,2,5.2,,Louisiana-Monroe,Darrin Taylor,2005
+lb,"Fresno, California","",78,215,,2,,,Nevada,Selevasio Fauolo,2005
+ath,"Garrison, Texas",Garrison,65,171,4.6,2,4.9,,Louisiana-Lafayette,Gerron Blount,2005
+rb,"Pearl River, Louisiana","",65,175,4.5,2,5.1,,Louisiana-Monroe,Steven Sylvas,2005
+ath,"Arcadia, Louisiana","",78,190,,2,4.9,,Louisiana-Monroe,E.J. Sinclair,2005
+ol,"Sacramento, California",Sheldon,78,305,,2,4.9,,Nevada,Omar Rawashdeh,2005
+dt,"West Columbia, Texas",Columbia HS,78,285,,2,4.9,,Houston,Andrew Jones,2005
+ol,"West Monroe, Louisiana","",78,280,5.2,2,5.0,,Louisiana-Monroe,Larry Shappley,2005
+de,"Coffeyville, Kansas",Coffeyville C.C.,78,255,,3,,,Troy,Jr. Tagovailoa,2005
+ol,"Amarillo, Texas",Palo Duro,78,265,,2,4.9,,New Mexico State,Dustin Bruns,2005
+ol,"Cartersville, Georgia",Coffeyville CC,78,315,,2,,,Troy,Seth Sutton,2005
+db,"Coffeyville, Kansas",Coffeyville C.C.,78,185,4.4,2,4.9,,Louisiana-Monroe,Quintez Secka,2005
+ol,"Fort Worth, Texas",Fossill Ridge,78,287,5.1,2,5.3,,Louisiana-Monroe,Aaron Schutz,2005
+de,"San Bernardino, California",San Bernardino Valley C.C.,78,260,,2,,,UTEP,Ricky Van,2005
+te,"Ellsworth, Kansas",Garden City CC,78,235,,2,,,Troy,Josh Pruitt,2005
+te,"Baytown, Texas",Tyler Lee,78,206,4.8,2,5.2,,Houston,Barry Laird,2005
+wr,"West Monroe, Louisiana",Ouachita Parish,78,185,,2,4.9,,Louisiana-Monroe,LaGregory Sapp,2005
+rb,"Bridgewater, New Jersey",Raritan,65,185,,2,4.9,,Troy,Xavier Walker,2005
+wr,"Hitchcock, Texas",Hitchcock HS,0,,,2,4.9,,Houston,T.J. Scranton,2005
+de,"Homerville, Georgia",Clinch County,78,245,4.7,2,4.9,,Troy,Darrion Thomas,2005
+db,"Baton Rouge, Louisiana",Tara,78,171,4.6,2,4.9,,Louisiana-Monroe,Antonius Roy,2005
+ol,"Warner Robins, Georgia",Houston County,78,265,4.9,2,5.1,,Troy,Nick Riley,2005
+de,"Bakersfield, California",North Bakersfield,78,270,,2,4.9,,New Mexico State,Richie Bolin,2005
+de,"Lutcher, Louisiana",Ft. Scott CC,78,280,,2,,,Troy,Baron Lemar,2005
+db,"Eunice, Louisiana","",78,185,,2,4.9,,Louisiana-Monroe,Ike Rhines,2005
+wr,"Mt. Vernon, Texas","",78,190,4.7,2,5.2,,Houston,Tim Monroe,2005
+wr,"Waycross, Georgia",Ware County,78,172,4.6,2,5.0,,Troy,Cedric Jones,2005
+lb,"Eatontown, New Jersey",Victor Valley JC,78,220,,2,,,UTEP,Jason McQuay,2005
+lb,"Pensacola, Florida","",78,205,,2,4.9,,Troy,Antoine Jones,2005
+rb,"Opelousas, Louisiana",Northwest,78,195,,2,4.9,,Louisiana-Monroe,Damorous Offord,2005
+lb,"Pima, Arizona",Pima C.C.,78,220,4.6,3,,,California,Mickey Pimentel,2005
+qb,"Bryan, Texas",Bryan,78,182,4.9,2,5.1,,Houston,Blake Joseph,2005
+dt,"Cartersville, Georgia","",78,243,5.1,2,5.0,,Troy,Mike Fair,2005
+dt,"Union City, California",San Francisco CC,78,318,,2,,,UTEP,Humberto Padilla,2005
+ol,"Ashland, Alabama",Clay County,78,255,5.4,2,4.9,,Troy,Chris Burkhalter,2005
+ath,"Dumas, Arkansas","",78,185,4.7,2,4.9,,Louisiana-Monroe,Robert Mingo,2005
+lb,"Hardrick, Georgia",Baldwin,78,215,,2,4.9,,Troy,Joe Baker,2005
+ol,"West Monroe, Louisiana","",78,265,,2,4.9,,Louisiana-Monroe,Bryn Meredith,2005
+qb,"Monroe, Louisiana",Neville,65,195,,2,4.9,,Louisiana-Monroe,Darrell McNeal,2005
+db,"Hayward, California",Chabot College,65,180,4.4,2,,,UTEP,Josh Ferguson,2005
+de,"Stony Point, Texas",Stony Point HS,78,265,,2,4.9,,UAB,Brandon Madden,2005
+dt,"Garden Grove, California",Cerritos C.C.,78,250,,2,,,UTEP,Alfonso Auelua,2005
+lb,"Claremont, California","",78,245,,2,4.9,,Nevada,Zach Shapiro,2005
+ol,"Vestavia Hills, Alabama",Vestavia Hills,78,275,,2,4.9,,UAB,Jake Seitz,2005
+wr,"New Orleans, Louisiana",Redeemer-Seton,78,185,4.6,2,5.3,,Louisiana-Monroe,George Lewis,2005
+db,"Lutcher, Louisiana",John Curtis,78,185,,2,4.9,,Louisiana-Monroe,Devin Joseph,2005
+de,"Bush, Louisiana",Covington,78,240,,2,4.9,,Louisiana-Monroe,Jameson Jordan,2005
+rb,"San Jose, California",Foothill College,78,235,,2,,,San Jose State,Allan Webster,2005
+te,"Odessa, Texas",Permian,78,245,5.0,2,4.9,,UTEP,Rayford Wright,2005
+ol,"Chandler, Arizona",Hamilton,78,260,,2,5.2,,Utah State,Ryan Tonnemacher,2005
+lb,"Richmond, California",DeAnza,78,218,,2,4.9,,San Jose State,John Smith,2005
+rb,"Fresno, California",Fresno City C.C.,65,180,4.5,2,4.9,,Oregon State,Nate Wright,2005
+lb,"Friendswood, Texas",Clear Brook,78,220,,2,4.9,,Louisiana-Monroe,Eddy Inyangumia,2005
+lb,"Tustin, California","",78,210,,2,4.9,,UTEP,Brian Wilkins,2005
+ol,"Chandler, Arizona",Hamilton,78,275,,2,4.9,,Nevada,Chris Hegge,2005
+te,"Lodi, California",St. Mary's,78,235,,2,4.9,,San Jose State,Brad Peterson,2005
+dt,"Sacreamento, California",Jesuit,78,270,,2,4.9,,Nevada,Alonzo Durham,2005
+ol,"Mission Viejo, California",Mission Viejo HS,78,290,5.4,2,4.9,,Oregon State,Gregg Peat,2005
+ol,"Hemet, California","",78,294,5.2,2,5.4,,UTEP,Tevita Stevens,2005
+dt,"Long Beach, California",Long Beach C.C.,78,285,5.0,2,,,San Jose State,Freddie McCutcheon,2005
+ath,"Vestavia Hills, Alabama",Vestavia Hills,78,180,,2,4.9,,UAB,Steven Brown,2005
+ol,"Haughton, Louisiana",Haughton,78,305,5.2,2,5.3,,Louisiana-Monroe,Glen Gibson,2005
+ol,"Fullerton, California",College,78,255,4.8,2,,,San Jose State,Shane Lapka,2005
+dt,"Peoria, Arizona","",78,225,,2,4.9,,UTEP,Jacob Robinson,2005
+ath,"Burleson, Texas","",78,190,,2,4.9,,North Texas,Steve Warren,2005
+te,"Oologah, Oklahoma","",78,240,,2,4.9,,Louisiana-Monroe,Mitch Doyle,2005
+rb,"Phoenix, Arizona",Brophy Prep HS,65,195,4.5,2,4.9,,Oregon State,Markel DeVorce,2005
+ol,"Kerrville, Texas",Tivy,78,322,5.3,2,,,UTEP,Cameron Raschke,2005
+db,"Houston, Texas",Eisenhower,65,180,4.5,2,5.1,,North Texas,Arthur Stubblefield,2005
+rb,"Fullerton, California",Fullerton C.C.,78,220,,2,,,San Jose State,Al Guidry,2005
+dt,"Arlington, Texas",Seguin,78,260,,2,4.9,,North Texas,Jonathan Stewart,2005
+db,"Chalmette, Louisiana","",65,190,,2,4.9,,Louisiana-Monroe,Kelly Dier,2005
+dt,"Chino Hills, California","",78,235,,2,4.9,,UTEP,Dave O'Neil,2005
+lb,"Olive Branch, Mississippi",Southaven,78,225,4.7,2,5.0,,Louisiana-Monroe,Alaric Coleman,2005
+ol,"La Habra, California",Fullerton College,78,285,,2,,,Washington State,Derek Hunter,2005
+ath,"Klein, Texas",Klein Collins,78,190,4.5,2,5.2,,Utah State,Cameron Luke,2005
+db,"Marksville, Louisiana","",78,180,,2,4.9,,Louisiana-Monroe,Marcus Berry,2005
+de,"Texas City, Texas","",78,280,,2,4.9,,UTEP,James Olalekan,2005
+wr,"Carson, California",Carson,65,165,4.4,2,5.1,,Nevada,Dwayne Sanders,2005
+de,"Mequon, Wisconsin",Homestead,78,230,,2,5.0,,Northern Illinois,Adam Grimm,2005
+qb,"Canyon Lake, California",Temescal Canyon,78,185,,2,4.9,,San Jose State,Myles Eden,2005
+lb,"Leander, Texas","",78,223,4.8,2,,,UTEP,Alan Kirkland,2005
+ol,"Lincolnshire, Illinois",Stevenson,78,300,,2,5.0,,Northern Illinois,Jake Wertz,2005
+wr,"San Jose, California",Leland,78,186,4.7,2,5.1,,Nevada,Art King,2005
+de,"Chino Hills, California","",78,210,,2,5.1,,San Jose State,Justin Cole,2005
+rb,"Kilgore, Texas","",65,175,4.7,2,5.2,,Utah State,Keith Gilliam,2005
+de,"Houston, Texas",Elsik,78,235,,2,4.9,,UTEP,Aaron King,2005
+rb,"Glendale, Arizona",Mountain Ridge,78,207,4.4,2,5.2,,Nevada,Tim Ham,2005
+qb,"Orange, California",Cerritos C.C.,78,195,,2,,,San Jose State,Kevin Brown,2005
+qb,"Moraga, California",Campolindo,78,210,,2,5.1,,Nevada,Nick Graziano,2005
+db,"Arcadia, California",Arcadia CC,65,190,,2,,,Washington,Chris Handy,2005
+de,"Miami, Florida",Edison,78,240,,2,4.9,,Akron,Clarence McPherson,2005
+lb,"Phelan, California",Serrano,78,240,,2,4.9,,UTEP,Justin Halas,2005
+ol,"Upper Arlington, Ohio",Upper Arlington,78,260,,2,4.9,,Akron,Chris Kemme,2005
+dt,"Lynwood, California",Lynwood,78,290,5.2,2,5.4,,Nevada,Nate Agaiava,2005
+db,"Los Angeles, California",Dorsey,65,170,4.5,2,5.1,,Utah State,Marquise Charles,2005
+lb,"Elkhart, Indiana",Central,78,185,,2,5.2,,Northern Illinois,Spencer Williamson,2005
+de,"Fort Washington, Maryland",Friendly,78,190,4.7,2,5.0,,Illinois,Rodney Pittman,2005
+wr,"Urbana, Illinois","",65,170,,2,5.1,,Northern Illinois,Preston Williams,2005
+lb,"Lebanon, Ohio","",78,215,,2,4.9,,Western Michigan,Austin Pritchard,2005
+ath,"Arcadia, California",Rio Hondo,78,214,4.8,2,5.3,,UTEP,Landon Goodwell,2005
+qb,"Painesville, Ohio",Mentor,78,200,,2,4.9,,Akron,Chris Jacquemain,2005
+wr,"Elkhart, Indiana",Central,78,180,,2,5.0,,Northern Illinois,Justin Williams,2005
+ol,"Hartland, Wisconsin",Arrowhead,78,277,,2,4.9,,Western Michigan,Matt Lochman,2005
+de,"El Paso, Texas",Franklin,78,245,,2,4.9,,UTEP,Clayton Byrd,2005
+rb,"Miami, Florida",Chaminade-Madonna,65,185,,2,4.9,,Western Michigan,James Jones,2005
+db,"Coffeyville, Kansas",Coffeyville C.C.,65,180,,2,4.9,,Western Michigan,Brandon Henderson,2005
+ol,"Brodhead, Wisconsin",Brodhead-Juda,78,295,,2,5.2,,Northern Illinois,Kevin Skatrud,2005
+lb,"Miami, Florida",Coral Reef,65,213,,2,4.9,,Western Michigan,Derrick Harris,2005
+rb,"Houston, Texas",Waller,78,200,,2,4.9,,UTEP,Don Brooks,2005
+db,"North Miami Beach, Florida","",78,175,,2,4.9,,Western Michigan,Louis Delmas,2005
+db,"Chicago, Illinois",Hyde Park,78,175,,2,5.0,,Northern Illinois,Bradley Pruitt,2005
+ol,"Cudahy, Wisconsin","",78,290,,2,4.9,,Western Michigan,Paul Wasikowski,2005
+db,"Cleveland, Ohio",South High School,78,185,,2,4.9,,Akron,DeAndre DeScott,2005
+wr,"Chicago, Illinois",Morgan Park,78,180,4.4,3,5.5,,Northern Illinois,Orlando Moore,2005
+lb,"East Point, Georgia",Westlake,78,233,4.9,2,5.3,,Georgia Tech,Taalib Tucker,2005
+ol,"Chicago, Illinois",St. Patrick,78,300,5.3,2,5.3,,Northern Illinois,Tim Mayerbock,2005
+lb,"Northfield, Minnesota","",78,217,,2,5.1,,Northern Illinois,Zach Larsen,2005
+db,"Miami, Florida",Northwestern,65,180,,2,4.9,,Western Michigan,Chauncey Thompkins,2005
+wr,"Irmo, South Carolina","",78,185,4.5,2,5.3,,Georgia Tech,Martin Frierson,2005
+ol,"Woodbury, Minnesota",Woodbury,78,310,,2,5.4,,Northern Illinois,Tony Holmes,2005
+db,"West Palm Beach, Florida",The King's Academy,78,170,4.6,2,5.0,,Georgia Tech,Jake Blackwood,2005
+lb,"Miami, Florida",Coral Reef,78,220,,2,4.9,,Western Michigan,Kevin Smith,2005
+db,"Minneapolis, Minnesota",De La Salle,78,195,,2,5.2,,Northern Illinois,Cory Hanson,2005
+lb,"New Brunswick, New Jersey","",78,200,,2,5.2,,New Hampshire,Al Teric Balaam,2005
+db,"St. Louis, Missouri",Ladue Horton Watkins,78,195,,2,5.1,,Northern Illinois,David Bryant,2005
+de,"Princeton, New Jersey",The Hun School,78,245,,2,4.9,,Western Michigan,John Russell,2005
+wr,"Westerville, Ohio",South High School,78,200,4.5,2,5.1,,Akron,J Sharps,2005
+ol,"Sun Prarie, Wisconsin","",78,265,,2,5.2,,Northern Illinois,Ethan Gill,2005
+de,"Jacksonville, Florida",Bolles,78,245,4.8,2,5.2,,Wake Forest,John Russell,2005
+te,"Cambria, Wisconsin",Pardeeville,78,240,,2,4.9,,Northern Illinois,Reed Cunningham,2005
+db,"Libertyville, Illinois","",65,183,4.8,2,5.0,,Northern Illinois,Jeff Fontana,2005
+k,"Bloomington, Illinois",University High,78,175,,2,5.1,,Northern Illinois,Andy Dittbenner,2005
+rb,"Cincinnati, Ohio",Hughes,65,193,,2,4.9,,Akron,Bryant McMillon,2005
+rb,"Newton, Iowa",Newton,78,197,4.9,2,5.3,,Northern Iowa,Derrick Law,2005
+ol,"Council Bluffs, Iowa",Abraham Lincoln,78,250,4.8,2,5.2,,Northern Iowa,Chuck Kinney,2005
+de,"LaGrange, Illinois",Lyons Township,78,225,,2,5.2,,Northern Illinois,Brandon Bice,2005
+de,"Maple Heights, Ohio","",78,240,,2,,,Akron,Terrico Marshall,2005
+db,"Sandwich, Ontario","",78,180,,2,4.9,,Western Michigan,Mark Metulynsky,2005
+ol,"Algona, Iowa",Algona,78,273,5.4,2,5.2,,Northern Iowa,Jordan Limbaugh,2005
+de,"Naperville, Illinois",Neuqua Valley,78,234,5.0,2,5.1,,Northern Illinois,Anthony Antonacci,2005
+dt,"Dauphin, Pennsylvania",Central Dauphin HS,78,255,,2,4.9,,Akron,Josh Kiner,2005
+k,"Utica, Michigan",Eisenhower,65,180,4.6,2,5.0,,Western Michigan,Brett Meldrum,2005
+lb,"Portage, Michigan",Northern High School,78,230,,2,4.9,,Western Michigan,Greg Marshall,2005
+ath,"North Chicago, Illinois","",78,190,,2,5.1,,Northern Illinois,Josh Allen,2005
+rb,"Aragon, California","",78,237,,2,4.9,,Idaho,Eddie Williams,2005
+ol,"Santa Clara, California",San Jose College,78,288,,2,,,Idaho,Matt O'Donnell,2005
+lb,"Tempe, Arizona",Marcos De Niza,78,205,,2,5.0,,Brigham Young,Terrance Hooks,2005
+qb,"Tracy, California",Delta College,78,224,,2,,,Idaho,Steve Wichman,2005
+db,"Long Beach, California",Compton College,78,196,,2,,,Idaho,Tone Taupule,2005
+ol,"Torrance, California",El Camino C.C.,78,295,,2,,,Brigham Young,Sete Aulai,2005
+wr,"Kannapolis, North Carolina",Georgia Military Academy,78,186,,2,,,East Carolina,Aundrae Allison,2005
+db,"Princeton, New Jersey",The Hun School,78,195,4.6,2,4.9,,Western Michigan,Robert Livingston,2005
+db,"Kahuku, Hawaii",Kahuku,78,180,4.5,2,5.3,,Oregon State,Al Afalava,2005
+wr,"Houston, Texas",Pierce College,65,210,,2,,,Idaho,Daniel Smith,2005
+db,"Bellhaven, North Carolina","",78,218,,2,4.9,,East Carolina,C.J. Wilson,2005
+wr,"Clovis, California",Fresno College,78,209,,2,,,Idaho,DeAngelo Ramsey,2005
+db,"Pompano Beach, Florida",Blanche Ely,78,183,4.5,2,5.1,,Akron,Rodney Etienne,2005
+wr,"Greensboro, North Carolina",Southwest Guiliford,78,193,,2,4.9,,East Carolina,Alex Taylor,2005
+ol,"Mundelein, Illinois",Carmel Catholic,78,250,,2,5.2,,Northern Illinois,Eddie Adamski,2005
+de,"Wilmington, North Carolina",New Hanover,78,267,,2,4.9,,East Carolina,Jay Ross,2005
+de,"Fulton, Mississippi",Itawamba C.C.,78,240,4.7,2,,,Iowa State,John Machado,2005
+db,"Monrovia, California",Mt. San Antonio College,65,182,,2,,,Idaho,Jason Martin,2005
+lb,"Salisbury, North Carolina","",78,205,,2,4.9,,East Carolina,Scotty Robinson,2005
+de,"Fayetteville, North Carolina",Seventy First,78,215,4.6,2,4.9,,East Carolina,J.T. McCoy,2005
+db,"New Bern, North Carolina","",78,191,,2,4.9,,East Carolina,Chris Mattocks,2005
+rb,"Charlotte, North Carolina",Independence,65,186,4.7,2,4.9,,East Carolina,Dominique Lindsay,2005
+k,"Longview, Texas",Trinity Valley CC,65,213,,2,,,East Carolina,Robert Lee,2005
+ol,"North Fort Myers, Florida","",78,257,,2,4.9,,East Carolina,Larry Lease,2005
+dt,"LaVerne, California",Orange Coast College,78,272,,2,4.9,,Idaho,Ryan Davis,2005
+de,"Hayward, California",Chabot College,78,230,,2,,,Idaho,Charles Campbell,2005
+wr,"Charlotte, North Carolina",Hopewell,78,185,4.4,2,5.2,,East Carolina,Kyle Johnson,2005
+ath,"Rocky Mount, North Carolina","",78,206,,2,4.9,,East Carolina,Terrell Hudgins,2005
+wr,"St. Louis, Missouri",West Hill College,78,211,,2,,,Idaho,Matt Askew,2005
+dt,"San Jose, California",Valley Christian,65,281,,2,4.9,,Idaho,Justin Willis,2005
+rb,"Goodrich, Michigan",Goodrich High School,78,210,4.6,2,4.9,,Western Michigan,Kirk Elsworth,2005
+qb,"Layton, Utah",Northridge,78,186,4.8,2,5.2,,Weber State,Tyler Canales,2005
+db,"Yorba Linda, California",Esperanza,65,156,,2,4.9,,Idaho,Wes Williams,2005
+ol,"Calgary, Alberta",St. Mary's,78,315,5.6,2,5.0,,Tulsa,Kevin Lane,2005
+ol,"Corona, California",Centennial,78,270,5.2,2,5.1,,Idaho,Irvin Stevens,2005
+ol,"Los Angeles, California",Serra,78,330,,2,4.9,,Idaho,Bryce Sinclair,2005
+ath,"Shallotte, North Carolina",West Brunswick,65,184,,2,4.9,,East Carolina,Jerek Hewett,2005
+ol,"Crown Point, Indiana","",78,270,,2,4.9,,Western Michigan,Steve Ellingsen,2005
+lb,"DeWitt, Michigan","",78,226,,2,4.9,,Western Michigan,Justin Braska,2005
+lb,"Post Falls, Idaho","",78,220,,2,4.9,,Idaho,Adam Shamion,2005
+wr,"Corona, California","",65,174,,2,4.9,,Idaho,Miles Robbins,2005
+ol,"Cincinnati, Ohio",Anderson,78,258,,2,4.9,,East Carolina,Stephen Heis,2005
+ol,"Chehalis, Washington",WF West,78,281,,2,5.0,,Idaho,Kurt Newboles,2005
+ol,"Maxton, North Carolina",Purnell Swett,78,309,,2,4.9,,East Carolina,Terence Campbell,2005
+db,"Shelby, North Carolina","",78,197,,2,4.9,,East Carolina,Van Eskeridge,2005
+ol,"Fairfield, Ohio","",78,259,,2,4.9,,East Carolina,Bryan Gibson,2005
+ol,"Palo Alto, California",Gunn,78,285,,2,4.9,,Idaho,Adam Juatovac,2005
+de,"Suitland, Maryland","",78,220,,2,4.9,,Temple,Devin Tyler,2005
+ol,"West Palm Beach, Florida",Royal Palm Beach,78,330,,2,4.9,,Temple,Carl Spitale,2005
+wr,"Brownsville, Tennessee",Haywood,78,185,,2,5.1,,Memphis,Carlos Singleton,2005
+db,"Philadelphia, Pennsylvania",Glen Mills,65,185,,2,4.9,,Temple,Wendell Simpkins,2005
+db,"Philadelphia, Pennsylvania",Simon Gratz,78,190,,2,4.9,,Temple,Richard Sheppard,2005
+dt,"Vallejo, California",Jesse Bethel,78,285,5.1,2,4.9,,Idaho,Marvin Jones,2005
+ath,"Washington, District of Columbia",H. D. Woodson,78,195,,2,4.9,,Temple,Barry Scott,2005
+ath,"Long Beach, California",Poly,78,210,,2,5.0,,Idaho,Jason Brown,2005
+db,"Lyndon, Kansas",Garden City C.C.,78,190,,2,,,Temple,Garrett Schultz,2005
+qb,"Concord, North Carolina",Robinson,78,205,4.7,2,4.9,,East Carolina,Brett Clay,2005
+ath,"Washington, District of Columbia",Woodrow Wilson,78,190,,2,4.9,,Temple,Karl Pope,2005
+rb,"Gainesville, Georgia",North Hall,65,195,4.4,3,5.4,,Memphis,T.J. Pitts,2005
+de,"Spokane, Washington",Shadle Park,78,224,,2,4.9,,Idaho,Bryan Braman,2005
+db,"Morristown, New York",Morrisville State College,78,205,,2,,,Syracuse,Jason Tanner,2005
+db,"Aurora, Colorado",Glendale CC,65,175,,2,,,Temple,Chris Page,2005
+te,"Spokane, Washington",Gonzaga Prep,78,227,,2,4.9,,Idaho,Kellen Beam,2005
+ol,"Hyattsville, Maryland",DeMatha,78,275,5.1,2,5.4,,Syracuse,Anthony Perkins,2005
+lb,"Riverhead, New York","",78,225,4.7,3,5.5,,Syracuse,Mike Owen,2005
+wr,"Chatham, Virginia",Hargrave Military Academy,78,200,4.5,2,,,Syracuse,Deanco Oliver,2005
+de,"Pensacola, Florida",Dixie State College of Utah,78,280,,2,,,Temple,Doug Morris,2005
+de,"Pensacola, Florida",Dixie State College of Utah,78,255,,2,,,Temple,Billy Ray Morris,2005
+wr,"New Berlin, New York",Milford Academy,78,180,4.5,2,,,Syracuse,Jeremy Horne,2005
+ol,"Beaverton, Oregon",Southridge,78,265,4.8,2,5.0,,Idaho,William Bates,2005
+de,"Washington, District of Columbia",Dunbar,78,240,4.8,2,5.0,,Syracuse,Brandon Gilbeaux,2005
+rb,"Kennesaw, Georgia",Kennesaw Mountain,65,180,,2,4.9,,Temple,Nicholas McAllister,2005
+wr,"Harrisburg, Pennsylvania",Pasadena City College,65,185,,2,,,Temple,Fred Lee,2005
+lb,"Miami, Florida",Palmetto,78,215,,2,4.9,,Temple,Evan Lee,2005
+lb,"Whitehouse, Ohio",St. John's,65,221,4.7,2,5.2,,Cincinnati,Marcus Waugh,2005
+qb,"Pottstown, Pennsylvania",Hill School,78,205,,2,4.9,,Temple,Shane Kelly,2005
+de,"Cleveland, Ohio",Glenville Academic Campus,78,241,4.9,2,5.4,,Cincinnati,Curtis Smith,2005
+lb,"Baltimore, Maryland",Baltimore City College HS,78,200,,2,4.9,,Temple,Erik Johnson,2005
+rb,"Salem, New Jersey","",78,199,4.5,2,5.1,,Cincinnati,Corey Smith,2005
+de,"Scooba, Mississippi",East Mississippi C.C.,78,265,4.8,4,,,Louisville,Zach Anderson,2005
+db,"Huber Heights, Ohio",Wayne High School,0,,,2,4.9,,Cincinnati,Mick Mickens,2005
+db,"Williamstown, New Jersey","",78,200,,2,4.9,,Temple,Keith Holt,2005
+te,"Sandy, Utah",Hillcrest,78,225,,2,4.9,,Temple,Ben Hendy,2005
+ol,"Sandusky, Ohio",Margaretta,78,315,,2,4.9,,Cincinnati,Jeffrey Linkenbach,2005
+dt,"Baltimore, Maryland",Edmondson,78,305,,2,4.9,,Temple,Lonnie Harvey,2005
+db,"Washington, District of Columbia",H. D. Woodson,78,185,,2,4.9,,Temple,Dominique Harris,2005
+ol,"Southfield, Michigan",Lathrup,78,252,,2,4.9,,Cincinnati,Chris Jurek,2005
+rb,"Pflugerville, Texas","",65,160,4.4,2,5.2,,North Texas,Evan Robertson,2005
+wr,"Wichita, Kansas",Dodge City C.C.,78,190,,2,,,Temple,DoMerio Hamilton-Martin,2005
+wr,"Bellville, Texas","",78,170,4.5,2,4.9,,Southern Methodist,Emmanuel Sanders,2005
+de,"Rocklin, California",Sierra C.C.,78,240,,2,,,Southern Methodist,Troy Theiren,2005
+db,"Deerfield, Florida",American Heritage,65,180,,2,4.9,,Temple,Evan Cooper,2005
+dt,"Georgetown, Texas","",78,270,,2,4.9,,North Texas,Robert Peachey,2005
+ol,"Toledo, Ohio",Rogers,78,275,,2,4.9,,Cincinnati,Steve Gawronski,2005
+ath,"Levittown, Pennsylvania",Neshaminy,78,180,,2,4.9,,Temple,Georg Coleman,2005
+te,"Hazel Park, Michigan",University of Detroit Jesuit High,78,225,,2,4.9,,Cincinnati,Connor Barwin,2005
+de,"Oil City, Pennsylvania","",78,240,,2,4.9,,Temple,Josh Cherish,2005
+db,"Phoenix, Arizona",Paradise Valley,78,185,,2,,,Southern Methodist,Victor Makinde,2005
+lb,"Houston, Texas",Elsik,78,240,,2,4.9,,North Texas,Tobe Nwigwe,2005
+lb,"Clear Lake, Texas",Houston,78,215,,2,,,Tulane,James McMurchy,2005
+wr,"Miami, Florida",City College of San Francisco,78,190,,2,,,Temple,Chris Bryant,2005
+ol,"Pflugerville, Texas","",78,275,5.0,2,4.9,,North Texas,Joseph Miller,2005
+de,"Baltimore, Maryland",Polytechnic,78,225,,2,4.9,,Temple,Kevin Armstrong,2005
+te,"Richmond, Virginia",Douglas Freeman,78,235,,2,4.9,,Richmond,Will Bischoff,2005
+wr,"Atlanta, Georgia",Mcnair,65,168,4.6,2,5.1,,Memphis,Alton Starr,2005
+wr,"Baytown, Texas",Sterling,78,175,,2,4.9,,Tulane,Jeremy Williams,2005
+ol,"Spring, Texas",Westfield,78,300,,2,5.4,,Southern Methodist,Patrick Handy,2005
+ol,"Culver City, California","",78,280,,2,4.9,,North Texas,Mike Mazzola,2005
+de,"Clarksville, Texas","",78,220,,2,4.9,,Southern Methodist,Adrian Dizer,2005
+k,"Ankeny, Iowa","",65,180,,2,5.3,,Kansas,Alex Hanson,2005
+db,"Marietta, Georgia","",65,156,4.6,2,5.2,,Memphis,Traye Simmons,2005
+ol,"Paris, Texas","",78,280,,2,4.9,,North Texas,Bryan Glass,2005
+db,"Friendswood, Texas",Clear Brook,78,190,,2,4.9,,Tulane,Cory Sonnier,2005
+ol,"Houston, Texas",Eisenhower,78,270,,2,5.0,,North Texas,Jack Crumes,2005
+ol,"Jersey City, New Jersey",Kent Hill/Hudson Catholic,78,290,,2,4.9,,Rutgers,Darren Salinardi,2005
+de,"Kennedale, Texas","",78,210,,2,4.9,,North Texas,David Collins,2005
+ath,"Baton Rouge, Louisiana",Dunham,65,185,4.5,2,4.9,,Tulane,Cary Koch,2005
+lb,"Mobile, Alabama",Davidson,78,200,,2,,,Tulane,David Kirksey,2005
+wr,"Slidel, Louisiana","",78,180,,2,4.9,,Tulane,Brian King,2005
+db,"Lansing, Michigan",Sexton,78,167,4.6,2,4.9,,Eastern Michigan,Jacob Wyatt,2005
+ol,"Chelsea, Michigan","",78,295,,2,4.9,,Eastern Michigan,Nick Toth,2005
+wr,"Cleveland, Ohio",Glenville Academic Campus,78,185,,2,4.9,,Eastern Michigan,Jacory Stone,2005
+qb,"St. John's, Michigan","",78,215,,2,4.9,,Eastern Michigan,Andy Schmitt,2005
+wr,"Irving, Texas",Macarthur,78,170,4.5,2,5.2,,Tulane,Charles Harris,2005
+lb,"Indianapolis, Indiana",Harper JC,78,205,,2,,,Eastern Michigan,Michael Richardson,2005
+rb,"Sugarland, Texas",Bellaire,65,195,,2,4.9,,Eastern Michigan,Olufemi Ogundare,2005
+wr,"Birmingham, Alabama",West End,78,192,4.5,3,5.5,,Vanderbilt,Earl Bennett,2005
+te,"Groveton, Texas",Cisco CC,78,245,,2,,,Eastern Michigan,R.J. Montemayor,2005
+db,"Jupiter, Florida",Dwyer,65,189,,2,5.0,,Eastern Michigan,Chris May,2005
+de,"Birmingham, Michigan",Brother Rice,78,255,,2,4.9,,Eastern Michigan,T.J. Lang,2005
+wr,"Moraga, California",Campolindo,78,165,,2,,,New Mexico,Mark Vandenberg,2005
+qb,"Saginaw, Michigan","",78,190,,2,4.9,,Eastern Michigan,Jermaine Jenkins,2005
+lb,"Enid, Oklahoma","",78,220,,2,4.9,,Eastern Michigan,Daniel Holtzclaw,2005
+rb,"North Miami Beach, Florida","",65,195,,2,4.9,,Eastern Michigan,Dwayne Harrison,2005
+te,"Lakewood, Colorado",Thunderridge,78,210,,2,4.9,,New Mexico,Luke Walters,2005
+qb,"Pontiac, Michigan",Northern High School,78,180,,2,4.9,,Eastern Michigan,Dontayo Gage,2005
+te,"Columbus, Mississippi","",78,231,4.6,2,5.0,,Memphis,Stacy Jones,2005
+ol,"Kalamazoo, Michigan",Central High School,78,250,,2,4.9,,Eastern Michigan,Andy Fretz,2005
+lb,"Marietta, Georgia","",78,205,4.7,2,4.9,,Memphis,Greg Jackson,2005
+te,"Cooper City, Florida","",78,220,,2,4.9,,Eastern Michigan,Robert Fischman,2005
+ol,"Ypsilanti, Michigan",Lincoln,78,320,5.3,2,4.9,,Eastern Michigan,Shane Dillon,2005
+db,"Oradell, New Jersey",Bergen Catholic,78,193,4.6,2,5.4,,James Madison,Wolfver Jean-Pierre,2005
+ol,"Chino, California",Don Lugo,78,320,,2,,,New Mexico,Ronnie Strait,2005
+rb,"Cleveland, Ohio",Glenville Academic Campus,65,179,4.7,2,5.4,,Eastern Michigan,Tim Conner,2005
+db,"Dania Beach, Florida",Ft. Lauderdale Northeast,65,180,,2,4.9,,Eastern Michigan,Todd Brown,2005
+lb,"Milledgeville, Georgia",Georgia Military,65,225,4.6,3,5.6,,Middle Tennessee State,J.K. Sabb,2005
+db,"Dayton, Texas",Dayton,78,175,4.4,2,5.2,,New Mexico,Justin McQueen,2005
+wr,"Dayton, Ohio",Chaminade-Julienne,78,185,,2,4.9,,Eastern Michigan,John Bonner,2005
+wr,"Tampa, Florida",Hillsborough,78,200,,2,,,New Mexico,Daryl Jones,2005
+rb,"Detroit, Michigan",Denby,78,230,4.6,2,5.3,,Eastern Michigan,Terrence Blevins,2005
+db,"St. Petersburg, Florida",Catholic,65,180,,2,4.9,,Eastern Michigan,Everett Barney,2005
+wr,"Greenville, South Carolina",Prince Ave. Prep,78,220,,2,4.9,,New Mexico,Jamar Dean,2005
+ath,"Danville, Kentucky",Danville,65,180,4.5,2,4.9,,Marshall,Kelvin Turner,2005
+db,"Houston, Texas",Lamar Consolidated,65,160,,2,4.9,,Rice,Jeramy Goodson,2005
+ol,"Valley Center, California","",78,300,,2,4.9,,New Mexico,Doug Crawshaw,2005
+dt,"Dayton, Ohio",Pima C.C.,78,294,,2,4.9,,Marshall,Juan Underwood,2005
+lb,"Los Angeles, California",LA Southwest College,78,230,4.7,2,4.9,,Marshall,Brandon Souder,2005
+ol,"Albequerque, New Mexico",Cibola,78,294,,2,,,New Mexico,Erik Cook,2005
+ol,"Meridian, Mississippi",Meridian,78,267,5.4,2,4.9,,Marshall,Brian Leggett,2005
+rb,"Humble, Texas",Episcopal High School,65,190,4.5,2,5.0,,Rice,Marcus Knox,2005
+ath,"Auburndale, Florida","",65,190,4.7,2,4.9,,Marshall,Dedrick Davis,2005
+db,"Albuquerque, New Mexico",Highland,78,190,,2,,,New Mexico,Ian Clark,2005
+ol,"McAllen, Texas",Sharyland,78,310,5.3,2,4.9,,Rice,Charles Wiebusch,2005
+wr,"Gautier, Mississippi","",78,183,4.5,2,4.9,,Rice,John Welch,2005
+wr,"Chico, California",Butte College,78,170,,2,,,New Mexico,Thomas Wilson,2005
+ol,"Brandon, Mississippi",Hinds C.C.,78,338,,2,4.9,,Marshall,Wesley Jones,2005
+ol,"El Paso, Texas",Coronado,78,260,5.4,2,5.2,,Rice,Preston Thompson,2005
+rb,"Fayetteville, Arkansas","",65,185,4.6,2,4.9,,Rice,Tristan Thomas,2005
+db,"Apopka, Florida",Garden City CC,65,180,,2,,,New Mexico,Othellus Swift,2005
+wr,"Missouri City, Texas",Ft. Bend Hightower,65,160,,2,4.9,,Rice,Ahmad Sweeny,2005
+ol,"Victoria, British Columbia",Butte College,78,300,,2,,,New Mexico,Brian Ramsay,2005
+wr,"Missouri City, Texas",Marshall,78,180,4.4,2,5.0,,Toledo,Stephen Williams,2005
+qb,"El Dorado, Arkansas","",78,180,4.5,2,4.9,,Rice,John Shepherd,2005
+db,"Mesquite, Texas",Tyler JC,65,200,,2,,,New Mexico,Darvin Peterson,2005
+wr,"Compton, California",Cerritos C.C.,78,215,,2,,,Toledo,D.J. Nichols,2005
+ol,"Kissimmee, Florida",Osceola,78,300,,2,4.9,,Marshall,Carlos Rodriguez,2005
+te,"Cleveland, Ohio",St. Ignatius,78,235,4.7,2,5.4,,Boston College,Jim Ramella,2005
+wr,"Binghamton, New York","",78,190,4.5,3,5.5,,Boston College,Clarence Megwa,2005
+ol,"Greenwood, Indiana",Center Grove,78,225,,2,4.9,,Toledo,Jeremy Mack,2005
+rb,"Pascogoula, Mississippi","",65,225,4.5,2,4.9,,Rice,Trey Hopson,2005
+db,"Anahuac, Texas","",78,180,,0,,,McNeese State,Deray Williams,2005
+ol,"Hoxie, Arkansas",Hoxie,78,305,5.4,2,4.9,,Vanderbilt,Drew Gardner,2005
+db,"Avon, Connecticut",Avon Old Farms,65,180,4.4,4,,,Boston College,Andre Jones,2005
+ol,"Sterling Heights, Michigan",Stevenson High School,78,242,4.9,2,5.0,,Toledo,Kevin Kilgo,2005
+qb,"Garden City, Kansas",Garden City C.C.,78,215,,2,,,New Mexico,Chris Nelson,2005
+wr,"Lawrenceville, New Jersey",Notre Dame,78,187,4.5,3,5.5,,Boston College,Rich Gunnell,2005
+db,"Shreveport, Louisiana",Byrd,78,195,,0,,,McNeese State,Detrick Taylor,2005
+ol,"Beaumont, Texas",Westbrook,78,315,,0,,,McNeese State,Barclay Stratton,2005
+db,"Youngstown, Ohio",Liberty,78,190,4.5,2,5.4,,Boston College,Marcellus Bowman,2005
+ol,"Nederland, Texas","",78,245,,0,,,McNeese State,Christopher Robin,2005
+te,"Muskogee, Oklahoma",Hilldale,78,235,4.8,2,4.9,,North Texas,Charley Brown,2005
+db,"Lake Charles, Louisiana",Lagrange,78,180,,0,,,McNeese State,Tyson Sibley,2005
+ol,"Petersburg, Ontario","",78,320,5.3,3,5.5,,Toledo,Kevin Hobbins,2005
+db,"Trotwood, Ohio",Madison Comprehensive,78,161,4.6,2,5.0,,Toledo,Garry Hill,2005
+db,"Washington, District of Columbia",St. John's College High,65,177,4.5,2,5.3,,Marshall,J.J. Johnson,2005
+de,"Portland, Texas",Gregory-Portland,78,238,5.0,2,5.2,,Rice,Victor Brooks,2005
+lb,"Columbus, Ohio",Beechcroft,78,225,,2,5.1,,Toledo,Eric Heller,2005
+ol,"McKenzie, Tennessee","",78,305,5.1,2,5.2,,Memphis,Paul Edwards,2005
+ol,"Opelousas, Louisiana",Opelousas,78,260,4.9,2,5.0,,Marshall,Daniel Baldridge,2005
+db,"Worthington, Ohio",Kilbourne,65,175,,2,4.9,,Miami (OH),Jeff Thompson,2005
+ol,"Prarieville, Louisiana",St. Amand,78,300,,0,,,McNeese State,Casey Richter,2005
+ol,"Spring, Texas","",78,325,,2,4.9,,North Texas,Ajani Banks,2005
+de,"Canton, Ohio",Jackson,78,255,,2,4.9,,Miami (OH),Kevin Samy,2005
+ol,"Houston, Texas",McAllen Memorial,78,260,5.5,0,,,McNeese State,Austen Reade,2005
+db,"Irving, Texas",Macarthur,78,180,,2,4.9,,North Texas,Kartey Agbottah,2005
+ol,"Grand Rapids, Michigan","",78,270,5.0,2,4.9,,Miami (OH),Brian Klesmith,2005
+ol,"Fairlawn, Ohio",Hoban,78,300,,2,5.1,,Toledo,Sean Glaser,2005
