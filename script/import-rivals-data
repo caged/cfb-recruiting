@@ -1,0 +1,88 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+require 'faraday'
+require 'nokogiri'
+require 'faraday_middleware'
+require 'active_support/cache'
+require 'csv'
+
+cache_dir = File.join(ENV['TMPDIR'] || '/tmp', 'cache')
+url = 'http://sports.yahoo.com/ncaa/football/recruiting/recruit-search-results'
+conn = Faraday.new(:url => url, :params => { :sport => 'football', :sport_id => 1, :committed => 1 }) do |faraday|
+  faraday.adapter  Faraday.default_adapter
+  faraday.response :caching do
+    ActiveSupport::Cache::FileStore.new cache_dir, :namespace => 'recruiting', :expires_in => 3600  # one hour
+  end
+end
+
+def feet_and_inches_to_inches(feet, inches)
+  (feet.to_i * 12) + inches.to_i
+end
+
+headers  = [:position, :location, :school, :height, :weight, :fourty, :stars, :rating, :rank, :institution, :name, :year]
+
+(2002..2013).to_a.reverse.each do |year|
+  file_name = "data/recruits-#{year}.csv"
+  File.delete(file_name) if File.exists?(file_name)
+  csv = CSV.open(file_name, 'w+', :headers => headers, :write_headers => true)
+
+  puts "== Parsing #{year}"
+  20.times do |i|
+    start = 100 * i
+    puts "... page #{i + 1}"
+    response = conn.get 'print', :year => year, :start => start
+    doc = Nokogiri::HTML(response.body)
+    table = doc.css('#ysr-search-results')
+
+    rows = table.css('tbody tr')
+    rows.each do |row|
+      stats = []
+      row.css('td, th').each_with_index do |cell, index|
+
+        if index == 0
+          stats << cell.content.strip.downcase
+
+        #Highschool and location are part of the same cell
+        elsif index == 1
+           stats << cell.xpath('text()').to_s
+           stats << cell.at('em').content.strip
+
+        # Convert height from 5'11" to an inches integer
+        elsif index == 2
+          val = cell.content.strip
+
+          if val.empty?
+            stats << nil
+          else
+            feet, inches = val.match(%r{([0-9])'([0-9]+)}).to_a
+            stats << feet_and_inches_to_inches(feet, inches)
+          end
+
+        # Stars are images, so we count them
+        elsif index == 5
+          val =  cell.css('img').length
+          stats << val == 0 ? nil : val
+
+        # Fourty and rating are floats
+        elsif [4, 6].include?(index)
+          val = cell.content.strip.downcase
+          stats << ((val.empty? || val == 'n/a') ? nil : val.to_f)
+
+        # Weight and rank are integers
+        elsif [3, 7].include?(index)
+          val = cell.content.strip.downcase
+          stats << ((val.empty? || val == 'n/a') ? nil : val.to_i)
+
+        # Everything else
+        else
+          stats << cell.content.strip
+        end
+
+      end
+      stats << year
+      csv << stats
+    end
+  end
+  csv.close
+end
