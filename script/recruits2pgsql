@@ -1,0 +1,64 @@
+#!/bin/sh
+#
+# Example:
+#
+#   $ ./bin/nhgis2pgsql -d nhgis -s ~/Desktop/nhgis0010_shape.zip -c ~/Desktop/nhgis0010_csv.zip
+#
+usage() { echo "Usage: $0 [-d postgres database] [-c csv file]" 1>&2; exit 1; }
+
+while getopts ":d:c:" opt; do
+  case $opt in
+    d)
+      dbname=$OPTARG
+      ;;
+    c)
+      csv_dir=$OPTARG
+      ;;
+    *)
+      usage
+      ;;
+  esac
+done
+
+shift $((OPTIND-1))
+
+if [ -z "${dbname}" ] || [ -z "${csv_dir}" ]; then
+  usage
+fi
+
+dropdb --interactive -e $dbname
+createdb --encoding UTF8 $dbname
+
+#    Column    |         Type          | Modifiers
+# -------------+-----------------------+-----------
+#  position    | character varying(80) |
+#  location    | character varying(80) |
+#  school      | character varying(80) |
+#  height      | integer               |
+#  weight      | integer               |
+#  fourty      | double precision      |
+#  stars       | integer               |
+#  rating      | double precision      |
+#  rank        | integer               |
+#  institution | character varying(80) |
+#  name        | character varying(80) |
+#  year        | integer               |
+
+# position,location,school,height,weight,fourty,stars,rating,rank,institution,name,year
+sql= "CREATE TABLE recruits (
+    position character varying(120),
+    location character varying(120),
+    school character varying(120),
+    height integer,
+    weight integer,
+    fourty double precision,
+    stars integer,
+    rating double precision,
+    rank integer,
+    institution character varying(120),
+    name character varying(120),
+    year integer
+)"
+psql -d $dbname -c 'CREATE EXTENSION postgis'
+psql -d $dbname -c $sql
+
