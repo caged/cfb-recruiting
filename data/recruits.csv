@@ -691,7 +691,6 @@ db,"Cincinnati, Ohio",La Salle,65,165,4.4,3,5.7,48,Kentucky,Jaleel Hytchye,2013
 ath,"Cooper City, Florida",Cooper City,78,190,4.5,3,5.7,48,Tennessee,Lemond Johnson,2013
 dt,"Port Arthur, Texas",Port Arthur Memorial,78,268,,3,5.6,48,Oklahoma,Matthew Romar,2013
 lb,"Sebastian, Florida",Sebastian River,78,210,,3,5.6,48,Louisiana-Lafayette,James Clark,2013
-ol,"Brantford, Ontario",Pauline Johnson Collegiate,78,290,,3,5.7,48,Nebraska,David Knevel,2013
 db,"Tampa, Florida",Freedom,78,190,4.5,3,5.6,49,South Florida,Nate Godwin,2013
 db,"Flowery Branch, Georgia",Flowery Branch,78,190,4.5,3,5.7,49,Oklahoma State,Darius Curry,2013
 ol,"Fallbrook, California",Fallbrook,78,265,5.1,3,5.7,49,Vanderbilt,Sean Dowling,2013
@@ -996,7 +995,6 @@ ath,"Harrisburg, Pennsylvania",Central Dauphin,78,210,4.6,3,5.5,,Penn State,Zayd
 ol,"Lynchburg, Virginia",Liberty Christian Academy,78,247,4.9,2,5.2,,Penn State,Tanner Hartman,2013
 db,"Conroe, Texas",Oak Ridge,65,185,,3,5.5,,Texas State,Germod Williams,2013
 rb,"Chesapeake, Virginia",Western Branch,65,188,,2,5.4,,Connecticut,Josh Marriner,2013
-ol,"Aurora, Ontario",St. Andrews College,78,297,5.3,2,5.3,,Rice,Peter Godber,2013
 rb,"Brooklyn, New York",Xaverian,78,185,4.5,3,5.5,,Indiana,Laray Smith,2013
 wr,"Lakewood, Ohio",St. Edward,78,175,4.4,2,5.4,,Indiana,Anthony Young,2013
 db,"Edmond, Oklahoma",Santa Fe,78,205,4.6,3,5.6,,Auburn,Khari Harding,2013
@@ -1193,7 +1191,7 @@ db,"Lancaster, Texas",Lancaster,65,167,4.5,2,5.4,,Oklahoma,Dakota Austin,2013
 lb,"Weed, California",College of the Siskiyous,78,220,,3,5.6,,Arkansas,Myke Tavarres,2013
 ol,"Fort George G Meade, Maryland",Wilde Lake,78,285,5.0,3,5.5,,Maryland,Moise Larose,2013
 rb,"Dodge City, Kansas",Dodge City,78,195,4.6,2,5.3,,Air Force,Parker Davis,2013
-de,Wisconsin,Riverside University,78,230,,0,,,Army,Brennan Richmond,2013
+de,"Milwaukee,Wisconsin",Riverside University,78,230,,0,,,Army,Brennan Richmond,2013
 ol,"South Bend, Indiana",South Bend Clay,78,292,,3,5.5,,Central Michigan,Shakir Carr,2013
 db,"Wilmington, California",Los Angeles Harbor C.C.,78,200,,3,5.5,,San Jose State,Esston Al-Uqdah,2013
 de,"West Palm Beach, Florida",Dwyer,78,250,,3,5.6,,Tennessee,Malik Brown,2013
@@ -1410,7 +1408,6 @@ qb,"Elizabeth, New Jersey",Elizabeth,78,195,,2,5.4,,Temple,PJ Walker,2013
 db,"Hammonton, New Jersey",St. Joseph,78,178,4.6,2,5.2,,Old Dominion,Rob Thompson,2013
 ath,"Sandy Spring, Maryland",Sherwood,65,185,,0,,,Liberty,Malaki Roy,2013
 qb,"Marietta, Georgia",Walton,78,190,,3,5.6,,Alabama,Parker McLeod,2013
-dt,"Toronto, Ontario",UTS,78,300,4.9,2,5.4,,Michigan State,James Bodanis,2013
 dt,"Ft. Lauderdale, Florida",Dillard,78,275,4.9,3,5.5,,Michigan State,Noah Jones,2013
 dt,"Plant City, Florida",Plant City,78,285,,3,5.6,,Michigan State,Devyn Salmon,2013
 lb,"Richmond, Virginia",Monacan,78,220,4.8,2,5.4,,Virginia,Connor Wingo-Reeves,2013
@@ -2941,7 +2938,6 @@ ath,"Norwood, North Carolina",South Stanly,78,220,4.6,2,5.2,,Charlotte,Jalen Hol
 ol,"Durham, North Carolina",Hillside,78,295,,3,5.5,,Charlotte,Casey Perry,2012
 de,"Woodland Hills, California",Pierce C.C.,78,265,,2,5.4,,Louisiana Tech,Devon McKinney,2012
 lb,"Waldorf, Maryland",North Point,78,215,,0,,,St. Francis (PA),Dwain McCray,2012
-ath,"Brockville, Ontario",Thousand Islands,78,235,,0,,,Virginia,Trent Corney,2012
 wr,"Columbus, Ohio",Bexley,78,197,4.6,0,,,Air Force,Jalen Robinette,2012
 te,"Palm Springs, California",Palm Springs,78,205,4.5,0,,,Colorado State,Jordan White,2012
 k,"Mission Viejo, California",Saddleback C.C.,78,170,4.8,0,,,East Carolina,Brendan Rowland,2012
@@ -2962,7 +2958,7 @@ ol,"Saline, Michigan",Saline,78,185,,0,,,Michigan State,Taybor Pepper,2012
 lb,"Torrance, California",El Camino C.C.,78,235,,0,,,San Diego State,Derek Largent,2012
 lb,"Irvine, California",Irvine,78,205,,0,,,USC,Elijah Steen,2012
 wr,"Louisville, Kentucky",Moore,78,192,,3,5.5,,Arkansas,MeKale McKay,2012
-wr,California,Whittier Christian,65,175,,0,,,Army,Grant Escobar,2012
+wr,"Whittier, California",Whittier Christian,65,175,,0,,,Army,Grant Escobar,2012
 db,"Newburgh, New York",Newburgh Free Academy,78,180,,0,,,Army,Steven Johnson,2012
 rb,"Los Angeles, California",Loyola,65,215,,0,,,Army,Robert Jenkins,2012
 lb,"Hudson, New York",Croton Harmon Senior,78,220,,0,,,Army,Kyle Ricciardi,2012
@@ -3004,7 +3000,7 @@ ol,"Riverside, California",Riverside C.C.,78,330,,2,5.4,,Nicholls State,Eric Alt
 db,"Salinas, California",Hartnell C.C.,65,170,4.4,0,,,UAB,D'Andre Green,2012
 de,"Buffalo, New York",St. Francis,78,245,,0,,,Army,Alex Cauley,2012
 dt,"Rancho Cucamonga, California",Rancho Cucamonga,78,250,,0,,,Boise State,Archie Lewis,2012
-dt,Oregon,Wilsonville,78,275,,0,,,Army,Ammon Tuimaunei,2012
+dt,"Wilsonville,Oregon",78,275,,0,,,Army,Ammon Tuimaunei,2012
 rb,"Concord, Massachusetts",Concord Carlisle,65,205,,2,5.2,,Boston College,George Craan,2012
 ath,"Newbern, Tennessee",Dyer County,65,176,4.5,0,,,Louisiana Tech,Thaddaeus Medford,2012
 dt,"Davie, Florida",Western,78,255,4.9,2,5.3,,Western Illinois,Gavin Ricketts,2012
@@ -3036,7 +3032,7 @@ db,"Rochester, Minnesota",Rochester C.C.,65,188,,0,,,Wyoming,BJ Hendrix,2012
 wr,"Delray Beach, Florida",Atlantic,78,183,,2,5.4,,Bryant,Chad Ward,2012
 lb,"Middleton, Wisconsin",Middleton,78,210,4.6,0,,,Dartmouth,Bennett Goff,2012
 wr,"Orlando, Florida",Lake Highland,65,178,4.3,2,5.4,,Lehigh,Hayden Jones,2012
-dt,California,Moorpark,78,230,,0,,,Army,Anthony Peterson,2012
+dt,"California,Moorpark",,78,230,,0,,,Army,Anthony Peterson,2012
 lb,"Ocala, Florida",Trinity Catholic,65,203,4.8,0,,,Weber State,Marquel Holmes,2012
 ath,"Gainesville, Florida",Gainesville,65,186,4.5,0,,,Weber State,Cordero Dixon,2012
 lb,"Wilmington, California",Los Angeles Harbor C.C.,78,225,4.5,2,5.3,,Idaho,Elijah Sala,2012
@@ -3709,7 +3705,6 @@ de,"Melbourne, Florida",Melbourne,78,225,,2,5.2,,Troy,Jamal Stadom,2012
 lb,"Etiwanda, California",Rancho Cucamonga,78,215,,2,,,Fresno State,Tui Unga,2012
 lb,"Lithonia, Georgia",Miller Grove,78,225,4.7,2,5.2,,Miami (OH),J'Terius Brown,2012
 ol,"Rock Island, Illinois",Rock Island,78,305,,2,5.2,,Northern Illinois,Brad Steger,2012
-de,"Mississaugo, Ontario",Our Lady of Mt. Carmel,78,245,,2,5.2,,Miami (OH),Mitch Winters,2012
 db,"Mobile, Alabama",Vigor,65,180,,2,5.2,,Northern Illinois,Marlon Moore,2012
 db,"Fitzgerald, Georgia",Fitzgerald,65,170,,2,5.2,,Troy,JaQuadrian Lewis,2012
 ol,"West Hills, California",Chaminade,78,295,,2,5.2,,Washington,Taylor Hindy,2012
@@ -4561,7 +4556,7 @@ dt,"Holland, Ohio",Springfield,78,275,4.9,3,5.7,36,Nebraska,Kevin Williams,2011
 ol,"Eagle Lake, Florida",Lake Region,78,270,,3,5.6,36,South Florida,Thor Jozwiak,2011
 ol,"Lindale, Georgia",Pepperell,78,260,5.3,3,5.6,37,South Carolina,Kyle Harris,2011
 rb,"Atlanta, Georgia",Grady,78,191,4.5,3,5.7,37,Kentucky,Marcus Caffey,2011
-lb,"Moorpark, California",Moorpark,78,225,,3,5.6,37,Minnesota,Quinn Bauducco,2011
+lb,"Moorpark, California",Moorpark High School,78,225,,3,5.6,37,Minnesota,Quinn Bauducco,2011
 db,"Ocala, Florida",Trinity Catholic,65,186,4.5,3,5.7,37,Florida,Chris Johnson,2011
 ath,"Tampa, Florida",Robinson,65,175,,3,5.7,37,Purdue,Frankie Williams,2011
 lb,"Dallas, Texas",Skyline,78,210,,3,5.7,37,Oklahoma,Franklin Shannon,2011
@@ -4620,7 +4615,6 @@ ath,"Norwalk, California",Norwalk,78,240,4.6,3,5.7,42,UNLV,Elijhaa Penny,2011
 rb,"Gilmer, Texas",Gilmer,65,205,,3,5.6,42,Stephen F. Austin,Gus Johnson,2011
 wr,"Allen, Texas",Allen,78,191,,3,5.7,42,Baylor,Jonathon Lee,2011
 db,"Baldwin Park, California",Baldwin Park,65,185,,3,5.7,42,Portland State,Demetrius Jackson,2011
-db,"Windsor, Ontario",WF Herman,78,180,4.6,3,5.7,42,Michigan State,Arjen Colquhoun,2011
 rb,"Houston, Texas",Cy-Creek,65,177,,3,5.6,43,Baylor,Jermichael Selders,2011
 lb,"Miami, Florida",Coral Park,78,215,,3,5.6,43,Florida State,Arrington Jenkins,2011
 ol,"Marietta, Georgia",Pope,78,313,5.4,3,5.6,43,Auburn,Thomas O'Reilly,2011
@@ -4896,7 +4890,6 @@ de,"Baltimore, Maryland",Boys Latin School,78,245,5.3,3,5.5,,Virginia,Marco Jone
 qb,"Keller, Texas",Faith Christian,78,185,4.6,2,5.4,,Oregon State,Peter Ashton,2011
 db,"Rancho Cucamonga, California",Chaffey C.C.,78,210,4.5,4,5.8,,Nebraska,Daimion Stafford,2011
 wr,"Alpharetta, Georgia",Chattahoochee,78,175,4.5,3,5.5,,Arkansas,Kane Whitehurst,2011
-db,"London, Ontario",St. Thomas Aquinas,78,217,4.4,3,5.5,,Arkansas,Brett Weir,2011
 lb,"Salinas, California",Hartnell C.C.,65,255,4.7,2,5.4,,Arkansas,Kiero Small,2011
 te,"Dallas, Texas",Seagoville,78,250,4.8,3,5.6,,Arkansas,Andrew Peterson,2011
 ol,"Glendora, California",Citrus C.C.,78,325,5.0,3,5.6,,Arkansas,Jason Peacock,2011
@@ -4925,7 +4918,6 @@ dt,"Spring, Texas",Klein Oak,78,265,,3,5.6,,TCU,Jon Lewis,2011
 rb,"Ft. Lauderdale, Florida",Dillard,78,185,4.5,2,5.4,,Wagner,Otis Wright,2011
 wr,"Chatham, Virginia",Hargrave Military Academy,78,195,,4,5.9,,Clemson,Martavis Bryant,2011
 ol,"Wahpeton, North Dakota",North Dakota State College of Science,78,355,,0,,,Toledo,Chase Nelson,2011
-de,"Montreal, Quebec",Vieux,78,260,,3,5.5,,Boston College,Mehdi Abdesmad,2011
 ol,"Valley Glen, California",Los Angeles Valley C.C.,78,310,,0,,,Western Michigan,Kasimili Uitalia,2011
 rb,"Independence, Kansas",Independence C.C.,78,220,4.5,3,5.5,,Indiana,Stephen Houston,2011
 te,"Ephraim, Utah",Snow College,78,245,4.6,3,5.5,,Arizona,Drew Robinson,2011
@@ -5007,7 +4999,7 @@ ath,"Kingfisher, Oklahoma",Kingfisher,78,180,,2,5.3,,Tulsa,Derek Patterson,2011
 qb,"Brenham, Texas",Blinn C.C.,78,228,4.6,3,5.6,,Kansas State,Justin Tuggle,2011
 ath,"Fork Union, Virginia",Fork Union Military Academy,78,190,,3,5.7,,Rutgers,Tejay Johnson,2011
 ath,"Rosenberg, Texas",Lamar Consolidated,65,165,4.4,0,,,Colorado,D.D. Goodson,2011
-rb,Illinois,Whitney Young,78,207,,2,5.2,,Army,Terrence Baggett,2011
+rb,"Chicago,Illinois",Whitney Young,78,207,,2,5.2,,Army,Terrence Baggett,2011
 rb,"St. Louis, Missouri",Parkway South Sr,65,185,,2,5.2,,Army,Lawrence Scott,2011
 wr,"Westlake Village, California",Westlake,78,190,4.5,3,5.5,,Colorado,Nelson Spruce,2011
 ol,"Eads, Tennessee",Briarcrest Christian,78,293,,3,5.5,,Georgia,Hunter Long,2011
@@ -5458,7 +5450,7 @@ lb,"Holmdel, New Jersey",St John Vianney,78,220,4.8,2,5.3,,Georgia Tech,Sean Tob
 te,"Nashville, Tennessee",Ensworth,78,245,4.9,2,5.4,,UCLA,Conor McDermott,2011
 de,"Westminster, Colorado",Mountain Range,78,210,4.7,2,5.4,,Army,James Kelly,2011
 rb,"Frederick, Maryland",Linganore,78,194,,2,5.3,,Army,Dwayne Randall,2011
-lb,Illinois,Elgin High School,78,195,,2,5.2,,Army,Dan Muenzer,2011
+lb,"Elgin, Illinois",Elgin High School,78,195,,2,5.2,,Army,Dan Muenzer,2011
 rb,"Bloomington, Indiana",Bloomington North,65,180,,3,5.6,,Indiana,D'Angelo Roberts,2011
 db,"Berkeley, California",St. Mary's,78,180,,2,5.2,,Army,Chris Carnegie,2011
 dt,"Macomb, Michigan",Dakota,78,281,4.9,3,5.5,,Indiana,Bernard Taylor,2011
@@ -5538,7 +5530,6 @@ qb,"Charlotte, North Carolina",Country Day,78,208,4.7,3,5.5,,Clemson,Morgan Robe
 ath,"Tulsa, Oklahoma",Union,65,171,4.5,2,5.2,,Air Force,Kale Pearson,2011
 lb,"Annapolis, Maryland",St. Mary's,78,225,,0,,,Lehigh,John Gonos,2011
 dt,"Baltimore, Maryland",Eastern Tech,78,255,,0,,,Bucknell,Dan McManus,2011
-ol,"Aurora, Ontario",St. Andrews College,78,291,,2,5.4,,Boston College,Eddie Meredith,2011
 ol,"New Lenox, Illinois",Providence Catholic,78,282,,2,5.3,,Boston College,Dan Lembke,2011
 ol,"Radnor, Pennsylvania",Radnor,78,256,,2,5.4,,Boston College,David Bowen,2011
 ol,"Park Ridge, Illinois",Maine South,78,300,,2,5.4,,Boston College,Victor Nelson,2011
@@ -5647,7 +5638,6 @@ wr,"Los Angeles, California",Dorsey,65,175,4.4,3,5.5,,Washington,Marvin Hall,201
 dt,"Groton, Massachusetts",Lawrence Academy,78,345,,2,5.4,,Boston College,Max Ricci,2011
 db,"Everett, Massachusetts",Everett,65,151,4.5,2,5.4,,Boston College,Manuel Asprilla,2011
 lb,"Sparta, New Jersey",Pope John XXIII,78,233,4.6,2,5.4,,Maryland,Cole Farrand,2011
-ol,"Hamilton, Ontario",Watertown District,78,290,,2,5.2,,Buffalo,Dillon Guy,2011
 lb,"Pewaukee, Wisconsin",Pewaukee,78,215,,3,5.6,,Wisconsin,Derek Watt,2011
 dt,"West Palm Beach, Florida",Dwyer,78,260,,3,5.5,,Maryland,Keith Bowers,2011
 wr,"Austin, Texas",Lake Travis,78,197,4.5,2,5.4,,Tulsa,Conner Floyd,2011
@@ -7072,7 +7062,6 @@ qb,"Los Altos, California",Foothill C.C.,78,200,4.7,2,5.2,,Fresno State,Kelly O'
 wr,"Rockwall, Texas",Rockwall-Heath,78,200,4.6,2,5.4,,Minnesota,Cameron Wilson,2010
 wr,"Riverside, California",J.W. North,78,170,4.6,3,5.6,,Utah,Dres Anderson,2010
 rb,"Riverside, California",J.W. North,65,211,4.7,3,5.5,,Fresno State,E.J. Schexnayder,2010
-de,British Columbia,St. George's School,78,260,,0,,,Colorado,Dakota Poole,2010
 te,"Frankfort, Kentucky",Western Hills,78,245,4.8,3,5.5,,Louisville,Dylan Curry,2010
 k,"Nashville, Tennessee",Montgomery Bell Academy,65,165,,2,5.2,,Louisville,Andrew Fletcher,2010
 dt,"Owensboro, Kentucky",Apollo,78,290,5.1,3,5.5,,Murray State,Harris Bivin,2010
@@ -9437,7 +9426,6 @@ ol,"Hesston, Kansas",Hesston,78,270,5.1,2,5.4,,Kansas,Riley Spencer,2009
 db,"Santa Ana, California",Santa Ana C.C.,78,215,,3,5.5,,Syracuse,Derek Hines,2009
 ath,"Durham, North Carolina",Hillside,65,158,4.5,3,5.5,,Duke,Corey Gattis,2009
 wr,"Wexford, Pennsylvania",North Allegheny,65,165,4.4,2,4.9,,Army,Brian Austin,2009
-rb,"","",65,175,,0,,,Army,Kyle Ulses,2009
 qb,"Orlando, Florida",Dr. Phillips,78,195,,2,5.4,,Colorado State,Nico Ranieri,2009
 te,"Atlanta, Georgia",Holy Innocents Episcopal,78,215,4.6,2,5.4,,Duke,Jack Farrell,2009
 db,"San Francisco, California",City College of San Francisco,65,190,,0,,,Syracuse,John Mark Henderson,2009
@@ -11382,7 +11370,6 @@ ol,"La Marque, Texas",La Marque,78,290,5.1,2,5.4,,Baylor,Brandon Garrett,2008
 lb,"West Point, Nebraska",West Point Central Catholic,78,215,4.8,2,5.2,,Nebraska,Micah Kreikemeier,2008
 lb,"Seattle, Washington",Evergreen,78,225,4.7,2,5.2,,Army,Corey Laufasa,2008
 qb,"Evansville, Indiana",Reitz Memorial,78,191,,2,5.1,,Army,Paul McIntosh,2008
-lb,"Lennoxville, Quebec","",78,243,4.6,2,5.1,,Baylor,Fredric Plesius,2008
 ol,"Tulare, California",Tulare Western,78,315,,2,5.1,,Nevada,Stephen Werner,2008
 ol,"Gilbert, Arizona",Scottsdale C.C.,78,293,,0,,,Kent State,Matt Conroy,2008
 lb,"Torrance, California",El Camino C.C.,78,230,4.7,3,5.5,,Oklahoma State,Tolu Moala,2008
@@ -11539,7 +11526,6 @@ db,"Childress, Texas",Childress,65,173,,0,,,South Dakota State,Bo Helm,2008
 k,"Florissant, Missouri",Hazelwood Central,78,172,,0,,,South Dakota State,Kyle Harris,2008
 lb,"Ames, Iowa",Ames Senior,78,224,,0,,,South Dakota State,Josiah Fitzsimmons,2008
 ol,"Chugiak, Alaska",Chugiak,78,328,5.7,0,,,North Dakota,Ian Rosario,2008
-wr,"Beauport, Quebec",Champlain Prep,78,180,4.4,0,,,North Dakota,Esmael Bamba,2008
 dt,"Wilson, North Carolina",Fike,78,276,,0,,,North Carolina Central,Leroy Vick,2008
 lb,"Miami, Florida",Coral Reef,65,220,,0,,,North Carolina Central,Eliezer Sandifer,2008
 lb,"Warner Robins, Georgia",Warner Robins,78,210,4.8,0,,,North Carolina Central,Jordan Sanders,2008
@@ -12556,7 +12542,6 @@ wr,"Carrollton, Texas",Creekview,78,184,4.5,3,5.7,34,Oklahoma,Corey Wilson,2007
 qb,"Lakeside, California",El Capitan,78,205,4.9,3,5.5,34,San Diego State,Ryan Lindley,2007
 db,"Philadelphia, Pennsylvania",Roman Catholic,78,195,4.4,3,5.6,34,Virginia,Dominique Joseph,2007
 de,"Columbus, Ohio",Beechcroft,78,203,4.7,3,5.5,34,West Virginia,Julian Miller,2007
-dt,"Montreal, Quebec",Montreal Vieux School,78,315,4.9,3,5.7,34,Michigan,Renaldo Sagesse,2007
 lb,"Cincinnati, Ohio",Moeller,78,210,4.6,3,5.7,34,Michigan State,Greg Jones,2007
 db,"Garland, Texas",South Garland,78,185,4.5,3,5.7,34,TCU,Tejay Johnson,2007
 te,"Mt. Carmel, Pennsylvania",Mt. Carmel,78,225,4.7,3,5.6,34,Virginia,Mark Ambrose,2007
@@ -13291,7 +13276,6 @@ db,"Washington, Georgia",Washington Wilkes,65,175,4.6,2,5.2,,Connecticut,Gary Wi
 ol,"Portland, Oregon",Jesuit,78,303,,0,,,Portland State,Adam Kleffner,2007
 de,"Senotobia, Mississippi",Northwest Mississippi C.C.,78,255,,2,5.0,,Houston,Tramaine Williams,2007
 qb,"Booneville, Mississippi",Northeast Mississippi C.C.,78,230,,2,5.0,,Louisiana-Monroe,Brice Beck,2007
-ol,"St. Laurent, Quebec",Vanier College,78,280,,2,5.4,,Connecticut,Muhammad Petrus,2007
 db,"Kingsport, Tennessee",Dobyns-Bennett,78,175,4.5,2,5.1,,Clemson,Coty Sensabaugh,2007
 de,"Mountain Brook, Alabama",Mountain Brook,78,224,4.7,2,5.4,,Clemson,Drew Traylor,2007
 wr,"Columbia, South Carolina",Ridge View,78,200,4.6,0,,,Appalachian State,Brian Quick,2007
@@ -13925,7 +13909,7 @@ te,"Visalia, California",College of the Sequoias,78,255,4.7,3,5.7,,Nevada,Brent 
 db,"Denver, Colorado",East High School,78,180,,2,5.0,,Colorado State,Blake Swain,2007
 dt,"Compton, California",Compton,78,264,5.8,2,5.3,,Fresno State,Porter Hill,2007
 ol,"Compton, California",Dominguez,78,265,,2,5.0,,Fresno State,Leslie Cooper,2007
-ath,"Moorpark, California",Moorpark,78,175,4.5,3,5.5,,Colorado,Josh Smith,2007
+ath,"Moorpark, California",Moorpark C.C.,78,175,4.5,3,5.5,,Colorado,Josh Smith,2007
 ol,"Wailuku, Hawaii",Baldwin,78,278,5.0,2,5.2,,Colorado,Kealakai Maiava,2007
 de,"Highland, Kansas",Highland C.C.,78,240,4.9,3,5.7,,Colorado,Drew Hudgins,2007
 lb,"Oakland Park, Florida",Northeast,78,196,4.9,2,5.4,,Colorado,Josh Hartigan,2007
@@ -15421,7 +15405,6 @@ wr,"Ventura, California",Ventura CC,78,195,4.5,3,,,Washington State,Charles Dill
 dt,"Chattanooga, Tennessee",The McCallie School,78,270,,2,5.2,,Duke,Ifreke Okpokowuruk,2006
 de,"Mesquite, Texas",North Mesquite,78,230,4.8,2,5.2,,Duke,Patrick Egboh,2006
 ol,"Forsyth, Georgia",Mary Persons,78,286,6.1,2,5.1,,Duke,Jeffrey Cowart,2006
-db,"Windsor, Ontario",W.F. Herman,65,185,4.5,2,5.0,,Duke,Chris Rwabukamba,2006
 db,"Hephzibah, Georgia",Hephzibah,78,196,4.5,2,5.1,,Duke,Catron Gainey,2006
 wr,"Locust Grove, Georgia",Luella,78,205,4.6,2,5.4,,Duke,Jeremy Ringfield,2006
 lb,"Ashburn, Virginia",Stone Bridge,78,202,4.6,2,5.2,,Duke,Andrew Holoman,2006
@@ -15500,7 +15483,6 @@ ol,"Wayne, Pennsylvania",Valley Forge Military College,78,350,,0,,,Grambling Sta
 ol,"Wayne, Pennsylvania",Valley Forge Military College,78,337,,0,,,Grambling State,Randle Bennett,2006
 ol,"St. Henry, Ohio",St. Henry,78,240,,2,5.1,,Cincinnati,Toby Boeckman,2006
 te,"Fort Thomas, Kentucky",Highlands,78,201,4.7,2,5.2,,Cincinnati,Ben Guidugli,2006
-db,"Laval, Quebec",St. Leonard Collegiate,78,202,,2,4.9,,Cincinnati,Peter Carriere,2006
 rb,"Columbus, Ohio",Independence,65,211,4.5,2,5.2,,Cincinnati,Jacob Ramsey,2006
 ath,"Cleveland, Ohio",Glenville Academic Campus,65,195,4.4,3,5.6,,Cincinnati,Freddie Lenix,2006
 rb,"Export, Pennsylvania",Franklin Regional,78,210,,2,4.9,,Cincinnati,Robby Armstrong,2006
@@ -15835,7 +15817,6 @@ rb,"Hollywood, Florida",Chaminade Madonna,65,165,,2,4.9,,Florida Atlantic,Willie
 lb,"Sherman Oaks, California",Capbell Hall,78,230,,2,4.9,,Stanford,Sam Weinberger,2006
 ol,"Sacremento, California",Sacremento,78,315,,2,4.9,,Nevada,Mike DeMars,2006
 de,"Los Angeles, California",Los Angeles Harbor C.C.,78,260,,2,,,Idaho,George Fa'avae,2006
-wr,"Windsor, Ontario",St. Anne,78,260,,2,4.9,,Stanford,Brian Bulcke,2006
 db,"Los Angeles, California",Serra,78,175,,2,4.9,,San Jose State,Jonathon Hardaway,2006
 de,"Fresno, California",Fresno City C.C.,78,260,,2,,,Idaho,Jon Dominguez,2006
 ath,"La Marque, Texas",LaMarque HS,78,200,4.8,3,5.5,,Houston,L.J. Castile,2006
@@ -15965,7 +15946,6 @@ ol,"Anaheim, California",Esperanza,78,270,,3,5.5,,UNLV,Joe Hawley,2006
 db,"San Francisco, California",City College of San Francisco,78,210,,3,,,UNLV,Tony Cade,2006
 lb,"Miami, Oklahoma",Northeastern Oklahoma A&M J.C.,65,220,4.5,2,,,UNLV,Adrian Bradley,2006
 de,"Cahokia, Illinois","",78,230,,2,4.9,,Northern Illinois,Ed Jackson,2006
-lb,"Lennoxville, Quebec",Champlain College,78,235,,2,5.2,,Houston,Shomari Williams,2006
 lb,"Cuero, Texas","",78,226,4.9,2,5.3,,Houston,J.T. Rudd,2006
 lb,"Ashdown, Arkansas",Ashdown,78,220,,2,4.9,,Houston,Antonio May,2006
 ath,"Brownwood, Texas",Brownwood,65,195,4.5,2,5.3,,Houston,Britton Maxwell,2006
@@ -16924,7 +16904,6 @@ rb,"West Palm Beach, Florida",Palm Beach Lakes,65,190,4.4,2,5.1,,West Virginia,J
 ath,"San Diego, California",Mesa Community College,78,190,4.5,3,,,Nebraska,Tyrell Spain,2005
 dt,"San Jose, California",Valley Christian,78,270,5.3,2,5.2,,Washington State,Joseph Townsend,2005
 ol,"Elmhurst, Illinois",York,78,280,5.2,2,5.1,,New Mexico State,Timothy Freitag,2005
-rb,"Brampton, Ontario",Notre Dame SS,78,230,4.4,4,,,Rutgers,Jerome Messam,2005
 qb,"Hazel Green, Alabama",Hazel Green,78,185,4.7,2,5.0,,Jacksonville State,Wesley Henderson,2005
 rb,"Miramar, Florida",Northwestern,65,190,4.4,2,5.1,,Colorado,Kevin Moyd,2005
 rb,"Midland, Texas",Christian,65,210,4.5,2,5.2,,Kansas State,Courtney Greer,2005
@@ -16989,7 +16968,6 @@ ol,"Walnut, California",Mt. San Antonio Junior College,78,315,,2,,,Nebraska,Jord
 lb,"Bolingbrook, Illinois","",78,219,4.6,5,,,Purdue,Kyle Williams,2005
 db,"Richmond, Texas",Foster High School,65,170,4.5,3,5.5,,UTEP,Braxton Amy,2005
 ath,"New Hampton, New Hampshire","",78,203,4.6,2,5.4,,Northwestern,Brendan Smith,2005
-db,"Windsor, Ontario",Sandwich,78,190,4.5,3,5.5,,Kansas,Tang Bacheyie,2005
 ol,"Shenandoah, Pennsylvania",Shenandoah Valley,78,272,5.1,2,5.4,,West Virginia,Frank Carduff,2005
 rb,"Pasadena, California",City College,78,210,4.5,0,,,San Diego State,Tyler Campbell,2005
 wr,"Youngstown, Ohio",Ursuline,65,170,4.4,2,5.2,,Cincinnati,Derrick Stewart,2005
@@ -17551,7 +17529,6 @@ wr,"El Paso, Texas",Andress,65,165,,2,4.9,,New Mexico State,Jahmeel Hobson,2005
 db,"Indianapolis, Indiana",Warren Central,78,200,4.5,3,5.5,,Purdue,Christian Graham,2005
 lb,"Corona, California",Chaffey College,78,235,,2,4.9,,New Mexico State,Michael Hernishin,2005
 wr,"Garden Plain, Kansas",Garden Plain,78,200,,2,4.9,,Utah State,Kendall Fisher,2005
-k,"Stoney Creek, Ontario",Saltfleet District,65,185,,2,4.9,,Utah State,Darryl Wheeler,2005
 ol,"Encino, California",Crespi Carmelite,78,280,,2,4.9,,Utah State,Taylor Wallace,2005
 qb,"Houston, Texas",Jersey Village,78,185,,2,4.9,,Utah State,Jerod Walker,2005
 db,"Corona, California",Santiago,78,180,,2,4.9,,Utah State,Josh Taylor,2005
@@ -17775,7 +17752,6 @@ rb,"Newton, Iowa",Newton,78,197,4.9,2,5.3,,Northern Iowa,Derrick Law,2005
 ol,"Council Bluffs, Iowa",Abraham Lincoln,78,250,4.8,2,5.2,,Northern Iowa,Chuck Kinney,2005
 de,"LaGrange, Illinois",Lyons Township,78,225,,2,5.2,,Northern Illinois,Brandon Bice,2005
 de,"Maple Heights, Ohio","",78,240,,2,,,Akron,Terrico Marshall,2005
-db,"Sandwich, Ontario","",78,180,,2,4.9,,Western Michigan,Mark Metulynsky,2005
 ol,"Algona, Iowa",Algona,78,273,5.4,2,5.2,,Northern Iowa,Jordan Limbaugh,2005
 de,"Naperville, Illinois",Neuqua Valley,78,234,5.0,2,5.1,,Northern Illinois,Anthony Antonacci,2005
 dt,"Dauphin, Pennsylvania",Central Dauphin HS,78,255,,2,4.9,,Akron,Josh Kiner,2005
@@ -17974,7 +17950,6 @@ db,"Youngstown, Ohio",Liberty,78,190,4.5,2,5.4,,Boston College,Marcellus Bowman,
 ol,"Nederland, Texas","",78,245,,0,,,McNeese State,Christopher Robin,2005
 te,"Muskogee, Oklahoma",Hilldale,78,235,4.8,2,4.9,,North Texas,Charley Brown,2005
 db,"Lake Charles, Louisiana",Lagrange,78,180,,0,,,McNeese State,Tyson Sibley,2005
-ol,"Petersburg, Ontario","",78,320,5.3,3,5.5,,Toledo,Kevin Hobbins,2005
 db,"Trotwood, Ohio",Madison Comprehensive,78,161,4.6,2,5.0,,Toledo,Garry Hill,2005
 db,"Washington, District of Columbia",St. John's College High,65,177,4.5,2,5.3,,Marshall,J.J. Johnson,2005
 de,"Portland, Texas",Gregory-Portland,78,238,5.0,2,5.2,,Rice,Victor Brooks,2005
@@ -18864,7 +18839,6 @@ db,"Vidor, Texas",Vidor,78,179,4.4,2,5.3,,Arkansas,Rick Culbert,2004
 ath,"Plantation, Florida","",78,245,4.6,2,5.4,,Pittsburgh,Darrell Strong,2004
 dt,"Chicago, Illinois",Hubbard,78,280,,2,5.2,,Michigan,Marques Walton,2004
 db,"Miami, Florida",Southridge,78,190,4.5,0,,,Auburn,Lorenzo Ferguson,2004
-ol,"Quebec, Ontario",Mississauga,78,280,5.0,2,,,South Carolina,Gurminder Thind,2004
 ol,"San Jose, California",Leland,78,285,5.1,2,5.2,,UCLA,Scott Glicksberg,2004
 dt,"Walnut, California",Mt. San Antonio C.C.,78,285,,3,,,Hawaii,Austin Jackson,2004
 ath,"Pittsburgh, Pennsylvania",Woodland Hills,78,193,4.4,2,5.3,,Pittsburgh,Steffan Brinson,2004
@@ -19024,7 +18998,6 @@ db,"Atlanta, Texas","",78,190,4.5,2,5.3,,Arkansas,Dallas Washington,2004
 db,"Bealeton, Virginia",Liberty,78,195,4.6,2,5.4,,Syracuse,A.J. Brown,2004
 ol,"Dublin, Ohio",Coffman,78,300,5.2,2,,,UCF,Kyle Storey,2004
 ol,"Ventura, California",Saint Bonaventure,78,270,5.0,2,5.4,,San Diego State,Eric Rouser,2004
-ath,"London, Ontario",Catholic Central,78,264,4.8,2,5.3,,Michigan State,Tom Kaczmarek,2004
 k,"Scottsdale, Arizona",Scottsdal C.C.,78,210,,3,,,Michigan State,John Goss,2004
 dt,"Santa Clarita, California",College of the Canyons,78,273,5.0,4,,,Michigan State,Domata Peko,2004
 ol,"Wixom, Michigan","",78,278,5.0,2,5.3,,Michigan State,Luis Fonseca,2004
@@ -19564,7 +19537,6 @@ db,"Waycross, Georgia",Ware County,78,170,4.4,2,5.2,,Troy,Leodis McKelvin,2004
 ol,"Duncanville, Texas",Duncanville,78,260,,2,,,Louisiana-Monroe,Patrick Avinger,2004
 db,"Jacksonville, Florida",University Christian,78,185,,2,,,Syracuse,Stacy Brown,2004
 ol,"Arlington, Texas",Bowie,78,290,,2,5.0,,Louisiana-Monroe,Tyler Dool,2004
-ol,"Cap-de-la Madeleine, Quebec",F.X. Garneau,78,300,,2,,,Syracuse,David Bouchard,2004
 db,"Auburn, Alabama",Auburn,65,180,,2,,,Troy,Chris King,2004
 ol,"Arlington, Texas",Lamar,78,305,5.0,2,5.0,,Louisiana-Monroe,Adam Hill,2004
 ol,"Columbus, Georgia",Carver HS,78,285,,2,,,Troy,Chris Jamison,2004
@@ -19819,7 +19791,6 @@ db,"Chino Hills, California","",78,205,,2,,,UNLV,KC Asiodu,2004
 db,"Warren, Pennsylvania","",78,200,4.5,2,5.4,,Syracuse,Ben Maljovec,2004
 ol,"Alief, Texas",Taylor,78,295,5.3,2,5.2,,Louisiana Tech,Bill Jones,2004
 lb,"Cooper City, Florida",St. Thomas Aquinas,65,198,,2,,,Miami (OH),Chris Shula,2004
-de,"Montreal, Quebec",Cegep du Vieux,78,230,4.6,3,,,Syracuse,Jonathan Pierre-Ã‰tienne,2004
 lb,"Moss Point, Mississippi",Pearl River C.C.,78,205,,2,,,Louisiana Tech,Quincy Hicks,2004
 rb,"New York, New York",Lansingburgh,78,195,4.4,2,5.0,,Syracuse,Kareem Jones,2004
 db,"Victorville, California",Silverado,65,180,,2,,,Wyoming,Julius Stinson,2004
@@ -19957,7 +19928,6 @@ lb,"Webster, New York","",78,220,,2,,,Buffalo,Chris Callahan,2004
 db,"Warren, Ohio",Howland,78,180,,2,4.9,,Toledo,Brandon Alexander,2004
 lb,"Willingboro, New Jersey","",78,195,,2,,,Connecticut,Robert Theoudele,2004
 db,"Delray Beach, Florida",Hargrave Military,65,175,4.4,3,,,Virginia Tech,Brandon Flowers,2004
-wr,"Toronto, Ontario",Notre Dame SS,78,206,,2,,,Western Michigan,Fernand Kashama,2004
 lb,"Detroit, Michigan",Pershing High School,78,250,,2,,,Western Michigan,Quentin Gray,2004
 k,"Boca Raton, Florida","",78,215,,2,,,Connecticut,Tony Ciaravino,2004
 wr,"Jobstown, New Jersey",Holy Cross High School,78,181,,2,,,Western Michigan,Londen Fryar,2004
@@ -21629,7 +21599,6 @@ lb,"Albuquerque, New Mexico",Alburquerque,78,205,,2,,,New Mexico,George Carter,2
 lb,"Waco, Texas",China Spring,78,210,,2,,,Rice,Lance Luedeker,2003
 dt,"Bradenton, Florida",Ellsworth,78,283,,2,,,Troy,Tagarius Spikes,2003
 rb,"Aiken, South Carolina",Sacramento City College,65,210,,2,,,Boise State,Antwaun Carter,2003
-db,"St. Hubert, Quebec",Vanier Prep,65,190,,2,,,Akron,Jason Nedd,2003
 dt,"Corona, California",Centennial,78,255,,2,,,New Mexico,Jeff Benjamin,2003
 rb,"Sinton, Texas",High,78,175,,2,,,Rice,Nehemiah Heard,2003
 te,"Meridian, Idaho",Eagle,78,200,,2,,,Boise State,Sherm Blaser,2003
@@ -21689,7 +21658,6 @@ lb,"Higley, Arizona",Mesa C.C.,78,190,,2,,,Utah,Steve Gordon,2003
 dt,"Pago Pago, ",College of the Canyons,78,300,,2,,,Utah,Jonathan Fanene,2003
 lb,"Ocala, Florida",Reedly (Calif.) JC,78,242,,2,,,UCF,R. Pullings,2003
 rb,"Jacksonvillle, Florida",White,65,195,,2,,,South Florida,Bell Johnson,2003
-qb,"Montreal, Quebec",Vanier Prep,78,210,,2,,,Akron,Jabari Arthur,2003
 de,"Miami, Florida",Northwester,78,220,,2,,,South Florida,Dorrean James,2003
 wr,"San Diego, California",Horizon,78,185,,2,,,Arizona,Anthony Johnson,2003
 wr,"North Miami, Florida",North Miami High School,78,180,,2,,,UCF,Sergiori Joachim,2003
@@ -21751,9 +21719,7 @@ ol,"Pulaski, Arkansas",Robinson,78,310,5.5,2,,,Arkansas,Nate Garner,2003
 db,"Coalville, Utah",North Summit,78,195,,2,,,Utah State,Andy Carlsen,2003
 te,"Palm Desert, California",Palm Desert,78,245,,2,,,Utah State,Jimmy Bohm,2003
 de,"Hurricane, Utah",Hurricane,78,225,,2,,,Utah State,Scott Barrett,2003
-db,Alabama,Edmond Memorial,78,190,,2,,,Tulsa,"Burnell Smith, Jr.",2003
 de,"Cincinnati, Ohio",Winton Woods,78,210,,2,,,Cincinnati,Craig Worthen,2003
-te,"Hamilton, Ontario",Barton Secondary,78,242,,2,,,Buffalo,Greg Vrantsis,2003
 te,"Great Neck, New York",Great Neck North,78,250,,2,,,Buffalo,Ken Sussman,2003
 lb,"LaGrange, Georgia",Troup County,78,190,,2,,,Cincinnati,Anthony Williams,2003
 ol,"Syracuse, New York",Canisius,78,360,,2,,,Buffalo,Quenzell Smith,2003
@@ -21769,7 +21735,6 @@ te,"Santa Clarita, California",College of the Canyons,78,222,,2,,,Buffalo,Brian 
 lb,"Booneville, California",Santa Rosa JC,65,210,,2,,,TCU,Logo Tevaseu,2003
 ol,"Pomfret, Maryland",McDonough H.S.,78,280,,2,,,Marshall,David Ziegler,2003
 wr,"Brooklyn, New York",Midwood,78,165,,2,,,Buffalo,DeSean Larmond,2003
-te,"Pickering, Ontario",St. Mary's,78,240,,2,,,Buffalo,James Judges,2003
 ol,"Wayzata, Minnesota",Bakersfield,78,300,,2,,,Buffalo,Lucas Johnson,2003
 lb,"Chatham, Virginia",Hargrave Military Academy,78,230,4.6,5,,,Virginia,Ahmad Brooks,2003
 k,"Zanesville, Ohio",Zanesville,78,215,,2,,,Cincinnati,Jordan Lear,2003
@@ -21790,7 +21755,6 @@ db,"New Brunswick, New Jersey",New Brunswick,65,170,,2,,,Buffalo,Kareem Byrom,20
 lb,"Detroit, Michigan",San Jacquin Delta,78,222,,2,,,Buffalo,DeShawn Brooks,2003
 k,"Knoxville, Tennessee",Halls H.S.,78,185,,2,,,Marshall,Ian O'Connor,2003
 ol,"Clarence, New York",Clarence,78,320,,2,,,Buffalo,Jon Burgio,2003
-db,"Etobicoke, Ontario",Henry Carr H.S.,78,185,,2,,,Marshall,Travis Noel,2003
 dt,"Fork Union, Virginia",Fork Union Military Academy,78,325,5.0,3,,,Virginia,Keenan Carter,2003
 te,"Chickasha, Oklahoma","",78,232,4.7,2,,,Tulsa,Cody Madison,2003
 db,"Oxnard, California",Ventura College,78,195,,2,,,Marshall,Lonnie McCowan,2003
@@ -21975,7 +21939,6 @@ db,"Amarillo, Texas",Palo Duro,78,190,4.5,2,,,UTEP,Devin Johnson,2003
 rb,"Sagamore Hills, Ohio",Nordonia HS,78,205,,2,,,Bowling Green,Dan Macon,2003
 ol,"Van Wert, Ohio",Crestview,78,295,,2,,,Bowling Green,Korey Lichtensteiger,2003
 de,"Reedley, California",Reedley C.C.,78,245,4.5,3,,,Auburn,Doug Langenfeld,2003
-te,"Toronto, Ontario",St. Xavier,78,220,4.8,2,,,South Carolina,Robert Pavlovic,2003
 ol,"Fullerton, California",Eastside Christian,78,260,,2,,,UTEP,Oniel Cousins,2003
 db,"Berea, Ohio",Berea,65,193,,2,,,Bowling Green,Loren Hargrove,2003
 ath,"Brockton, Massachusetts","",65,205,4.5,3,,,Boston College,Tyronne Pruitt,2003
@@ -22304,7 +22267,6 @@ db,"Tyler, Texas",John Tyler,78,190,4.4,3,,18,Texas,Matthew Melton,2002
 wr,"Strath Haven, Pennsylvania","",78,170,4.3,4,,18,Penn State,Josh Hannum,2002
 ol,"Summerville, South Carolina","",78,305,4.9,4,,18,Clemson,Dustin Fry,2002
 rb,"Palm Beach Gardens, Florida",Dwyer,65,175,4.5,3,,,Michigan State,Jerramy Scott,2002
-ol,"Montreal, Quebec",Vanier Prep,78,285,5.2,4,,18,Boston College,Jeremy Simpson,2002
 rb,"Dacula, Georgia","",65,190,4.5,4,,18,South Carolina,Kenny Irons,2002
 de,"Summit, Illinois",Argo,78,225,4.8,3,,,Boston College,Robert Ziminski,2002
 te,"Chaminade, California","",78,238,4.7,4,,18,Washington State,Jesse Taylor,2002
@@ -22800,7 +22762,6 @@ de,"Seattle, Washington",O'Dea,78,240,4.8,3,,49,Washington,Jason Benn,2002
 dt,"Newburgh, Indiana",Castle,78,265,5.0,3,,49,Illinois,Andrew Burk,2002
 lb,"Langham Creek, Texas","",78,210,4.5,3,,49,Arizona State,Jamar Williams,2002
 rb,"Detroit, Michigan",Cooley,78,215,4.6,2,,49,Toledo,Oral Hylton,2002
-db,"Toronto, Ontario",Central Teck,65,175,4.4,3,,49,Ohio State,Michael Roberts,2002
 ath,"Monticello, Arkansas","",78,180,4.4,3,,49,Arkansas,John Jackson,2002
 ath,"Port Arthur, Texas",Lincoln,65,162,4.4,3,,50,Texas Tech,Ricky Wilson,2002
 dt,"Aliceville, Alabama","",78,280,4.8,3,,50,Alabama,Henry Smith,2002
@@ -22918,7 +22879,6 @@ ol,"Overland Park, Kansas",Blue Valley Northwest,78,260,5.2,3,,59,Kansas State,J
 qb,"Pittsburgh, Pennsylvania",Keystone Oaks,78,200,4.8,2,,59,Temple,Greg Dapper,2002
 de,"Elizabeth, New Jersey","",78,270,4.8,2,,59,Akron,Gabriel Gonzalez,2002
 dt,"Miami, Florida",Coral Park,78,260,4.8,3,,59,Rutgers,Luis Rivas,2002
-rb,"Toronto, Ontario",St. Thomas Aquinas,78,190,4.5,2,,59,Rutgers,Jason Nugent,2002
 db,"Jersey Village, Texas","",78,190,4.5,3,,59,Texas Tech,Micah Sweats,2002
 wr,"Winston-Salem, North Carolina",R.J. Reynolds,78,190,4.5,3,,59,North Carolina,Derrele Mitchell,2002
 de,"New Orleans, Louisiana",Holy Cross,78,250,4.8,2,,,LSU,Ryan Willis,2002
@@ -23017,7 +22977,6 @@ ath,"Plano, Texas",West,78,195,4.5,2,,68,Stanford,David Lofton,2002
 lb,"Bartow, Georgia",Johnson County,78,220,4.7,2,,68,Troy,Chris Dickerson,2002
 dt,"Black Mountain, North Carolina",Owen,78,280,4.7,2,,68,Wake Forest,Jamil Smith,2002
 wr,"Detroit, Michigan",Country Day,78,205,4.5,3,,68,Northwestern,Brandon Horn,2002
-db,"Montreal, Quebec",Vanier,65,175,4.4,2,,68,Syracuse,Modibo Sidibe,2002
 de,"Dallas, Texas",Highland Park,78,245,,2,,68,Southern Methodist,Brent Karrington,2002
 db,"Belleville, Illinois",West,78,195,4.4,2,,68,Minnesota,Guillermo Davis,2002
 ol,"Santa Margarita, California",Catholic,78,265,4.9,3,,68,Washington State,Spencer Hollison,2002
@@ -23071,7 +23030,6 @@ dt,"Dayton, Texas","",78,275,4.8,2,,74,Texas Tech,Joseph Edwards,2002
 db,"Miami, Florida",Jackson,78,185,4.5,2,,74,Kansas,Dexter Jackson,2002
 wr,"Canton, Ohio",McKinley,65,170,4.5,3,,74,Bowling Green,Reggie Corner,2002
 de,"Morganza, Louisiana",Pointe Coupee,78,225,4.5,2,,74,Auburn,Kyle Derozan,2002
-rb,"Toronto, Ontario",Birchmount Park,65,180,4.4,2,,74,Northwestern,Clifton Dawson,2002
 lb,"North Fort Myers, Florida",Bishop Verot,78,205,,2,,74,Air Force,John Mohring,2002
 ol,"Lawton, Oklahoma",Eisenhower,78,290,5.1,2,,74,Stanford,Ismail Simpson,2002
 lb,"Honolulu, Hawaii",St. Louis,78,235,4.6,2,,74,Stanford,Taualai Fonoti,2002
@@ -23116,7 +23074,6 @@ ol,"Hiram, Georgia",Paulding County,78,310,5.2,2,,79,UAB,Joey Horne,2002
 ath,"Canton, Ohio",McKinley,78,185,4.5,2,,79,Purdue,Marc Huddleston,2002
 ath,"Pittsburg, Kansas",Pittsburg,78,205,4.6,2,,80,Kansas State,Dylan Meier,2002
 lb,"Jenks, Oklahoma","",78,206,4.6,2,,80,West Virginia,Jay Henry,2002
-db,"Toronto, Ontario",Central Tech,78,195,4.5,2,,80,West Virginia,DeWayne Mundle,2002
 wr,"Charlotte, North Carolina",Independence,78,195,4.5,3,,80,Duke,Eric Lyon,2002
 dt,"Camden, New Jersey",Wilson,78,270,5.2,2,,80,Rutgers,Haines Holloway,2002
 lb,"Willis, Texas","",78,177,4.4,2,,80,Baylor,D.D. Terry,2002
@@ -23236,7 +23193,6 @@ db,"Abilene, Texas",Wylie,78,200,4.5,2,,89,Purdue,John Lampert,2002
 wr,"Avenal, California",Avenal,78,185,4.5,2,,97,Fresno State,Paul Williams,2002
 ol,"Cullman, Alabama","",78,330,5.2,2,,97,Arkansas,Zac Tubbs,2002
 dt,"Pendleton, Oregon","",78,275,5.0,2,,97,Oregon,Shawn Perkins,2002
-ol,"Sherbrooke, Quebec",Champlain,78,280,,2,,98,UCF,Cedric Gagne-Marcoux,2002
 wr,"Union City, New Jersey",Union City,65,185,4.5,2,,98,Iowa,Miguel Merrick,2002
 db,"Aurora, Colorado",Eaglecrest High School,78,185,4.5,2,,90,Colorado State,Luke Davis,2002
 lb,"Houston, Texas",St. Pius X,78,205,4.6,2,,98,Southern Methodist,Jamar Bey,2002
@@ -23508,7 +23464,7 @@ lb,"Kilgore, Texas",Kilgore J.C.,78,200,4.6,5,,,Nebraska,DeMorrio Williams,2002
 db,"San Francisco, California",City College of San Francisco,65,175,4.5,4,,,USC,Ronald Nunn,2002
 db,"Arcadia, California","",65,170,4.6,2,,,Georgetown,Brian Golper,2002
 db,"Dallas, Texas",South Oak Cliff,78,185,,2,,,Arkansas State,Darius Woods,2002
-db,Mississippi,Southwest Mississippi JC,65,175,,2,,,Arkansas State,Joe Williams,2002
+db,"Summit, Mississippi",Southwest Mississippi JC,65,175,,2,,,Arkansas State,Joe Williams,2002
 db,"Dallas, Texas",Sam Houston,65,175,,2,,,Arkansas State,Marques Walker,2002
 db,"Dallas, Texas",Lincoln,78,205,,2,,,Arkansas State,Josh Ward,2002
 wr,"Arlington, Texas",Sam Houston,65,165,,2,,,Arkansas State,Gary Vincent,2002
@@ -23543,9 +23499,7 @@ lb,"St. George, Utah",Dixie College,78,250,4.8,2,,,Hawaii,Darrell Tautofi,2002
 ol,"Honolulu, Hawaii",St. Louis,78,240,4.8,2,,,Hawaii,Mesepa Reed,2002
 ol,"Honolulu, Hawaii",Kailua,78,295,,2,,,Hawaii,Kahai La Count,2002
 qb,"Honolulu, Hawaii",Kahuku,78,180,,2,,,Hawaii,Inoke Funaki,2002
-dt,Hawaii,Fresno City College,78,320,,2,,,Hawaii,Matt Faga,2002
-wr,Hawaii,St Louis School,65,175,,2,,,Hawaii,Ross Dickerson,2002
-wr,Hawaii,Chaffey College,78,185,,2,,,Hawaii,Jeremiah Cockheran,2002
+dt,"Fresno, California",Fresno City College,78,320,,2,,,Hawaii,Matt Faga,2002
 db,"Louisa, Kentucky",Lawrence County,78,180,,2,,,Miami (OH),Dontae Wright,2002
 wr,"Cincinnati, Ohio",St. Xavier,78,205,4.5,2,,,Miami (OH),Josh Williams,2002
 db,"Milan, Illinois",Army Prep,78,190,,2,,,Miami (OH),Bryan Tyson,2002
@@ -23624,11 +23578,9 @@ ol,"Aurora, Colorado",Grandview High School,78,290,5.1,2,,,Boise State,Kevin Wor
 db,"Lethbridge, Alberta",Lethbridge Collegiate of Institute,78,235,,2,,,Boise State,Mike Williams,2002
 de,"Oxnard, California",Rio Mesa HS,78,235,,2,,,Boise State,Mike Dominguez,2002
 db,"Rancho Cucamonga, California",Rancho Cucamonga,78,170,,2,,,Boise State,Gerald Alexander,2002
-db,Quebec,Vieux,78,205,,2,,,Eastern Michigan,Manasse Zephir,2002
 lb,"Cedar Grove, New Jersey",Cedar Grove,78,205,,2,,,Eastern Michigan,Mark Zambrano,2002
 dt,"Colombus, Ohio",Northland,78,275,,2,,,Eastern Michigan,Reggie Woods,2002
 ol,"Long Beach, California",Kennedy-Cerritos JC,78,290,,2,,,Eastern Michigan,Lloyd Wilson,2002
-dt,Ontario,Michael Power,78,275,,2,,,Eastern Michigan,Sean Simms,2002
 ol,"Cadillac, Michigan",Cadillac,78,273,,2,,,Eastern Michigan,Robert Seehase,2002
 dt,"Troy, Michigan",Athens,78,275,,2,,,Eastern Michigan,Jason Robert,2002
 wr,"Akron, Ohio",Walsh Jesuit,65,165,,2,,,Eastern Michigan,Trumaine Riley,2002
@@ -23755,7 +23707,6 @@ db,"Langham Creek, Texas","",78,190,4.4,2,,,San Jose State,Chris Baloney,2002
 dt,"Miame, Florida",Chabot JC,78,275,,2,,,Akron,Darius Thomas,2002
 k,"Niles, Ohio",McKinley,78,175,,2,,,Akron,Billy Sullivan,2002
 lb,"Massillon, Ohio",Jackson,78,210,,2,,,Akron,Jay Rohr,2002
-dt,"Toronto, Ontario",St Mary's Catholic,78,250,,2,,,Akron,Jermaine Reid,2002
 db,"Toledo, Ohio",Rogers,78,185,,2,,,Akron,Ron Rease,2002
 qb,"Struthers, Ohio",Ohio State,78,210,,2,,,Akron,Rick McFadden,2002
 lb,"Perry, Ohio",Lake Perry,78,235,,2,,,Akron,Aaron Holderman,2002
@@ -23893,7 +23844,6 @@ lb,"Detroit, Michigan",Renaissance HS,78,230,,2,,,Minnesota,Stephon Hopkins,2002
 de,"Mableton, Georgia",Pebblebrook HS,78,230,,2,,,Minnesota,Mario Reese,2002
 lb,"Kingwood, Texas",Kingwood,78,210,,2,,,Indiana,Kyle Killion,2002
 k,"Denver, Colorado",Chatfield,65,175,,2,,,Indiana,Troy Grosfield,2002
-k,Alabama,"",78,170,,2,,,Indiana,Michael Beattie,2002
 de,"Tampa Bay, Florida",Tampa Bay Tech,78,240,4.8,2,,,Minnesota,Eric Clark,2002
 db,"Apopka, Florida","",65,180,4.4,2,,,Memphis,Cato Mott,2002
 ol,"Alpadena, California",John Muier,78,260,,2,,,Memphis,Bruce McCaleb,2002
