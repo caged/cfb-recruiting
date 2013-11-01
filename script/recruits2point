@@ -36,8 +36,43 @@ mappings = {
   'Perkinston:28'       => 'Wiggins',
   'Autauga:01'          => 'Autaugaville',
   'Wayne:34'            => 'Paterson',
-  'Ellenwood:13'        => 'Morrow'
-  'Ft. Worth' => 'Fort Worth'
+  'Ellenwood:13'        => 'Morrow',
+  'Etiwanda:06'         => 'Rancho Cucamonga'
+  'Cordova:47'          => 'Memphis'
+  # 'Sicklerville:34' => '',
+  # 'Newbury Park:06' => '',
+  # 'Lake Balboa:06' => '',
+  # 'Van Nuys:06' => '',
+  # 'Opa Locka:12' => '',
+  # 'Fort Monmouth:34' => '',
+  # 'Staten Island:36' => '',
+  # 'Newhall:06' => '',
+  # 'Citra:12' => '',
+  # 'Salisbury:09' => '',
+  # 'Wayne:42' => '',
+  # 'Wexford:42' => '',
+  # 'Midlothian:51' => '',
+  # 'Spring Branch:48' => '',
+  # 'Irvington:34' => '',
+  # 'Valencia:06' => '',
+  # 'Long Island:36' => '',
+  # 'Fort Bend:48' => '',
+  # 'Macomb:26' => '',
+  # 'Avon:09' => '',
+  # 'North Hollywood:06' => '',
+  # 'Canyon Country:06' => '',
+  # 'Westwood:25' => '',
+  # 'Bloomfield:09' => '',
+  # 'Teaneck:34' => '',
+  # 'Kingwood:48' => '',
+  # 'Mililani:15' => '',
+  # 'Geismar:22' => '',
+  # 'West Orange:34' => '',
+  # 'Ponte Vedra Beach:12' => '',
+  # 'Willingboro:34' => '',
+  # 'Belle Glades:12' => '',
+  # 'Canton:26' => '',
+  # 'Milford:09' => ''
 }
 
 schools = {}
@@ -84,27 +119,30 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
     city,_ = recruit.location.split(',')
 
     city = mappings["#{city}:#{state.fips}"] if mappings["#{city}:#{state.fips}"]
-    city2 = city.gsub('St.', 'Saint').gsub('Ft.', 'Fort').('Mt.', 'Mount')
+    city2 = city.gsub('St.', 'Saint').gsub('Ft.', 'Fort').gsub('Mt.', 'Mount')
     city3 = city.gsub('Saint', 'St.').gsub('Fort', 'Ft.').gsub('Mount', 'Mt.')
-    names = [city, city2, city3].map(&:downcase).join(',')
+    names = [city, city2, city3].map(&:downcase).map {|v| "'#{PG::Connection::escape_string(v)}'" }.join(',')
 
-    conn.exec("SELECT name,gid FROM nhgis_places WHERE LOWER(name) IN($1) AND statefp=$2", [names, state.fips]) do |res|
+    begin
+      res = conn.exec_params(%(SELECT name,gid FROM nhgis_places WHERE LOWER(name) IN(#{names}) AND statefp='#{state.fips}'))
+    rescue PG::Error => err
+      puts err.inspect
+    end
 
-      # The most confident query didn't yield any results, so lets try the second most confident query and see
-      # if there are any names like the city in the same state.
-      if res.first.nil?
-        conn.exec("SELECT name FROM nhgis_places WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips]) do |res2|
-          if res2.count == 1
-            puts "Found on second attempt: #{city}, #{state.fips}"
-            recruit.place_id = res2.first['gid']
-          else
-            unfound_recruits["#{city}:#{state.fips}"] ||= 0
-            unfound_recruits["#{city}:#{state.fips}"] += 1
-          end
+    # The most confident query didn't yield any results, so lets try the second most confident query and see
+    # if there are any names like the city in the same state.
+    if res.first.nil?
+      conn.exec("SELECT name FROM nhgis_places WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips]) do |res2|
+        if res2.count == 1
+          puts "Found on second attempt: #{city}, #{state.fips}"
+          recruit.place_id = res2.first['gid']
+        else
+          unfound_recruits["#{city}:#{state.fips}"] ||= 0
+          unfound_recruits["#{city}:#{state.fips}"] += 1
         end
-      else
-        recruit.place_id = res.first['gid']
       end
+    else
+      recruit.place_id = res.first['gid']
     end
 
 
