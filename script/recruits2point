@@ -16,9 +16,8 @@ mappings = {
   'Amherst:36'          => 'Williamsville',
   'Nashville:47'        => 'Nashville-Davidson metropolitan government (balance)',
   'Fork Union:51'       => 'Weber City',
-  'Indianapolis'        => 'Indianapolis city (balance)',
+  'Indianapolis:18'     => 'Indianapolis city (balance)',
   'Ft. Lauderdale:12'   => 'Fort Lauderdale',
-  'Klien:48'            => 'Houston',
   'Brooklyn:36'         => 'New York',
   'Ventura:06'          => 'San Buenaventura (Ventura)',
   'Woodland Hills:06'   => 'Los Angeles',
@@ -26,17 +25,46 @@ mappings = {
   'Wilmington:06'       => 'Los Angeles',
   'Sherman Oaks:06'     => 'Los Angeles',
   'Encino:06'           => 'Los Angeles',
-  'Venice:06'           => 'Los Angeles'
+  'Venice:06'           => 'Los Angeles',
+  'West Hills:06'       => 'Los Angeles',
+  'Orchard Lake:26'     => 'Orchard Lake Village',
+  'Cypress:48'          => 'Houston',
+  'Klein:48'            => 'Houston',
+  'Alief:48'            => 'Houston',
+  'Sugarland:48'        => 'Houston',
+  'Ponte Vedra:12'      => 'Jacksonville',
+  'Perkinston:28'       => 'Wiggins',
+  'Autauga:01'          => 'Autaugaville',
+  'Wayne:34'            => 'Paterson',
+  'Ellenwood:13'        => 'Morrow'
+  'Ft. Worth' => 'Fort Worth'
 }
 
 schools = {}
 conn = PG.connect(:dbname => 'nhgis')
-stadiums = CSV.read('data/stadiums.csv', :headers => true).map do |st|
+
+@stadiums = CSV.read('data/stadiums.csv', :headers => true).map do |st|
   OpenStruct.new(st.to_hash)
 end
 
-states = CSV.read('data/states.csv', :headers => true).map do |st|
+@states = CSV.read('data/states.csv', :headers => true).map do |st|
   OpenStruct.new(st.to_hash)
+end
+
+def state_for_recruit(recruit)
+  @states.detect do |st|
+    state = st.state.strip.downcase
+    city, state2 = recruit.location.split(',')
+    state == state2.strip.downcase
+  end
+end
+
+def stadium_for_recruit(recruit)
+  @stadiums.detect { |s| [s.team, s.alt].include?(recruit.institution) }
+end
+
+def reconcile_city_and_state(city, state)
+
 end
 
 # (select RandomPointsInPolygon(portland_blocks.geom, nhgis_data.h8c002) as geom from portland_blocks  LEFT JOIN nhgis_data ON portland_blocks.gisjoin = nhgis_data.gisjoin WHERE nhgis_data.h8c002 > 0) as points
@@ -46,25 +74,36 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
   puts i
   i += 1
   recruit = OpenStruct.new(recruit.to_hash)
-  school = stadiums.detect { |s| [s.team, s.alt].include?(recruit.institution) }
+  school = stadium_for_recruit(recruit)
+
   if school
     schools[school.team] ||= 0
     schools[school.team] += 1
 
-    state = states.detect do |st|
-      state = st.state.strip.downcase
-      city, state2 = recruit.location.split(',')
-      state == state2.strip.downcase
-    end
-
+    state = state_for_recruit(recruit)
     city,_ = recruit.location.split(',')
 
-    city = mappings["#{city}:#{state.fips}"] if !mappings["#{city}:#{state.fips}"].nil?
+    city = mappings["#{city}:#{state.fips}"] if mappings["#{city}:#{state.fips}"]
+    city2 = city.gsub('St.', 'Saint').gsub('Ft.', 'Fort').('Mt.', 'Mount')
+    city3 = city.gsub('Saint', 'St.').gsub('Fort', 'Ft.').gsub('Mount', 'Mt.')
+    names = [city, city2, city3].map(&:downcase).join(',')
 
-    conn.exec("SELECT name FROM nhgis_places WHERE name=$1 AND statefp=$2", [city, state.fips]) do |res|
+    conn.exec("SELECT name,gid FROM nhgis_places WHERE LOWER(name) IN($1) AND statefp=$2", [names, state.fips]) do |res|
+
+      # The most confident query didn't yield any results, so lets try the second most confident query and see
+      # if there are any names like the city in the same state.
       if res.first.nil?
-        unfound_recruits[recruit.location] ||= 0
-        unfound_recruits[recruit.location] += 1
+        conn.exec("SELECT name FROM nhgis_places WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips]) do |res2|
+          if res2.count == 1
+            puts "Found on second attempt: #{city}, #{state.fips}"
+            recruit.place_id = res2.first['gid']
+          else
+            unfound_recruits["#{city}:#{state.fips}"] ||= 0
+            unfound_recruits["#{city}:#{state.fips}"] += 1
+          end
+        end
+      else
+        recruit.place_id = res.first['gid']
       end
     end
 
@@ -77,4 +116,7 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
 end
 
 puts unfound_recruits.length
-puts unfound_recruits.sort_by { |k,v| v }.inspect
+puts unfound_recruits.inspect
+unfound_recruits.sort_by { |k,v| v }.reverse.each do |val|
+  puts %('#{val[0]}' => '')
+end
