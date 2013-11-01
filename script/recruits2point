@@ -4,6 +4,31 @@ require 'csv'
 require 'pg'
 require 'ostruct'
 
+mappings = {
+  'Chestnut Hill:25'    => 'Boston',
+  'Honolulu:15'         => 'Urban Honolulu',
+  'Athens:13'           => 'Athens-Clarke County unified government (balance)',
+  'University Park:42'  => 'State College',
+  'Boise:16'            => 'Boise City',
+  'Lexington:21'        => 'Lexington-Fayette',
+  'Piscataway:34'       => 'New Brunswick',
+  'Louisville:21'       => 'Louisville/Jefferson County metro government (balance)',
+  'Amherst:36'          => 'Williamsville',
+  'Nashville:47'        => 'Nashville-Davidson metropolitan government (balance)',
+  'Fork Union:51'       => 'Weber City',
+  'Indianapolis'        => 'Indianapolis city (balance)',
+  'Ft. Lauderdale:12'   => 'Fort Lauderdale',
+  'Klien:48'            => 'Houston',
+  'Brooklyn:36'         => 'New York',
+  'Ventura:06'          => 'San Buenaventura (Ventura)',
+  'Woodland Hills:06'   => 'Los Angeles',
+  'Harbor City:06'      => 'Los Angeles',
+  'Wilmington:06'       => 'Los Angeles',
+  'Sherman Oaks:06'     => 'Los Angeles',
+  'Encino:06'           => 'Los Angeles',
+  'Venice:06'           => 'Los Angeles'
+}
+
 schools = {}
 conn = PG.connect(:dbname => 'nhgis')
 stadiums = CSV.read('data/stadiums.csv', :headers => true).map do |st|
@@ -34,6 +59,8 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
 
     city,_ = recruit.location.split(',')
 
+    city = mappings["#{city}:#{state.fips}"] if !mappings["#{city}:#{state.fips}"].nil?
+
     conn.exec("SELECT name FROM nhgis_places WHERE name=$1 AND statefp=$2", [city, state.fips]) do |res|
       if res.first.nil?
         unfound_recruits[recruit.location] ||= 0
@@ -50,4 +77,4 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
 end
 
 puts unfound_recruits.length
-puts unfound_recruits.sort_by { |k,v| v }
+puts unfound_recruits.sort_by { |k,v| v }.inspect
