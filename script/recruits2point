@@ -10,13 +10,44 @@ stadiums = CSV.read('data/stadiums.csv', :headers => true).map do |st|
   OpenStruct.new(st.to_hash)
 end
 
+states = CSV.read('data/states.csv', :headers => true).map do |st|
+  OpenStruct.new(st.to_hash)
+end
+
+# (select RandomPointsInPolygon(portland_blocks.geom, nhgis_data.h8c002) as geom from portland_blocks  LEFT JOIN nhgis_data ON portland_blocks.gisjoin = nhgis_data.gisjoin WHERE nhgis_data.h8c002 > 0) as points
+unfound_recruits = {}
+i = 0
 CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
+  puts i
+  i += 1
   recruit = OpenStruct.new(recruit.to_hash)
   school = stadiums.detect { |s| [s.team, s.alt].include?(recruit.institution) }
   if school
     schools[school.team] ||= 0
     schools[school.team] += 1
+
+    state = states.detect do |st|
+      state = st.state.strip.downcase
+      city, state2 = recruit.location.split(',')
+      state == state2.strip.downcase
+    end
+
+    city,_ = recruit.location.split(',')
+
+    conn.exec("SELECT name FROM nhgis_places WHERE name=$1 AND statefp=$2", [city, state.fips]) do |res|
+      if res.first.nil?
+        unfound_recruits[recruit.location] ||= 0
+        unfound_recruits[recruit.location] += 1
+      end
+    end
+
+
+    # conn.exec("SELECT geom, RandomPointsInPolygon(nhgis_places.geom, 1) FROM nhgis_places WHERE gid=$1", [school.place_gid]) do |res|
+    #   puts res.first.inspect
+    # end
+
   end
 end
 
-#puts schools.sort_by {|k,v| v}.reverse.inspect
+puts unfound_recruits.length
+puts unfound_recruits.sort_by { |k,v| v }
