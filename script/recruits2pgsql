@@ -29,7 +29,6 @@ fi
 dropdb --interactive -e $dbname
 createdb --encoding UTF8 $dbname
 
-
 sql="CREATE TABLE recruits (
     position character varying(120),
     location character varying(120),
@@ -47,4 +46,5 @@ sql="CREATE TABLE recruits (
 
 psql -d $dbname -c 'CREATE EXTENSION postgis'
 psql -d $dbname -c "${sql}"
+psql -d $dbname -f script/point-in-polygon.sql
 
