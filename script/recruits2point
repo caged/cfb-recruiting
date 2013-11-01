@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'csv'
+require 'pg'
+require 'ostruct'
+
+conn = PG.connect(:dbname => 'nhgis')
+stadiums = CSV.read('data/stadiums.csv', :headers => true).map do |st|
+  OpenStruct.new(st.to_hash)
+end
+
+schools = {}
+CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
+  recruit = OpenStruct.new(recruit.to_hash)
+  has_school = stadiums.detect { |s| [s.team, s.alt].include?(recruit.institution) }
+  if has_school.nil?
+    schools[recruit.institution] ||= 0
+    schools[recruit.institution] += 1
+  end
+end
+
+puts schools.sort_by {|k, v| v}.reverse.inspect
