@@ -81,11 +81,6 @@ def stadium_for_recruit(recruit)
   @stadiums.detect { |s| [s.team, s.alt].include?(recruit.institution) }
 end
 
-def reconcile_city_and_state(city, state)
-
-end
-
-# (select RandomPointsInPolygon(portland_blocks.geom, nhgis_data.h8c002) as geom from portland_blocks  LEFT JOIN nhgis_data ON portland_blocks.gisjoin = nhgis_data.gisjoin WHERE nhgis_data.h8c002 > 0) as points
 unfound_recruits = {}
 i = 0
 CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
