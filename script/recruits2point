@@ -83,15 +83,16 @@ end
 
 unfound_recruits = {}
 i = 0
-CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
-  puts i
-  i += 1
+recruits = CSV.read('data/recruits.csv', :headers => true)
+points = CSV.open('data/recruits-with-points.csv', 'w', :headers => recruits.headers.concat([:place_gid, :statefp, :geom]), :write_headers => true)
+recruits.each do |recruit|
+  recruitvals = recruit.to_hash.values
   recruit = OpenStruct.new(recruit.to_hash)
-  school = stadium_for_recruit(recruit)
+  bsc_school = stadium_for_recruit(recruit)
 
-  if school
-    schools[school.team] ||= 0
-    schools[school.team] += 1
+  if bsc_school
+    schools[bsc_school.team] ||= 0
+    schools[bsc_school.team] += 1
 
     state = state_for_recruit(recruit)
     city,_ = recruit.location.split(',')
@@ -99,7 +100,9 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
     city = mappings["#{city}:#{state.fips}"] if mappings["#{city}:#{state.fips}"]
     city2 = city.gsub('St.', 'Saint').gsub('Ft.', 'Fort').gsub('Mt.', 'Mount')
     city3 = city.gsub('Saint', 'St.').gsub('Fort', 'Ft.').gsub('Mount', 'Mt.')
-    names = [city, city2, city3].map(&:downcase).map {|v| "'#{PG::Connection::escape_string(v)}'" }.join(',')
+    city4 = city.gsub('St ', 'St. ').gsub('Ft ', 'Ft. ').gsub('Mt ', 'Mt. ')
+
+    names = [city, city2, city3, city4].map(&:downcase).map {|v| "'#{PG::Connection::escape_string(v)}'" }.join(',')
 
     begin
       res = conn.exec_params(%(SELECT name,gid FROM nhgis_places WHERE LOWER(name) IN(#{names}) AND statefp='#{state.fips}'))
@@ -107,32 +110,32 @@ CSV.foreach('data/recruits.csv', :headers => true) do |recruit|
       puts err.inspect
     end
 
-    # The most confident query didn't yield any results, so lets try the second most confident query and see
-    # if there are any names like the city in the same state.
-    if res.first.nil?
-      conn.exec("SELECT name FROM nhgis_places WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips]) do |res2|
-        if res2.count == 1
-          puts "Found on second attempt: #{city}, #{state.fips}"
-          recruit.place_id = res2.first['gid']
-        else
-          unfound_recruits["#{city}:#{state.fips}"] ||= 0
-          unfound_recruits["#{city}:#{state.fips}"] += 1
-        end
-      end
+    if !res.first.nil?
+      recruit.place_gid = res.first['gid']
     else
-      recruit.place_id = res.first['gid']
+      res = conn.exec("SELECT name FROM nhgis_places WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips])
+      if res.count == 1
+        recruit.place_gid = res.first['gid']
+      elsif res.count > 1
+        puts "#{city}:#{state.fips}: #{res.map {|r| r['name']}}"
+      end
     end
 
+    if recruit.place_gid.nil?
+      unfound_recruits["#{city}:#{state.fips}"] ||= 0
+      unfound_recruits["#{city}:#{state.fips}"] += 1
+    end
 
-    # conn.exec("SELECT geom, RandomPointsInPolygon(nhgis_places.geom, 1) FROM nhgis_places WHERE gid=$1", [school.place_gid]) do |res|
-    #   puts res.first.inspect
-    # end
+    if recruit.place_gid
+      res = conn.exec("SELECT ST_AsText(RandomPointsInPolygon(nhgis_places.geom, 1)) as point FROM nhgis_places WHERE gid=$1", [recruit.place_gid])
+      vals = recruitvals.concat([recruit.place_gid, state.fips, %(SRID=4326;#{res.first['point']})])
+      points << vals
 
+      i += 1
+      puts i
+    end
   end
 end
 
 puts unfound_recruits.length
-puts unfound_recruits.inspect
-unfound_recruits.sort_by { |k,v| v }.reverse.each do |val|
-  puts %('#{val[0]}' => '')
-end
+puts unfound_recruits.sort_by { |k,v| v }.reverse.inspect
