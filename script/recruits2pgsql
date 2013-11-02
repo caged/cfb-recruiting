@@ -41,10 +41,20 @@ sql="CREATE TABLE recruits (
     rank integer,
     institution character varying(120),
     name character varying(120),
-    year integer
+    year integer,
+    place_gid integer,
+    statefp character varying(2),
+    geom geometry(Point,4326)
 )"
 
 psql -d $dbname -c 'CREATE EXTENSION postgis'
+psql -d $dbname -c "DROP TABLE IF EXISTS recruits"
 psql -d $dbname -c "${sql}"
 psql -d $dbname -f script/point-in-polygon.sql
+psql -d $dbname -c "COPY recruits FROM '$(pwd)/data/recruits-with-points.csv' WITH CSV HEADER"
+psql -c "create index recruits_gix on recruits using gist (geom)" $dbname
+psql -c "create index recruits_stars on recruits (stars)" $dbname
+psql -c "create index recruits_place_gid on recruits (place_gid)" $dbname
+
+
 
