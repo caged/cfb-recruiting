@@ -2,9 +2,7 @@
 
 render = ->
   width       = $(document.body).width()
-  height      = Math.min(500, width)
-  # colors      = ['#1a1a1a', '#353535', '#555', '#757575', '#959595', '#b5b5b5', '#d5d5d5', '#f5f5f5']
-  # color       = d3.scale.quantile().range colors
+  height      = width
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#f1f1f1', '#0aafed']
@@ -14,9 +12,14 @@ render = ->
     .attr('height', height)
 
   tip = d3.tip().attr('class', 'd3-tip').html (d) ->
-    p = d.properties
-    " <h3>#{p.name} County</h3>
-      <p><strong>#{p.four_star || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+    if d.properties?
+      p = d.properties
+      "<h3>#{p.name} County</h3><p><strong>#{p.four_star || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+    else
+      "<h3>#{d.team}</h3><p>#{d.stadium} in #{d.city}, #{d.state}</p>"
+
+  #tip2 = d3.tip().attr('class', 'd3-tip').h
+
   map.call(tip)
 
   $.when($.ajax('/data/recruiting.json'), $.ajax('/data/stadiums.csv')).then (r1, r2) ->
@@ -28,7 +31,8 @@ render = ->
     counties = topojson.feature usa, usa.objects.counties
     nation   = topojson.mesh usa, usa.objects.nation
 
-    fill.domain [0.1, d3.max(counties.features, (d) -> parseFloat(d.properties.four_star))]
+
+    fill.domain [0.1, d3.max(counties.features, (d) -> d.properties.four_star)]
 
     # Auto scale map based on bounds
     projection.scale(1).translate([0, 0])
@@ -44,7 +48,7 @@ render = ->
       .data(counties.features)
     .enter().append('path')
       .attr('class', 'county')
-      .style('fill', (d) -> fill(parseFloat(d.properties.four_star)))
+      .style('fill', (d) -> fill(d.properties.four_star || 0))
       .attr('d', path)
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
@@ -69,8 +73,10 @@ render = ->
     .enter().append('circle')
       .attr('cx', (d) -> d.position[0])
       .attr('cy', (d) -> d.position[1])
-      .attr('r', 2)
+      .attr('r', 3)
       .attr('class', 'stadium')
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
 
 
 $(render)
