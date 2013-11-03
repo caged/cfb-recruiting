@@ -31,7 +31,12 @@ body {
 
 .recruits circle {
   fill-opacity: 0.4;
+}
 
+.connection {
+  fill: none;
+  stroke: green;
+  stroke-width: 1;
 }
 
 .d3-tip {

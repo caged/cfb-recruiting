@@ -1,5 +1,4 @@
-# all.coffee
-
+#= require master-map
 render = ->
   width       = $(document.body).width()
   height      = width
@@ -81,21 +80,19 @@ render = ->
     geometries = map.append('g')
 
     # Add counties
-    # geometries.append('g')
-    #   .attr('class', 'counties')
-    # .selectAll('path.county')
-    #   .data(counties.features)
-    # .enter().append('path')
-    #   .attr('class', 'county')
-    #   .style('fill', (d) -> fill(d.properties[starCount] || 0))
-    #   .attr('d', path)
-    #   .on('mouseover', tip.show)
-    #   .on('mouseout', tip.hide)
-    #   .on('click', onCountyClick)
-    #   .style('stroke', (d) ->
-    #     stars = d.properties[starCount] || 0
-    #     if stars > 0 then fill(stars) else '#333'
-    #   )
+    geometries.append('g')
+      .attr('class', 'counties')
+    .selectAll('path.county')
+      .data(counties.features)
+    .enter().append('path')
+      .attr('class', 'county')
+      .style('fill', (d) -> fill(d.properties[starCount] || 0))
+      .attr('d', path)
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+      .style('stroke', (d) ->
+        stars = d.properties[starCount] || 0
+        if stars > 0 then fill(stars) else '#333')
 
     # Add states mesh
     geometries.append('path')
@@ -109,20 +106,26 @@ render = ->
       .attr('class', 'nation')
       .attr('d', path)
 
-    for recruit in recruits
-      recruit.position = projection [recruit.lat, recruit.lon]
+    # for recruit in recruits
+    #   recruit.position = projection [recruit.lat, recruit.lon]
 
-    recs = geometries.append('g')
-      .attr('class', 'recruits')
+    # recgroup = geometries.append('g')
+    #   .attr('class', 'recruits')
 
-    recs.selectAll('circle.recruit')
-      .data(recruits)
-    .enter().append('circle')
-      .attr('cx', (d) -> d.position[0])
-      .attr('cy', (d) -> d.position[1])
-      .attr('r', 1)
-      .style('fill', '#ff00ff')
-      # .attr('filter', 'url(#blend)')
+    # recs = recgroup.selectAll('circle.recruit')
+    #   .data(recruits)
+    # .enter().append('circle')
+    #   .attr('cx', (d) -> d.position[0])
+    #   .attr('cy', (d) -> d.position[1])
+    #   .attr('r', 1)
+    #   .style('fill', '#ff00ff')
+    #   .style('fill-opacity', 0)
+    #   .attr('class', (d) -> d.school.toLowerCase().replace(' ', '-'))
+
+# svg.append("path")
+#     .datum({type: "LineString", coordinates: [[-77.05, 38.91], [116.35, 39.91]]})
+#     .attr("class", "arc")
+#     .attr("d", path)
 
     for stadium in stadiums
       stadium.position = projection [stadium.lat, stadium.lon]
@@ -136,4 +139,24 @@ render = ->
       .attr('class', 'stadium')
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
+      .on('click', (d) ->
+        players = recruits.filter (r) -> d.team == r.institution
+        features = players.map (p) ->
+          type: "LineString"
+          coordinates: [[d.lat, d.lon], [p.lat, p.lon]]
+          properties: p
+
+        connections = map.selectAll('.connection')
+          .data(features, (d) -> "#{d.properties.name}:#{d.properties.school}")
+
+        connections.enter().append('path')
+          .attr('class', 'connection')
+          .attr('d', path)
+
+        connections.exit().remove()
+        # players = recruits.filter (s) ->
+        #   console.log d.institution, s.team
+        #   s.team == d.institution
+      )
+
 $(render)
