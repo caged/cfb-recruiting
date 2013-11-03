@@ -1,31 +1,33 @@
 @charset "utf-8";
 
 body {
-  background: #fff;
+  background: #010101;
   font-family: sans-serif;
 }
 
 .counties {
   stroke-width: 0.5;
-  stroke: #fff;
+  stroke: #222;
   shape-rendering: crispedges;
+  fill-opacity: 0.5;
 }
 
 .states {
   fill: none;
-  stroke: #fff;
-  stroke-width: 1.5;
+  stroke: #444;
+  stroke-width: 1;
 }
 
 .nation {
-  stroke: #fff;
+  stroke: #444;
   fill: none;
 }
 
 .stadium {
-  fill: hotpink;
+  fill: #009dff;
   stroke: #fff;
-  stroke-width: 1;
+  stroke-width: 0;
+  mix-blend-mode: screen;
 }
 
 .d3-tip {
