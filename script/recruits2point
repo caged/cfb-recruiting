@@ -84,7 +84,7 @@ end
 unfound_recruits = {}
 i = 0
 recruits = CSV.read('data/recruits.csv', :headers => true)
-points = CSV.open('data/recruits-with-points.csv', 'w', :headers => recruits.headers.concat([:place_gid, :statefp, :geom]), :write_headers => true)
+points = CSV.open('data/recruits-with-points.csv', 'w', :headers => recruits.headers.concat([:place_gid, :statefp, :lat, :lon]), :write_headers => true)
 recruits.each do |recruit|
   recruitvals = recruit.to_hash.values
   recruit = OpenStruct.new(recruit.to_hash)
@@ -126,9 +126,13 @@ recruits.each do |recruit|
       unfound_recruits["#{city}:#{state.fips}"] += 1
     end
 
+    query = "SELECT ST_AsText(RandomPointsInPolygon(nhgis_places.geom, 1)) AS point FROM nhgis_places WHERE gid=$1"
+    query = "WITH points as (SELECT *, RandomPointsInPolygon(nhgis_places.geom, 1) AS point FROM nhgis_places WHERE gid=$1) SELECT st_x(point) AS lat, st_y(point) AS lon FROM points"
     if recruit.place_gid
-      res = conn.exec("SELECT ST_AsText(RandomPointsInPolygon(nhgis_places.geom, 1)) as point FROM nhgis_places WHERE gid=$1", [recruit.place_gid])
-      vals = recruitvals.concat([recruit.place_gid, state.fips, %(SRID=4326;#{res.first['point']})])
+      res = conn.exec(query, [recruit.place_gid])
+      lat = res.first['lat']
+      lon = res.first['lon']
+      vals = recruitvals.concat([recruit.place_gid, state.fips, lat, lon])
       points << vals
 
       i += 1
