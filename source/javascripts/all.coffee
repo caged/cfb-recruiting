@@ -5,7 +5,10 @@ render = ->
   height      = width
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
-  fill        = d3.scale.log().clamp(true).range ['#f1f1f1', '#0aafed']
+  fill        = d3.scale.log().clamp(true).range ['#111', '#ff00ff']
+  starCount   = 'three_star'
+  centered    = null
+  geometries  = null
 
   map = d3.select('body').append('svg')
     .attr('width', width)
@@ -14,13 +17,63 @@ render = ->
   tip = d3.tip().attr('class', 'd3-tip').html (d) ->
     if d.properties?
       p = d.properties
-      "<h3>#{p.name} County</h3><p><strong>#{p.four_star || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+      "<h3>#{p.name} County</h3><p><strong>#{p[starCount] || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
     else
       "<h3>#{d.team}</h3><p>#{d.stadium} in #{d.city}, #{d.state}</p>"
 
-  #tip2 = d3.tip().attr('class', 'd3-tip').h
-
   map.call(tip)
+
+  onCountyClick = (d) ->
+    if d && centered != d
+      [x,y] = path.centroid(d)
+      centered = d
+      k = 4
+    else
+      x = width / 2
+      y = height / 2
+      centered = null
+      k = 1
+
+    geometries.selectAll('path')
+      .classed('active', centered && ((d) -> d == centered))
+
+    translate = " translate(#{width / 2},#{height / 2})
+        scale(#{k})
+        translate({#{-x},#{-y})"
+
+    console.log translate
+    geometries.transition()
+      .duration(750)
+      .attr('transform', "
+        translate(#{width / 2},#{height / 2})
+        scale(#{k})
+        translate(#{-x},#{-y})")
+      .style('stroke-width', "#{1.5 / k}px")
+
+        # function clicked(d) {
+      #   var x, y, k;
+
+      #   if (d && centered !== d) {
+      #     var centroid = path.centroid(d);
+      #     x = centroid[0];
+      #     y = centroid[1];
+      #     k = 4;
+      #     centered = d;
+      #   } else {
+      #     x = width / 2;
+      #     y = height / 2;
+      #     k = 1;
+      #     centered = null;
+      #   }
+
+      #   g.selectAll("path")
+      #       .classed("active", centered && function(d) { return d === centered; });
+
+      #   g.transition()
+      #       .duration(750)
+      #       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+      #       .style("stroke-width", 1.5 / k + "px");
+      # }
 
   $.when($.ajax('/data/recruiting.json'), $.ajax('/data/stadiums.csv')).then (r1, r2) ->
     usa      = r1[0]
@@ -32,7 +85,7 @@ render = ->
     nation   = topojson.mesh usa, usa.objects.nation
 
 
-    fill.domain [0.1, d3.max(counties.features, (d) -> d.properties.four_star)]
+    fill.domain [0.1, d3.max(counties.features, (d) -> d.properties[starCount])]
 
     # Auto scale map based on bounds
     projection.scale(1).translate([0, 0])
@@ -41,26 +94,33 @@ render = ->
     t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]
     projection.scale(s).translate(t)
 
+    geometries = map.append('g')
+
     # Add counties
-    map.append('g')
+    geometries.append('g')
       .attr('class', 'counties')
     .selectAll('path.county')
       .data(counties.features)
     .enter().append('path')
       .attr('class', 'county')
-      .style('fill', (d) -> fill(d.properties.four_star || 0))
+      .style('fill', (d) -> fill(d.properties[starCount] || 0))
       .attr('d', path)
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
+      .on('click', onCountyClick)
+      .style('stroke', (d) ->
+        stars = d.properties[starCount] || 0
+        if stars > 0 then fill(stars) else '#333'
+      )
 
     # Add states mesh
-    map.append('path')
+    geometries.append('path')
       .datum(states)
       .attr('class', 'states')
       .attr('d', path)
 
     # Add nation mesh
-    map.append('path')
+    geometries.append('path')
       .datum(nation)
       .attr('class', 'nation')
       .attr('d', path)
@@ -68,7 +128,7 @@ render = ->
     for stadium in stadiums
       stadium.position = projection [stadium.lat, stadium.lon]
 
-    map.selectAll('.stadiums')
+    geometries.selectAll('.stadiums')
       .data(stadiums)
     .enter().append('circle')
       .attr('cx', (d) -> d.position[0])
@@ -77,6 +137,5 @@ render = ->
       .attr('class', 'stadium')
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
-
 
 $(render)
