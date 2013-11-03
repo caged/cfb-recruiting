@@ -13,6 +13,11 @@ render = ->
     .attr('height', height)
 
   d3.json '/data/recruiting.json', (usa) ->
+  tip = d3.tip().attr('class', 'd3-tip').html (d) ->
+    p = d.properties
+    " <h3>#{p.name} County</h3>
+      <p><strong>#{p.four_star || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+  map.call(tip)
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
     counties = topojson.feature usa, usa.objects.counties
     nation   = topojson.mesh usa, usa.objects.nation
@@ -30,6 +35,10 @@ render = ->
     .enter().append('path')
       .attr('d', path)
       .attr('class', 'county')
+      .style('fill', (d) -> fill(parseFloat(d.properties.four_star)))
+      .attr('d', path)
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
 
     map.append('path')
       .datum(states)
