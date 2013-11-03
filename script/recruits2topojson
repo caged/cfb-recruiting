@@ -6,11 +6,11 @@ require 'csv'
 #exec "psql -f script/count-queries.sql cfb"
 
 topo = JSON.parse(File.read('data/us-counties.json'))
-csv  = CSV.parse(File.read('data/cfb-counties.csv'), :headers => true)
+csv  = CSV.parse(File.read('data/cfb-counties.csv'), :headers => true, :converters => [:numeric])
 
 counties_csv = {}
 csv.each do |row|
-  counties_csv[row['geoid']] = row.to_hash
+  counties_csv[row['geoid'].to_s] = row.to_hash
 end
 
 counties_topo = topo['objects']['counties']
