@@ -5,17 +5,26 @@ require 'csv'
 
 #exec "psql -f script/count-queries.sql cfb"
 
+def convert_value(field, info)
+  puts field
+end
+
+convert = lambda do |val, info|
+  ['geoid', 'gisjoin', 'name'].include?(info.header) ? val : val.to_i
+end
+
 topo = JSON.parse(File.read('data/us-counties.json'))
-csv  = CSV.parse(File.read('data/cfb-counties.csv'), :headers => true, :converters => [:numeric])
+csv  = CSV.parse(File.read('data/cfb-counties.csv'), :headers => true, :converters => [convert])
 
 counties_csv = {}
 csv.each do |row|
   counties_csv[row['geoid'].to_s] = row.to_hash
 end
 
+
 counties_topo = topo['objects']['counties']
 counties_topo['geometries'].each do |cnt|
-  data = counties_csv[cnt['id']]
+  data = counties_csv[cnt['id'].to_s]
   cnt['properties'].merge!(data) if data
 end
 
