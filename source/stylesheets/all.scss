@@ -27,7 +27,11 @@ body {
   fill: #009dff;
   stroke: #fff;
   stroke-width: 0;
-  mix-blend-mode: screen;
+}
+
+.recruits circle {
+  fill-opacity: 0.4;
+
 }
 
 .d3-tip {

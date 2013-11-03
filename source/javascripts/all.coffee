@@ -14,6 +14,12 @@ render = ->
     .attr('width', width)
     .attr('height', height)
 
+  map.append('defs').append('filter')
+    .attr('id', 'blend')
+  .append('feBlend')
+    .attr('mode', 'screen')
+    .attr('in1', 'BackgroundImage')
+
   tip = d3.tip().attr('class', 'd3-tip').html (d) ->
     if d.properties?
       p = d.properties
@@ -41,7 +47,6 @@ render = ->
         scale(#{k})
         translate({#{-x},#{-y})"
 
-    console.log translate
     geometries.transition()
       .duration(750)
       .attr('transform', "
@@ -50,34 +55,13 @@ render = ->
         translate(#{-x},#{-y})")
       .style('stroke-width', "#{1.5 / k}px")
 
-        # function clicked(d) {
-      #   var x, y, k;
+  $.when($.ajax('/data/counties.json'),
+         $.ajax('/data/stadiums.csv'),
+         $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
 
-      #   if (d && centered !== d) {
-      #     var centroid = path.centroid(d);
-      #     x = centroid[0];
-      #     y = centroid[1];
-      #     k = 4;
-      #     centered = d;
-      #   } else {
-      #     x = width / 2;
-      #     y = height / 2;
-      #     k = 1;
-      #     centered = null;
-      #   }
-
-      #   g.selectAll("path")
-      #       .classed("active", centered && function(d) { return d === centered; });
-
-      #   g.transition()
-      #       .duration(750)
-      #       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-      #       .style("stroke-width", 1.5 / k + "px");
-      # }
-
-  $.when($.ajax('/data/recruiting.json'), $.ajax('/data/stadiums.csv')).then (r1, r2) ->
     usa      = r1[0]
     stadiums = d3.csv.parse(r2[0])
+    recruits = d3.csv.parse(r3[0])
 
     # Convert to GeoJSON
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
@@ -97,21 +81,21 @@ render = ->
     geometries = map.append('g')
 
     # Add counties
-    geometries.append('g')
-      .attr('class', 'counties')
-    .selectAll('path.county')
-      .data(counties.features)
-    .enter().append('path')
-      .attr('class', 'county')
-      .style('fill', (d) -> fill(d.properties[starCount] || 0))
-      .attr('d', path)
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
-      .on('click', onCountyClick)
-      .style('stroke', (d) ->
-        stars = d.properties[starCount] || 0
-        if stars > 0 then fill(stars) else '#333'
-      )
+    # geometries.append('g')
+    #   .attr('class', 'counties')
+    # .selectAll('path.county')
+    #   .data(counties.features)
+    # .enter().append('path')
+    #   .attr('class', 'county')
+    #   .style('fill', (d) -> fill(d.properties[starCount] || 0))
+    #   .attr('d', path)
+    #   .on('mouseover', tip.show)
+    #   .on('mouseout', tip.hide)
+    #   .on('click', onCountyClick)
+    #   .style('stroke', (d) ->
+    #     stars = d.properties[starCount] || 0
+    #     if stars > 0 then fill(stars) else '#333'
+    #   )
 
     # Add states mesh
     geometries.append('path')
@@ -125,6 +109,21 @@ render = ->
       .attr('class', 'nation')
       .attr('d', path)
 
+    for recruit in recruits
+      recruit.position = projection [recruit.lat, recruit.lon]
+
+    recs = geometries.append('g')
+      .attr('class', 'recruits')
+
+    recs.selectAll('circle.recruit')
+      .data(recruits)
+    .enter().append('circle')
+      .attr('cx', (d) -> d.position[0])
+      .attr('cy', (d) -> d.position[1])
+      .attr('r', 1)
+      .style('fill', '#ff00ff')
+      # .attr('filter', 'url(#blend)')
+
     for stadium in stadiums
       stadium.position = projection [stadium.lat, stadium.lon]
 
@@ -137,5 +136,4 @@ render = ->
       .attr('class', 'stadium')
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
-
 $(render)
