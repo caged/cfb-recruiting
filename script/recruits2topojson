@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'csv'
+
+#exec "psql -f script/count-queries.sql cfb"
+
+topo = JSON.parse(File.read('data/us-counties.json'))
+csv  = CSV.parse(File.read('data/cfb-counties.csv'), :headers => true)
+
+counties_csv = {}
+csv.each do |row|
+  counties_csv[row['geoid']] = row.to_hash
+end
+
+counties_topo = topo['objects']['counties']
+counties_topo['geometries'].each do |cnt|
+  data = counties_csv[cnt['id']]
+  cnt['properties'].merge!(data) if data
+end
+
+File.write('data/counties-reconciled.json', topo.to_json)
