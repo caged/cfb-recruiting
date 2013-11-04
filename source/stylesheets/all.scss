@@ -27,10 +27,12 @@ body {
   fill: #009dff;
   stroke: #fff;
   stroke-width: 0;
+  cursor: pointer;
 }
 
 .recruits circle {
   fill-opacity: 0.4;
+  fill: green;
 }
 
 .connection {

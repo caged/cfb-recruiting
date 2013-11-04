@@ -8,6 +8,7 @@ render = ->
   starCount   = 'three_star'
   centered    = null
   geometries  = null
+  colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
 
   map = d3.select('body').append('svg')
     .attr('width', width)
@@ -106,8 +107,8 @@ render = ->
       .attr('class', 'nation')
       .attr('d', path)
 
-    # for recruit in recruits
-    #   recruit.position = projection [recruit.lat, recruit.lon]
+    for recruit in recruits
+      recruit.position = projection [recruit.lat, recruit.lon]
 
     # recgroup = geometries.append('g')
     #   .attr('class', 'recruits')
@@ -140,7 +141,7 @@ render = ->
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
       .on('click', (d) ->
-        players = recruits.filter (r) -> d.team == r.institution
+        players = recruits.filter (r) -> r.institution in [d.team, d.alt] # && r.year == "2013"
         features = players.map (p) ->
           type: "LineString"
           coordinates: [[d.lat, d.lon], [p.lat, p.lon]]
@@ -152,11 +153,22 @@ render = ->
         connections.enter().append('path')
           .attr('class', 'connection')
           .attr('d', path)
+          .style('stroke', (d) -> colors[d.properties.stars - 1])
 
         connections.exit().remove()
-        # players = recruits.filter (s) ->
-        #   console.log d.institution, s.team
-        #   s.team == d.institution
+
+        recs = map.selectAll('.recruit')
+          .data(players, (d) -> "#{d.name}:#{d.school}")
+
+        recs.enter().append('circle')
+          .attr('cx', (d) -> d.position[0])
+          .attr('cy', (d) -> d.position[1])
+          .attr('r', 2)
+          .style('fill', (d) -> console.log d.stars; colors[d.stars - 1])
+          .attr('class', 'recruit')
+
+        recs.exit().remove()
+
       )
 
 $(render)
