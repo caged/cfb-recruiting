@@ -14,12 +14,6 @@ render = ->
     .attr('width', width)
     .attr('height', height)
 
-  map.append('defs').append('filter')
-    .attr('id', 'blend')
-  .append('feBlend')
-    .attr('mode', 'screen')
-    .attr('in1', 'BackgroundImage')
-
   tip = d3.tip().attr('class', 'd3-tip').html (d) ->
     if d.properties?
       p = d.properties
