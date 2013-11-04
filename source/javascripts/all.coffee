@@ -23,7 +23,10 @@ render = ->
   tip = d3.tip().attr('class', 'd3-tip').html (d) ->
     if d.properties?
       p = d.properties
-      "<h3>#{p.name} County</h3><p><strong>#{p[starCount] || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+      name = if /county/i.test(p.name) then p.name else "#{p.name} County"
+      "<h3>#{name}</h3><p><strong>#{p[starCount] || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+    else if d.weight?
+      "<h3>#{d.stars} &star; #{d.name} - #{d.year}</h3><p>#{d.weight}lb #{d.position} from #{d.school} in #{d.location}"
     else
       "<h3>#{d.team}</h3><p>#{d.stadium} in #{d.city}, #{d.state}</p>"
 
