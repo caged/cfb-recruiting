@@ -1,7 +1,7 @@
 #= require master-map
 render = ->
   width       = $(document.body).width()
-  height      = width
+  height      = 700
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#ff00ff']
