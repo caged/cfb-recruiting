@@ -5,7 +5,7 @@ render = ->
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#ff00ff']
-  starCount   = 'three_star'
+  starCount   = 'five_star'
   centered    = null
   geometries  = null
   colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
@@ -14,7 +14,7 @@ render = ->
     .attr('width', width)
     .attr('height', height)
 
-  tip = d3.tip().attr('class', 'd3-tip').html (d) ->
+  tip = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html (d) ->
     if d.properties?
       p = d.properties
       name = if /county/i.test(p.name) then p.name else "#{p.name} County"
@@ -88,6 +88,7 @@ render = ->
       .attr('d', path)
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
+      .on('click', onCountyClick)
       .style('stroke', (d) ->
         stars = d.properties[starCount] || 0
         if stars > 0 then fill(stars) else '#333')
@@ -105,7 +106,7 @@ render = ->
       .attr('d', path)
 
     for recruit in recruits
-      recruit.position = projection [recruit.lat, recruit.lon]
+      recruit.coordinates = projection [recruit.lat, recruit.lon]
 
     # recgroup = geometries.append('g')
     #   .attr('class', 'recruits')
@@ -135,16 +136,17 @@ render = ->
       .attr('cy', (d) -> d.position[1])
       .attr('r', 3)
       .attr('class', 'stadium')
+      .classed('gt', (d) -> d.name == 'Georgia Tech')
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
       .on('click', (d) ->
-        players = recruits.filter (r) -> r.institution in [d.team, d.alt] # && r.year == "2013"
+        players = recruits.filter (r) -> r.institution in [d.team, d.alt] && r.stars == '5'
         features = players.map (p) ->
           type: "LineString"
           coordinates: [[d.lat, d.lon], [p.lat, p.lon]]
           properties: p
 
-        connections = map.selectAll('.connection')
+        connections = geometries.selectAll('.connection')
           .data(features, (d) -> "#{d.properties.name}:#{d.properties.school}")
 
         connections.enter().append('path')
@@ -154,15 +156,17 @@ render = ->
 
         connections.exit().remove()
 
-        recs = map.selectAll('.recruit')
+        recs = geometries.selectAll('.recruit')
           .data(players, (d) -> "#{d.name}:#{d.school}")
 
         recs.enter().append('circle')
-          .attr('cx', (d) -> d.position[0])
-          .attr('cy', (d) -> d.position[1])
+          .attr('cx', (d) -> d.coordinates[0])
+          .attr('cy', (d) -> d.coordinates[1])
           .attr('r', 2)
           .style('fill', (d) -> console.log d.stars; colors[d.stars - 1])
           .attr('class', 'recruit')
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide)
 
         recs.exit().remove()
 
