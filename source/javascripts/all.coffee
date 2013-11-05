@@ -1,7 +1,7 @@
 #= require master-map
 render = ->
   width       = $(document.body).width()
-  height      = 700
+  height      = 800
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#ff00ff']
@@ -140,7 +140,7 @@ render = ->
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
       .on('click', (d) ->
-        players = recruits.filter (r) -> r.institution in [d.team, d.alt] && r.stars == '5'
+        players = recruits.filter (r) -> r.institution in [d.team, d.alt]
         features = players.map (p) ->
           type: "LineString"
           coordinates: [[d.lat, d.lon], [p.lat, p.lon]]
