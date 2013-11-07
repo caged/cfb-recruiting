@@ -90,6 +90,8 @@ recruits.each do |recruit|
   recruit = OpenStruct.new(recruit.to_hash)
   bsc_school = stadium_for_recruit(recruit)
 
+  next if recruit.stars.to_i < 1
+
   if bsc_school
     schools[bsc_school.team] ||= 0
     schools[bsc_school.team] += 1
@@ -97,6 +99,7 @@ recruits.each do |recruit|
     state = state_for_recruit(recruit)
     city,_ = recruit.location.split(',')
 
+    # Terrible stuff or "Normalization, LOL."
     city = mappings["#{city}:#{state.fips}"] if mappings["#{city}:#{state.fips}"]
     city2 = city.gsub('St.', 'Saint').gsub('Ft.', 'Fort').gsub('Mt.', 'Mount')
     city3 = city.gsub('Saint', 'St.').gsub('Fort', 'Ft.').gsub('Mount', 'Mt.')
@@ -126,7 +129,6 @@ recruits.each do |recruit|
       unfound_recruits["#{city}:#{state.fips}"] += 1
     end
 
-    query = "SELECT ST_AsText(RandomPointsInPolygon(nhgis_places.geom, 1)) AS point FROM nhgis_places WHERE gid=$1"
     query = "WITH points as (SELECT *, RandomPointsInPolygon(nhgis_places.geom, 1) AS point FROM nhgis_places WHERE gid=$1) SELECT st_x(point) AS lat, st_y(point) AS lon FROM points"
     if recruit.place_gid
       res = conn.exec(query, [recruit.place_gid])
