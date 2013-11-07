@@ -1,0 +1,61 @@
+.counties {
+  stroke-width: 0.5;
+  stroke: #222;
+  fill-opacity: 0.5;
+}
+
+.states {
+  fill: none;
+  stroke: #444;
+  stroke-width: 1;
+}
+
+.nation {
+  stroke: #444;
+  fill: none;
+}
+
+.stadium {
+  fill: #009dff;
+  stroke: #fff;
+  stroke-width: 0;
+  cursor: pointer;
+}
+
+.recruits circle {
+  fill-opacity: 0.4;
+  fill: green;
+}
+
+.connection {
+  fill: none;
+  stroke: green;
+  stroke-width: 1;
+}
+
+.d3-tip {
+  line-height: 1;
+  background: rgba(255, 255, 255, 1);
+  color: #555;
+  border-radius: 2px;
+  font-size: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+  h3 {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+  }
+
+  p {
+    padding: 10px;
+    margin: 0;
+    color: #777;
+  }
+
+  span {
+    color: #333;
+    font-weight: bold;
+  }
+}

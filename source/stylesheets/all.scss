@@ -1,70 +1,89 @@
 @charset "utf-8";
 
+html, body {
+  height: 100%;
+}
+
+section, header {
+  display: block;
+}
+
 body {
   background: #010101;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
-  padding: 20px;
-}
-
-.counties {
-  stroke-width: 0.5;
-  stroke: #222;
-  fill-opacity: 0.5;
-}
-
-.states {
-  fill: none;
-  stroke: #444;
-  stroke-width: 1;
-}
-
-.nation {
-  stroke: #444;
-  fill: none;
-}
-
-.stadium {
-  fill: #009dff;
-  stroke: #fff;
-  stroke-width: 0;
-  cursor: pointer;
-}
-
-.recruits circle {
-  fill-opacity: 0.4;
-  fill: green;
-}
-
-.connection {
-  fill: none;
-  stroke: green;
-  stroke-width: 1;
-}
-
-.d3-tip {
-  line-height: 1;
-  background: rgba(255, 255, 255, 1);
-  color: #555;
-  border-radius: 2px;
+  padding: 0;
   font-size: 12px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
 
-  h3 {
+#global-header {
+  background: #010101;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  color: #555;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+
+  h1 {
     margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    font-size: 12px;
+    padding: 0;
+    font-family: "Roboto Slab";
+    display: inline-block;
+    font-size: 16px;
   }
+}
 
-  p {
-    padding: 10px;
-    margin: 0;
-    color: #777;
-  }
+.cover {
+  background-size: cover;
+  background-position: center;
 
-  span {
-    color: #333;
-    font-weight: bold;
+  &.inner-shadow {
+    box-shadow:
+      inset 100px 100px 200px rgba(0, 0, 0, 0.8),
+      inset -100px -100px 200px rgba(0, 0, 0, 0.8),
+      inset 0 -300px 100px rgba(0, 0, 0, 0.8);
   }
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  flex-flow: row wrap;
+  height: 100%;
+  flex: 1;
+}
+
+.flex-item {
+  display: inline-flex;
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.title {
+  -webkit-align-self: center;
+  align-self: center;
+  display: inline-block;
+  text-align: center;
+}
+
+.title-main {
+  font-size: 100px;
+  font-family: "Roboto Slab";
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  display: block;
+  font-weight: 300;
+}
+
+.title-sub {
+  color: #ddd;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+  font-family: "Nothing You Could Do";
+  font-size: 30px;
 }
