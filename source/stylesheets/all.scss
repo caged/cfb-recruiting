@@ -49,6 +49,7 @@ header {
 #master-map-container {
   background: #111;
   padding: 20px;
+  position: relative;
 }
 
 #master-map {
@@ -78,6 +79,7 @@ header {
   stroke-opacity: 0.6;
   stroke-width: 1;
   cursor: pointer;
+  shape-rendering: crispedges;
 }
 
 .recruits circle {
@@ -89,8 +91,130 @@ header {
   fill: none;
   stroke: green;
   stroke-width: 1;
+
+  &.stars5 {
+    stroke-width: 2.5;
+  }
+
+  &.stars4 {
+    stroke-width: 1.5;
+  }
 }
 
+.recruit {
+  stroke-width: 0.5;
+  stroke: #000;
+  stroke-opacity: 0.5;
+}
+
+.legend {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  color: #777;
+  font-size: 12px;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  .title {
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    display: block;
+    border-top: 1px solid #333;
+    font-weight: bold;
+    color: #ccc;
+
+    &:first-child {
+      border-top: none;
+      padding: 0 10px 5px 10px;
+    }
+  }
+
+  .school {
+    width: 10px;
+    height: 10px;
+    background: #009dff;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .ramp {
+    margin: 5px 0 10px 0;
+  }
+
+  .ramp li {
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 10px;
+  }
+
+  .recruit-ramp {
+    list-style: none;
+    font-size: 12px;
+
+    li {
+      border-bottom: 1px solid #222;
+      padding: 10px;
+      line-height: 1;
+    }
+
+    li span {
+      height: 1px;
+      width: 100px;
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      margin-bottom: 3px;
+
+      &:after {
+        content: "\2022";
+        display: inline-block;
+        font-size: 32px;
+        float: right;
+        line-height: 1;
+        margin-top: -14px;
+        margin-right: -5px;
+      }
+    }
+
+
+    // ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
+    .star5 span {
+      height: 3px;
+      background: #ec180c;
+      &:after { color: #ec180c; }
+    }
+
+    .star4 span {
+      height: 2px;
+      background: #eeb016;
+      &:after { color: #eeb016; }
+    }
+
+    .star3 span {
+      background: #bcf020;
+      &:after { color: #bcf020; }
+    }
+
+    .star2 span {
+      background: #5adacc;
+      &:after { color: #5adacc; }
+    }
+
+    .star1 span {
+      background: #a634f4;
+      &:after { color: #a634f4; }
+    }
+
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// =tooltips
+////////////////////////////////////////////////////////////////////////////////
 .d3-tip {
   line-height: 1;
   background: rgba(255, 255, 255, 1);
