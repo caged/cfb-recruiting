@@ -4,8 +4,8 @@ render = ->
   height      = 1200
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
-  fill        = d3.scale.log().clamp(true).range ['#111', '#ff00ff']
-  starCount   = 'five_star'
+  fill        = d3.scale.log().clamp(true).range ['#111', '#00ff00']
+  starCount   = 'total'
   centered    = null
   geometries  = null
   colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
@@ -18,7 +18,7 @@ render = ->
     if d.properties?
       p = d.properties
       name = if /county/i.test(p.name) then p.name else "#{p.name} County"
-      "<h3>#{name}</h3><p><strong>#{p[starCount] || 0}</strong> &star;&star;&star;&star; athletes since 2002.</p>"
+      "<h3>#{name}</h3><p><strong>#{p[starCount] || 0}</strong> athletes.</p>"
     else if d.weight?
       "<h3>#{d.stars} &star; #{d.name} - #{d.year}</h3><p>#{d.weight}lb #{d.position} from #{d.school} in #{d.location}"
     else
