@@ -1,3 +1,4 @@
+#= require tabs
 #= require master-map
 render = ->
 #   width       = $('#master-map').width()
