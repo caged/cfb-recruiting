@@ -5,7 +5,49 @@ body {
   background: #010101;
   font-family: sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// =header
+////////////////////////////////////////////////////////////////////////////////
+header {
+  background: #111;
   padding: 20px;
+  font-family: "Roboto Slab";
+  color: #666;
+  vertical-align: middle;
+  line-height: 1;
+  border-bottom: 1px solid #222;
+
+  h1 {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border-right: 1px solid #333;
+    padding-right: 10px;
+  }
+
+  h2 {
+    display: inline-block;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .credit {
+    float: right;
+    font-size: 14px;
+    color: #444;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// =master map                                                                 /
+////////////////////////////////////////////////////////////////////////////////
+
+#master-map {
+  background: #111;
 }
 
 .counties {
@@ -25,7 +67,7 @@ body {
   fill: none;
 }
 
-.stadium {
+.school {
   fill: #009dff;
   stroke: #fff;
   stroke-width: 0;
