@@ -15,10 +15,6 @@ render = ->
   counties = null
   states   = null
 
-  map = d3.select('#master-map').append('svg')
-    .attr('width', width)
-    .attr('height', height)
-
   tip = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html (d) ->
     if d.properties?
       p = d.properties
@@ -29,7 +25,10 @@ render = ->
     else
       "<h3>#{d.team}</h3><p>#{d.stadium} in #{d.city}, #{d.state}</p>"
 
-  map.call(tip)
+  map = d3.select('#master-map').append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .call(tip)
 
   # Generates a LineString GeoJSON object from a player to a school
   #
