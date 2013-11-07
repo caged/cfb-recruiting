@@ -50,7 +50,10 @@ render = ->
   # Returns nothing
   drawRecruitPathsToSchool = (school) ->
     schoolRecruits = recruits.filter((r) -> r.institution in [school.team, school.alt])
+    schoolRecruits.sort (a, b) -> d3.ascending(parseFloat(a.stars), parseFloat(b.stars))
+
     recruitFeatures = schoolRecruits.map((player) -> lineStringFromPlayerToSchool(player, school))
+    recruitFeatures.sort (a, b) -> d3.ascending(parseFloat(a.properties.stars), parseFloat(b.properties.stars))
 
     connections = zoomGroup
       .selectAll('.connection')
@@ -84,6 +87,8 @@ render = ->
     usa      = r1[0]
     schools = d3.csv.parse r2[0]
     recruits = d3.csv.parse r3[0]
+
+    schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
 
     # Convert to GeoJSON
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
