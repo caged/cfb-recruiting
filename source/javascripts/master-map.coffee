@@ -5,7 +5,7 @@ render = ->
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#00ff00']
   starCount   = 'total'
-  geometries  = null
+  zoomGroup   = null
   colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
 
   # Main objects
@@ -49,11 +49,12 @@ render = ->
   #
   # Returns nothing
   drawRecruitPathsToSchool = (school) ->
-    players = recruits.filter (r) -> r.institution in [school.team, school.alt]
-    features = players.map (player) -> lineStringFromPlayerToSchool(player, school)
+    schoolRecruits = recruits.filter((r) -> r.institution in [school.team, school.alt])
+    recruitFeatures = schoolRecruits.map((player) -> lineStringFromPlayerToSchool(player, school))
 
-    connections = geometries.selectAll('.connection')
-      .data(features, (d) -> "#{d.properties.name}:#{d.properties.school}")
+    connections = zoomGroup
+      .selectAll('.connection')
+      .data(recruitFeatures, (d) -> "#{d.properties.name}:#{d.properties.school}")
 
     connections.enter().append('path')
       .attr('class', 'connection')
@@ -62,10 +63,10 @@ render = ->
 
     connections.exit().remove()
 
-    recs = geometries.selectAll('.recruit')
-      .data(players, (d) -> "#{d.name}:#{d.school}")
+    recruitNodes = zoomGroup.selectAll('.recruit')
+      .data(schoolRecruits, (d) -> "#{d.name}:#{d.school}")
 
-    recs.enter().append('circle')
+    recruitNodes.enter().append('circle')
       .attr('cx', (d) -> d.coordinates[0])
       .attr('cy', (d) -> d.coordinates[1])
       .attr('r', 2)
@@ -74,21 +75,22 @@ render = ->
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
 
-    recs.exit().remove()
+    recruitNodes.exit().remove()
 
   $.when($.ajax('/data/counties.json'),
          $.ajax('/data/schools.csv'),
          $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
 
     usa      = r1[0]
-    schools = d3.csv.parse(r2[0])
-    recruits = d3.csv.parse(r3[0])
+    schools = d3.csv.parse r2[0]
+    recruits = d3.csv.parse r3[0]
 
     # Convert to GeoJSON
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
     counties = topojson.feature usa, usa.objects.counties
     nation   = topojson.mesh usa, usa.objects.nation
 
+    # Set the fill domain based on the total number of recruits
     fill.domain [0.1, d3.max(counties.features, (d) -> d.properties[starCount])]
 
     # Auto scale map based on bounds
@@ -98,10 +100,16 @@ render = ->
     t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]
     projection.scale(s).translate(t)
 
-    geometries = map.append('g')
+    for recruit in recruits
+      recruit.coordinates = projection [recruit.lat, recruit.lon]
+
+    for school in schools
+      school.position = projection [school.lat, school.lon]
+
+    zoomGroup = map.append('g')
 
     # Add counties
-    geometries.append('g')
+    zoomGroup.append('g')
       .attr('class', 'counties')
     .selectAll('path.county')
       .data(counties.features)
@@ -116,24 +124,18 @@ render = ->
         if stars > 0 then fill(stars || 0) else '#333')
 
     # Add states mesh
-    geometries.append('path')
+    zoomGroup.append('path')
       .datum(states)
       .attr('class', 'states')
       .attr('d', path)
 
     # Add nation mesh
-    geometries.append('path')
+    zoomGroup.append('path')
       .datum(nation)
       .attr('class', 'nation')
       .attr('d', path)
 
-    for recruit in recruits
-      recruit.coordinates = projection [recruit.lat, recruit.lon]
-
-    for school in schools
-      school.position = projection [school.lat, school.lon]
-
-    geometries.selectAll('.schools')
+    zoomGroup.selectAll('.schools')
       .data(schools)
     .enter().append('circle')
       .attr('cx', (d) -> d.position[0])
