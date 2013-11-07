@@ -1,12 +1,12 @@
 render = ->
   width       = $('#master-map').width()
-  height      = 1200
+  height      = 1000
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#00ff00']
   starCount   = 'total'
   zoomGroup   = null
-  colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
+  colors      = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
 
   # Main objects
   recruits = null
