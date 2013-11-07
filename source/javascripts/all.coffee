@@ -1,7 +1,7 @@
 #= require master-map
 render = ->
   width       = $(document.body).width()
-  height      = 800
+  height      = 1200
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#ff00ff']
@@ -10,7 +10,7 @@ render = ->
   geometries  = null
   colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
 
-  map = d3.select('body').append('svg')
+  map = d3.select('#master-map').append('svg')
     .attr('width', width)
     .attr('height', height)
 
@@ -53,11 +53,11 @@ render = ->
       .style('stroke-width', "#{1.5 / k}px")
 
   $.when($.ajax('/data/counties.json'),
-         $.ajax('/data/stadiums.csv'),
+         $.ajax('/data/schools.csv'),
          $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
 
     usa      = r1[0]
-    stadiums = d3.csv.parse(r2[0])
+    schools = d3.csv.parse(r2[0])
     recruits = d3.csv.parse(r3[0])
 
     # Convert to GeoJSON
@@ -126,16 +126,16 @@ render = ->
 #     .attr("class", "arc")
 #     .attr("d", path)
 
-    for stadium in stadiums
-      stadium.position = projection [stadium.lat, stadium.lon]
+    for school in schools
+      school.position = projection [school.lat, school.lon]
 
-    geometries.selectAll('.stadiums')
-      .data(stadiums)
+    geometries.selectAll('.schools')
+      .data(schools)
     .enter().append('circle')
       .attr('cx', (d) -> d.position[0])
       .attr('cy', (d) -> d.position[1])
-      .attr('r', 3)
-      .attr('class', 'stadium')
+      .attr('r', 4)
+      .attr('class', 'school')
       .classed('gt', (d) -> d.name == 'Georgia Tech')
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
