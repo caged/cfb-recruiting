@@ -45,11 +45,23 @@
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  require 'csv'
+  require 'ostruct'
+
+  def schools
+    @schools ||= CSV.parse(File.read('source/data/schools.csv'), :headers => true)
+  end
+
+  def recruits
+    @recruits ||= CSV.parse(File.read('source/data/recruits.csv'), :headers => true)
+  end
+
+  def years
+    (2002..2013).to_a.reverse
+  end
+
+end
 
 set :css_dir, 'stylesheets'
 
