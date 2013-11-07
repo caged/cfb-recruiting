@@ -20,7 +20,7 @@ render = ->
       name = if /county/i.test(p.name) then p.name else "#{p.name} County"
       "<h3>#{name}</h3><p><strong>#{p[starCount] || 0}</strong> athletes.</p>"
     else if d.weight?
-      "<h3>#{d.stars} &star; #{d.name} - #{d.year}</h3><p>#{d.weight}lb #{d.position} from #{d.school} in #{d.location}"
+      "<h3>#{d.stars} &#9733; #{d.name} - #{d.year}</h3><p>#{d.weight}lb #{d.position} from #{d.school} in #{d.location}"
     else
       "<h3>#{d.team}</h3><p>#{d.stadium} in #{d.city}, #{d.state}</p>"
 
@@ -60,7 +60,7 @@ render = ->
       .data(recruitFeatures, (d) -> "#{d.properties.name}:#{d.properties.school}")
 
     connections.enter().append('path')
-      .attr('class', 'connection')
+      .attr('class', (d) -> "connection stars#{d.properties.stars}")
       .attr('d', path)
       .style('stroke', (d) -> colors[d.properties.stars - 1])
 
@@ -72,7 +72,7 @@ render = ->
     recruitNodes.enter().append('circle')
       .attr('cx', (d) -> d.coordinates[0])
       .attr('cy', (d) -> d.coordinates[1])
-      .attr('r', 2)
+      .attr('r', 4)
       .style('fill', (d) -> colors[d.stars - 1])
       .attr('class', 'recruit')
       .on('mouseover', tip.show)
@@ -80,10 +80,14 @@ render = ->
 
     recruitNodes.exit().remove()
 
-  $.when($.ajax('/data/counties.json'),
-         $.ajax('/data/schools.csv'),
-         $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
-
+  # Draw the base map
+  #
+  # r1 - Nation, State and County polygons
+  # r2 - Schools
+  # r3 - Recruits
+  #
+  # Returns nothing
+  drawMap = (r1, r2, r3) ->
     usa      = r1[0]
     schools = d3.csv.parse r2[0]
     recruits = d3.csv.parse r3[0]
@@ -96,7 +100,7 @@ render = ->
     nation   = topojson.mesh usa, usa.objects.nation
 
     # Set the fill domain based on the total number of recruits
-    fill.domain [0.1, d3.max(counties.features, (d) -> d.properties[starCount])]
+    fill.domain [0.2, d3.max(counties.features, (d) -> d.properties[starCount])]
 
     # Auto scale map based on bounds
     projection.scale(1).translate([0, 0])
@@ -128,28 +132,25 @@ render = ->
         stars = d.properties[starCount] || 0
         if stars > 0 then fill(stars || 0) else '#333')
 
-    # Add states mesh
-    zoomGroup.append('path')
-      .datum(states)
-      .attr('class', 'states')
-      .attr('d', path)
-
-    # Add nation mesh
-    zoomGroup.append('path')
-      .datum(nation)
-      .attr('class', 'nation')
-      .attr('d', path)
+    # Add states and nation
+    zoomGroup.append('path').datum(states).attr('class', 'states').attr('d', path)
+    zoomGroup.append('path').datum(nation).attr('class', 'nation').attr('d', path)
 
     zoomGroup.selectAll('.schools')
       .data(schools)
-    .enter().append('circle')
-      .attr('cx', (d) -> d.position[0])
-      .attr('cy', (d) -> d.position[1])
-      .attr('r', 4)
+    .enter().append('rect')
+      .attr('x', (d) -> d.position[0])
+      .attr('y', (d) -> d.position[1])
+      .attr('width', 7)
+      .attr('height', 7)
       .attr('class', 'school')
       .classed('gt', (d) -> d.name == 'Georgia Tech')
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
       .on('click', drawRecruitPathsToSchool)
+
+  $.when($.ajax('/data/counties.json'),
+         $.ajax('/data/schools.csv'),
+         $.ajax('/data/recruits.csv')).then(drawMap)
 
 $(render)
