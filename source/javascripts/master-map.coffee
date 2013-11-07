@@ -5,7 +5,6 @@ render = ->
   path        = d3.geo.path().projection(projection)
   fill        = d3.scale.log().clamp(true).range ['#111', '#00ff00']
   starCount   = 'total'
-  centered    = null
   geometries  = null
   colors      = ['#a634f4', '#f1f42f', '#bcf020', '#eeb016', '#ec180c']
 
@@ -47,6 +46,8 @@ render = ->
   # and draw a path from the recruit back to the school.
   #
   # school - Object
+  #
+  # Returns nothing
   drawRecruitPathsToSchool = (school) ->
     players = recruits.filter (r) -> r.institution in [school.team, school.alt]
     features = players.map (player) -> lineStringFromPlayerToSchool(player, school)
