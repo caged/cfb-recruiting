@@ -6,6 +6,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  color: #ccc;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -39,6 +40,52 @@ header {
     float: right;
     font-size: 14px;
     color: #444;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// =tabs and toolbar
+////////////////////////////////////////////////////////////////////////////////
+
+.master-toolbar {
+  padding: 10px 20px;
+  background: #151515;
+  text-align: right;
+  border-bottom: 1px solid #171717;
+}
+
+.tabs {
+  display: inline-block;
+}
+
+.tab {
+  display: inline-block;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #1f1f1f;
+    padding: 10px;
+    display: block;
+  }
+
+  &:first-child a {
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  &:last-child a {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &.active a {
+    background: #333;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2),
+      inset -3px -3px 6px rgba(0, 0, 0, 0.2);
+
   }
 }
 
@@ -79,7 +126,6 @@ header {
   stroke-opacity: 0.6;
   stroke-width: 1;
   cursor: pointer;
-  shape-rendering: crispedges;
 }
 
 .recruits circle {
@@ -108,7 +154,7 @@ header {
 }
 
 .legend {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px;
   color: #777;
@@ -117,6 +163,7 @@ header {
   position: absolute;
   top: 20px;
   left: 20px;
+  pointer-events: none;
 
   .title {
     padding: 10px 10px 0 10px;
