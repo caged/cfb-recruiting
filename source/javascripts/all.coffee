@@ -1,6 +1,6 @@
 #= require master-map
 render = ->
-  width       = $(document.body).width()
+  width       = $('#master-map').width()
   height      = 1200
   projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path        = d3.geo.path().projection(projection)

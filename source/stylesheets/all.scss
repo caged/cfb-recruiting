@@ -46,8 +46,13 @@ header {
 // =master map                                                                 /
 ////////////////////////////////////////////////////////////////////////////////
 
-#master-map {
+#master-map-container {
   background: #111;
+  padding: 20px;
+}
+
+#master-map {
+  margin: 0;
 }
 
 .counties {
