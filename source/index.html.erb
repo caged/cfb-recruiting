@@ -1,48 +1,41 @@
 <div class="master-toolbar">
-  <ul class="tabs">
-    <li class="tab active"><a href="#counties">Counties</a></li
-    ><li class="tab"><a href="#recruits">Recruits</a></li>
+  <ul class="tabs js-hard-tabs">
+    <li class="tab"><a href="counties.html" class="<%= 'selected' if current_page.path != 'recruits.html' %>" data-container-id="counties">Counties</a></li
+    ><li class="tab"><a href="recruits.html" class="<%= 'selected' if current_page.path == 'recruits.html' %>" data-container-id="recruits">Recruits</a></li>
   </ul>
 </div>
 
-<!-- <div class="map-toolbar">
-  <form action="/">
-    <select name="year">
-      <option>Every Year</option>
-      <% years.each do |year| %>
-      <option><%= year %></option>
-      <% end %>
-    </select>
-  </form>
-</div> -->
 <div id="master-map-container">
-  <div id="counties" class="tab-container active">
-    <div class="legend">
-      <span class="title">More Recruits &rarr;</span>
-      <ul class="ramp">
-        <li style="background-color:#191919"></li>
-        <li style="background-color:#0e270e"></li>
-        <li style="background-color:#0d3b0d"></li>
-        <li style="background-color:#0a550a"></li>
-        <li style="background-color:#0c690b"></li>
-        <li style="background-color:#128612"></li>
-      </ul>
-      <span class="title">Recruit level</span>
-      <ul class="recruit-ramp">
-        <li class="star5"><span></span> 5&#9733;</li>
-        <li class="star4"><span></span> 4&#9733;</li>
-        <li class="star3"><span></span> 3&#9733;</li>
-        <li class="star2"><span></span> 2&#9733;</li>
-        <li class="star1"><span></span> 1&#9733;</li>
-      </ul>
-      <span class="title">
-        <span class="school"></span>School
-      </span>
+  <% if current_page.path != 'recruits.html' %>
+    <div id="counties" class="tab-container">
+      <div class="legend">
+        <span class="title">More Recruits &rarr;</span>
+        <ul class="ramp">
+          <li style="background-color:#191919"></li>
+          <li style="background-color:#0e270e"></li>
+          <li style="background-color:#0d3b0d"></li>
+          <li style="background-color:#0a550a"></li>
+          <li style="background-color:#0c690b"></li>
+          <li style="background-color:#128612"></li>
+        </ul>
+        <span class="title">Recruit level</span>
+        <ul class="recruit-ramp">
+          <li class="star5"><span></span> 5&#9733;</li>
+          <li class="star4"><span></span> 4&#9733;</li>
+          <li class="star3"><span></span> 3&#9733;</li>
+          <li class="star2"><span></span> 2&#9733;</li>
+          <li class="star1"><span></span> 1&#9733;</li>
+        </ul>
+        <span class="title">
+          <span class="school"></span>School
+        </span>
+      </div>
+      <div id="master-map"></div>
     </div>
-    <div id="master-map"></div>
-  </div>
-
-  <div id="recruits" class="tab-container">
-    <div id="recruit-map"></div>
-  </div>
+  <% else %>
+    <div id="recruits" class="tab-container">
+    test
+      <div id="recruit-map"></div>
+    </div>
+  <% end %>
 </div>

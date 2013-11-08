@@ -33,10 +33,9 @@
 # end
 
 # Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
+#page "/counties", :proxy => "/index.html.erb", :content_type => 'text/html'
+proxy '/counties.html', '/index.html'
+proxy '/recruits.html', '/index.html'
 ###
 # Helpers
 ###

@@ -81,7 +81,7 @@ header {
     border-bottom-right-radius: 3px;
   }
 
-  &.active a {
+  a.selected {
     background: #333;
     box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2),
       inset -3px -3px 6px rgba(0, 0, 0, 0.2);
@@ -90,11 +90,14 @@ header {
 }
 
 .tab-container {
-  display: none;
 
-  &.active {
-    display: block;
-  }
+  // &.active {
+  //   display: block;
+  // }
+
+  // &:target {
+  //   display: block;
+  // }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -136,10 +139,10 @@ header {
   cursor: pointer;
 }
 
-.recruits circle {
-  fill-opacity: 0.4;
-  fill: green;
-}
+// .recruits circle {
+//   fill-opacity: 0.4;
+//   fill: green;
+// }
 
 .connection {
   fill: none;
