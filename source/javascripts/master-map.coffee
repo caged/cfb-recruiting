@@ -1,8 +1,14 @@
 render = (event, env) ->
+  colors = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
 
   map = d3.select('#master-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
+
+  zoomGroup = map.append 'g'
+
+  recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
+  school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
 
   # Generates a LineString GeoJSON object from a player to a school
   #
@@ -24,11 +30,10 @@ render = (event, env) ->
   #
   # Returns nothing
   drawRecruitPathsToSchool = (school) ->
-    schoolRecruits = recruits.filter((r) -> r.institution in [school.team, school.alt])
-    schoolRecruits.sort (a, b) -> d3.ascending(parseFloat(a.stars), parseFloat(b.stars))
-
+    schoolRecruits  = env.recruits.filter((r) -> r.institution in [school.team, school.alt])
     recruitFeatures = schoolRecruits.map((player) -> lineStringFromPlayerToSchool(player, school))
-    recruitFeatures.sort (a, b) -> d3.ascending(parseFloat(a.properties.stars), parseFloat(b.properties.stars))
+    schoolRecruits.sort  (a, b) -> d3.ascending parseFloat(a.stars), parseFloat(b.stars)
+    recruitFeatures.sort (a, b) -> d3.ascending parseFloat(a.properties.stars), parseFloat(b.properties.stars)
 
     connections = zoomGroup
       .selectAll('.connection')
@@ -36,7 +41,7 @@ render = (event, env) ->
 
     connections.enter().append('path')
       .attr('class', (d) -> "connection stars#{d.properties.stars}")
-      .attr('d', path)
+      .attr('d', env.path)
       .style('stroke', (d) -> colors[d.properties.stars - 1])
 
     connections.exit().remove()
@@ -47,22 +52,15 @@ render = (event, env) ->
     recruitNodes.enter().append('circle')
       .attr('cx', (d) -> d.coordinates[0])
       .attr('cy', (d) -> d.coordinates[1])
-      .attr('r', 4)
+      .attr('r', 3)
       .style('fill', (d) -> colors[d.stars - 1])
       .attr('class', 'recruit')
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
 
     recruitNodes.exit().remove()
 
 
   # Set the fill domain based on the total number of recruits
   env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
-
-  recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
-  school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
-
-  zoomGroup = map.append('g')
 
   # Add counties
   zoomGroup.append('g')
@@ -88,8 +86,6 @@ render = (event, env) ->
     .attr('cy', (d) -> d.coordinates[1])
     .attr('r', 4)
     .attr('class', 'school')
-    .on('mouseover', tip.show)
-    .on('mouseout', tip.hide)
     .on('click', drawRecruitPathsToSchool)
 
   # $.when($.ajax('/data/counties.json'),
