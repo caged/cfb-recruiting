@@ -87,12 +87,12 @@ render = ->
   # r3 - Recruits
   #
   # Returns nothing
-  drawMap = (r1, r2, r3) ->
-    usa      = r1[0]
-    schools = d3.csv.parse r2[0]
-    recruits = d3.csv.parse r3[0]
+  drawMasterMap = (usa, schools, recruits) ->
+    # usa      = r1[0]
+    # schools = d3.csv.parse r2[0]
+    # recruits = d3.csv.parse r3[0]
 
-    schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
+    # schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
 
     # Convert to GeoJSON
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
@@ -149,6 +149,13 @@ render = ->
 
   $.when($.ajax('/data/counties.json'),
          $.ajax('/data/schools.csv'),
-         $.ajax('/data/recruits.csv')).then(drawMap)
+         $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
+
+      usa      = r1[0]
+      schools = d3.csv.parse r2[0]
+      recruits = d3.csv.parse r3[0]
+
+      schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
+      drawMasterMap(usa, schools, recruits)
 
 $(render)
