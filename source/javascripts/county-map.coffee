@@ -1,7 +1,7 @@
 render = (event, env) ->
   colors = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
 
-  map = d3.select('#master-map').append('svg')
+  map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
 
