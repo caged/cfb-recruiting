@@ -88,11 +88,6 @@ render = ->
   #
   # Returns nothing
   drawMasterMap = (usa, schools, recruits) ->
-    # usa      = r1[0]
-    # schools = d3.csv.parse r2[0]
-    # recruits = d3.csv.parse r3[0]
-
-    # schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
 
     # Convert to GeoJSON
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
@@ -147,6 +142,42 @@ render = ->
       .on('mouseout', tip.hide)
       .on('click', drawRecruitPathsToSchool)
 
+  drawRecruitMap = (usa, schools, recruits) ->
+    states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
+
+    canvas = d3.select('#recruit-map').append('canvas')
+      .attr('width', width)
+      .attr('height', height)
+    context = canvas.node().getContext '2d'
+    ratio = window.devicePixelRatio / context.webkitBackingStorePixelRatio
+
+    if window.devicePixelRatio != context.webkitBackingStorePixelRatio
+      canvas
+        .attr('width', width * ratio)
+        .attr('height', height * ratio)
+        .style('width', width + 'px')
+        .style('height', height + 'px')
+
+    path = d3.geo.path()
+      .projection(projection)
+      .context(context)
+
+    context.beginPath()
+    path topojson.mesh(usa, usa.objects.states)
+    context.lineWidth = 1
+    context.strokeStyle = "#333"
+    context.stroke()
+
+    context.fillStyle = 'lime'
+    context.globalCompositeOperation = 'color-dodge'
+
+    for recruit in recruits
+      coordinates = projection [recruit.lat, recruit.lon]
+      context.beginPath()
+      context.arc coordinates[0], coordinates[1], 1, 0, Math.PI * 2, false
+      context.fill()
+
+
   $.when($.ajax('/data/counties.json'),
          $.ajax('/data/schools.csv'),
          $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
@@ -157,5 +188,6 @@ render = ->
 
       schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
       drawMasterMap(usa, schools, recruits)
+      drawRecruitMap(usa, schools, recruits)
 
 $(render)
