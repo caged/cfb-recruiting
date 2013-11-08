@@ -87,7 +87,7 @@ end
 unfound_recruits = {}
 i = 0
 recruits = CSV.read('data/recruits.csv', :headers => true)
-points = CSV.open('data/recruits-with-points.csv', 'w', :headers => recruits.headers.concat([:place_gid, :statefp, :lat, :lon]), :write_headers => true)
+points = CSV.open('data/recruits-with-points.csv', 'w', :headers => recruits.headers.concat([:id, :place_gid, :statefp, :lat, :lon]), :write_headers => true)
 recruits.each do |recruit|
   recruitvals = recruit.to_hash.values
   recruit = OpenStruct.new(recruit.to_hash)
@@ -137,7 +137,7 @@ recruits.each do |recruit|
       res = conn.exec(query, [recruit.place_gid])
       lat = res.first['lat']
       lon = res.first['lon']
-      vals = recruitvals.concat([recruit.place_gid, state.fips, lat, lon])
+      vals = recruitvals.concat([i, recruit.place_gid, state.fips, lat, lon])
       points << vals
 
       i += 1
