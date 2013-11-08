@@ -89,6 +89,14 @@ header {
   }
 }
 
+.tab-container {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // =master map                                                                 /
 ////////////////////////////////////////////////////////////////////////////////
@@ -157,7 +165,7 @@ header {
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px;
-  color: #777;
+  color: #ccc;
   font-size: 12px;
   border-radius: 2px;
   position: absolute;

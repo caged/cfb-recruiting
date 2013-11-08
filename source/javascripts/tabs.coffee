@@ -3,10 +3,11 @@ render = ->
     tabs = $ '.tabs li'
     el = $ this
     target = el.find('a').attr('href')
-    console.log target
 
     tabs.removeClass 'active'
     el.addClass 'active'
 
+    $('.tab-container').removeClass('active').hide()
+    $(target).addClass('active').show()
 
 $(render)
