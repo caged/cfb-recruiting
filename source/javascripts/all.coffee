@@ -1,5 +1,6 @@
 #= require tabs
 #= require county-map
+#= require recruit-map
 
 init = ->
   width      = $('.map').width()
