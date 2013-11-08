@@ -34,6 +34,7 @@ render = (event, env) ->
     recruitFeatures = schoolRecruits.map((player) -> lineStringFromPlayerToSchool(player, school))
     schoolRecruits.sort  (a, b) -> d3.ascending parseFloat(a.stars), parseFloat(b.stars)
     recruitFeatures.sort (a, b) -> d3.ascending parseFloat(a.properties.stars), parseFloat(b.properties.stars)
+    numRecruits = schoolRecruits.length
 
     connections = zoomGroup
       .selectAll('.connection')
@@ -41,23 +42,30 @@ render = (event, env) ->
 
     connections.enter().append('path')
       .attr('class', (d) -> "connection stars#{d.properties.stars}")
-      .attr('d', env.path)
       .style('stroke', (d) -> colors[d.properties.stars - 1])
+      .attr('d', env.path)
 
     connections.exit().remove()
 
     recruitNodes = zoomGroup.selectAll('.recruit')
-      .data(schoolRecruits, (d) -> "#{d.name}:#{d.school}")
+      .data(schoolRecruits, (d) -> d.id)
 
     recruitNodes.enter().append('circle')
       .attr('cx', (d) -> d.coordinates[0])
       .attr('cy', (d) -> d.coordinates[1])
-      .attr('r', 3)
+      .attr('r', 0)
       .style('fill', (d) -> colors[d.stars - 1])
       .attr('class', 'recruit')
+    .transition()
+      .delay((d, i) -> i / numRecruits * 300)
+      .style('fill', '#fff')
+      .attr('r', 6)
+    .transition()
+      .attr('r', 3)
+      .ease('bounce')
+      .style('fill', (d) -> colors[d.stars - 1])
 
     recruitNodes.exit().remove()
-
 
   # Set the fill domain based on the total number of recruits
   env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
@@ -88,9 +96,4 @@ render = (event, env) ->
     .attr('class', 'school')
     .on('click', drawRecruitPathsToSchool)
 
-  # $.when($.ajax('/data/counties.json'),
-  #        $.ajax('/data/schools.csv'),
-  #        $.ajax('/data/recruits.csv')).then(drawMap)
-
-# $(render)
 $(document).on 'data.loaded', render
