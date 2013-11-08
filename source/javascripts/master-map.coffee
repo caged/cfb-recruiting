@@ -1,33 +1,8 @@
-render = ->
-  width       = $('#master-map').width()
-  height      = 1000
-  projection  = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
-  path        = d3.geo.path().projection(projection)
-  fill        = d3.scale.log().clamp(true).range ['#111', '#00ff00']
-  starCount   = 'total'
-  zoomGroup   = null
-  colors      = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
-
-  # Main objects
-  recruits = null
-  schools  = null
-  counties = null
-  states   = null
-
-  tip = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html (d) ->
-    if d.properties?
-      p = d.properties
-      name = if /county/i.test(p.name) then p.name else "#{p.name} County"
-      "<h3>#{name}</h3><p><strong>#{p[starCount] || 0}</strong> athletes.</p>"
-    else if d.weight?
-      "<h3>#{d.stars} &#9733; #{d.name} - #{d.year}</h3><p>#{d.weight}lb #{d.position} from #{d.school} in #{d.location}"
-    else
-      "<h3>#{d.team}</h3><p>#{d.stadium} in #{d.city}, #{d.state}</p>"
+render = (event, env) ->
 
   map = d3.select('#master-map').append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .call(tip)
+    .attr('width', env.width)
+    .attr('height', env.height)
 
   # Generates a LineString GeoJSON object from a player to a school
   #
@@ -80,75 +55,46 @@ render = ->
 
     recruitNodes.exit().remove()
 
-  # Draw the base map
-  #
-  # r1 - Nation, State and County polygons
-  # r2 - Schools
-  # r3 - Recruits
-  #
-  # Returns nothing
-  drawMap = (r1, r2, r3) ->
-    usa      = r1[0]
-    schools = d3.csv.parse r2[0]
-    recruits = d3.csv.parse r3[0]
 
-    schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
+  # Set the fill domain based on the total number of recruits
+  env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
 
-    # Convert to GeoJSON
-    states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
-    counties = topojson.feature usa, usa.objects.counties
-    nation   = topojson.mesh usa, usa.objects.nation
+  recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
+  school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
 
-    # Set the fill domain based on the total number of recruits
-    fill.domain [0.2, d3.max(counties.features, (d) -> d.properties[starCount])]
+  zoomGroup = map.append('g')
 
-    # Auto scale map based on bounds
-    projection.scale(1).translate([0, 0])
-    b = path.bounds(nation)
-    s = 1 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height)
-    t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]
-    projection.scale(s).translate(t)
+  # Add counties
+  zoomGroup.append('g')
+    .attr('class', 'counties')
+  .selectAll('path.county')
+    .data(env.counties.features)
+  .enter().append('path')
+    .attr('class', 'county')
+    .style('fill', (d) -> env.fill(d.properties.total || 0))
+    .attr('d', env.path)
+    .style('stroke', (d) ->
+      stars = d.properties.total || 0
+      if stars > 0 then env.fill(stars || 0) else '#333')
 
-    for recruit in recruits
-      recruit.coordinates = projection [recruit.lat, recruit.lon]
+  # Add states and nation
+  zoomGroup.append('path').datum(env.states).attr('class', 'states').attr('d', env.path)
+  zoomGroup.append('path').datum(env.nation).attr('class', 'nation').attr('d', env.path)
 
-    for school in schools
-      school.position = projection [school.lat, school.lon]
+  zoomGroup.selectAll('.schools')
+    .data(env.schools)
+  .enter().append('circle')
+    .attr('cx', (d) -> d.coordinates[0])
+    .attr('cy', (d) -> d.coordinates[1])
+    .attr('r', 4)
+    .attr('class', 'school')
+    .on('mouseover', tip.show)
+    .on('mouseout', tip.hide)
+    .on('click', drawRecruitPathsToSchool)
 
-    zoomGroup = map.append('g')
+  # $.when($.ajax('/data/counties.json'),
+  #        $.ajax('/data/schools.csv'),
+  #        $.ajax('/data/recruits.csv')).then(drawMap)
 
-    # Add counties
-    zoomGroup.append('g')
-      .attr('class', 'counties')
-    .selectAll('path.county')
-      .data(counties.features)
-    .enter().append('path')
-      .attr('class', 'county')
-      .style('fill', (d) -> fill(d.properties[starCount] || 0))
-      .attr('d', path)
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
-      .style('stroke', (d) ->
-        stars = d.properties[starCount] || 0
-        if stars > 0 then fill(stars || 0) else '#333')
-
-    # Add states and nation
-    zoomGroup.append('path').datum(states).attr('class', 'states').attr('d', path)
-    zoomGroup.append('path').datum(nation).attr('class', 'nation').attr('d', path)
-
-    zoomGroup.selectAll('.schools')
-      .data(schools)
-    .enter().append('circle')
-      .attr('cx', (d) -> d.position[0])
-      .attr('cy', (d) -> d.position[1])
-      .attr('r', 4)
-      .attr('class', 'school')
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
-      .on('click', drawRecruitPathsToSchool)
-
-  $.when($.ajax('/data/counties.json'),
-         $.ajax('/data/schools.csv'),
-         $.ajax('/data/recruits.csv')).then(drawMap)
-
-$(render)
+# $(render)
+$(document).on 'data.loaded', render
