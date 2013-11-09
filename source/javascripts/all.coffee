@@ -10,6 +10,7 @@ init = ->
   projection = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path       = d3.geo.path().projection projection
   fill       = d3.scale.log().clamp(true).range ['#111', '#00ff00']
+  colors     = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
 
   autoProjectTo = (geometry) ->
     projection.scale(1).translate([0, 0])
@@ -35,5 +36,6 @@ init = ->
 
     autoProjectTo(nation)
 
+    $(document).trigger 'data.loaded', {states, counties, nation, schools, recruits, projection, path, fill, colors, width, height}
 
 $(init)
