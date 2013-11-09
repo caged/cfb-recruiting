@@ -1,4 +1,4 @@
-<div class="master-toolbar">
+<div class="master-toolbar no-height">
   <ul class="tabs js-hard-tabs">
     <li class="tab"><a href="counties.html" class="<%= 'selected' if current_page.path != 'recruits.html' %>" data-container-id="counties">Counties</a></li
     ><li class="tab"><a href="recruits.html" class="<%= 'selected' if current_page.path == 'recruits.html' %>" data-container-id="recruits">Recruits</a></li>
@@ -6,8 +6,7 @@
 </div>
 
 <div id="master-map-container">
-  <% if current_page.path != 'recruits.html' %>
-    <div id="counties" class="tab-container">
+    <div id="counties" class="tab-container" style="<%= 'display:none;' if current_page.path == 'recruits.html' %>">
       <div class="legend">
         <span class="title">More Recruits &rarr;</span>
         <ul class="ramp">
@@ -32,9 +31,7 @@
       </div>
       <div id="county-map" class="map"></div>
     </div>
-  <% else %>
-    <div id="recruits" class="tab-container">
+    <div id="recruits" class="tab-container" style="<%= 'display:none;' if current_page.path != 'recruits.html' %>">
       <div id="recruit-map" class="map"></div>
     </div>
-  <% end %>
 </div>
