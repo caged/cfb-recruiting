@@ -1,6 +1,4 @@
 render = (event, env) ->
-  colors = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
-
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
@@ -18,7 +16,7 @@ render = (event, env) ->
   # Returns a GeoJSON LineString object
   lineStringFromPlayerToSchool = (player, school) ->
     type: 'LineString'
-    coordinates: [[school.lat, school.lon], [player.lat, player.lon]]
+    coordinates: [[parseFloat(school.lat), parseFloat(school.lon)], [parseFloat(player.lat), parseFloat(player.lon)]]
     properties: player
 
   # Draw Great Arcs to recruit locations from the school.
@@ -41,9 +39,17 @@ render = (event, env) ->
       .data(recruitFeatures, (d) -> "#{d.properties.name}:#{d.properties.school}")
 
     connections.enter().append('path')
-      .attr('class', (d) -> "connection stars#{d.properties.stars}")
-      .style('stroke', (d) -> colors[d.properties.stars - 1])
       .attr('d', env.path)
+      .each(-> pathlen = @getTotalLength())
+      .attr('class', (d) -> "connection stars#{d.properties.stars}")
+      .style('stroke', (d) -> env.colors[d.properties.stars - 1])
+      .attr('stroke-dasharray', -> len = @getTotalLength(); "#{len},#{len}")
+      .attr('stroke-dashoffset', -> @getTotalLength())
+    .transition()
+      .duration(100)
+      .delay((d, i) -> i / numRecruits * 200)
+      .attr('stroke-dashoffset', 0)
+
 
     connections.exit().remove()
 
@@ -54,16 +60,13 @@ render = (event, env) ->
       .attr('cx', (d) -> d.coordinates[0])
       .attr('cy', (d) -> d.coordinates[1])
       .attr('r', 0)
-      .style('fill', (d) -> colors[d.stars - 1])
+      .style('fill', '#fff')
       .attr('class', 'recruit')
     .transition()
-      .delay((d, i) -> i / numRecruits * 300)
-      .style('fill', '#fff')
-      .attr('r', 6)
-    .transition()
+      .delay((d, i) -> i / numRecruits * 200)
+      .duration(200)
+      .style('fill', (d) -> env.colors[d.stars - 1])
       .attr('r', 3)
-      .ease('bounce')
-      .style('fill', (d) -> colors[d.stars - 1])
 
     recruitNodes.exit().remove()
 
