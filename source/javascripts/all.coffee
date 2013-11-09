@@ -3,8 +3,10 @@
 #= require recruit-map
 
 init = ->
+  heightAdjust = 0
+  heightAdjust += $(e).outerHeight() for e in $('.no-height')
   width      = $('.map').width()
-  height     = 1000
+  height     = $(window).height() - heightAdjust - 40
   projection = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path       = d3.geo.path().projection projection
   fill       = d3.scale.log().clamp(true).range ['#111', '#00ff00']
@@ -33,6 +35,5 @@ init = ->
 
     autoProjectTo(nation)
 
-    $(document).trigger 'data.loaded', {states, counties, nation, schools, recruits, projection, path, fill, width, height}
 
 $(init)
