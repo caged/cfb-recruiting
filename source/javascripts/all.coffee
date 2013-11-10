@@ -5,7 +5,7 @@
 init = ->
   heightAdjust = 0
   heightAdjust += $(e).outerHeight() for e in $('.no-height')
-  width      = $('.map').width()
+  width      = $('#master-map-container').width()
   height     = $(window).height() - heightAdjust - 40
   projection = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path       = d3.geo.path().projection projection
@@ -21,11 +21,13 @@ init = ->
 
   $.when($.ajax('/data/counties.json'),
          $.ajax('/data/schools.csv'),
-         $.ajax('/data/recruits.csv')).then (r1, r2, r3) ->
+         $.ajax('/data/recruits.csv'),
+         $.ajax('/data/places.csv')).then (r1, r2, r3, r4) ->
 
-    usa      = r1[0]
-    schools = d3.csv.parse r2[0]
-    recruits = d3.csv.parse r3[0]
+    usa       = r1[0]
+    schools   = d3.csv.parse r2[0]
+    recruits  = d3.csv.parse r3[0]
+    places    = d3.csv.parse r4[0]
 
     schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
 
@@ -36,6 +38,6 @@ init = ->
 
     autoProjectTo(nation)
 
-    $(document).trigger 'data.loaded', {states, counties, nation, schools, recruits, projection, path, fill, colors, width, height}
+    $(document).trigger 'data.loaded', {states, counties, nation, schools, recruits, places, projection, path, fill, colors, width, height}
 
 $(init)
