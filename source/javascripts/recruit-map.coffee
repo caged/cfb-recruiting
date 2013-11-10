@@ -1,4 +1,9 @@
-# Fix for blurry canvas elements on Retina MBP
+# Scale canvas elements to support retina if a retina display is detected.
+#
+# canvas - The canvas element
+# context - The canvas context
+#
+# Returns nothing
 scaleForRetina = (canvas, context) ->
   rwidth = $(canvas.node()).width()
   rheight = $(canvas.node()).width()
@@ -21,6 +26,13 @@ scaleForRetina = (canvas, context) ->
 
     context.scale ratio, ratio
 
+# The main entry point for rendering the map to the screen
+#
+# event - the `data.loaded` event object
+# env - The environment containing all data and previously computed
+#       projections
+#
+# Returns nothing
 render = (event, env) ->
   canvas = d3.select('#recruit-map').append('canvas')
     .attr('width', env.width)
