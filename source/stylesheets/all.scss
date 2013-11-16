@@ -145,12 +145,11 @@ header {
   stroke-opacity: 0.6;
   stroke-width: 1;
   cursor: pointer;
-}
 
-// .recruits circle {
-//   fill-opacity: 0.4;
-//   fill: green;
-// }
+  &:hover {
+    fill: tomato;
+  }
+}
 
 .connection {
   fill: none;

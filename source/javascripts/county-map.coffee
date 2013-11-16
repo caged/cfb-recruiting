@@ -92,10 +92,11 @@ render = (event, env) ->
 
   zoomGroup.selectAll('.schools')
     .data(env.schools)
-  .enter().append('circle')
-    .attr('cx', (d) -> d.coordinates[0])
-    .attr('cy', (d) -> d.coordinates[1])
-    .attr('r', 4)
+  .enter().append('rect')
+    .attr('width', 7)
+    .attr('height', 7)
+    .attr('x', (d) -> d.coordinates[0])
+    .attr('y', (d) -> d.coordinates[1])
     .attr('class', 'school')
     .on('click', drawRecruitPathsToSchool)
 
