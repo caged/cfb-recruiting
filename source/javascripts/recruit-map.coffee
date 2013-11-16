@@ -66,8 +66,22 @@ render = (event, env) ->
     .rollup((d) -> d.length)
     .entries(env.recruits)
 
+  hotschools = d3.nest()
+    .key((d) -> "#{d.school}:#{d.place_gid}")
+    .rollup((d) -> d.length)
+    .entries(env.recruits)
+
+  for school in hotschools
+    [name, gid] = school.key.split(':')
+    school.place = bygid[gid]
+    school.name = name
+    school
+
   hotspots.sort (a, b) -> d3.descending(a.values, b.values)
   topPlaces = hotspots[0..14].map (spot) -> spot.place = bygid[spot.key]; spot
+
+  hotschools.sort (a, b) -> d3.descending(a.values, b.values)
+  console.log hotschools[0..10]
 
   for recruit in env.recruits
     coordinates = env.projection [recruit.lat, recruit.lon]
