@@ -46,7 +46,7 @@ proxy '/recruits.html', '/index.html'
 # Methods defined in the helpers block are available in templates
 helpers do
   require 'csv'
-  require 'ostruct'
+  require 'json'
 
   def schools
     @schools ||= CSV.parse(File.read('source/data/schools.csv'), :headers => true)
@@ -56,6 +56,14 @@ helpers do
     @recruits ||= CSV.parse(File.read('source/data/recruits.csv'), :headers => true)
   end
 
+  def places
+    @places ||= CSV.parse(File.read('source/data/places.csv'), :headers => true)
+  end
+
+  def counties
+    @counties ||= JSON.parse(File.read('source/data/counties.json'))
+  end
+
   def years
     (2002..2013).to_a.reverse
   end
@@ -63,9 +71,7 @@ helpers do
 end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
