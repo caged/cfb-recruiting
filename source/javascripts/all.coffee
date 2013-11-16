@@ -12,6 +12,8 @@ init = ->
   fill       = d3.scale.log().clamp(true).range ['#111', '#00ff00']
   colors     = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
 
+  d3.select('#master-map-container').style('height', "#{height}px")
+
   autoProjectTo = (geometry) ->
     projection.scale(1).translate([0, 0])
     b = path.bounds(geometry)
