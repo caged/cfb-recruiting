@@ -1,4 +1,6 @@
 render = (event, env) ->
+  selectedSchool = null
+
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
@@ -54,6 +56,9 @@ render = (event, env) ->
   #
   # Returns nothing
   drawRecruitPathsToSchool = (school) ->
+    school = school || selectedSchool
+    return if !school
+
     year = $('.js-year').val()
     schoolRecruits  = env.recruits.filter (r) ->
       fromSchool = r.institution in [school.team, school.alt]
@@ -99,6 +104,7 @@ render = (event, env) ->
       .attr('r', 3)
 
     recruitNodes.exit().remove()
+    selectedSchool = school
 
   # Set the fill domain based on the total number of recruits
   env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
@@ -128,8 +134,7 @@ render = (event, env) ->
     .on('click', drawRecruitPathsToSchool)
 
   # Shade the county by the selected year
-  drawCountyAtYear = ->
-    year = $(this).val()
+  drawCountyAtYear = (year) ->
     year = if year then "total_#{year}" else 'total'
     numCounties = env.counties.features.length
 
@@ -143,6 +148,9 @@ render = (event, env) ->
         stars = d.properties[year] || 0
         if stars > 0 then env.fill(stars || 0) else '#333')
 
-  $('.js-year').on 'change', drawCountyAtYear
+  $('.js-year').on 'change', ->
+    year = $(this).val()
+    drawCountyAtYear year
+    drawRecruitPathsToSchool()
 
 $(document).on 'data.loaded', render
