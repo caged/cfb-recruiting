@@ -100,4 +100,22 @@ render = (event, env) ->
     .attr('class', 'school')
     .on('click', drawRecruitPathsToSchool)
 
+  # Shade the county by the selected year
+  drawCountyAtYear = ->
+    year = $(this).val()
+    year = if year then "total_#{year}" else 'total'
+    numCounties = env.counties.features.length
+
+    env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties[year])]
+
+    zoomGroup.selectAll('.county')
+      .transition()
+      .delay((d, i) -> i / numCounties * 500)
+      .style('fill', (d) -> env.fill(d.properties[year] || 0))
+      .style('stroke', (d) ->
+        stars = d.properties[year] || 0
+        if stars > 0 then env.fill(stars || 0) else '#333')
+
+  $('.js-year').on 'change', drawCountyAtYear
+
 $(document).on 'data.loaded', render

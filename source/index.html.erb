@@ -1,9 +1,9 @@
 <div class="master-toolbar no-height">
   <span class="select">
     <select id="year" class="js-year">
-      <option>2002-2013</option>
+      <option value="">2002-2013</option>
       <% years.each do |year| %>
-      <option><%= year %></option>
+      <option value="<%= year %>"><%= year %></option>
       <% end %>
     </select>
   </span>
@@ -34,7 +34,7 @@
           <li class="star1"><span></span> 1&#9733;</li>
         </ul>
         <span class="title">
-          <span class="school"></span>School
+          <span class="school">&star;</span>School
         </span>
       </div>
       <div id="county-map" class="map"></div>
