@@ -19,6 +19,32 @@ render = (event, env) ->
     coordinates: [[parseFloat(school.lat), parseFloat(school.lon)], [parseFloat(player.lat), parseFloat(player.lon)]]
     properties: player
 
+  # Draw a star polygon
+  #
+  # x - center x
+  # y - center y
+  # points - number of star points
+  # innerRadius - radius inside the start
+  # outerRadius - radius outside the star
+  #
+  # Returns a point string for a polygon
+  drawStar = (x, y, points, innerRadius, outerRadius) ->
+    results = ""
+    angle = Math.PI / points
+    i = 0
+
+    while i < 2 * points
+      r = (if (i & 1) is 0 then outerRadius else innerRadius)
+      currX = x + Math.cos(i * angle) * r
+      currY = y + Math.sin(i * angle) * r
+      if i is 0
+        results = "#{currX},#{currY}"
+      else
+        results += ",#{currX},#{currY}"
+      i++
+    results
+
+
   # Draw Great Arcs to recruit locations from the school.
   #
   # Find all recruits that have committed to the current school
@@ -28,7 +54,11 @@ render = (event, env) ->
   #
   # Returns nothing
   drawRecruitPathsToSchool = (school) ->
-    schoolRecruits  = env.recruits.filter((r) -> r.institution in [school.team, school.alt])
+    year = $('.js-year').val()
+    schoolRecruits  = env.recruits.filter (r) ->
+      fromSchool = r.institution in [school.team, school.alt]
+      if year then (fromSchool and r.year == year) else fromSchool
+
     recruitFeatures = schoolRecruits.map((player) -> lineStringFromPlayerToSchool(player, school))
     schoolRecruits.sort  (a, b) -> d3.ascending parseFloat(a.stars), parseFloat(b.stars)
     recruitFeatures.sort (a, b) -> d3.ascending parseFloat(a.properties.stars), parseFloat(b.properties.stars)
@@ -92,12 +122,27 @@ render = (event, env) ->
 
   zoomGroup.selectAll('.schools')
     .data(env.schools)
-  .enter().append('rect')
-    .attr('width', 7)
-    .attr('height', 7)
-    .attr('x', (d) -> d.coordinates[0])
-    .attr('y', (d) -> d.coordinates[1])
+  .enter().append('polygon')
     .attr('class', 'school')
+    .attr('points', (d) -> drawStar(d.coordinates[0], d.coordinates[1], 5, 6, 3))
     .on('click', drawRecruitPathsToSchool)
+
+  # Shade the county by the selected year
+  drawCountyAtYear = ->
+    year = $(this).val()
+    year = if year then "total_#{year}" else 'total'
+    numCounties = env.counties.features.length
+
+    env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties[year])]
+
+    zoomGroup.selectAll('.county')
+      .transition()
+      .delay((d, i) -> i / numCounties * 500)
+      .style('fill', (d) -> env.fill(d.properties[year] || 0))
+      .style('stroke', (d) ->
+        stars = d.properties[year] || 0
+        if stars > 0 then env.fill(stars || 0) else '#333')
+
+  $('.js-year').on 'change', drawCountyAtYear
 
 $(document).on 'data.loaded', render
