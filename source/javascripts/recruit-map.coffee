@@ -70,7 +70,7 @@ render = (event, env) ->
     coordinates = env.projection [recruit.lat, recruit.lon]
     context.beginPath()
     context.arc coordinates[0], coordinates[1], radius(recruit.stars), 0, Math.PI * 2, false
-    context.fillStyle = 'rgba(223, 0, 83, 0.9)' #env.colors[recruit.stars - 1]
+    context.fillStyle = 'rgba(255, 255, 255, 0.3)' #'rgba(223, 0, 83, 0.9)' #env.colors[recruit.stars - 1]
     context.shadowColor = 'rgba(255, 255, 255, 0.5)'
     context.fill()
 
@@ -97,7 +97,7 @@ render = (event, env) ->
 
     context.beginPath()
     context.rect x, y - metrics.height, metrics.width + padding, metrics.height + padding
-    context.fillStyle = 'rgba(31, 192, 30, 0.9)'
+    context.fillStyle = 'rgba(31, 192, 30, 0.7)'
     context.fill()
 
     context.beginPath()
@@ -109,6 +109,5 @@ render = (event, env) ->
     context.fillStyle = '#fff'
     context.fillText(label, x + padding / 2, y + padding / 2)
     context.fill()
-    # context.stroke()
 
 $(document).on 'data.loaded', render
