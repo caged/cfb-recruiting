@@ -75,7 +75,6 @@ render = (event, env) ->
 
     connections.enter().append('path')
       .attr('d', env.path)
-      .each(-> pathlen = @getTotalLength())
       .attr('class', (d) -> "connection stars#{d.properties.stars}")
       .style('stroke', (d) -> env.colors[d.properties.stars - 1])
       .attr('stroke-dasharray', -> len = @getTotalLength(); "#{len},#{len}")
