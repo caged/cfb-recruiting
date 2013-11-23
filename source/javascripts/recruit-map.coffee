@@ -53,9 +53,6 @@ render = (event, env) ->
   context.strokeStyle = "#333"
   context.stroke()
 
-  context.shadowBlur = 1
-  context.globalCompositeOperation = 'color-dodge'
-
   bygid = d3.nest()
     .key((d) -> d.gid)
     .rollup((d) -> d[0])
