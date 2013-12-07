@@ -1,15 +1,28 @@
 render = (event, env) ->
   selectedSchool = null
 
+  tip = d3.tip().attr('class', 'd3-tip')
+      .html (d) ->
+        summary = summaryForSchool d.team
+        console.log summary
+        "<h3>#{d.team}</h3>"
+        "<p>#{d.city}</p>"
+
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
+    .call(tip)
 
   zoomGroup = map.append 'g'
 
   recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
   school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
 
+  summaryForSchool = (school) ->
+    d3.nest()
+      .key((d) -> d.institution)
+      .map(env.recruits, d3.map)
+      .get(school)
   # Generates a LineString GeoJSON object from a player to a school
   #
   # player - Object
@@ -130,6 +143,7 @@ render = (event, env) ->
   .enter().append('polygon')
     .attr('class', 'school')
     .attr('points', (d) -> drawStar(d.coordinates[0], d.coordinates[1], 5, 6, 3))
+    .on('mouseover', tip.show)
     .on('click', drawRecruitPathsToSchool)
 
   # Shade the county by the selected year
