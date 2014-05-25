@@ -6,19 +6,34 @@ render = (event, env) ->
         "<h3>#{d.team}</h3>" +
         "<p>#{d.city}</p>"
 
-  tip2 = d3.tip().attr('class', 'd3-tip-county')
-      .html (d) -> "<span>#{d.properties.name}</span>"
-
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
     .call(tip)
-    .call(tip2)
 
   zoomGroup = map.append 'g'
 
   recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
   school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
+
+  # Update county information dialog with information about the focused county
+  #
+  # county - Object
+  #
+  # Returns nothing
+  updateCountyInfo = (county) ->
+    props = county.properties
+    counts = []
+    console.log props
+
+    el = d3.select('.js-county-info').append('div')
+      .attr('class', 'js-county')
+      .datum(props)
+
+    el.append('span').text((d) -> d.name)
+
+  clearCountyInfo = (county) ->
+    d3.select('.js-county').remove()
 
   # Generates a LineString GeoJSON object from a player to a school
   #
@@ -127,8 +142,8 @@ render = (event, env) ->
     .attr('class', 'county')
     .style('fill', (d) -> env.fill(d.properties.total || 0))
     .attr('d', env.path)
-    .on('mouseover', tip2.show)
-    .on('mouseout', tip2.hide)
+    .on('mouseover', updateCountyInfo)
+    .on('mouseout', clearCountyInfo)
     .style('stroke', (d) ->
       stars = d.properties.total || 0
       if stars > 0 then env.fill(stars || 0) else '#333')

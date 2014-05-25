@@ -34,6 +34,7 @@ init = ->
     places    = d3.csv.parse r4[0]
 
     schools.sort (a, b) -> d3.ascending parseFloat(a.capacity), parseFloat(b.capacity)
+    recruits = recruits.filter (d) -> +d.stars >= 2
 
     # Convert to GeoJSON
     states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
