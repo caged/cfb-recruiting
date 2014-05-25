@@ -43,6 +43,20 @@ init = ->
 
     autoProjectTo(nation)
 
+    # Create a timeline array from the recruits over the years and remove
+    # one-star recruits from the total count because we're not that interested
+    # in one-star recruits and it's highly likely that we don't have all of the
+    # one star recruits in the database. 
+    for county in counties.features
+      props = county.properties
+      props.timeline = []
+      if props.total
+        props.total -= county.properties.one_star
+        for year in [2002..2013] by 1
+          props.timeline.push
+            year: year
+            count: props["total_#{year}"]
+
     env = {states, counties, nation, schools, recruits, places, projection, path, fill, colors, width, height}
     $(document).trigger 'data.loaded', env
 
