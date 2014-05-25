@@ -373,7 +373,8 @@
       return projection.scale(s).translate(t);
     };
     return $.when($.ajax('data/counties.json'), $.ajax('data/schools.csv'), $.ajax('data/recruits.csv'), $.ajax('data/places.csv')).then(function(r1, r2, r3, r4) {
-      var counties, nation, places, recruits, schools, states, usa;
+      var counties, env, nation, places, recruits, schools, states, usa;
+      $('.js-loading').hide();
       usa = r1[0];
       schools = d3.csv.parse(r2[0]);
       recruits = d3.csv.parse(r3[0]);
@@ -387,7 +388,7 @@
       counties = topojson.feature(usa, usa.objects.counties);
       nation = topojson.mesh(usa, usa.objects.nation);
       autoProjectTo(nation);
-      return $(document).trigger('data.loaded', {
+      env = {
         states: states,
         counties: counties,
         nation: nation,
@@ -400,6 +401,15 @@
         colors: colors,
         width: width,
         height: height
+      };
+      $(document).trigger('data.loaded', env);
+      return $('.js-hard-tabs').on('tabChanged', function(event, object) {
+        var canvas;
+        canvas = $('#recruit-map canvas');
+        if (object.link.text() === 'Recruits' && +canvas.attr('width') === 0) {
+          canvas.remove();
+          return $(document).trigger('data.loaded', env);
+        }
       });
     });
   };
