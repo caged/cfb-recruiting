@@ -21,10 +21,10 @@ init = ->
     t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]
     projection.scale(s).translate(t)
 
-  $.when($.ajax('/data/counties.json'),
-         $.ajax('/data/schools.csv'),
-         $.ajax('/data/recruits.csv'),
-         $.ajax('/data/places.csv')).then (r1, r2, r3, r4) ->
+  $.when($.ajax('data/counties.json'),
+         $.ajax('data/schools.csv'),
+         $.ajax('data/recruits.csv'),
+         $.ajax('data/places.csv')).then (r1, r2, r3, r4) ->
 
     usa       = r1[0]
     schools   = d3.csv.parse r2[0]
