@@ -99,6 +99,10 @@ end
 
 # To deploy to a remote branch via git (e.g. gh-pages on github):
 activate :deploy do |deploy|
-  deploy.build_before = true 
+  deploy.build_before = true
   deploy.method = :git
 end
+
+ignore '**/*/README*'
+ignore '**/*/LICENSE'
+ignore '**/*/CONTRIBUTING*'
