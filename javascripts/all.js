@@ -372,7 +372,7 @@
       t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
       return projection.scale(s).translate(t);
     };
-    return $.when($.ajax('/data/counties.json'), $.ajax('/data/schools.csv'), $.ajax('/data/recruits.csv'), $.ajax('/data/places.csv')).then(function(r1, r2, r3, r4) {
+    return $.when($.ajax('data/counties.json'), $.ajax('data/schools.csv'), $.ajax('data/recruits.csv'), $.ajax('data/places.csv')).then(function(r1, r2, r3, r4) {
       var counties, nation, places, recruits, schools, states, usa;
       usa = r1[0];
       schools = d3.csv.parse(r2[0]);
