@@ -26,6 +26,8 @@ init = ->
          $.ajax('data/recruits.csv'),
          $.ajax('data/places.csv')).then (r1, r2, r3, r4) ->
 
+    $('.js-loading').hide()
+
     usa       = r1[0]
     schools   = d3.csv.parse r2[0]
     recruits  = d3.csv.parse r3[0]
@@ -40,6 +42,13 @@ init = ->
 
     autoProjectTo(nation)
 
-    $(document).trigger 'data.loaded', {states, counties, nation, schools, recruits, places, projection, path, fill, colors, width, height}
+    env = {states, counties, nation, schools, recruits, places, projection, path, fill, colors, width, height}
+    $(document).trigger 'data.loaded', env
+
+    $('.js-hard-tabs').on 'tabChanged', (event, object) ->
+      canvas = $ '#recruit-map canvas'
+      if object.link.text() is 'Recruits' and +canvas.attr('width') is 0
+        canvas.remove()
+        $(document).trigger 'data.loaded', env
 
 $(init)
