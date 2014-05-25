@@ -314,6 +314,7 @@ header {
 // =tooltips
 ////////////////////////////////////////////////////////////////////////////////
 .d3-tip {
+  min-width: 100px;
   line-height: 1;
   background: rgba(255, 255, 255, 1);
   color: #555;
@@ -338,4 +339,11 @@ header {
     color: #333;
     font-weight: bold;
   }
+}
+
+.d3-tip-county {
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  padding: 5px;
+  color: #999;
 }

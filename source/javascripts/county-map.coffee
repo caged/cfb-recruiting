@@ -3,46 +3,22 @@ render = (event, env) ->
 
   tip = d3.tip().attr('class', 'd3-tip')
       .html (d) ->
-        summary = summaryForSchool d.team
-        console.log summary
         "<h3>#{d.team}</h3>" +
         "<p>#{d.city}</p>"
+
+  tip2 = d3.tip().attr('class', 'd3-tip-county')
+      .html (d) -> "<span>#{d.properties.name}</span>"
 
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
     .call(tip)
+    .call(tip2)
 
   zoomGroup = map.append 'g'
 
   recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
   school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
-
-  # Get a summary of recruits including the number of recruits in a year
-  # and the number of 1-5 star levels.
-  #
-  # school - Common name of the college/institution/team
-  #
-  # Returns an array for the given school
-  #
-  #    [{
-  #       key: '2013',
-  #       values: [{key: '5', values: 12},...]
-  #     },
-  #     {2012 recruits}, ...]
-  #
-  recruitSummaryForSchool = (school) ->
-    d3.nest()
-      .key((d) -> d.institution)
-      .rollup((d) ->
-        d3.nest()
-          .key((r) -> r.year)
-          .key((r) -> r.stars)
-          .rollup((r) -> r.length)
-          .sortKeys(d3.descending)
-          .entries(d))
-      .map(env.recruits, d3.map)
-      .get(school)
 
   # Generates a LineString GeoJSON object from a player to a school
   #
@@ -151,6 +127,8 @@ render = (event, env) ->
     .attr('class', 'county')
     .style('fill', (d) -> env.fill(d.properties.total || 0))
     .attr('d', env.path)
+    .on('mouseover', tip2.show)
+    .on('mouseout', tip2.hide)
     .style('stroke', (d) ->
       stars = d.properties.total || 0
       if stars > 0 then env.fill(stars || 0) else '#333')
