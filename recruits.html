@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300' rel='stylesheet' type='text/css'>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>College Football Recruiting</title>
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/vendor.js" type="text/javascript"></script>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header class="no-height">
+      <h1>THE CLASS</h1><h2>A look at college football recruiting</h2>
+      <span class="credit">A Project by <a href="https://twitter.com/caged">Justin Palmer</a></span>
+    </header>
+    <div class="master-toolbar no-height">
+  <span class="select">
+    <select id="year" class="js-year">
+      <option value="">2002-2013</option>
+      
+      <option value="2013">2013</option>
+      
+      <option value="2012">2012</option>
+      
+      <option value="2011">2011</option>
+      
+      <option value="2010">2010</option>
+      
+      <option value="2009">2009</option>
+      
+      <option value="2008">2008</option>
+      
+      <option value="2007">2007</option>
+      
+      <option value="2006">2006</option>
+      
+      <option value="2005">2005</option>
+      
+      <option value="2004">2004</option>
+      
+      <option value="2003">2003</option>
+      
+      <option value="2002">2002</option>
+      
+    </select>
+  </span>
+  <ul class="tabs js-hard-tabs">
+    <li class="tab"><a href="counties.html" class="" data-container-id="counties">Counties</a></li
+    ><li class="tab"><a href="recruits.html" class="selected" data-container-id="recruits">Recruits</a></li>
+  </ul>
+</div>
+
+<div id="master-map-container">
+    <div id="counties" class="tab-container" style="display:none;">
+      <div class="legend">
+        <span class="title">More Recruits &rarr;</span>
+        <ul class="ramp">
+          <li style="background-color:#191919"></li>
+          <li style="background-color:#0e270e"></li>
+          <li style="background-color:#0d3b0d"></li>
+          <li style="background-color:#0a550a"></li>
+          <li style="background-color:#0c690b"></li>
+          <li style="background-color:#128612"></li>
+        </ul>
+        <span class="title">Recruit level</span>
+        <ul class="recruit-ramp">
+          <li class="star5"><span></span> 5&#9733;</li>
+          <li class="star4"><span></span> 4&#9733;</li>
+          <li class="star3"><span></span> 3&#9733;</li>
+          <li class="star2"><span></span> 2&#9733;</li>
+          <li class="star1"><span></span> 1&#9733;</li>
+        </ul>
+        <span class="title">
+          <span class="school">&star;</span>School
+        </span>
+      </div>
+      <div id="county-map" class="map"></div>
+    </div>
+    <div id="recruits" class="tab-container" style="">
+      <div id="recruit-map" class="map"></div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7881178-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
