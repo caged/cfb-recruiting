@@ -1,6 +1,11 @@
 //= require reset
 @charset "utf-8";
 
+$two: #5adacc;
+$three: #bcf020;
+$four: #eeb016;
+$five: #ec180c;
+
 body {
   background: #010101;
   font-family: sans-serif;
@@ -290,24 +295,24 @@ header {
     // ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
     .star5 span {
       height: 3px;
-      background: #ec180c;
-      &:after { color: #ec180c; }
+      background: $five;
+      &:after { color: $five; }
     }
 
     .star4 span {
       height: 2px;
-      background: #eeb016;
-      &:after { color: #eeb016; }
+      background: $four;
+      &:after { color: $four; }
     }
 
     .star3 span {
-      background: #bcf020;
-      &:after { color: #bcf020; }
+      background: $three;
+      &:after { color: $three; }
     }
 
     .star2 span {
-      background: #5adacc;
-      &:after { color: #5adacc; }
+      background: $two;
+      &:after { color: $two; }
     }
 
     .star1 span {
@@ -321,6 +326,62 @@ header {
 .county-info {
   top: 279px;
   width: 152px;
+  z-index: 9999;
+}
+
+.star-recruits {
+  margin-bottom: 5px;
+}
+
+.star-recruits li {
+  display: table-cell;
+  width: 1%;
+  padding: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+// .star-recruits .star { margin-right: 3px; }
+.star-recruits .count {
+  display: block;
+  margin-top: 5px;
+}
+
+.star.two { color: $two; }
+.star.three { color: $three; }
+.star.four { color: $four; }
+.star.five { color: $five; }
+
+.cam {
+  display: block;
+  line-height: 1.5em;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+  color: #999;
+}
+
+.cam .count {
+  color: #fff;
+  font-weight: normal;
+}
+
+.county-bar {
+  fill: tomato;
+}
+
+.domain {
+  display: none;
+}
+
+.axis text {
+  fill: #555;
+}
+
+.x.axis line {
+  shape-rendering: crispedges;
+  stroke: #222;
+  stroke-width: 1;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
