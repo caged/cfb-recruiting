@@ -32,7 +32,7 @@ COPY (SELECT cfb_counties.geoid, cfb_counties.gisjoin, cfb_counties.name,
 FROM cfb_counties
 INNER JOIN recruits ON st_contains(cfb_counties.geom, recruits.geom)
 LEFT JOIN cfb_counties_data on cfb_counties.gisjoin = cfb_counties_data.gisjoin
-WHERE stars > 0
+WHERE stars > 1
 GROUP BY cfb_counties.name, cfb_counties.gisjoin, cfb_counties.geoid)
 TO '/tmp/cfb-counties.csv' WITH CSV HEADER;
 
