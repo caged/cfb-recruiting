@@ -142,7 +142,13 @@
         return env.colors[d.stars - 1];
       }).attr('r', 3);
       recruitNodes.exit().remove();
-      return selectedSchool = school;
+      selectedSchool = school;
+      return map.on('click', function() {
+        if (d3.event.target.tagName === 'svg') {
+          connections.remove();
+          return recruitNodes.remove();
+        }
+      });
     };
     env.fill.domain([
       0.2, d3.max(env.counties.features, function(d) {
