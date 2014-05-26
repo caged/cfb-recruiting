@@ -164,6 +164,11 @@ render = (event, env) ->
     recruitNodes.exit().remove()
     selectedSchool = school
 
+    map.on 'click', ->
+      if d3.event.target.tagName is 'svg'
+        connections.remove()
+        recruitNodes.remove()
+
   # Set the fill domain based on the total number of recruits
   env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
 
