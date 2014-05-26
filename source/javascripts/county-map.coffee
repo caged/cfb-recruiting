@@ -75,7 +75,7 @@ render = (event, env) ->
 
     el.append('span')
       .attr('class', 'title')
-      .text((d) -> "#{d.name.replace('County', '')} County")
+      .text((d) -> "#{d.name.replace('County', '')}")
 
     if props.male_18_24
       stars = el.append('ul')
