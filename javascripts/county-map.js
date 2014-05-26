@@ -2,7 +2,7 @@
   var render;
 
   render = function(event, env) {
-    var clearCountyInfo, drawCountyAtYear, drawRecruitPathsToSchool, drawStar, lineStringFromPlayerToSchool, map, recruit, school, selectedSchool, tip, updateCountyInfo, zoomGroup, _i, _j, _len, _len1, _ref, _ref1;
+    var anchor, clearCountyInfo, drawCountyAtYear, drawRecruitPathsToSchool, drawStar, left, lineStringFromPlayerToSchool, map, recruit, reset, school, selectedSchool, tip, tip2, top, updateCountyInfo, zoom, zoomGroup, zoomed, _i, _j, _len, _len1, _ref, _ref1, _ref2;
     if (d3.select('#county-map svg').node()) {
       return;
     }
@@ -10,8 +10,21 @@
     tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
       return ("<h3>" + d.team + "</h3>") + ("<p>" + d.city + "</p>");
     });
-    map = d3.select('#county-map').append('svg').attr('width', env.width).attr('height', env.height).call(tip);
+    tip2 = d3.tip().attr('class', 'd3-tip-recruit').html(function(d) {
+      return "<span class='name'>" + d.name + "</span>:        <span class='star" + d.stars + "'>" + d.stars + "&#9733;</span> " + d.weight + "lb        " + (d.position.toUpperCase()) + " recruit from <span>" + d.location + "</span>        in " + d.year;
+    });
+    map = d3.select('#county-map').append('svg').attr('width', env.width).attr('height', env.height).call(tip).call(tip2);
     zoomGroup = map.append('g');
+    zoomed = function() {
+      zoomGroup.selectAll('.counties').style('stroke-width', 0.5 / d3.event.scale + 'px');
+      zoomGroup.selectAll('.states').style('stroke-width', 0.5 / d3.event.scale + 'px');
+      return zoomGroup.attr('transform', "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    };
+    reset = function() {
+      return zoomGroup.transition().duration(750).call(zoom.translate([0, 0]).scale(1).event);
+    };
+    zoom = d3.behavior.zoom().translate([0, 0]).scale(1).scaleExtent([1, 8]).on("zoom", zoomed);
+    zoomGroup.call(zoom).call(zoom.event);
     _ref = env.recruits;
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       recruit = _ref[_i];
@@ -50,9 +63,11 @@
         stars.append('span').attr('class', 'count').text(function(d) {
           return d.count;
         });
-        return el.append('span').attr('class', 'cam').html(function(d) {
+        el.append('span').attr('class', 'cam').html(function(d) {
           return "<span class='count'>" + (d3.format(',')(d.male_18_24)) + "</span>            males 18-24yo according to The U.S. Census Bureau.";
         });
+        return el.append('span').attr('class', 'note').text('Recruit numbers based on 2002-2013 combined totals.\
+               Demographics from 2008-12 5 year American Community Survey.');
       } else {
         return el.append('span').attr('class', 'no-recruits').html('No 2-5&#9733; recruits');
       }
@@ -136,7 +151,7 @@
         return d.coordinates[0];
       }).attr('cy', function(d) {
         return d.coordinates[1];
-      }).attr('r', 0).style('fill', '#fff').attr('class', 'recruit').transition().delay(function(d, i) {
+      }).attr('r', 0).style('fill', '#fff').attr('class', 'recruit').on('mouseover', tip2.show).on('mouseout', tip2.hide).transition().delay(function(d, i) {
         return i / numRecruits * 200;
       }).duration(200).style('fill', function(d) {
         return env.colors[d.stars - 1];
@@ -158,12 +173,22 @@
     map.append('text').attr('class', 'ui-info').attr('x', env.width / 2).attr('y', 25).text('Select school to see recruit locations');
     zoomGroup.append('g').attr('class', 'counties').selectAll('path.county').data(env.counties.features).enter().append('path').attr('class', 'county').style('fill', function(d) {
       return env.fill(d.properties.total || 0);
-    }).attr('d', env.path).on('mouseover', updateCountyInfo).on('mouseout', clearCountyInfo);
+    }).attr('d', env.path).on('mouseover', updateCountyInfo).on('mouseout', clearCountyInfo).on('click', reset);
     zoomGroup.append('path').datum(env.states).attr('class', 'states').attr('d', env.path);
     zoomGroup.append('path').datum(env.nation).attr('class', 'nation').attr('d', env.path);
-    zoomGroup.selectAll('.schools').data(env.schools).enter().append('polygon').attr('class', 'school').attr('points', function(d) {
+    zoomGroup.selectAll('.schools').data(env.schools).enter().append('polygon').attr('class', function(d) {
+      return "school " + (d.team.toLowerCase().replace(/\s+/, '-'));
+    }).attr('points', function(d) {
       return drawStar(d.coordinates[0], d.coordinates[1], 5, 6, 3);
     }).on('mouseover', tip.show).on('mouseout', tip.hide).on('click', drawRecruitPathsToSchool);
+    anchor = zoomGroup.select('.syracuse').datum();
+    _ref2 = env.projection([+anchor.lat, +anchor.lon]), left = _ref2[0], top = _ref2[1];
+    top = Math.max(top - 200, parseFloat(d3.select('header.no-height').style('height')) + 10);
+    d3.select('.js-spurrier').style({
+      display: 'block',
+      top: "" + top + "px",
+      left: "" + (left - 200) + "px"
+    });
     drawCountyAtYear = function(year) {
       var numCounties;
       year = year ? "total_" + year : 'total';
