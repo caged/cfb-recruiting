@@ -1,17 +1,3 @@
-<div class="master-toolbar no-height">
-  <span class="select">
-    <select id="year" class="js-year">
-      <option value="">2002-2013</option>
-      <% years.each do |year| %>
-      <option value="<%= year %>"><%= year %></option>
-      <% end %>
-    </select>
-  </span>
-  <ul class="tabs js-hard-tabs">
-    <li class="tab"><a href="counties.html" class="<%= 'selected' if current_page.path != 'recruits.html' %>" data-container-id="counties">Counties</a></li
-    ><li class="tab"><a href="recruits.html" class="<%= 'selected' if current_page.path == 'recruits.html' %>" data-container-id="recruits">Recruits</a></li>
-  </ul>
-</div>
 
 <div id="master-map-container">
     <div id="counties" class="tab-container" style="<%= 'display:none;' if current_page.path == 'recruits.html' %>">
