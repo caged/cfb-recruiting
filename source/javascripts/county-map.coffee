@@ -23,23 +23,8 @@ render = (event, env) ->
   # Returns nothing
   updateCountyInfo = (county) ->
     props = county.properties
-    container = d3.select '.js-county-info'
-    margin = top: 20, left: 40, bottom: 0, right: 0
-    vwidth = parseFloat(container.style 'width') - margin.left - margin.right
-    vheight = 225 - margin.top - margin.bottom
-
-    props.timeline.forEach (p) ->
-      p.percent = ((p.count / props.male_18_24) * 100).toFixed(2)
-
-    vy = d3.scale.ordinal().domain(props.timeline.map (p) -> p.year).rangeBands [vheight, 0], 0.1
-    vx = d3.scale.linear().domain([0, env.maxyear]).range [0, vwidth]
-
-    yax = d3.svg.axis().scale(vy).orient('left')
-    xax = d3.svg.axis()
-      .scale(vx)
-      .orient('top')
-      .ticks(4)
-      .tickSize(vheight)
+    container = d3.select('.js-county-info')
+      .style 'display', 'block'
 
     el = container.append('div')
       .attr('class', 'js-county')
@@ -69,35 +54,9 @@ render = (event, env) ->
 
     el.append('span')
       .attr('class', 'cam')
-      .html((d) ->
+      .html (d) ->
         "<span class='count'>#{d3.format(',')(d.male_18_24)}</span>
           males 18-24yo according to The U.S. Census Bureau."
-      )
-
-    vis = el.append('svg')
-      .attr('width', vwidth + margin.left + margin.right)
-      .attr('height', vheight + margin.top + margin.bottom)
-    .append('g')
-      .attr('transform', "translate(#{margin.left}, #{margin.top})")
-
-    vis.append('g')
-      .attr('class', 'y axis')
-      .call(yax)
-
-    vis.append('g')
-      .attr('transform', "translate(0, #{vheight})")
-      .attr('class', 'x axis')
-      .call(xax)
-
-    grect = vis.selectAll('.county-bar')
-      .data((d) -> d.timeline)
-    .enter().append('g')
-      .attr('class', 'county-bar')
-      .attr('transform', (d, i) -> "translate(0, #{vy d.year})")
-
-    grect.append('rect')
-      .attr('height', vy.rangeBand())
-      .attr('width', (d) -> vx(d.count))
 
   clearCountyInfo = (county) ->
     d3.select('.js-county').remove()
