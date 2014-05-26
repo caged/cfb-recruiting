@@ -461,9 +461,21 @@ footer {
   }
 }
 
-.d3-tip-county {
-  background: rgba(0, 0, 0, 0.9);
+.d3-tip-recruit {
+  background: rgba(0, 0, 0, 0.8);
   font-size: 12px;
-  padding: 5px;
+  padding: 10px;
   color: #999;
+  max-width: 250px;
+  line-height: 1.5em;
+
+  .name {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .star5 { color: $five; }
+  .star4 { color: $four; }
+  .star3 { color: $three; }
+  .star2 { color: $two; }
 }

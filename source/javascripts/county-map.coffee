@@ -7,10 +7,18 @@ render = (event, env) ->
         "<h3>#{d.team}</h3>" +
         "<p>#{d.city}</p>"
 
+  tip2 = d3.tip().attr('class', 'd3-tip-recruit')
+      .html (d) ->
+        "<span class='name'>#{d.name}</span>:
+        <span class='star#{d.stars}'>#{d.stars}&#9733;</span> #{d.weight}lb
+        #{d.position.toUpperCase()} recruit from <span>#{d.location}</span>
+        in #{d.year}"
+
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
     .call(tip)
+    .call(tip2)
 
   zoomGroup = map.append 'g'
 
@@ -190,6 +198,8 @@ render = (event, env) ->
       .attr('r', 0)
       .style('fill', '#fff')
       .attr('class', 'recruit')
+      .on('mouseover', tip2.show)
+      .on('mouseout', tip2.hide)
     .transition()
       .delay((d, i) -> i / numRecruits * 200)
       .duration(200)
