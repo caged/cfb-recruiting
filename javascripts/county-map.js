@@ -28,30 +28,34 @@
       container = d3.select('.js-county-info').style('display', 'block');
       el = container.append('div').attr('class', 'js-county').datum(props);
       el.append('span').attr('class', 'title').text(function(d) {
-        return "" + d.name + " Totals";
+        return "" + (d.name.replace('County', '')) + " County";
       });
-      stars = el.append('ul').attr('class', 'star-recruits').selectAll('li').data(function(d) {
-        var star, _k, _len2, _ref2;
-        stars = [];
-        _ref2 = ['five', 'four', 'three', 'two'];
-        for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
-          star = _ref2[_k];
-          stars.push({
-            label: star,
-            count: d["" + star + "_star"]
-          });
-        }
-        return stars;
-      }).enter().append('li');
-      stars.append('span').attr('class', function(d) {
-        return "star " + d.label;
-      }).html("&#9733;");
-      stars.append('span').attr('class', 'count').text(function(d) {
-        return d.count;
-      });
-      return el.append('span').attr('class', 'cam').html(function(d) {
-        return "<span class='count'>" + (d3.format(',')(d.male_18_24)) + "</span>          males 18-24yo according to The U.S. Census Bureau.";
-      });
+      if (props.male_18_24) {
+        stars = el.append('ul').attr('class', 'star-recruits').selectAll('li').data(function(d) {
+          var star, _k, _len2, _ref2;
+          stars = [];
+          _ref2 = ['five', 'four', 'three', 'two'];
+          for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
+            star = _ref2[_k];
+            stars.push({
+              label: star,
+              count: d["" + star + "_star"]
+            });
+          }
+          return stars;
+        }).enter().append('li');
+        stars.append('span').attr('class', function(d) {
+          return "star " + d.label;
+        }).html("&#9733;");
+        stars.append('span').attr('class', 'count').text(function(d) {
+          return d.count;
+        });
+        return el.append('span').attr('class', 'cam').html(function(d) {
+          return "<span class='count'>" + (d3.format(',')(d.male_18_24)) + "</span>            males 18-24yo according to The U.S. Census Bureau.";
+        });
+      } else {
+        return el.append('span').attr('class', 'no-recruits').html('No 2-5&#9733; recruits');
+      }
     };
     clearCountyInfo = function(county) {
       d3.select('.js-county-info').style('display', 'none');

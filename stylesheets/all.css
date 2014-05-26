@@ -369,29 +369,36 @@ header {
   color: #999; }
 
 /* line 372, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+.no-recruits {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #555; }
+
+/* line 379, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .cam .count {
   color: #fff;
   font-weight: normal; }
 
-/* line 377, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 384, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .county-bar {
   fill: tomato; }
 
-/* line 381, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 388, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .domain {
   display: none; }
 
-/* line 385, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 392, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .axis text {
   fill: #555; }
 
-/* line 389, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 396, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .x.axis line {
   shape-rendering: crispedges;
   stroke: #222;
   stroke-width: 1; }
 
-/* line 398, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 405, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .d3-tip {
   min-width: 100px;
   line-height: 1;
@@ -400,23 +407,23 @@ header {
   border-radius: 2px;
   font-size: 12px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
-  /* line 407, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 414, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip h3 {
     margin: 0;
     padding: 10px;
     border-bottom: 1px solid #eee;
     font-size: 12px; }
-  /* line 414, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 421, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip p {
     padding: 10px;
     margin: 0;
     color: #777; }
-  /* line 420, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 427, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip span {
     color: #333;
     font-weight: bold; }
 
-/* line 426, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 433, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .d3-tip-county {
   background: rgba(0, 0, 0, 0.9);
   font-size: 12px;
