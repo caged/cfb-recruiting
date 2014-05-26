@@ -27,7 +27,7 @@ a {
 ////////////////////////////////////////////////////////////////////////////////
 header {
   background: #111;
-  padding: 20px;
+  padding: 25px 20px;
   font-family: "Roboto Slab";
   color: #666;
   vertical-align: middle;
@@ -49,12 +49,6 @@ header {
     font-size: 14px;
     vertical-align: 3px;
   }
-
-  .credit {
-    float: right;
-    font-size: 14px;
-    color: #444;
-  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -73,8 +67,9 @@ footer {
 ////////////////////////////////////////////////////////////////////////////////
 
 .master-toolbar {
-  padding: 10px 20px;
-  background: #151515;
+  display: inline-block;
+  float: right;
+  margin-top: -8px;
   text-align: right;
   border-bottom: 1px solid #171717;
 }
@@ -190,16 +185,21 @@ footer {
   stroke-width: 0.5;
   stroke: #222;
   fill-opacity: 0.6;
+
+  path:hover {
+    fill-opacity: 1;
+  }
 }
 
 .states {
   fill: none;
-  stroke: #555;
+  stroke: lime;
   stroke-width: 0.5;
 }
 
 .nation {
-  stroke: #444;
+  stroke-width: 0.5;
+  stroke: lime;
   fill: none;
 }
 
@@ -360,7 +360,6 @@ footer {
   text-align: center;
 }
 
-// .star-recruits .star { margin-right: 3px; }
 .star-recruits .count {
   display: block;
   margin-top: 5px;
@@ -414,6 +413,21 @@ footer {
   shape-rendering: crispedges;
   stroke: #222;
   stroke-width: 1;
+}
+
+.spurrier-knows {
+  display: none;
+  width: 320px;
+  font-size: 14px;
+  font-style: italic;
+  position: absolute;
+  line-height: 1.5em;
+  color: #999;
+
+  cite {
+    color: #aaa;
+    font-weight: bold;
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
