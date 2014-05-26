@@ -4,8 +4,8 @@ render = (event, env) ->
 
   tip = d3.tip().attr('class', 'd3-tip')
       .html (d) ->
-        "<h3>#{d.team}</h3>" +
-        "<p>#{d.city}</p>"
+        "<span class='name'>#{d.team}</span> -
+        <span>#{d.city}, #{d.state}</span>"
 
   tip2 = d3.tip().attr('class', 'd3-tip-recruit')
       .html (d) ->
@@ -34,14 +34,6 @@ render = (event, env) ->
     zoomGroup.transition()
       .duration(750)
       .call(zoom.translate([0, 0]).scale(1).event)
-#     function reset() {
-#   active.classed("active", false);
-#   active = d3.select(null);
-#
-#   svg.transition()
-#       .duration(750)
-#       .call(zoom.translate([0, 0]).scale(1).event);
-# }
 
   zoom = d3.behavior.zoom()
     .translate([0, 0])
