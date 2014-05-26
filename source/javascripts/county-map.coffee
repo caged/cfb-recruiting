@@ -33,7 +33,7 @@ render = (event, env) ->
 
     el.append('span')
       .attr('class', 'title')
-      .text((d) -> d.name)
+      .text((d) -> "#{d.name} Totals")
 
     stars = el.append('ul')
       .attr('class', 'star-recruits')
@@ -59,7 +59,9 @@ render = (event, env) ->
         "<span class='count'>#{d3.format(',')(d.male_18_24)}</span>
           males 18-24yo according to The U.S. Census Bureau."
 
+  # Clear the county rect
   clearCountyInfo = (county) ->
+    d3.select('.js-county-info').style 'display', 'none'
     d3.select('.js-county').remove()
 
   # Generates a LineString GeoJSON object from a player to a school
@@ -171,13 +173,17 @@ render = (event, env) ->
     .attr('d', env.path)
     .on('mouseover', updateCountyInfo)
     .on('mouseout', clearCountyInfo)
-    .style('stroke', (d) ->
-      stars = d.properties.total || 0
-      if stars > 0 then env.fill(stars || 0) else '#333')
 
   # Add states and nation
-  zoomGroup.append('path').datum(env.states).attr('class', 'states').attr('d', env.path)
-  zoomGroup.append('path').datum(env.nation).attr('class', 'nation').attr('d', env.path)
+  zoomGroup.append('path')
+    .datum(env.states)
+    .attr('class', 'states')
+    .attr('d', env.path)
+
+  zoomGroup.append('path')
+    .datum(env.nation)
+    .attr('class', 'nation')
+    .attr('d', env.path)
 
   zoomGroup.selectAll('.schools')
     .data(env.schools)

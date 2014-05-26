@@ -37,9 +37,9 @@ init = ->
     recruits = recruits.filter (d) -> +d.stars >= 2
 
     # Convert to GeoJSON
-    states   = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
-    counties = topojson.feature usa, usa.objects.counties
-    nation   = topojson.mesh usa, usa.objects.nation
+    states    = topojson.mesh usa, usa.objects.states, (a, b) -> a.id != b.id
+    counties  = topojson.feature usa, usa.objects.counties
+    nation    = topojson.mesh usa, usa.objects.nation
 
     autoProjectTo(nation)
 

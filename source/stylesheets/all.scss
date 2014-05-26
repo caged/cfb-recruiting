@@ -47,6 +47,7 @@ header {
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 14px;
+    vertical-align: 3px;
   }
 
   .credit {
@@ -171,13 +172,14 @@ header {
 .counties {
   stroke-width: 0.5;
   stroke: #222;
-  fill-opacity: 0.5;
+  fill-opacity: 0.6;
+  shape-rendering: crispedges;
 }
 
 .states {
   fill: none;
-  stroke: #444;
-  stroke-width: 1;
+  stroke: #555;
+  stroke-width: 0.5;
 }
 
 .nation {
@@ -327,6 +329,7 @@ header {
   top: 279px;
   width: 152px;
   z-index: 9999;
+  display: none;
 }
 
 .star-recruits {
