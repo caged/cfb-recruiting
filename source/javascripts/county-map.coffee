@@ -162,6 +162,11 @@ render = (event, env) ->
   # Set the fill domain based on the total number of recruits
   env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
 
+  map.append('text')
+    .attr('class', 'ui-info')
+    .attr('x', env.width / 2)
+    .attr('y', 25)
+    .text('Select school to see recruit locations')
   # Add counties
   zoomGroup.append('g')
     .attr('class', 'counties')
