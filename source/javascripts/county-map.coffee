@@ -33,31 +33,36 @@ render = (event, env) ->
 
     el.append('span')
       .attr('class', 'title')
-      .text((d) -> "#{d.name} Totals")
+      .text((d) -> "#{d.name.replace('County', '')} County")
 
-    stars = el.append('ul')
-      .attr('class', 'star-recruits')
-    .selectAll('li')
-      .data((d) ->
-          stars = []
-          for star in ['five', 'four', 'three', 'two']
-            stars.push label: star, count: d["#{star}_star"]
-          stars)
-    .enter().append('li')
+    if props.male_18_24
+      stars = el.append('ul')
+        .attr('class', 'star-recruits')
+      .selectAll('li')
+        .data((d) ->
+            stars = []
+            for star in ['five', 'four', 'three', 'two']
+              stars.push label: star, count: d["#{star}_star"]
+            stars)
+      .enter().append('li')
 
-    stars.append('span')
-      .attr('class', (d) -> "star #{d.label}")
-      .html("&#9733;")
+      stars.append('span')
+        .attr('class', (d) -> "star #{d.label}")
+        .html("&#9733;")
 
-    stars.append('span')
-      .attr('class', 'count')
-      .text((d) -> d.count)
+      stars.append('span')
+        .attr('class', 'count')
+        .text((d) -> d.count)
 
-    el.append('span')
-      .attr('class', 'cam')
-      .html (d) ->
-        "<span class='count'>#{d3.format(',')(d.male_18_24)}</span>
-          males 18-24yo according to The U.S. Census Bureau."
+      el.append('span')
+        .attr('class', 'cam')
+        .html (d) ->
+          "<span class='count'>#{d3.format(',')(d.male_18_24)}</span>
+            males 18-24yo according to The U.S. Census Bureau."
+    else
+      el.append('span')
+        .attr('class', 'no-recruits')
+        .html('No 2-5&#9733; recruits')
 
   # Clear the county rect
   clearCountyInfo = (county) ->

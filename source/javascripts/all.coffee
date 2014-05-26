@@ -54,7 +54,7 @@ init = ->
       if props.total
         props.total -= county.properties.one_star
         for year in [2002..2013] by 1
-          count = props["total_#{year}"]
+          count = props["total_#{year}"] || 0
           maxyear = count if count > maxyear
           props.timeline.push {year, count}
 
