@@ -145,6 +145,7 @@
         return d.properties.total;
       })
     ]);
+    map.append('text').attr('class', 'ui-info').attr('x', env.width / 2).attr('y', 25).text('Select school to see recruit locations');
     zoomGroup.append('g').attr('class', 'counties').selectAll('path.county').data(env.counties.features).enter().append('path').attr('class', 'county').style('fill', function(d) {
       return env.fill(d.properties.total || 0);
     }).attr('d', env.path).on('mouseover', updateCountyInfo).on('mouseout', clearCountyInfo);
