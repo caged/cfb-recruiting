@@ -9,7 +9,6 @@ init = ->
   height     = $(window).height() - heightAdjust - 40
   projection = d3.geo.albersUsa().scale(1).translate [ 0, 0 ]
   path       = d3.geo.path().projection projection
-  line       = d3.svg.line()
   fill       = d3.scale.log().clamp(true).range ['#111', '#00ff00']
   colors     = ['#a634f4', '#5adacc', '#bcf020', '#eeb016', '#ec180c']
 
@@ -59,7 +58,7 @@ init = ->
           maxyear = count if count > maxyear
           props.timeline.push {year, count}
 
-    env = {states, counties, nation, schools, recruits, places, projection, path, line, fill, colors, width, height, maxyear}
+    env = {states, counties, nation, schools, recruits, places, projection, path, fill, colors, width, height, maxyear}
     $(document).trigger 'data.loaded', env
 
     $('.js-hard-tabs').on 'tabChanged', (event, object) ->

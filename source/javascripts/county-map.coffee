@@ -14,6 +14,18 @@ render = (event, env) ->
         #{d.position.toUpperCase()} recruit from <span>#{d.location}</span>
         in #{d.year}"
 
+  # Draw an eliptical arc between two points
+  #
+  # d - An array of lat,lon points in the format of [source, target]
+  #
+  # Returns a path string
+  arc = (d) ->
+    [source, target] = d
+    dx = target[0] - source[0]
+    dy = target[1] - source[1]
+    dr = Math.sqrt(dx * dx + dy * dy)
+    "M#{source[0]},#{source[1]}A#{dr},#{dr} 0 0,1 #{target[0]},#{target[1]}"
+
   map = d3.select('#county-map').append('svg')
     .attr('width', env.width)
     .attr('height', env.height)
@@ -111,9 +123,11 @@ render = (event, env) ->
   #
   # Returns a GeoJSON LineString object
   lineStringFromPlayerToSchool = (player, school) ->
-    type: 'LineString'
-    coordinates: [[parseFloat(school.lat), parseFloat(school.lon)], [parseFloat(player.lat), parseFloat(player.lon)]]
-    properties: player
+    player.points = [
+      env.projection([school.lat, school.lon]),
+      env.projection([player.lat, player.lon])
+    ]
+    player
 
   # Draw a star polygon
   #
@@ -160,17 +174,17 @@ render = (event, env) ->
 
     recruitFeatures = schoolRecruits.map((player) -> lineStringFromPlayerToSchool(player, school))
     schoolRecruits.sort  (a, b) -> d3.ascending parseFloat(a.stars), parseFloat(b.stars)
-    recruitFeatures.sort (a, b) -> d3.ascending parseFloat(a.properties.stars), parseFloat(b.properties.stars)
+    recruitFeatures.sort (a, b) -> d3.ascending parseFloat(a.stars), parseFloat(b.stars)
     numRecruits = schoolRecruits.length
 
     connections = zoomGroup
       .selectAll('.connection')
-      .data(recruitFeatures, (d) -> "#{d.properties.name}:#{d.properties.school}")
+      .data(recruitFeatures, (d) -> "#{d.name}:#{d.school}")
 
     connections.enter().append('path')
-      .attr('d', env.path)
-      .attr('class', (d) -> "connection stars#{d.properties.stars}")
-      .style('stroke', (d) -> env.colors[d.properties.stars - 1])
+      .attr('d', (d) -> arc(d.points))
+      .attr('class', (d) -> "connection stars#{d.stars}")
+      .style('stroke', (d) ->console.log d; env.colors[d.stars - 1])
       .attr('stroke-dasharray', -> len = @getTotalLength(); "#{len},#{len}")
       .attr('stroke-dashoffset', -> @getTotalLength())
     .transition()
