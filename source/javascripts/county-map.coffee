@@ -14,6 +14,36 @@ render = (event, env) ->
 
   zoomGroup = map.append 'g'
 
+  # Rescale and move objects when zooming
+  #
+  # Returns nothing
+  zoomed = ->
+    zoomGroup.selectAll('.counties').style('stroke-width', 0.5 / d3.event.scale + 'px')
+    zoomGroup.selectAll('.states').style('stroke-width', 0.5 / d3.event.scale + 'px')
+    zoomGroup.attr('transform', "translate(#{d3.event.translate})scale(#{d3.event.scale})")
+
+  reset = ->
+    zoomGroup.transition()
+      .duration(750)
+      .call(zoom.translate([0, 0]).scale(1).event)
+#     function reset() {
+#   active.classed("active", false);
+#   active = d3.select(null);
+#
+#   svg.transition()
+#       .duration(750)
+#       .call(zoom.translate([0, 0]).scale(1).event);
+# }
+
+  zoom = d3.behavior.zoom()
+    .translate([0, 0])
+    .scale(1)
+    .scaleExtent([1, 8])
+    .on("zoom", zoomed)
+
+  zoomGroup.call(zoom)
+    .call(zoom.event)
+
   recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
   school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
 
@@ -193,6 +223,7 @@ render = (event, env) ->
     .attr('d', env.path)
     .on('mouseover', updateCountyInfo)
     .on('mouseout', clearCountyInfo)
+    .on('click', reset)
 
   # Add states and nation
   zoomGroup.append('path')
