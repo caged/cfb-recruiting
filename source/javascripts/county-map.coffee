@@ -11,7 +11,7 @@ render = (event, env) ->
       .html (d) ->
         "<span class='name'>#{d.name}</span>:
         <span class='star#{d.stars}'>#{d.stars}&#9733;</span> #{d.weight}lb
-        #{d.position.toUpperCase()} recruit from <span>#{d.location}</span>
+        #{d.position.toUpperCase()} from <span>#{d.location}</span>
         in #{d.year}"
 
   # Draw an eliptical arc between two points
