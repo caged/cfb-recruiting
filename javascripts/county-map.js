@@ -2,15 +2,15 @@
   var render;
 
   render = function(event, env) {
-    var drawCountyAtYear, drawRecruitPathsToSchool, drawStar, lineStringFromPlayerToSchool, map, recruit, school, selectedSchool, tip, tip2, zoomGroup, _i, _j, _len, _len1, _ref, _ref1;
+    var clearCountyInfo, drawCountyAtYear, drawRecruitPathsToSchool, drawStar, lineStringFromPlayerToSchool, map, recruit, school, selectedSchool, tip, updateCountyInfo, zoomGroup, _i, _j, _len, _len1, _ref, _ref1;
+    if (d3.select('#county-map svg').node()) {
+      return;
+    }
     selectedSchool = null;
     tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
       return ("<h3>" + d.team + "</h3>") + ("<p>" + d.city + "</p>");
     });
-    tip2 = d3.tip().attr('class', 'd3-tip-county').html(function(d) {
-      return "<span>" + d.properties.name + "</span>";
-    });
-    map = d3.select('#county-map').append('svg').attr('width', env.width).attr('height', env.height).call(tip).call(tip2);
+    map = d3.select('#county-map').append('svg').attr('width', env.width).attr('height', env.height).call(tip);
     zoomGroup = map.append('g');
     _ref = env.recruits;
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
@@ -22,6 +22,41 @@
       school = _ref1[_j];
       school.coordinates = env.projection([school.lat, school.lon]);
     }
+    updateCountyInfo = function(county) {
+      var container, el, props, stars;
+      props = county.properties;
+      container = d3.select('.js-county-info').style('display', 'block');
+      el = container.append('div').attr('class', 'js-county').datum(props);
+      el.append('span').attr('class', 'title').text(function(d) {
+        return "" + d.name + " Totals";
+      });
+      stars = el.append('ul').attr('class', 'star-recruits').selectAll('li').data(function(d) {
+        var star, _k, _len2, _ref2;
+        stars = [];
+        _ref2 = ['five', 'four', 'three', 'two'];
+        for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
+          star = _ref2[_k];
+          stars.push({
+            label: star,
+            count: d["" + star + "_star"]
+          });
+        }
+        return stars;
+      }).enter().append('li');
+      stars.append('span').attr('class', function(d) {
+        return "star " + d.label;
+      }).html("&#9733;");
+      stars.append('span').attr('class', 'count').text(function(d) {
+        return d.count;
+      });
+      return el.append('span').attr('class', 'cam').html(function(d) {
+        return "<span class='count'>" + (d3.format(',')(d.male_18_24)) + "</span>          males 18-24yo according to The U.S. Census Bureau.";
+      });
+    };
+    clearCountyInfo = function(county) {
+      d3.select('.js-county-info').style('display', 'none');
+      return d3.select('.js-county').remove();
+    };
     lineStringFromPlayerToSchool = function(player, school) {
       return {
         type: 'LineString',
@@ -112,15 +147,7 @@
     ]);
     zoomGroup.append('g').attr('class', 'counties').selectAll('path.county').data(env.counties.features).enter().append('path').attr('class', 'county').style('fill', function(d) {
       return env.fill(d.properties.total || 0);
-    }).attr('d', env.path).on('mouseover', tip2.show).on('mouseout', tip2.hide).style('stroke', function(d) {
-      var stars;
-      stars = d.properties.total || 0;
-      if (stars > 0) {
-        return env.fill(stars || 0);
-      } else {
-        return '#333';
-      }
-    });
+    }).attr('d', env.path).on('mouseover', updateCountyInfo).on('mouseout', clearCountyInfo);
     zoomGroup.append('path').datum(env.states).attr('class', 'states').attr('d', env.path);
     zoomGroup.append('path').datum(env.nation).attr('class', 'nation').attr('d', env.path);
     zoomGroup.selectAll('.schools').data(env.schools).enter().append('polygon').attr('class', 'school').attr('points', function(d) {
