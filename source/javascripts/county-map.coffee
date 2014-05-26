@@ -208,11 +208,18 @@ render = (event, env) ->
   zoomGroup.selectAll('.schools')
     .data(env.schools)
   .enter().append('polygon')
-    .attr('class', 'school')
+    .attr('class', (d) -> "school #{d.team.toLowerCase().replace(/\s+/, '-')}")
     .attr('points', (d) -> drawStar(d.coordinates[0], d.coordinates[1], 5, 6, 3))
     .on('mouseover', tip.show)
     .on('mouseout', tip.hide)
     .on('click', drawRecruitPathsToSchool)
+
+
+  anchor = zoomGroup.select('.syracuse').datum()
+  [left, top] = env.projection [+anchor.lat, +anchor.lon]
+  top = Math.max(top - 200, parseFloat(d3.select('header.no-height').style('height')) + 10)
+  d3.select('.js-spurrier')
+    .style(display: 'block', top: "#{top}px", left: "#{left - 200}px")
 
   # Shade the county by the selected year
   drawCountyAtYear = (year) ->
