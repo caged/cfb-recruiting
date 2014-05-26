@@ -1,5 +1,1 @@
-define([
-	"../Data"
-], function( Data ) {
-	return new Data();
-});
+define(["../Data"],function(e){return new e});

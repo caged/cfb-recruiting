@@ -1,5 +1,1 @@
-define([
-	"./arr"
-], function( arr ) {
-	return arr.push;
-});
+define(["./arr"],function(e){return e.push});

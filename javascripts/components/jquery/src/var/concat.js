@@ -1,5 +1,1 @@
-define([
-	"./arr"
-], function( arr ) {
-	return arr.concat;
-});
+define(["./arr"],function(e){return e.concat});
