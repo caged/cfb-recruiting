@@ -428,29 +428,14 @@ footer {
 /* line 435, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .d3-tip {
   min-width: 100px;
+  padding: 10px;
   line-height: 1;
-  background: white;
-  color: #555;
+  background: rgba(0, 0, 0, 0.9);
+  color: #999;
   border-radius: 2px;
-  font-size: 12px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
-  /* line 444, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
-  .d3-tip h3 {
-    margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    font-size: 12px; }
-  /* line 451, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
-  .d3-tip p {
-    padding: 10px;
-    margin: 0;
-    color: #777; }
-  /* line 457, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
-  .d3-tip span {
-    color: #333;
-    font-weight: bold; }
+  font-size: 12px; }
 
-/* line 463, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+/* line 445, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
 .d3-tip-recruit {
   background: rgba(0, 0, 0, 0.8);
   font-size: 12px;
@@ -458,19 +443,19 @@ footer {
   color: #999;
   max-width: 250px;
   line-height: 1.5em; }
-  /* line 471, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 453, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip-recruit .name {
     font-weight: bold;
     color: #fff; }
-  /* line 476, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 458, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip-recruit .star5 {
     color: #ec180c; }
-  /* line 477, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 459, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip-recruit .star4 {
     color: #eeb016; }
-  /* line 478, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 460, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip-recruit .star3 {
     color: #bcf020; }
-  /* line 479, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
+  /* line 461, /Users/justin/dev/me/ruby/recruiting/source/stylesheets/all.scss */
   .d3-tip-recruit .star2 {
     color: #5adacc; }

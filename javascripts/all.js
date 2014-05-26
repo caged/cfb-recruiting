@@ -93,17 +93,25 @@
   var render;
 
   render = function(event, env) {
-    var anchor, clearCountyInfo, drawCountyAtYear, drawRecruitPathsToSchool, drawStar, left, lineStringFromPlayerToSchool, map, recruit, reset, school, selectedSchool, tip, tip2, top, updateCountyInfo, zoom, zoomGroup, zoomed, _i, _j, _len, _len1, _ref, _ref1, _ref2;
+    var anchor, arc, clearCountyInfo, drawCountyAtYear, drawRecruitPathsToSchool, drawStar, left, lineStringFromPlayerToSchool, map, recruit, reset, school, selectedSchool, tip, tip2, top, updateCountyInfo, zoom, zoomGroup, zoomed, _i, _j, _len, _len1, _ref, _ref1, _ref2;
     if (d3.select('#county-map svg').node()) {
       return;
     }
     selectedSchool = null;
     tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
-      return ("<h3>" + d.team + "</h3>") + ("<p>" + d.city + "</p>");
+      return "<span class='name'>" + d.team + "</span> -        <span>" + d.city + ", " + d.state + "</span>";
     });
     tip2 = d3.tip().attr('class', 'd3-tip-recruit').html(function(d) {
       return "<span class='name'>" + d.name + "</span>:        <span class='star" + d.stars + "'>" + d.stars + "&#9733;</span> " + d.weight + "lb        " + (d.position.toUpperCase()) + " recruit from <span>" + d.location + "</span>        in " + d.year;
     });
+    arc = function(d) {
+      var dr, dx, dy, source, target;
+      source = d[0], target = d[1];
+      dx = target[0] - source[0];
+      dy = target[1] - source[1];
+      dr = Math.sqrt(dx * dx + dy * dy);
+      return "M" + source[0] + "," + source[1] + "A" + dr + "," + dr + " 0 0,1 " + target[0] + "," + target[1];
+    };
     map = d3.select('#county-map').append('svg').attr('width', env.width).attr('height', env.height).call(tip).call(tip2);
     zoomGroup = map.append('g');
     zoomed = function() {
@@ -168,11 +176,8 @@
       return d3.select('.js-county').remove();
     };
     lineStringFromPlayerToSchool = function(player, school) {
-      return {
-        type: 'LineString',
-        coordinates: [[parseFloat(school.lat), parseFloat(school.lon)], [parseFloat(player.lat), parseFloat(player.lon)]],
-        properties: player
-      };
+      player.points = [env.projection([school.lat, school.lon]), env.projection([player.lat, player.lon])];
+      return player;
     };
     drawStar = function(x, y, points, innerRadius, outerRadius) {
       var angle, currX, currY, i, r, results;
@@ -215,16 +220,19 @@
         return d3.ascending(parseFloat(a.stars), parseFloat(b.stars));
       });
       recruitFeatures.sort(function(a, b) {
-        return d3.ascending(parseFloat(a.properties.stars), parseFloat(b.properties.stars));
+        return d3.ascending(parseFloat(a.stars), parseFloat(b.stars));
       });
       numRecruits = schoolRecruits.length;
       connections = zoomGroup.selectAll('.connection').data(recruitFeatures, function(d) {
-        return "" + d.properties.name + ":" + d.properties.school;
+        return "" + d.name + ":" + d.school;
       });
-      connections.enter().append('path').attr('d', env.path).attr('class', function(d) {
-        return "connection stars" + d.properties.stars;
+      connections.enter().append('path').attr('d', function(d) {
+        return arc(d.points);
+      }).attr('class', function(d) {
+        return "connection stars" + d.stars;
       }).style('stroke', function(d) {
-        return env.colors[d.properties.stars - 1];
+        console.log(d);
+        return env.colors[d.stars - 1];
       }).attr('stroke-dasharray', function() {
         var len;
         len = this.getTotalLength();
