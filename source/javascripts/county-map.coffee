@@ -59,6 +59,11 @@ render = (event, env) ->
         .html (d) ->
           "<span class='count'>#{d3.format(',')(d.male_18_24)}</span>
             males 18-24yo according to The U.S. Census Bureau."
+
+      el.append('span')
+        .attr('class', 'note')
+        .text('Recruit numbers based on 2002-2013 combined totals.
+               Demographics from 2008-12 5 year American Community Survey.')
     else
       el.append('span')
         .attr('class', 'no-recruits')
