@@ -22,7 +22,7 @@ init = ->
     projection.scale(s).translate(t)
 
   $.when($.ajax('data/counties.json'),
-         $.ajax('data/schools.csv'),
+         $.ajax('data/combined.csv'),
          $.ajax('data/recruits.csv'),
          $.ajax('data/places.csv')).then (r1, r2, r3, r4) ->
 
