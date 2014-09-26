@@ -57,7 +57,7 @@ render = (event, env) ->
     .call(zoom.event)
 
   recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
-  school.coordinates  = env.projection [school.lat, school.lon] for school in env.schools
+  school.coordinates  = env.projection [school.lon, school.lat] for school in env.schools
 
   # Update county information dialog with information about the focused county
   #
@@ -124,7 +124,7 @@ render = (event, env) ->
   # Returns a GeoJSON LineString object
   lineStringFromPlayerToSchool = (player, school) ->
     player.points = [
-      env.projection([school.lat, school.lon]),
+      env.projection([school.lon, school.lat]),
       env.projection([player.lat, player.lon])
     ]
     player
@@ -263,7 +263,7 @@ render = (event, env) ->
 
 
   anchor = zoomGroup.select('.syracuse').datum()
-  [left, top] = env.projection [+anchor.lat, +anchor.lon]
+  [left, top] = env.projection [anchor.lon, anchor.lat]
   top = Math.max(top - 200, parseFloat(d3.select('header.no-height').style('height')) + 10)
   d3.select('.js-spurrier')
     .style(display: 'block', top: "#{top}px", left: "#{left - 200}px")
