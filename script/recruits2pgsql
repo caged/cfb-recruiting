@@ -57,6 +57,6 @@ psql -d $dbname -c "COPY recruits FROM '$(pwd)/data/recruits-with-points.csv' WI
 psql -c "create index recruits_stars on recruits (stars)" $dbname
 psql -c "create index recruits_place_gid on recruits (place_gid)" $dbname
 
-psql -c "alter table recruits add column geom geometry(Point,4326)" $dbname
+psql -c "alter table recruits add column geom geometry(Point,2163)" $dbname
+psql -c "update recruits set geom = st_transform(st_setsrid(st_makepoint(lon, lat), 4326), 2163)" $dbname
 psql -c "create index recruits_gix on recruits using gist (geom)" $dbname
-psql -c "update recruits set geom = st_setsrid(st_makepoint(lon, lat), 4326)" $dbname
