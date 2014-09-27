@@ -58,7 +58,13 @@ mappings = {
   'Citra:12'            => 'Reddick',
   'Sicklerville:34'     => 'Williamstown',
   'Opa Locka:12'        => 'Opa-locka',
-  'Newhall:06'          => 'Santa Clarita'
+  'Newhall:06'          => 'Santa Clarita',
+  'Avon:09'             => 'West Hartford',
+  'Hallandale:12'       => 'Hallandale Beach',
+  'Newbury Park:06'     => 'Thousand Oaks',
+  'Macomb:26'           => 'Detroit',
+  'Midlothian:51'       => 'Bon Air',
+  'Wexford:42'          => 'Pittsburgh'
 }
 
 schools = {}
@@ -76,6 +82,13 @@ def state_for_recruit(recruit)
   @states.detect do |st|
     state = st.state.strip.downcase
     city, state2 = recruit.location.split(',')
+
+    # Likely bad data.  No state given.
+    if state2.nil?
+      puts state2
+      return nil
+    end
+
     state == state2.strip.downcase
   end
 end
@@ -101,6 +114,12 @@ recruits.each do |recruit|
 
     state = state_for_recruit(recruit)
     city,_ = recruit.location.split(',')
+
+    # Likely not a US location and we're only concerned with US recruiting
+    if state.nil?
+      puts recruit.inspect
+      next
+    end
 
     # Terrible stuff or "Normalization, LOL."
     city = mappings["#{city}:#{state.fips}"] if mappings["#{city}:#{state.fips}"]
