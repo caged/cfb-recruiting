@@ -9,7 +9,7 @@
 -- h76010:      Male: 22 to 24 years
 -- h76011:      Male: 25 to 29 years
 
-COPY (SELECT cfb_counties.geoid, cfb_counties.gisjoin, cfb_counties.name,
+COPY (SELECT counties.geoid10, counties.namelsad10,
   SUM(CAST((stars = 5) AS INT)) as five_star,
   SUM(CAST((stars = 4) AS INT)) as four_star,
   SUM(CAST((stars = 3) AS INT)) as three_star,
@@ -30,12 +30,11 @@ COPY (SELECT cfb_counties.geoid, cfb_counties.gisjoin, cfb_counties.name,
   SUM(CAST((recruits.year = 2003) AS INT)) as total_2003,
   SUM(CAST((recruits.year = 2002) AS INT)) as total_2002,
   COUNT(1) as total,
-  (max(h76007) + max(h76008) + max(h76009) + max(h76010)) as male_18_24
-FROM cfb_counties
-INNER JOIN recruits ON st_contains(cfb_counties.geom, recruits.geom)
-LEFT JOIN cfb_counties_data on cfb_counties.gisjoin = cfb_counties_data.gisjoin
+  (max(dp0010024) + max(dp0010025) + max(dp0010026)) as male_15_29
+FROM counties
+INNER JOIN recruits ON st_contains(counties.geom, recruits.geom)
 WHERE stars > 1
-GROUP BY cfb_counties.name, cfb_counties.gisjoin, cfb_counties.geoid)
+GROUP BY counties.namelsad10, counties.geoid10)
 TO '/tmp/cfb-counties.csv' WITH CSV HEADER;
 
 -- SELECT (SELECT cfb_counties.name, count(1) AS total FROM cfb_counties
