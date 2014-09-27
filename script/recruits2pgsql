@@ -45,8 +45,8 @@ sql="CREATE TABLE recruits (
     id integer,
     place_gid integer,
     statefp character varying(2),
-    lat double precision,
-    lon double precision
+    lon double precision,
+    lat double precision
 )"
 
 psql -d $dbname -c 'CREATE EXTENSION postgis'
