@@ -104,7 +104,7 @@ render = (event, env) ->
 
       el.append('span')
         .attr('class', 'note')
-        .text('Recruit numbers based on 2002-2013 combined totals.
+        .text('Recruit numbers based on 2002-2015 combined totals.
                Demographics from 2008-12 5 year American Community Survey.')
     else
       el.append('span')
