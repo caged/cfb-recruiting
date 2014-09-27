@@ -4,6 +4,9 @@ require 'csv'
 require 'pg'
 require 'ostruct'
 
+db_name = 'usa'
+table_name = 'places'
+
 mappings = {
   'Chestnut Hill:25'    => 'Boston',
   'Honolulu:15'         => 'Urban Honolulu',
@@ -68,7 +71,7 @@ mappings = {
 }
 
 schools = {}
-conn = PG.connect(:dbname => 'nhgis')
+conn = PG.connect(:dbname => db_name)
 
 @stadiums = CSV.read('data/stadiums.csv', :headers => true).map do |st|
   OpenStruct.new(st.to_hash)
@@ -130,7 +133,7 @@ recruits.each do |recruit|
     names = [city, city2, city3, city4].map(&:downcase).map {|v| "'#{PG::Connection::escape_string(v)}'" }.join(',')
 
     begin
-      res = conn.exec_params(%(SELECT name,gid FROM nhgis_places WHERE LOWER(name) IN(#{names}) AND statefp='#{state.fips}'))
+      res = conn.exec_params(%(SELECT name,gid FROM #{table_name} WHERE LOWER(name) IN(#{names}) AND statefp='#{state.fips}'))
     rescue PG::Error => err
       puts err.inspect
     end
@@ -138,7 +141,7 @@ recruits.each do |recruit|
     if !res.first.nil?
       recruit.place_gid = res.first['gid']
     else
-      res = conn.exec("SELECT name FROM nhgis_places WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips])
+      res = conn.exec("SELECT name FROM #{table_name} WHERE LOWER(name) LIKE $1 AND statefp=$2", ["%#{city.downcase}%", state.fips])
       if res.count == 1
         recruit.place_gid = res.first['gid']
       elsif res.count > 1
@@ -151,7 +154,7 @@ recruits.each do |recruit|
       unfound_recruits["#{city}:#{state.fips}"] += 1
     end
 
-    query = "WITH points as (SELECT *, RandomPointsInPolygon(nhgis_places.geom, 1) AS point FROM nhgis_places WHERE gid=$1) SELECT st_x(point) AS lat, st_y(point) AS lon FROM points"
+    query = "WITH points as (SELECT *, RandomPointsInPolygon(#{table_name}.geom, 1) AS point FROM #{table_name} WHERE gid=$1) SELECT st_x(st_transform(point, 4326)) AS lon, st_y(st_transform(point, 4326)) AS lat FROM points"
     if recruit.place_gid
       res = conn.exec(query, [recruit.place_gid])
       lat = res.first['lat']
@@ -160,7 +163,7 @@ recruits.each do |recruit|
       points << vals
 
       i += 1
-      puts i
+      puts i if i % 100 == 0
     end
   end
 end
