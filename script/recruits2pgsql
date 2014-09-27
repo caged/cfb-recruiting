@@ -26,8 +26,8 @@ if [ -z "${dbname}" ] || [ -z "${csv_dir}" ]; then
   usage
 fi
 
-dropdb --interactive -e $dbname
-createdb --encoding UTF8 $dbname
+# dropdb --interactive -e $dbname
+# createdb --encoding UTF8 $dbname
 
 sql="CREATE TABLE recruits (
     position character varying(120),
