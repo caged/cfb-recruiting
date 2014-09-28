@@ -8,7 +8,7 @@ echo $tmp
 
 psql -o $tmp/counts.csv -f sql/count-queries.sql $dbname
 pgsql2shp -p 15432 -f $tmp/counties.shp $dbname \
-  "select geom,fips,state_fips as statefp,county as name from counties_simplified where state_fips not in('72', '78')"
+  "select st_transform(geom, '4326') as geom,fips,state_fips as statefp,county as name from counties_simplified where state_fips not in('72', '78')"
 
 
 topojson -p \
@@ -17,7 +17,7 @@ topojson -p \
   --external-properties $tmp/counts.csv \
   --no-pre-quantization \
   --post-quantization=1e6 \
-  --simplify-proportion=0.15 \
+  --simplify=7e-7 \
   $tmp/counties.shp > $tmp/counties-ungrouped.json
 
 topojson-group \
@@ -28,17 +28,16 @@ topojson-merge \
   -o $tmp/states.json \
   --in-object=counties \
   --out-object=states \
-  --key='d.properties.STATEFP' \
+  --key='d.properties.statefp' \
   -- $tmp/counties.json
 
 # Merge states into the nation (land).
 topojson-merge \
-  -o data/counties.json \
+  -o source/data/counties.json \
   --in-object=states \
-  --out-object=land \
+  --out-object=nation \
   --no-key \
   -- $tmp/states.json
 #
 rm -rf $tmp
 #
-ls -lah data
