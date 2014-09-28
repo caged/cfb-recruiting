@@ -83,8 +83,8 @@ render = (event, env) ->
       .selectAll('li')
         .data((d) ->
             stars = []
-            for star in ['five', 'four', 'three', 'two']
-              stars.push label: star, count: d["#{star}_star"]
+            for star in ['5', '4', '3', '2']
+              stars.push label: star, count: d["s#{star}"]
             stars)
       .enter().append('li')
 

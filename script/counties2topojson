@@ -1,10 +1,44 @@
 #!/bin/sh
 
-pgsql2shp -p 15432 -f counties.shp usa "select geom,geoid10 as geoid from counties"
+dbname=usa
+out=/tmp/counties.csv
+
+tmp=`mktemp -d -t recruiting`
+echo $tmp
+
+psql -o $tmp/counts.csv -f sql/count-queries.sql $dbname
+pgsql2shp -p 15432 -f $tmp/counties.shp $dbname \
+  "select geom,fips,state_fips as statefp,county as name from counties_simplified where state_fips not in('72', '78')"
+
+
 topojson -p \
-  --id-property geoid=GEOID \
-  --external-properties data/cfb-counties.csv \
+  --id-property=+FIPS \
+  -p +male_pop,+total,+t2002,+t2003,+t2004,+t2005,+t2006,+t2007,+t2008,+s2,+s3,+s4,+s5,name=NAME,fips=+FIPS,statefp=STATEFP,+s1,+t2015,+t2014,+t2013,+t2012,+t2011,+t2010,+t2009 \
+  --external-properties $tmp/counts.csv \
   --no-pre-quantization \
   --post-quantization=1e6 \
-  --simplify=7e-7 \
-  counties.shp > data/us-counties.json
+  --simplify-proportion=0.15 \
+  $tmp/counties.shp > $tmp/counties-ungrouped.json
+
+topojson-group \
+  -o $tmp/counties.json \
+  -- $tmp/counties-ungrouped.json
+
+topojson-merge \
+  -o $tmp/states.json \
+  --in-object=counties \
+  --out-object=states \
+  --key='d.properties.STATEFP' \
+  -- $tmp/counties.json
+
+# Merge states into the nation (land).
+topojson-merge \
+  -o data/counties.json \
+  --in-object=states \
+  --out-object=land \
+  --no-key \
+  -- $tmp/states.json
+#
+rm -rf $tmp
+#
+ls -lah data
