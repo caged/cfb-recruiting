@@ -148,7 +148,7 @@ recruits.each do |recruit|
       if res.count == 1
         recruit.place_gid = res.first['gid']
       elsif res.count > 1
-        puts "#{city}:#{state.fips}: #{res.map {|r| r['name']}}"
+        puts "#{city}:#{state.fips}: #{state.state}, #{res.map {|r| r['name']}}"
       end
     end
 
