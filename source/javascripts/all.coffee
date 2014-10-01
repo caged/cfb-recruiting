@@ -22,7 +22,7 @@ init = ->
     projection.scale(s).translate(t)
 
   $.when($.ajax('data/counties.json'),
-         $.ajax('data/combined.csv'),
+         $.ajax('data/schools.csv'),
          $.ajax('data/recruits.csv'),
          $.ajax('data/places.csv')).then (r1, r2, r3, r4) ->
 
@@ -43,20 +43,18 @@ init = ->
 
     autoProjectTo(nation)
 
-    # Create a timeline array from the recruits over the years and remove
-    # one-star recruits from the total count because we're not that interested
-    # in one-star recruits and it's highly likely that we don't have all of the
-    # one star recruits in the database.
+    # Create a timeline array from the recruits over the years including
+    # recruits per 1000 people.
     maxyear = -Infinity
     for county in counties.features
       props = county.properties
       props.timeline = []
       if props.total
-        props.total -= county.properties.one_star
         for year in [2002..2015] by 1
           count = props["t#{year}"] || 0
           maxyear = count if count > maxyear
-          props.timeline.push {year, count}
+          per1k = (count / props.male_pop) * 1000
+          props.timeline.push {year, count, per1k}
 
     env = {states, counties, nation, schools, recruits, places, projection, path, fill, colors, width, height, maxyear}
     $(document).trigger 'data.loaded', env
