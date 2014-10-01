@@ -82,7 +82,12 @@ mappings = {
   'Senotbia:28'         => 'Senatobia',
   'Camden:28'           => 'Canton',
   'Lousiville:28'       => 'Louisville',
-  'Biggersville:28'     => 'Corinth'
+  'Biggersville:28'     => 'Corinth',
+  'Springfield:42'      => 'Morton',
+  'Christchurch:51'     => 'Urbanna',
+  "Woodberry Forest:51" => "Orange",
+  "Irvington:34"        => "East Orange",
+  "West Orange:34"      => "East Orange"
 }
 
 schools = {}
