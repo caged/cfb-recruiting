@@ -56,7 +56,7 @@ render = (event, env) ->
   zoomGroup.call(zoom)
     .call(zoom.event)
 
-  recruit.coordinates = env.projection [recruit.lat, recruit.lon] for recruit in env.recruits
+  recruit.coordinates = env.projection [recruit.lon, recruit.lat] for recruit in env.recruits
   school.coordinates  = env.projection [school.lon, school.lat] for school in env.schools
 
   # Update county information dialog with information about the focused county
@@ -125,7 +125,7 @@ render = (event, env) ->
   lineStringFromPlayerToSchool = (player, school) ->
     player.points = [
       env.projection([school.lon, school.lat]),
-      env.projection([player.lat, player.lon])
+      env.projection([player.lon, player.lat])
     ]
     player
 
