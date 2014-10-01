@@ -13,7 +13,7 @@ pgsql2shp -p 15432 -f $tmp/counties.shp $dbname \
 
 topojson -p \
   --id-property=+FIPS \
-  -p +male_pop,+total,+t2002,+t2003,+t2004,+t2005,+t2006,+t2007,+t2008,+s2,+s3,+s4,+s5,name=NAME,fips=+FIPS,statefp=STATEFP,+s1,+t2015,+t2014,+t2013,+t2012,+t2011,+t2010,+t2009 \
+  -p +power_index,+male_pop,+total,+t2002,+t2003,+t2004,+t2005,+t2006,+t2007,+t2008,+s2,+s3,+s4,+s5,name=NAME,fips=+FIPS,statefp=STATEFP,+s1,+t2015,+t2014,+t2013,+t2012,+t2011,+t2010,+t2009 \
   --external-properties $tmp/counts.csv \
   --no-pre-quantization \
   --post-quantization=1e6 \
