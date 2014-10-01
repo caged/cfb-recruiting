@@ -67,7 +67,7 @@ render = (event, env) ->
   topPlaces = hotspots[0..14].map (spot) -> spot.place = bygid[spot.key]; spot
 
   for recruit in env.recruits
-    coordinates = env.projection [recruit.lat, recruit.lon]
+    coordinates = env.projection [recruit.lon, recruit.lat]
     context.beginPath()
     context.arc coordinates[0], coordinates[1], radius(recruit.stars), 0, Math.PI * 2, false
     context.fillStyle = 'rgba(255, 255, 255, 0.3)' #'rgba(223, 0, 83, 0.9)' #env.colors[recruit.stars - 1]
