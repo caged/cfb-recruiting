@@ -7,13 +7,23 @@ require 'faraday_middleware'
 require 'active_support/cache'
 require 'csv'
 
+STAR_MIN = 3
+PAGES_TO_TRAVERSE = 18
+START_YEAR = 2002
+END_YEAR   = 2015
+
 cache_dir = File.join(ENV['TMPDIR'] || '/tmp', 'cache')
 url = 'http://sports.yahoo.com/ncaa/football/recruiting/recruit-search-results'
-conn = Faraday.new(:url => url, :params => { :sport => 'football', :sport_id => 1, :committed => 1 }) do |faraday|
-  faraday.adapter  Faraday.default_adapter
-  faraday.response :caching do
-    ActiveSupport::Cache::FileStore.new cache_dir, :namespace => 'recruiting', :expires_in => 3600  # one hour
-  end
+conn = Faraday.new(:url => url, :params => {
+  :sport => 'football',
+  :sport_id => 1,
+  :committed => 1,
+  :startype => 'gt',
+  :stars => (STAR_MIN - 1) }) do |faraday|
+    faraday.adapter  Faraday.default_adapter
+    faraday.response :caching do
+      ActiveSupport::Cache::FileStore.new cache_dir, :namespace => 'recruiting', :expires_in => 3600  # one hour
+    end
 end
 
 def feet_and_inches_to_inches(feet, inches)
@@ -22,13 +32,13 @@ end
 
 headers  = [:position, :location, :school, :height, :weight, :fourty, :stars, :rating, :rank, :institution, :name, :year]
 
-(2013..2015).to_a.reverse.each do |year|
+(START_YEAR..END_YEAR).to_a.reverse.each do |year|
   file_name = "data/recruits-#{year}.csv"
   File.delete(file_name) if File.exists?(file_name)
   csv = CSV.open(file_name, 'w+', :headers => headers, :write_headers => true)
 
   puts "== Parsing #{year}"
-  20.times do |i|
+  PAGES_TO_TRAVERSE.times do |i|
     start = 100 * i
     puts "... page #{i + 1}"
     response = conn.get 'print', :year => year, :start => start
