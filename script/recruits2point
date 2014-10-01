@@ -63,6 +63,8 @@ mappings = {
   'Sicklerville:34'     => 'Williamstown',
   'Opa Locka:12'        => 'Opa-locka',
   'Newhall:06'          => 'Santa Clarita',
+  'Valencia:06'         => 'Santa Clarita',
+  'Canyon Country:06'   => 'Santa Clarita',
   'Avon:09'             => 'West Hartford',
   'Hallandale:12'       => 'Hallandale Beach',
   'Newbury Park:06'     => 'Thousand Oaks',
@@ -70,7 +72,17 @@ mappings = {
   'Midlothian:51'       => 'Bon Air',
   'Wexford:42'          => 'Pittsburgh',
   'Palos Verdes:06'     => 'Rancho Palos Verdes',
-  'Ocean:34'            => 'Ocean Grove'
+  'Ocean:34'            => 'Ocean Grove',
+  'Warminster:42'       => 'Warminster Heights',
+  'Summitt:28'          => 'Summit',
+  'Cheshire:09'         => 'Cheshire Village',
+  'Hargrave:51'         => 'Chatham',
+  'Geismar:22'          => 'Gonzales',
+  'Salisbury:09'        => 'Lakeville',
+  'Senotbia:28'         => 'Senatobia',
+  'Camden:28'           => 'Canton',
+  'Lousiville:28'       => 'Louisville',
+  'Biggersville:28'     => 'Corinth'
 }
 
 schools = {}
@@ -153,8 +165,8 @@ recruits.each do |recruit|
     end
 
     if recruit.place_gid.nil?
-      unfound_recruits["#{city}:#{state.fips}"] ||= 0
-      unfound_recruits["#{city}:#{state.fips}"] += 1
+      unfound_recruits["#{city}:#{state.fips}:#{state.state}"] ||= 0
+      unfound_recruits["#{city}:#{state.fips}:#{state.state}"] += 1
     end
 
     query = "WITH points as (SELECT *, RandomPointsInPolygon(#{table_name}.geom, 1) AS point FROM #{table_name} WHERE gid=$1) SELECT st_x(st_transform(point, 4326)) AS lon, st_y(st_transform(point, 4326)) AS lat FROM points"
@@ -172,4 +184,5 @@ recruits.each do |recruit|
 end
 
 puts unfound_recruits.length
+unfound_recruits = unfound_recruits.sort_by { |k,v| k.split(':').last }
 puts unfound_recruits.sort_by { |k,v| v }.reverse.inspect
