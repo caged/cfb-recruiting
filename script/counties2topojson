@@ -6,7 +6,7 @@ out=/tmp/counties.csv
 tmp=`mktemp -d -t recruiting`
 echo $tmp
 
-psql -o $tmp/counts.csv -f sql/count-queries.sql $dbname
+psql -o $tmp/counts.csv -f sql/county-stats.sql $dbname
 pgsql2shp -p 15432 -f $tmp/counties.shp $dbname \
   "select st_transform(geom, '4326') as geom,fips,state_fips as statefp,county as name from counties_simplified where state_fips not in('72', '78')"
 
