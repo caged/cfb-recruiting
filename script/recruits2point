@@ -33,6 +33,7 @@ mappings = {
   'West Hills:06'       => 'Los Angeles',
   'Lake Balboa:06'      => 'Los Angeles',
   'Van Nuys:06'         => 'Los Angeles',
+  'LA:06'               => 'Los Angeles',
   'Orchard Lake:26'     => 'Orchard Lake Village',
   'Cypress:48'          => 'Houston',
   'Klein:48'            => 'Houston',
@@ -67,7 +68,9 @@ mappings = {
   'Newbury Park:06'     => 'Thousand Oaks',
   'Macomb:26'           => 'Detroit',
   'Midlothian:51'       => 'Bon Air',
-  'Wexford:42'          => 'Pittsburgh'
+  'Wexford:42'          => 'Pittsburgh',
+  'Palos Verdes:06'     => 'Rancho Palos Verdes',
+  'Ocean:34'            => 'Ocean Grove'
 }
 
 schools = {}
