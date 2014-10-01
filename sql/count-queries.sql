@@ -23,7 +23,11 @@ COPY (SELECT counties.geoid10 as "FIPS",
   SUM(CAST((recruits.year = 2003) AS INT)) as t2003,
   SUM(CAST((recruits.year = 2002) AS INT)) as t2002,
   COUNT(1) as total,
-  (max(dp0010024) + max(dp0010025) + max(dp0010026)) as male_pop
+  (max(dp0010024) + max(dp0010025) + max(dp0010026)) as male_pop,
+  -- Come up with a number that isn't affected by population so we can make
+  -- comparisons between large and small counties.
+  -- ((total_recruits / total_years) / male_population) * 1000
+  ((COUNT(1) / 14.0) / (max(dp0010024) + max(dp0010025) + max(dp0010026))) * 10000 as power_index
 FROM counties
 INNER JOIN recruits ON st_contains(counties.geom, recruits.geom)
 WHERE stars > 1
