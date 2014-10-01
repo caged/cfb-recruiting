@@ -1,0 +1,24 @@
+#!/bin/sh
+
+usage() { echo "Usage: $0 [-x latitude] [-y longitude]" 1>&2; exit 1; }
+
+while getopts ":x:y:" opt; do
+  case $opt in
+    x)
+      x=$OPTARG
+      ;;
+    y)
+      y=$OPTARG
+      ;;
+    *)
+      usage
+      ;;
+  esac
+done
+
+psql --no-align -F ',' -c \
+"select name, states.state, format('\"FILL:%s\" => \"%s\"', statefp, name) as key \
+  from places \
+  inner join states on places.statefp = states.state_fips
+  order by st_distance(st_setsrid(st_makepoint($x::float, $y::float), 4326), st_setsrid(st_makepoint(intptlat::float, intptlon::float), 4326)) \
+  limit 5;" usa
