@@ -35,6 +35,11 @@ headers  = [:position, :location, :school, :height, :weight, :fourty, :stars, :r
     doc = Nokogiri::HTML(response.body)
     table = doc.css('#ysr-search-results')
 
+    if table.text.downcase.include?('your search returned no results')
+      puts "End of results for #{year}"
+      break
+    end
+
     rows = table.css('tbody tr')
     rows.each do |row|
       stats = []
