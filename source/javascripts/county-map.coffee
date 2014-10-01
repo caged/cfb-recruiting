@@ -77,7 +77,7 @@ render = (event, env) ->
       .attr('class', 'title')
       .text((d) -> "#{d.name.replace('County', '')}")
 
-    if props.male_18_24
+    if props.male_pop
       stars = el.append('ul')
         .attr('class', 'star-recruits')
       .selectAll('li')
@@ -89,7 +89,7 @@ render = (event, env) ->
       .enter().append('li')
 
       stars.append('span')
-        .attr('class', (d) -> "star #{d.label}")
+        .attr('class', (d) -> "star star-#{d.label}")
         .html("&#9733;")
 
       stars.append('span')
@@ -99,13 +99,14 @@ render = (event, env) ->
       el.append('span')
         .attr('class', 'cam')
         .html (d) ->
-          "<span class='count'>#{d3.format(',')(d.male_18_24)}</span>
-            males 18-24yo according to The U.S. Census Bureau."
+          "<span class='count'>#{d3.format(',')(d.male_pop)}</span>
+            college-aged males*."
 
       el.append('span')
         .attr('class', 'note')
         .text('Recruit numbers based on 2002-2015 combined totals.
-               Demographics from 2008-12 5 year American Community Survey.')
+               Demographics from 2008-12 5 year American Community Survey.
+               Males include demographic groups aged 15-29 years old.')
     else
       el.append('span')
         .attr('class', 'no-recruits')
@@ -184,7 +185,7 @@ render = (event, env) ->
     connections.enter().append('path')
       .attr('d', (d) -> arc(d.points))
       .attr('class', (d) -> "connection stars#{d.stars}")
-      .style('stroke', (d) ->console.log d; env.colors[d.stars - 1])
+      .style('stroke', (d) -> env.colors[d.stars - 1])
       .attr('stroke-dasharray', -> len = @getTotalLength(); "#{len},#{len}")
       .attr('stroke-dashoffset', -> @getTotalLength())
     .transition()
@@ -222,7 +223,6 @@ render = (event, env) ->
 
   # Set the fill domain based on the total number of recruits
   env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties.total)]
-
   map.append('text')
     .attr('class', 'ui-info')
     .attr('x', env.width / 2)
@@ -268,17 +268,24 @@ render = (event, env) ->
   d3.select('.js-spurrier')
     .style(display: 'block', top: "#{top}px", left: "#{left - 200}px")
 
+  per1kForYear = (county, year) ->
+    if timeline = county.properties.timeline
+      yearhaul = timeline.filter((y) -> y.year is year)
+      if yearhaul.length is 1 then yearhaul[0].per1k else 0
+    else
+      0
+
   # Shade the county by the selected year
   drawCountyAtYear = (year) ->
-    year = if year then "total_#{year}" else 'total'
+    year = if year then "t#{year}" else 'total'
     numCounties = env.counties.features.length
+    max = d3.max env.counties.features, (d) -> d.properties[year]
 
-    env.fill.domain [0.2, d3.max(env.counties.features, (d) -> d.properties[year])]
+    env.fill.domain [0.2, max]
 
     zoomGroup.selectAll('.county')
       .transition()
-      .delay((d, i) -> i / numCounties * 500)
-      .style('fill', (d) -> env.fill(d.properties[year] || 0))
+      .style('fill', (d) -> env.fill d.properties[year] || 0)
       .style('stroke', (d) ->
         stars = d.properties[year] || 0
         if stars > 0 then env.fill(stars || 0) else '#333')
