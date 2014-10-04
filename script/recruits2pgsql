@@ -43,7 +43,7 @@ sql="CREATE TABLE recruits (
     name character varying(120),
     year integer,
     id integer,
-    place_gid integer,
+    place_geoid text,
     statefp character varying(2),
     lat double precision,
     lon double precision

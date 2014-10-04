@@ -1,0 +1,37 @@
+#!/bin/sh
+
+dbname=usa
+
+sql="CREATE TABLE schools (
+	stadium VARCHAR(80),
+	city VARCHAR(80),
+	\"state\" VARCHAR(80),
+	team VARCHAR(80),
+	conference VARCHAR(80),
+	capacity INTEGER,
+	record INTEGER,
+	built INTEGER,
+	expanded INTEGER,
+	place_gid varchar(80),
+	statefp INTEGER,
+	placefp INTEGER,
+	alt VARCHAR(80),
+	name VARCHAR(80),
+	lon DOUBLE PRECISION,
+	lat DOUBLE PRECISION,
+	nickname VARCHAR(80),
+	first_played INTEGER,
+	joined_fbs INTEGER,
+	pop_est_2013 INTEGER,
+	seats_per_100 DOUBLE PRECISION
+)"
+
+psql -d $dbname -c "DROP TABLE IF EXISTS schools"
+psql -d $dbname -c "${sql}"
+psql -d $dbname -c "COPY schools FROM '$(pwd)/source/data/schools.csv' WITH CSV HEADER"
+psql -c "create index on schools (place_gid)" $dbname
+psql -c "create index on schools (statefp)" $dbname
+
+psql -c "alter table schools add column geom geometry(Point,2163)" $dbname
+psql -c "update schools set geom = st_transform(st_setsrid(st_makepoint(lon, lat), 4326), 2163)" $dbname
+psql -c "create index schools_gix on schools using gist (geom)" $dbname
