@@ -10,7 +10,7 @@ require 'csv'
 STAR_MIN = 3
 PAGES_TO_TRAVERSE = 18
 START_YEAR = 2002
-END_YEAR   = 2015
+END_YEAR   = 2016
 
 cache_dir = File.join(ENV['TMPDIR'] || '/tmp', 'cache')
 url = 'http://sports.yahoo.com/ncaa/football/recruiting/recruit-search-results'
