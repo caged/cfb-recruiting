@@ -13,6 +13,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    dotenv (2.0.2)
     execjs (1.4.0)
       multi_json (~> 1.0)
     faraday (0.8.11)
@@ -119,6 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  dotenv
   faraday (~> 0.8.0)
   faraday_middleware
   middleman (~> 3.0.14)

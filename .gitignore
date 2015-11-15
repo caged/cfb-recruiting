@@ -16,3 +16,4 @@
 source/javascripts/components
 node_modules
 data/recruits-*.csv
+.env
