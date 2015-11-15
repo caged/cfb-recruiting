@@ -30,7 +30,7 @@ def feet_and_inches_to_inches(feet, inches)
   (feet.to_i * 12) + inches.to_i
 end
 
-headers  = [:position, :location, :school, :height, :weight, :fourty, :stars, :rating, :rank, :institution, :name, :year]
+headers  = [:position, :name, :location, :school, :height, :weight, :fourty, :stars, :rating, :rank, :institution, :year]
 
 (START_YEAR..END_YEAR).to_a.reverse.each do |year|
   file_name = "data/recruits-#{year}.csv"
@@ -58,13 +58,13 @@ headers  = [:position, :location, :school, :height, :weight, :fourty, :stars, :r
         if index == 0
           stats << cell.content.strip.downcase
 
-        #Highschool and location are part of the same cell
-        elsif index == 1
+        # Highschool and location are part of the same cell
+        elsif index == 2
            stats << cell.xpath('text()').to_s
            stats << cell.at('em').content.strip
 
         # Convert height from 5'11" to an inches integer
-        elsif index == 2
+        elsif index == 3
           val = cell.content.strip
 
           if val.empty?
@@ -75,17 +75,17 @@ headers  = [:position, :location, :school, :height, :weight, :fourty, :stars, :r
           end
 
         # Stars are images, so we count them
-        elsif index == 5
+        elsif index == 6
           val =  cell.css('img').length
           stats << val == 0 ? nil : val
 
         # Fourty and rating are floats
-        elsif [4, 6].include?(index)
+        elsif [5, 7].include?(index)
           val = cell.content.strip.downcase
           stats << ((val.empty? || val == 'n/a') ? nil : val.to_f)
 
         # Weight and rank are integers
-        elsif [3, 7].include?(index)
+        elsif [4, 8].include?(index)
           val = cell.content.strip.downcase
           stats << ((val.empty? || val == 'n/a') ? nil : val.to_i)
 
