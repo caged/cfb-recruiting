@@ -3,7 +3,7 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.14"
-gem "faraday"
+gem "faraday", "~> 0.8.0"
 gem "nokogiri"
 gem "faraday_middleware"
 gem "activesupport"
