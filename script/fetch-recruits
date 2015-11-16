@@ -33,7 +33,7 @@ end
 headers  = [:position, :name, :location, :school, :height, :weight, :fourty, :stars, :rating, :rank, :institution, :year]
 
 (START_YEAR..END_YEAR).to_a.reverse.each do |year|
-  file_name = "data/recruits-#{year}.csv"
+  file_name = "data/csv/recruits-#{year}.csv"
   File.delete(file_name) if File.exists?(file_name)
   csv = CSV.open(file_name, 'w+', :headers => headers, :write_headers => true)
 
