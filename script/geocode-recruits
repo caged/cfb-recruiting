@@ -34,7 +34,7 @@ CSV.open("data/csv/combined.csv", "ab", write_headers: true, :headers => headers
       if d
         prp = d['properties']
         geo = d['geometry']['coordinates']
-        row.push(prp['region'], prp['region_a'], prp['county'], prp['locality'])
+        row.push(prp['region'], prp['region_a'], prp['county'], prp['locality'], prp['gid'])
         row.push(*geo)
         csv << row
       else
