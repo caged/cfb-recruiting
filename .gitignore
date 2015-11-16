@@ -15,5 +15,7 @@
 
 source/javascripts/components
 node_modules
-data/recruits-*.csv
+data/gz
+data/gdb
+
 .env
