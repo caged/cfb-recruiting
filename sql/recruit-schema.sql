@@ -1,0 +1,21 @@
+CREATE TABLE recruits (
+    position text,
+    name text,
+    location text,
+    school text,
+    height integer,
+    weight integer,
+    fourty double precision,
+    stars integer,
+    rating double precision,
+    rank integer,
+    institution text,
+    year integer,
+    region text,
+    region_a text,
+    county text,
+    geo_name text,
+    gid text,
+    lng double precision,
+    lat double precision
+)
