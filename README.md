@@ -1,5 +1,11 @@
-nothing to see here yet...
 
-### Datasets
 
-* [Counties with demographics](http://www2.census.gov/geo/tiger/TIGER2010DP1/County_2010Census_DP1.zip)
+``` bash
+# Add your Mapzen search API key here:
+touch .env
+
+# Fetch and geocode results
+script/fetch-results
+script/geocode-results
+script/recruits2psql -d YOUR_DB_NAME
+```

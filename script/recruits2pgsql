@@ -4,15 +4,12 @@
 #
 #   $ ./bin/recruits2pgsql -d sports -c data/recruits.csv
 #
-usage() { echo "Usage: $0 [-d postgres database] [-c csv file]" 1>&2; exit 1; }
+usage() { echo "Usage: $0 [-d postgres database]" 1>&2; exit 1; }
 
 while getopts ":d:c:" opt; do
   case $opt in
     d)
       dbname=$OPTARG
-      ;;
-    c)
-      csv_dir=$OPTARG
       ;;
     *)
       usage
@@ -22,41 +19,26 @@ done
 
 shift $((OPTIND-1))
 
-if [ -z "${dbname}" ] || [ -z "${csv_dir}" ]; then
+if [ -z "${dbname}" ]; then
   usage
 fi
 
-# dropdb --interactive -e $dbname
-# createdb --encoding UTF8 $dbname
+dropdb --if-exists --interactive -e $dbname
+createdb --template template0 --encoding UTF8 $dbname
 
-sql="CREATE TABLE recruits (
-    position character varying(120),
-    location character varying(120),
-    school character varying(120),
-    height integer,
-    weight integer,
-    fourty double precision,
-    stars integer,
-    rating double precision,
-    rank integer,
-    institution character varying(120),
-    name character varying(120),
-    year integer,
-    id integer,
-    place_gid integer,
-    statefp character varying(2),
-    lat double precision,
-    lon double precision
-)"
+psql -d $dbname -c 'create extension postgis'
+psql -d $dbname -c 'drop table if exists recruits'
+psql -d $dbname -f sql/recruit-schema.sql
+psql -d $dbname -f sql/stadiums-schema.sql
+psql -d $dbname -f sql/point-in-polygon.sql
 
-psql -d $dbname -c 'CREATE EXTENSION postgis'
-psql -d $dbname -c "DROP TABLE IF EXISTS recruits"
-psql -d $dbname -c "${sql}"
-psql -d $dbname -f script/point-in-polygon.sql
-psql -d $dbname -c "COPY recruits FROM '$(pwd)/data/recruits-with-points.csv' WITH CSV HEADER"
+cat data/csv/stadiums.csv | psql -d $dbname -c "copy stadiums from stdin with csv header"
+cat data/csv/combined.csv | psql -d $dbname -c "copy recruits from stdin with csv header"
 psql -c "create index recruits_stars on recruits (stars)" $dbname
-psql -c "create index recruits_place_gid on recruits (place_gid)" $dbname
+psql -c "create index recruits_region on recruits (region)" $dbname
 
-psql -c "alter table recruits add column geom geometry(Point,2163)" $dbname
-psql -c "update recruits set geom = st_transform(st_setsrid(st_makepoint(lon, lat), 4326), 2163)" $dbname
+psql -c "alter table recruits add column geom geometry(Point,4326)" $dbname
+psql -c "update recruits set geom = st_setsrid(st_makepoint(lng, lat), 4326)" $dbname
 psql -c "create index recruits_gix on recruits using gist (geom)" $dbname
+
+ogr2ogr -t_srs 'EPSG:4326' --config PG_USE_COPY YES -append -f PGDump /dev/stdout data/gdb/places.gdb/ | psql $dbname

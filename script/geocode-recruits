@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+
+require 'dotenv'
+Dotenv.load
+
+require 'faraday_middleware'
+require 'active_support/cache'
+require 'csv'
+require 'json'
+require 'pp'
+require 'pathname'
+
+cache_dir = File.join(ENV['TMPDIR'] || '/tmp', 'cache')
+url = 'https://search.mapzen.com/v1'
+params = { 'api_key' => ENV['MAPZEN_SEARCH_KEY'], 'boundary.country' => 'USA' }
+conn = Faraday.new(url: url, params: params) do |faraday|
+  faraday.response :json, content_type: /\bjson$/
+  faraday.response :caching do
+    ActiveSupport::Cache::FileStore.new cache_dir, :namespace => 'recruiting', :expires_in => 86400  # one day
+  end
+  faraday.adapter  Faraday.default_adapter
+end
+
+missing_locations = {}
+headers  = [:position, :name, :location, :school, :height, :weight, :fourty, :stars, :rating, :rank, :institution, :year]
+headers += [:region, :region_a, :county, :geo_name, :gid, :lng, :lat]
+CSV.open("data/csv/combined.csv", "ab", write_headers: true, :headers => headers) do |csv|
+  Pathname.glob("data/csv/recruits-*.csv") do |path|
+    puts "Fetching #{path}"
+    CSV.foreach(path, :headers => true) do |row|
+      response = conn.get('search', text: row['location'])
+      d = response.body['features'].first
+
+      if d
+        prp = d['properties']
+        geo = d['geometry']['coordinates']
+        row.push(prp['region'], prp['region_a'], prp['county'], prp['locality'], prp['gid'])
+        row.push(*geo)
+        csv << row
+      else
+        missing_locations[row['location']] ||= 0
+        missing_locations[row['location']] += 1
+      end
+    end
+  end
+end
+
+pp missing_locations
