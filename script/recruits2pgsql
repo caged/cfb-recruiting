@@ -2,7 +2,7 @@
 #
 # Example:
 #
-#   $ ./bin/recruits2pgsql -d sports -c data/recruits.csv
+#   $ ./bin/recruits2pgsql -d recruiting
 #
 usage() { echo "Usage: $0 [-d postgres database]" 1>&2; exit 1; }
 
@@ -29,10 +29,10 @@ createdb --template template0 --encoding UTF8 $dbname
 psql -d $dbname -c 'create extension postgis'
 psql -d $dbname -c 'drop table if exists recruits'
 psql -d $dbname -f sql/recruit-schema.sql
-psql -d $dbname -f sql/stadiums-schema.sql
+psql -d $dbname -f sql/institutions-schema.sql
 psql -d $dbname -f sql/point-in-polygon.sql
 
-cat data/csv/stadiums.csv | psql -d $dbname -c "copy stadiums from stdin with csv header"
+cat data/csv/institutions.csv | psql -d $dbname -c "copy institutions from stdin with csv header"
 cat data/csv/combined.csv | psql -d $dbname -c "copy recruits from stdin with csv header"
 psql -c "create index recruits_stars on recruits (stars)" $dbname
 psql -c "create index recruits_region on recruits (region)" $dbname
