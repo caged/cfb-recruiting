@@ -16,7 +16,7 @@ params = { 'api_key' => ENV['MAPZEN_SEARCH_KEY'], 'boundary.country' => 'USA' }
 conn = Faraday.new(url: url, params: params) do |faraday|
   faraday.response :json, content_type: /\bjson$/
   faraday.response :caching do
-    ActiveSupport::Cache::FileStore.new cache_dir, :namespace => 'recruiting', :expires_in => 86400  # one day
+    ActiveSupport::Cache::FileStore.new cache_dir, :namespace => 'recruiting', :expires_in => 604800  # one week
   end
   faraday.adapter  Faraday.default_adapter
 end
